@@ -8,11 +8,14 @@ from cards.models import Card
 from core.testutils import AuthedTestCase
 from decks.models import Deck
 from decks.services import get_global_deck
+from video_study.dictionary import DictionaryResult
 from video_study.es.capture import resolve_capture_es
 from video_study.es.lemma import lemmatize_spanish
 from video_study.metadata import LemmaCacheUnavailable
 from video_study.models import WordTranslation
+from video_study.nl.wiktionary import NlDictionaryResult
 from video_study.normalization import CaptureResolution
+from video_study.testutils import DictionaryStubMixin
 from video_study.testutils_lemma import LemmaCacheTestMixin
 
 
@@ -231,3 +234,48 @@ class GermanSavingIsUnchangedTests(LemmaCacheTestMixin, AuthedTestCase):
         self.assertTrue(response.json()["created"])
         self.assertEqual(Card.objects.filter(deck=deck).count(), 2)
         self.assertNotEqual(response.json()["card_id"], noun.pk)
+
+
+class UnavailableDictionarySavingTests(DictionaryStubMixin, LemmaCacheTestMixin, AuthedTestCase):
+    """With no dictionary answer a verb has no part of speech; it is still a verb."""
+
+    dictionary_result = DictionaryResult(status="unavailable")
+
+    def save(self, word, context, source_language=None):
+        payload = {"word": word, "source_form": word, "translation": "есть", "context": context}
+        if source_language:
+            payload["source_language"] = source_language
+        return self.client.post(
+            reverse("cards:add_to_global"),
+            data=json.dumps(payload),
+            content_type="application/json",
+        )
+
+    def test_a_german_verb_is_saved_when_the_dictionary_is_unavailable(self):
+        deck = get_global_deck(self.user, Deck.LanguageMode.DE_RU)
+        noun = Card.objects.create(deck=deck, front="das Essen", article="das", back="еда")
+
+        response = self.save("essen", "Ich möchte essen.")
+
+        self.assertEqual(response.status_code, 201)
+        self.assertTrue(response.json()["created"])
+        self.assertNotEqual(response.json()["card_id"], noun.pk)
+        self.assertEqual(Card.objects.filter(deck=deck).count(), 2)
+
+    def test_a_dutch_verb_is_saved_when_the_dictionary_is_unavailable(self):
+        session = self.client.session
+        session["language_mode"] = Deck.LanguageMode.NL_EN
+        session.save()
+        deck = get_global_deck(self.user, Deck.LanguageMode.NL_EN)
+        noun = Card.objects.create(deck=deck, front="het eten", article="het", back="food")
+
+        with patch(
+            "video_study.nl.capture.lookup_nl_dictionary",
+            return_value=NlDictionaryResult(status="unavailable"),
+        ):
+            response = self.save("eten", "Ik wil eten.", source_language="nl")
+
+        self.assertEqual(response.status_code, 201)
+        self.assertTrue(response.json()["created"])
+        self.assertNotEqual(response.json()["card_id"], noun.pk)
+        self.assertEqual(Card.objects.filter(deck=deck).count(), 2)

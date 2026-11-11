@@ -58,9 +58,16 @@ def add_to_global_deck(request):
 
     deck = get_global_deck(request.user, language_mode)
     existing = deck.cards.filter(front__iexact=word).first()
-    if existing is None and not resolution.article and not resolution.part_of_speech:
-        # Without an article or a part of speech the word cannot be told from a list
-        # card that carries its article in the front ("el coche" for "coche").
+    if (
+        existing is None
+        and source_language == "es"
+        and not resolution.article
+        and not resolution.part_of_speech
+    ):
+        # Spanish capture has no dictionary: without an article or a part of speech the
+        # word cannot be told from a list card that carries its article in the front
+        # ("el coche" for "coche"). German and Dutch keep the exact-front rule only: an
+        # unavailable dictionary also leaves a plain verb without a part of speech.
         listed = Q()
         for article in pack_for_mode(language_mode).articles:
             listed |= Q(front__iexact=f"{article} {word}")
