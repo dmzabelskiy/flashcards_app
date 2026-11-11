@@ -1,0 +1,1674 @@
+# Spanish verbs in context: ser, estar and hay, the past tenses, gustar-type verbs, saber and conocer.
+slug: verbs-in-context
+trainer: es_verb_context
+label: Verbs in context
+description: Complete sentences with the right verb or tense, such as ser, estar or hay, indefinido, imperfecto or perfecto, gustar-type verbs, and saber or conocer.
+order: 20
+round_size: 20
+targets: [ru]
+pictogram: theater
+instruction: Fill the gap with the form of the verb, or the verb of the choice, named in brackets.
+hint: Accents count · the time word settles the past tense · vosotros is the Spain form
+fields:
+  - key: answer
+    label: Answer
+    kind: typed
+    normalise: spanish
+    placeholder: Type the missing word
+items:
+  - id: ser-estar-madrid-espana
+    prompt: 'Madrid ___ en España. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'Madrid está en España.'
+        reveal:
+          Translation: 'Мадрид находится в Испании.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-llaves-mesa
+    prompt: 'Las llaves ___ encima de la mesa. (ser / estar)'
+    alternatives:
+      - answer: [están]
+        example: 'Las llaves están encima de la mesa.'
+        reveal:
+          Translation: 'Ключи лежат на столе.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-banco-farmacia
+    prompt: 'El banco ___ al lado de la farmacia. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'El banco está al lado de la farmacia.'
+        reveal:
+          Translation: 'Банк находится рядом с аптекой.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-padres-casa
+    prompt: 'Mis padres ___ en casa ahora. (ser / estar)'
+    alternatives:
+      - answer: [están]
+        example: 'Mis padres están en casa ahora.'
+        reveal:
+          Translation: 'Мои родители сейчас дома.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-yo-oficina
+    prompt: 'Hoy ___ en la oficina. (ser / estar, yo)'
+    alternatives:
+      - answer: [estoy]
+        example: 'Hoy estoy en la oficina.'
+        reveal:
+          Translation: 'Сегодня я в офисе.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-tu-donde
+    prompt: '¿Dónde ___ ahora, Pablo? (ser / estar, tú)'
+    alternatives:
+      - answer: [estás]
+        example: '¿Dónde estás ahora, Pablo?'
+        reveal:
+          Translation: 'Где ты сейчас, Пабло?'
+          Why: 'местоположение → estar'
+  - id: ser-estar-gato-sofa
+    prompt: 'El gato ___ en el sofá. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'El gato está en el sofá.'
+        reveal:
+          Translation: 'Кот на диване.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-museo-centro
+    prompt: 'El museo ___ en el centro de la ciudad. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'El museo está en el centro de la ciudad.'
+        reveal:
+          Translation: 'Музей находится в центре города.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-nosotros-parque
+    prompt: 'Nosotros ___ en el parque. (ser / estar)'
+    alternatives:
+      - answer: [estamos]
+        example: 'Nosotros estamos en el parque.'
+        reveal:
+          Translation: 'Мы в парке.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-vosotros-cocina
+    prompt: 'Vosotros ___ en la cocina. (ser / estar)'
+    alternatives:
+      - answer: [estáis]
+        example: 'Vosotros estáis en la cocina.'
+        reveal:
+          Translation: 'Вы на кухне.'
+          Why: 'местоположение → estar'
+  - id: ser-estar-casa-lejos
+    prompt: 'Mi casa ___ lejos del centro. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'Mi casa está lejos del centro.'
+        reveal:
+          Translation: 'Мой дом далеко от центра.'
+          Why: 'расположение → estar'
+  - id: ser-estar-ana-mexico
+    prompt: 'Ana ___ de México. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Ana es de México.'
+        reveal:
+          Translation: 'Ана из Мексики.'
+          Why: 'происхождение → ser'
+  - id: ser-estar-yo-rusia
+    prompt: 'Yo ___ de Rusia. (ser / estar)'
+    alternatives:
+      - answer: [soy]
+        example: 'Yo soy de Rusia.'
+        reveal:
+          Translation: 'Я из России.'
+          Why: 'происхождение → ser'
+  - id: ser-estar-tu-medico
+    prompt: 'Tú ___ médico, ¿verdad? (ser / estar)'
+    alternatives:
+      - answer: [eres]
+        example: 'Tú eres médico, ¿verdad?'
+        reveal:
+          Translation: 'Ты врач, правда?'
+          Why: 'профессия → ser'
+  - id: ser-estar-tios-profesores
+    prompt: 'Mis tíos ___ profesores. (ser / estar)'
+    alternatives:
+      - answer: [son]
+        example: 'Mis tíos son profesores.'
+        reveal:
+          Translation: 'Мои дяди — учителя.'
+          Why: 'профессия → ser'
+  - id: ser-estar-marta-yo-amigas
+    prompt: 'Marta y yo ___ amigas desde niñas. (ser / estar)'
+    alternatives:
+      - answer: [somos]
+        example: 'Marta y yo somos amigas desde niñas.'
+        reveal:
+          Translation: 'Марта и я подруги с детства.'
+          Why: 'кто есть кто → ser'
+  - id: ser-estar-vosotros-amigos
+    prompt: 'Vosotros ___ mis mejores amigos. (ser / estar)'
+    alternatives:
+      - answer: [sois]
+        example: 'Vosotros sois mis mejores amigos.'
+        reveal:
+          Translation: 'Вы мои лучшие друзья.'
+          Why: 'кто есть кто → ser'
+  - id: ser-estar-hoy-lunes
+    prompt: 'Hoy ___ lunes. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Hoy es lunes.'
+        reveal:
+          Translation: 'Сегодня понедельник.'
+          Why: 'день недели → ser'
+  - id: ser-estar-hora-tres
+    prompt: '___ las tres de la tarde. (ser / estar)'
+    alternatives:
+      - answer: [son]
+        example: 'Son las tres de la tarde.'
+        reveal:
+          Translation: 'Сейчас три часа дня.'
+          Why: 'время → ser, во мн. числе: las tres'
+  - id: ser-estar-fecha-mayo
+    prompt: 'Hoy ___ el cinco de mayo. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Hoy es el cinco de mayo.'
+        reveal:
+          Translation: 'Сегодня пятое мая.'
+          Why: 'дата → ser'
+  - id: ser-estar-mesa-madera
+    prompt: 'La mesa ___ de madera. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'La mesa es de madera.'
+        reveal:
+          Translation: 'Стол деревянный.'
+          Why: 'материал → ser'
+  - id: ser-estar-regalo-madre
+    prompt: 'Este regalo ___ para mi madre. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Este regalo es para mi madre.'
+        reveal:
+          Translation: 'Этот подарок для моей мамы.'
+          Why: 'назначение → ser'
+  - id: ser-estar-coche-hermano
+    prompt: 'Este coche ___ de mi hermano. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Este coche es de mi hermano.'
+        reveal:
+          Translation: 'Эта машина моего брата.'
+          Why: 'принадлежность → ser'
+  - id: ser-estar-cuanto-todo
+    prompt: '¿Cuánto ___ todo? (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: '¿Cuánto es todo?'
+        reveal:
+          Translation: 'Сколько всего?'
+          Why: 'итоговая цена → ser'
+  - id: ser-estar-hermano-alto
+    prompt: 'Mi hermano ___ muy alto. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Mi hermano es muy alto.'
+        reveal:
+          Translation: 'Мой брат очень высокий.'
+          Why: 'постоянная черта → ser'
+  - id: ser-estar-casa-pequena
+    prompt: 'Nuestra casa ___ pequeña pero bonita. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Nuestra casa es pequeña pero bonita.'
+        reveal:
+          Translation: 'Наш дом маленький, но красивый.'
+          Why: 'постоянная черта → ser'
+  - id: ser-estar-profesora-simpatica
+    prompt: 'Mi profesora ___ muy simpática. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Mi profesora es muy simpática.'
+        reveal:
+          Translation: 'Моя учительница очень приятная.'
+          Why: 'характер → ser'
+  - id: ser-estar-espanol-lengua
+    prompt: 'El español ___ una lengua muy bonita. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'El español es una lengua muy bonita.'
+        reveal:
+          Translation: 'Испанский — очень красивый язык.'
+          Why: 'определение → ser'
+  - id: ser-estar-yo-cansado
+    prompt: 'Hoy ___ muy cansado. (ser / estar, yo)'
+    alternatives:
+      - answer: [estoy]
+        example: 'Hoy estoy muy cansado.'
+        reveal:
+          Translation: 'Сегодня я очень устал.'
+          Why: 'состояние → estar'
+  - id: ser-estar-sopa-caliente
+    prompt: 'La sopa ___ caliente. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'La sopa está caliente.'
+        reveal:
+          Translation: 'Суп горячий.'
+          Why: 'состояние сейчас → estar'
+  - id: ser-estar-ventana-abierta
+    prompt: 'La ventana ___ abierta. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'La ventana está abierta.'
+        reveal:
+          Translation: 'Окно открыто.'
+          Why: 'результат действия → estar'
+  - id: ser-estar-nosotros-contentos
+    prompt: 'Hoy ___ muy contentos. (ser / estar)'
+    alternatives:
+      - answer: [estamos]
+        example: 'Hoy estamos muy contentos.'
+        reveal:
+          Translation: 'Сегодня мы очень довольны.'
+          Why: 'настроение → estar'
+  - id: ser-estar-ninos-enfermos
+    prompt: 'Los niños ___ enfermos. (ser / estar)'
+    alternatives:
+      - answer: [están]
+        example: 'Los niños están enfermos.'
+        reveal:
+          Translation: 'Дети больны.'
+          Why: 'состояние → estar'
+  - id: ser-estar-tu-triste
+    prompt: '¿Por qué ___ tan triste? (ser / estar, tú)'
+    alternatives:
+      - answer: [estás]
+        example: '¿Por qué estás tan triste?'
+        reveal:
+          Translation: 'Почему ты такой грустный?'
+          Why: 'настроение → estar'
+  - id: ser-estar-cafe-frio
+    prompt: 'El café ___ frío. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'El café está frío.'
+        reveal:
+          Translation: 'Кофе холодный.'
+          Why: 'состояние сейчас → estar'
+  - id: ser-estar-tienda-cerrada
+    prompt: 'La tienda ___ cerrada hoy porque es fiesta. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'La tienda está cerrada hoy porque es fiesta.'
+        reveal:
+          Translation: 'Магазин сегодня закрыт, потому что праздник.'
+          Why: 'состояние → estar'
+  - id: ser-estar-yo-ocupada
+    prompt: 'Ahora no puedo hablar: ___ ocupada. (ser / estar, yo)'
+    alternatives:
+      - answer: [estoy]
+        example: 'Ahora no puedo hablar: estoy ocupada.'
+        reveal:
+          Translation: 'Сейчас не могу говорить: я занята.'
+          Why: 'состояние → estar'
+  - id: ser-estar-madre-nerviosa
+    prompt: 'Mi madre ___ nerviosa antes del viaje. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'Mi madre está nerviosa antes del viaje.'
+        reveal:
+          Translation: 'Мама нервничает перед поездкой.'
+          Why: 'настроение → estar'
+  - id: ser-estar-hoy-nublado
+    prompt: 'Hoy ___ nublado. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'Hoy está nublado.'
+        reveal:
+          Translation: 'Сегодня облачно.'
+          Why: 'погода: estar nublado'
+  - id: ser-estar-es-tarde
+    prompt: '___ tarde, vamos a casa. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'Es tarde, vamos a casa.'
+        reveal:
+          Translation: 'Уже поздно, пойдём домой.'
+          Why: 'время: es tarde → ser'
+  - id: ser-estar-padre-cocinando
+    prompt: 'Mi padre ___ cocinando. (ser / estar)'
+    alternatives:
+      - answer: [está]
+        example: 'Mi padre está cocinando.'
+        reveal:
+          Translation: 'Мой отец готовит.'
+          Why: 'estar + gerundio: действие сейчас'
+  - id: ser-estar-ninos-durmiendo
+    prompt: 'Los niños ___ durmiendo. (ser / estar)'
+    alternatives:
+      - answer: [están]
+        example: 'Los niños están durmiendo.'
+        reveal:
+          Translation: 'Дети спят.'
+          Why: 'estar + gerundio: действие сейчас'
+  - id: ser-estar-yo-estudiando
+    prompt: 'Ahora ___ estudiando español. (ser / estar, yo)'
+    alternatives:
+      - answer: [estoy]
+        example: 'Ahora estoy estudiando español.'
+        reveal:
+          Translation: 'Сейчас я изучаю испанский.'
+          Why: 'estar + gerundio: действие сейчас'
+  - id: ser-estar-tu-haciendo
+    prompt: '¿Qué ___ haciendo? (ser / estar, tú)'
+    alternatives:
+      - answer: [estás]
+        example: '¿Qué estás haciendo?'
+        reveal:
+          Translation: 'Что ты делаешь?'
+          Why: 'estar + gerundio: действие сейчас'
+  - id: ser-estar-fiesta-casa
+    prompt: 'La fiesta ___ en mi casa. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'La fiesta es en mi casa.'
+        reveal:
+          Translation: 'Вечеринка будет у меня дома.'
+          Why: 'место события → ser'
+  - id: ser-estar-concierto-nueve
+    prompt: 'El concierto ___ a las nueve. (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: 'El concierto es a las nueve.'
+        reveal:
+          Translation: 'Концерт в девять.'
+          Why: 'время события → ser'
+  - id: ser-estar-donde-reunion
+    prompt: '¿Dónde ___ la reunión? (ser / estar)'
+    alternatives:
+      - answer: [es]
+        example: '¿Dónde es la reunión?'
+        reveal:
+          Translation: 'Где проходит собрание?'
+          Why: 'место события → ser'
+  - id: ser-estar-hay-parque
+    prompt: '___ un parque cerca de mi casa. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'Hay un parque cerca de mi casa.'
+        reveal:
+          Translation: 'Рядом с моим домом есть парк.'
+          Why: 'что-то есть → hay'
+  - id: ser-estar-hay-banco
+    prompt: '¿___ un banco por aquí? (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: '¿Hay un banco por aquí?'
+        reveal:
+          Translation: 'Здесь есть банк поблизости?'
+          Why: 'что-то есть → hay'
+  - id: ser-estar-hay-gente
+    prompt: 'En la plaza ___ mucha gente. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'En la plaza hay mucha gente.'
+        reveal:
+          Translation: 'На площади много людей.'
+          Why: 'наличие → hay'
+  - id: ser-estar-hay-leche
+    prompt: 'No ___ leche en la nevera. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'No hay leche en la nevera.'
+        reveal:
+          Translation: 'В холодильнике нет молока.'
+          Why: 'наличие → hay'
+  - id: ser-estar-donde-banco
+    prompt: '¿Dónde ___ el banco? (ser / estar / hay)'
+    alternatives:
+      - answer: [está]
+        example: '¿Dónde está el banco?'
+        reveal:
+          Translation: 'Где банк?'
+          Why: 'известный предмет → estar'
+  - id: ser-estar-hay-sillas
+    prompt: 'En mi habitación ___ dos sillas. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'En mi habitación hay dos sillas.'
+        reveal:
+          Translation: 'В моей комнате два стула.'
+          Why: 'наличие → hay'
+  - id: ser-estar-hay-alguien
+    prompt: '¿___ alguien en casa? (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: '¿Hay alguien en casa?'
+        reveal:
+          Translation: 'Дома кто-нибудь есть?'
+          Why: 'наличие → hay'
+  - id: ser-estar-sillas-jardin
+    prompt: 'Las sillas ___ en el jardín. (ser / estar / hay)'
+    alternatives:
+      - answer: [están]
+        example: 'Las sillas están en el jardín.'
+        reveal:
+          Translation: 'Стулья в саду.'
+          Why: 'известные предметы → estar'
+  - id: ser-estar-hay-clase
+    prompt: 'Mañana no ___ clase. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'Mañana no hay clase.'
+        reveal:
+          Translation: 'Завтра нет занятий.'
+          Why: 'наличие → hay'
+  - id: ser-estar-hay-metro
+    prompt: '¿Dónde ___ una estación de metro? (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: '¿Dónde hay una estación de metro?'
+        reveal:
+          Translation: 'Где есть станция метро?'
+          Why: 'неопределённый предмет → hay'
+  - id: ser-estar-hay-problema
+    prompt: 'No ___ ningún problema. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'No hay ningún problema.'
+        reveal:
+          Translation: 'Никаких проблем нет.'
+          Why: 'наличие → hay'
+  - id: ser-estar-hay-familia
+    prompt: 'En mi familia ___ cinco personas. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'En mi familia hay cinco personas.'
+        reveal:
+          Translation: 'В моей семье пять человек.'
+          Why: 'наличие → hay'
+  - id: ser-estar-leche-nevera
+    prompt: 'La leche ___ en la nevera. (ser / estar / hay)'
+    alternatives:
+      - answer: [está]
+        example: 'La leche está en la nevera.'
+        reveal:
+          Translation: 'Молоко в холодильнике.'
+          Why: 'известный предмет → estar'
+  - id: ser-estar-hay-tren
+    prompt: 'A las ocho ___ un tren a Madrid. (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: 'A las ocho hay un tren a Madrid.'
+        reveal:
+          Translation: 'В восемь есть поезд до Мадрида.'
+          Why: 'наличие → hay'
+  - id: ser-estar-hay-libros
+    prompt: '¿Cuántos libros ___ en la mesa? (ser / estar / hay)'
+    alternatives:
+      - answer: [hay]
+        example: '¿Cuántos libros hay en la mesa?'
+        reveal:
+          Translation: 'Сколько книг на столе?'
+          Why: 'наличие → hay'
+  - id: ser-estar-mi-libro
+    prompt: 'Mi libro ___ en la mochila. (ser / estar / hay)'
+    alternatives:
+      - answer: [está]
+        example: 'Mi libro está en la mochila.'
+        reveal:
+          Translation: 'Моя книга в рюкзаке.'
+          Why: 'известный предмет → estar'
+  - id: indefinido-ayer-cine
+    prompt: 'Ayer ___ al cine. (ir, nosotros)'
+    alternatives:
+      - answer: [fuimos]
+        example: 'Ayer fuimos al cine.'
+        reveal:
+          Translation: 'Вчера мы ходили в кино.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-anoche-dormir
+    prompt: 'Anoche ___ ocho horas. (dormir, yo)'
+    alternatives:
+      - answer: [dormí]
+        example: 'Anoche dormí ocho horas.'
+        reveal:
+          Translation: 'Прошлой ночью я проспал восемь часов.'
+          Why: 'anoche → indefinido'
+  - id: indefinido-ano-pasado-viajar
+    prompt: 'El año pasado ___ a Italia. (viajar, nosotros)'
+    alternatives:
+      - answer: [viajamos]
+        example: 'El año pasado viajamos a Italia.'
+        reveal:
+          Translation: 'В прошлом году мы ездили в Италию.'
+          Why: 'el año pasado → indefinido'
+  - id: indefinido-hace-dos-dias
+    prompt: 'Hace dos días ___ un libro nuevo. (comprar, yo)'
+    alternatives:
+      - answer: [compré]
+        example: 'Hace dos días compré un libro nuevo.'
+        reveal:
+          Translation: 'Два дня назад я купил новую книгу.'
+          Why: 'hace + время → indefinido'
+  - id: indefinido-semana-pasada-llamar
+    prompt: 'La semana pasada Marta me ___ por teléfono. (llamar)'
+    alternatives:
+      - answer: [llamó]
+        example: 'La semana pasada Marta me llamó por teléfono.'
+        reveal:
+          Translation: 'На прошлой неделе Марта мне позвонила.'
+          Why: 'la semana pasada → indefinido'
+  - id: indefinido-lunes-pasado-ver
+    prompt: 'El lunes pasado ___ a Juan en el metro. (ver, yo)'
+    alternatives:
+      - answer: [vi]
+        example: 'El lunes pasado vi a Juan en el metro.'
+        reveal:
+          Translation: 'В прошлый понедельник я видел Хуана в метро.'
+          Why: 'el lunes pasado → indefinido'
+  - id: indefinido-verano-pasado-ir
+    prompt: 'El verano pasado ___ a la playa con mis primos. (ir, yo)'
+    alternatives:
+      - answer: [fui]
+        example: 'El verano pasado fui a la playa con mis primos.'
+        reveal:
+          Translation: 'Прошлым летом я ездил на пляж с двоюродными братьями.'
+          Why: 'el verano pasado → indefinido'
+  - id: indefinido-una-vez-perder
+    prompt: 'Una vez ___ las llaves en el autobús. (perder, yo)'
+    alternatives:
+      - answer: [perdí]
+        example: 'Una vez perdí las llaves en el autobús.'
+        reveal:
+          Translation: 'Однажды я потерял ключи в автобусе.'
+          Why: 'una vez → indefinido'
+  - id: indefinido-hace-un-mes-empezar
+    prompt: 'Hace un mes ___ las clases. (empezar)'
+    alternatives:
+      - answer: [empezaron]
+        example: 'Hace un mes empezaron las clases.'
+        reveal:
+          Translation: 'Месяц назад начались занятия.'
+          Why: 'hace + время → indefinido'
+  - id: indefinido-anoche-cenar
+    prompt: 'Anoche ___ en un restaurante italiano. (cenar, nosotros)'
+    alternatives:
+      - answer: [cenamos]
+        example: 'Anoche cenamos en un restaurante italiano.'
+        reveal:
+          Translation: 'Вчера вечером мы ужинали в итальянском ресторане.'
+          Why: 'anoche → indefinido'
+  - id: indefinido-ayer-tener
+    prompt: 'Ayer ___ un examen de matemáticas. (tener, yo)'
+    alternatives:
+      - answer: [tuve]
+        example: 'Ayer tuve un examen de matemáticas.'
+        reveal:
+          Translation: 'Вчера у меня был экзамен по математике.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-ayer-hacer-compra
+    prompt: 'Ayer ___ la compra. (hacer, nosotros)'
+    alternatives:
+      - answer: [hicimos]
+        example: 'Ayer hicimos la compra.'
+        reveal:
+          Translation: 'Вчера мы ходили за покупками.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-ayer-decir
+    prompt: 'Ayer mi jefe me ___ la verdad. (decir)'
+    alternatives:
+      - answer: [dijo]
+        example: 'Ayer mi jefe me dijo la verdad.'
+        reveal:
+          Translation: 'Вчера мой начальник сказал мне правду.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-hace-anos-venir
+    prompt: 'Hace tres años ___ a vivir a Madrid. (venir, nosotros)'
+    alternatives:
+      - answer: [vinimos]
+        example: 'Hace tres años vinimos a vivir a Madrid.'
+        reveal:
+          Translation: 'Три года назад мы приехали жить в Мадрид.'
+          Why: 'hace + время → indefinido'
+  - id: indefinido-ayer-poder
+    prompt: 'Ayer no ___ llegar a tiempo. (poder, yo)'
+    alternatives:
+      - answer: [pude]
+        example: 'Ayer no pude llegar a tiempo.'
+        reveal:
+          Translation: 'Вчера я не смог прийти вовремя.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-2020-mudarse
+    prompt: 'En 2020 ___ a Valencia. (mudarse, yo)'
+    alternatives:
+      - answer: [me mudé]
+        example: 'En 2020 me mudé a Valencia.'
+        reveal:
+          Translation: 'В 2020 году я переехал в Валенсию.'
+          Why: 'год в прошлом → indefinido'
+  - id: indefinido-ayer-estar
+    prompt: 'Ayer ___ en mi casa mis abuelos. (estar, ellos)'
+    alternatives:
+      - answer: [estuvieron]
+        example: 'Ayer estuvieron en mi casa mis abuelos.'
+        reveal:
+          Translation: 'Вчера у меня дома были бабушка с дедушкой.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-viernes-pasado-leer
+    prompt: 'El viernes pasado ___ tu mensaje. (leer, yo)'
+    alternatives:
+      - answer: [leí]
+        example: 'El viernes pasado leí tu mensaje.'
+        reveal:
+          Translation: 'В прошлую пятницу я прочитал твоё сообщение.'
+          Why: 'el viernes pasado → indefinido'
+  - id: indefinido-anoche-salir
+    prompt: 'Anoche ___ a bailar. (salir, ellos)'
+    alternatives:
+      - answer: [salieron]
+        example: 'Anoche salieron a bailar.'
+        reveal:
+          Translation: 'Вчера вечером они пошли танцевать.'
+          Why: 'anoche → indefinido'
+  - id: indefinido-ayer-escribir
+    prompt: 'Ayer ___ una carta a mi abuela. (escribir, yo)'
+    alternatives:
+      - answer: [escribí]
+        example: 'Ayer escribí una carta a mi abuela.'
+        reveal:
+          Translation: 'Вчера я написал письмо бабушке.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-ayer-pedir
+    prompt: 'Ayer ___ una pizza. (pedir, nosotros)'
+    alternatives:
+      - answer: [pedimos]
+        example: 'Ayer pedimos una pizza.'
+        reveal:
+          Translation: 'Вчера мы заказали пиццу.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-2010-nacer
+    prompt: 'En 2010 ___ mi sobrina. (nacer)'
+    alternatives:
+      - answer: [nació]
+        example: 'En 2010 nació mi sobrina.'
+        reveal:
+          Translation: 'В 2010 году родилась моя племянница.'
+          Why: 'год в прошлом → indefinido'
+  - id: indefinido-ayer-ver-pelicula
+    prompt: 'Ayer ___ una película muy buena. (ver, nosotros)'
+    alternatives:
+      - answer: [vimos]
+        example: 'Ayer vimos una película muy buena.'
+        reveal:
+          Translation: 'Вчера мы смотрели очень хороший фильм.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-ano-pasado-aprender
+    prompt: 'El año pasado ___ a nadar. (aprender, yo)'
+    alternatives:
+      - answer: [aprendí]
+        example: 'El año pasado aprendí a nadar.'
+        reveal:
+          Translation: 'В прошлом году я научился плавать.'
+          Why: 'el año pasado → indefinido'
+  - id: indefinido-domingo-comer
+    prompt: 'El domingo pasado ___ en casa de mis abuelos. (comer, nosotros)'
+    alternatives:
+      - answer: [comimos]
+        example: 'El domingo pasado comimos en casa de mis abuelos.'
+        reveal:
+          Translation: 'В прошлое воскресенье мы обедали у бабушки с дедушкой.'
+          Why: 'el domingo pasado → indefinido'
+  - id: indefinido-hace-diez-anos-vivir
+    prompt: 'Hace diez años ___ un año en Berlín. (vivir, ellos)'
+    alternatives:
+      - answer: [vivieron]
+        example: 'Hace diez años vivieron un año en Berlín.'
+        reveal:
+          Translation: 'Десять лет назад они прожили год в Берлине.'
+          Why: 'срок года, законченный → indefinido'
+  - id: indefinido-ayer-tu-hacer
+    prompt: 'Ayer ___ muy bien el examen. (hacer, tú)'
+    alternatives:
+      - answer: [hiciste]
+        example: 'Ayer hiciste muy bien el examen.'
+        reveal:
+          Translation: 'Вчера ты очень хорошо сдал экзамен.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: indefinido-anoche-vosotros-volver
+    prompt: 'Anoche ___ muy tarde. (volver, vosotros)'
+    alternatives:
+      - answer: [volvisteis]
+        example: 'Anoche volvisteis muy tarde.'
+        reveal:
+          Translation: 'Вчера вечером вы вернулись очень поздно.'
+          Why: 'anoche → indefinido'
+  - id: indefinido-ayer-tu-abrir
+    prompt: 'Ayer ___ la ventana y entró frío. (abrir, tú)'
+    alternatives:
+      - answer: [abriste]
+        example: 'Ayer abriste la ventana y entró frío.'
+        reveal:
+          Translation: 'Вчера ты открыл окно, и стало холодно.'
+          Why: 'ayer → законченное действие: indefinido'
+  - id: imperfecto-nino-jugar
+    prompt: 'De niño, ___ al fútbol todos los días. (jugar, yo)'
+    alternatives:
+      - answer: [jugaba]
+        example: 'De niño, jugaba al fútbol todos los días.'
+        reveal:
+          Translation: 'В детстве я каждый день играл в футбол.'
+          Why: 'de niño → привычка в прошлом: imperfecto'
+  - id: imperfecto-pequena-vivir
+    prompt: 'De pequeña ___ en un pueblo. (vivir, yo)'
+    alternatives:
+      - answer: [vivía]
+        example: 'De pequeña vivía en un pueblo.'
+        reveal:
+          Translation: 'В детстве я жила в деревне.'
+          Why: 'de pequeña → описание прошлого: imperfecto'
+  - id: imperfecto-abuelo-joven-ser
+    prompt: 'Cuando mi abuelo ___ joven, vivía en el campo. (ser)'
+    alternatives:
+      - answer: [era]
+        example: 'Cuando mi abuelo era joven, vivía en el campo.'
+        reveal:
+          Translation: 'Когда мой дедушка был молодым, он жил в деревне.'
+          Why: 'описание в прошлом: imperfecto'
+  - id: imperfecto-ninos-playa-ir
+    prompt: 'De niños, todos los veranos ___ a la playa. (ir, nosotros)'
+    alternatives:
+      - answer: [íbamos]
+        example: 'De niños, todos los veranos íbamos a la playa.'
+        reveal:
+          Translation: 'В детстве каждое лето мы ездили на море.'
+          Why: 'todos los veranos → привычка: imperfecto'
+  - id: imperfecto-nino-comer-abuela
+    prompt: 'De niño siempre ___ en casa de mi abuela. (comer, yo)'
+    alternatives:
+      - answer: [comía]
+        example: 'De niño siempre comía en casa de mi abuela.'
+        reveal:
+          Translation: 'В детстве я всегда обедал у бабушки.'
+          Why: 'siempre в прошлом → imperfecto'
+  - id: imperfecto-pequena-tener-perro
+    prompt: 'De pequeña ___ un perro grande. (tener, yo)'
+    alternatives:
+      - answer: [tenía]
+        example: 'De pequeña tenía un perro grande.'
+        reveal:
+          Translation: 'В детстве у меня была большая собака.'
+          Why: 'de pequeña → описание: imperfecto'
+  - id: imperfecto-antes-fumar
+    prompt: 'Antes mi padre ___ mucho, pero ya no. (fumar)'
+    alternatives:
+      - answer: [fumaba]
+        example: 'Antes mi padre fumaba mucho, pero ya no.'
+        reveal:
+          Translation: 'Раньше мой отец много курил, но теперь нет.'
+          Why: 'antes … ya no → imperfecto'
+  - id: imperfecto-ninos-rio-vivir
+    prompt: 'Cuando éramos niños, ___ cerca del río. (vivir, nosotros)'
+    alternatives:
+      - answer: [vivíamos]
+        example: 'Cuando éramos niños, vivíamos cerca del río.'
+        reveal:
+          Translation: 'Когда мы были детьми, мы жили рядом с рекой.'
+          Why: 'cuando éramos niños → imperfecto'
+  - id: imperfecto-joven-sabados-salir
+    prompt: 'De joven, los sábados ___ con mis amigos. (salir, yo)'
+    alternatives:
+      - answer: [salía]
+        example: 'De joven, los sábados salía con mis amigos.'
+        reveal:
+          Translation: 'В молодости по субботам я гулял с друзьями.'
+          Why: 'los sábados в прошлом → imperfecto'
+  - id: imperfecto-infancia-ver-dibujos
+    prompt: 'En mi infancia ___ dibujos animados cada mañana. (ver, yo)'
+    alternatives:
+      - answer: [veía]
+        example: 'En mi infancia veía dibujos animados cada mañana.'
+        reveal:
+          Translation: 'В детстве я каждое утро смотрел мультфильмы.'
+          Why: 'cada mañana → привычка: imperfecto'
+  - id: imperfecto-nino-ser-timido
+    prompt: 'De niño, yo ___ muy tímido. (ser, yo)'
+    alternatives:
+      - answer: [era]
+        example: 'De niño, yo era muy tímido.'
+        reveal:
+          Translation: 'В детстве я был очень застенчивым.'
+          Why: 'описание в прошлом: imperfecto'
+  - id: imperfecto-pequenos-leer-cuento
+    prompt: 'De pequeños, todos los días ___ un cuento. (leer, nosotros)'
+    alternatives:
+      - answer: [leíamos]
+        example: 'De pequeños, todos los días leíamos un cuento.'
+        reveal:
+          Translation: 'В детстве мы каждый день читали сказку.'
+          Why: 'todos los días → привычка: imperfecto'
+  - id: imperfecto-antes-abuelos-levantarse
+    prompt: 'Antes mis abuelos ___ a las seis todos los días. (levantarse, ellos)'
+    alternatives:
+      - answer: [se levantaban]
+        example: 'Antes mis abuelos se levantaban a las seis todos los días.'
+        reveal:
+          Translation: 'Раньше мои бабушка с дедушкой каждый день вставали в шесть.'
+          Why: 'todos los días в прошлом → imperfecto'
+  - id: imperfecto-mientras-cocinar
+    prompt: 'Mientras yo ___, mi hermano ponía la mesa. (cocinar)'
+    alternatives:
+      - answer: [cocinaba]
+        example: 'Mientras yo cocinaba, mi hermano ponía la mesa.'
+        reveal:
+          Translation: 'Пока я готовил, брат накрывал на стол.'
+          Why: 'mientras → два действия сразу: imperfecto'
+  - id: imperfecto-escuela-ir
+    prompt: 'Cuando ___ a la escuela, caminaba una hora. (ir, yo)'
+    alternatives:
+      - answer: [iba]
+        example: 'Cuando iba a la escuela, caminaba una hora.'
+        reveal:
+          Translation: 'Когда я ходил в школу, я шёл пешком целый час.'
+          Why: 'cuando + привычка → imperfecto'
+  - id: imperfecto-epoca-no-tener-coche
+    prompt: 'En aquella época no ___ coche y íbamos en autobús. (tener, nosotros)'
+    alternatives:
+      - answer: [teníamos]
+        example: 'En aquella época no teníamos coche y íbamos en autobús.'
+        reveal:
+          Translation: 'Тогда у нас не было машины, и мы ездили на автобусе.'
+          Why: 'en aquella época → imperfecto'
+  - id: imperfecto-nina-gustar-bailar
+    prompt: 'De niña me ___ bailar. (gustar)'
+    alternatives:
+      - answer: [gustaba]
+        example: 'De niña me gustaba bailar.'
+        reveal:
+          Translation: 'В детстве мне нравилось танцевать.'
+          Why: 'de niña → imperfecto'
+  - id: imperfecto-joven-madre-deporte
+    prompt: 'De joven, mi madre ___ deporte todas las mañanas. (hacer)'
+    alternatives:
+      - answer: [hacía]
+        example: 'De joven, mi madre hacía deporte todas las mañanas.'
+        reveal:
+          Translation: 'В молодости моя мама каждое утро занималась спортом.'
+          Why: 'todas las mañanas → привычка: imperfecto'
+  - id: imperfecto-nino-dormir-siesta
+    prompt: 'Cuando era niño, ___ siempre la siesta. (dormir, yo)'
+    alternatives:
+      - answer: [dormía]
+        example: 'Cuando era niño, dormía siempre la siesta.'
+        reveal:
+          Translation: 'Когда я был ребёнком, я всегда спал днём.'
+          Why: 'siempre в прошлом → imperfecto'
+  - id: imperfecto-pequenos-ver-tele
+    prompt: 'Cuando erais pequeños, ___ mucho la tele. (ver, vosotros)'
+    alternatives:
+      - answer: [veíais]
+        example: 'Cuando erais pequeños, veíais mucho la tele.'
+        reveal:
+          Translation: 'Когда вы были маленькими, вы много смотрели телевизор.'
+          Why: 'cuando erais pequeños → imperfecto'
+  - id: imperfecto-epoca-trabajar-banco
+    prompt: 'En aquella época ___ en un banco y cada día cogía el metro. (trabajar, yo)'
+    alternatives:
+      - answer: [trabajaba]
+        example: 'En aquella época trabajaba en un banco y cada día cogía el metro.'
+        reveal:
+          Translation: 'Тогда я работал в банке и каждый день ездил на метро.'
+          Why: 'en aquella época → imperfecto'
+  - id: imperfecto-ninos-primos-venir
+    prompt: 'De niños, cada verano nuestros primos ___ a nuestro pueblo. (venir)'
+    alternatives:
+      - answer: [venían]
+        example: 'De niños, cada verano nuestros primos venían a nuestro pueblo.'
+        reveal:
+          Translation: 'В детстве каждое лето наши двоюродные братья приезжали в нашу деревню.'
+          Why: 'cada verano в прошлом → imperfecto'
+  - id: imperfecto-domingos-madre-cocinar
+    prompt: 'Los domingos, cuando yo era niño, mi madre ___ paella. (cocinar)'
+    alternatives:
+      - answer: [cocinaba]
+        example: 'Los domingos, cuando yo era niño, mi madre cocinaba paella.'
+        reveal:
+          Translation: 'По воскресеньям, когда я был ребёнком, мама готовила паэлью.'
+          Why: 'los domingos в прошлом → imperfecto'
+  - id: imperfecto-nino-querer
+    prompt: 'De niño ___ ser bombero. (querer, yo)'
+    alternatives:
+      - answer: [quería]
+        example: 'De niño quería ser bombero.'
+        reveal:
+          Translation: 'В детстве я хотел стать пожарным.'
+          Why: 'de niño → imperfecto'
+  - id: perfecto-hoy-comer
+    prompt: 'Hoy ___ en casa. (comer, yo)'
+    alternatives:
+      - answer: [he comido]
+        example: 'Hoy he comido en casa.'
+        reveal:
+          Translation: 'Сегодня я обедал дома.'
+          Why: 'hoy → perfecto: he + participio'
+  - id: perfecto-semana-trabajar
+    prompt: 'Esta semana ___ mucho. (trabajar, nosotros)'
+    alternatives:
+      - answer: [hemos trabajado]
+        example: 'Esta semana hemos trabajado mucho.'
+        reveal:
+          Translation: 'На этой неделе мы много работали.'
+          Why: 'esta semana → perfecto'
+  - id: perfecto-ya-hacer-deberes
+    prompt: 'Ya ___ los deberes. (hacer, yo)'
+    alternatives:
+      - answer: [he hecho]
+        example: 'Ya he hecho los deberes.'
+        reveal:
+          Translation: 'Я уже сделал уроки.'
+          Why: 'ya → perfecto: he + participio'
+  - id: perfecto-todavia-no-llamar
+    prompt: 'Todavía no ___ mi hermano. (llamar)'
+    alternatives:
+      - answer: [ha llamado]
+        example: 'Todavía no ha llamado mi hermano.'
+        reveal:
+          Translation: 'Мой брат ещё не звонил.'
+          Why: 'todavía no → perfecto'
+  - id: perfecto-nunca-estar-roma
+    prompt: 'Nunca ___ en Roma. (estar, yo)'
+    alternatives:
+      - answer: [he estado]
+        example: 'Nunca he estado en Roma.'
+        reveal:
+          Translation: 'Я никогда не был в Риме.'
+          Why: 'nunca → perfecto'
+  - id: perfecto-alguna-vez-probar
+    prompt: '¿___ alguna vez el gazpacho? (probar, tú)'
+    alternatives:
+      - answer: [has probado]
+        example: '¿Has probado alguna vez el gazpacho?'
+        reveal:
+          Translation: 'Ты когда-нибудь пробовал гаспачо?'
+          Why: 'alguna vez → perfecto'
+  - id: perfecto-ano-viajar
+    prompt: 'Este año ___ mucho. (viajar, nosotros)'
+    alternatives:
+      - answer: [hemos viajado]
+        example: 'Este año hemos viajado mucho.'
+        reveal:
+          Translation: 'В этом году мы много путешествовали.'
+          Why: 'este año → perfecto'
+  - id: perfecto-manana-ver
+    prompt: 'Esta mañana ___ a tu hermana. (ver, yo)'
+    alternatives:
+      - answer: [he visto]
+        example: 'Esta mañana he visto a tu hermana.'
+        reveal:
+          Translation: 'Сегодня утром я видел твою сестру.'
+          Why: 'esta mañana → perfecto, ver → visto'
+  - id: perfecto-todavia-no-leer
+    prompt: 'Todavía no ___ el correo. (leer, nosotros)'
+    alternatives:
+      - answer: [hemos leído]
+        example: 'Todavía no hemos leído el correo.'
+        reveal:
+          Translation: 'Мы ещё не прочитали письмо.'
+          Why: 'todavía no → perfecto'
+  - id: perfecto-ya-comer-ninos
+    prompt: 'Ya ___ los niños. (comer, ellos)'
+    alternatives:
+      - answer: [han comido]
+        example: 'Ya han comido los niños.'
+        reveal:
+          Translation: 'Дети уже поели.'
+          Why: 'ya → perfecto'
+  - id: perfecto-mes-ir-medico
+    prompt: 'Este mes ___ tres veces al médico. (ir, yo)'
+    alternatives:
+      - answer: [he ido]
+        example: 'Este mes he ido tres veces al médico.'
+        reveal:
+          Translation: 'В этом месяце я три раза был у врача.'
+          Why: 'este mes → perfecto, ir → ido'
+  - id: perfecto-nunca-ver-serie
+    prompt: 'Nunca ___ esta serie, ¿verdad? (ver, tú)'
+    alternatives:
+      - answer: [has visto]
+        example: 'Nunca has visto esta serie, ¿verdad?'
+        reveal:
+          Translation: 'Ты ни разу не смотрел этот сериал, да?'
+          Why: 'nunca → perfecto'
+  - id: perfecto-hoy-escribir
+    prompt: 'Hoy ___ cinco correos. (escribir, yo)'
+    alternatives:
+      - answer: [he escrito]
+        example: 'Hoy he escrito cinco correos.'
+        reveal:
+          Translation: 'Сегодня я написал пять писем.'
+          Why: 'hoy → perfecto, escribir → escrito'
+  - id: perfecto-semana-estudiar
+    prompt: 'Esta semana ___ poco. (estudiar, yo)'
+    alternatives:
+      - answer: [he estudiado]
+        example: 'Esta semana he estudiado poco.'
+        reveal:
+          Translation: 'На этой неделе я мало занимался.'
+          Why: 'esta semana → perfecto'
+  - id: perfecto-ya-abrir
+    prompt: 'Ya ___ la ventana. (abrir, yo)'
+    alternatives:
+      - answer: [he abierto]
+        example: 'Ya he abierto la ventana.'
+        reveal:
+          Translation: 'Я уже открыл окно.'
+          Why: 'ya → perfecto, abrir → abierto'
+  - id: perfecto-todavia-no-decir
+    prompt: 'Todavía no me ___ tu nombre. (decir, tú)'
+    alternatives:
+      - answer: [has dicho]
+        example: 'Todavía no me has dicho tu nombre.'
+        reveal:
+          Translation: 'Ты ещё не сказал мне своё имя.'
+          Why: 'todavía no → perfecto, decir → dicho'
+  - id: perfecto-verano-llover
+    prompt: 'Este verano no ___ nada. (llover)'
+    alternatives:
+      - answer: [ha llovido]
+        example: 'Este verano no ha llovido nada.'
+        reveal:
+          Translation: 'Этим летом совсем не было дождя.'
+          Why: 'este verano → perfecto'
+  - id: perfecto-nunca-vivir-extranjero
+    prompt: 'Nunca ___ en el extranjero. (vivir, nosotros)'
+    alternatives:
+      - answer: [hemos vivido]
+        example: 'Nunca hemos vivido en el extranjero.'
+        reveal:
+          Translation: 'Мы никогда не жили за границей.'
+          Why: 'nunca → perfecto'
+  - id: perfecto-ultimamente-dormir
+    prompt: 'Últimamente ___ muy mal. (dormir, yo)'
+    alternatives:
+      - answer: [he dormido]
+        example: 'Últimamente he dormido muy mal.'
+        reveal:
+          Translation: 'В последнее время я очень плохо сплю.'
+          Why: 'últimamente → perfecto'
+  - id: perfecto-tarde-llegar
+    prompt: 'Esta tarde ___ mis primos. (llegar, ellos)'
+    alternatives:
+      - answer: [han llegado]
+        example: 'Esta tarde han llegado mis primos.'
+        reveal:
+          Translation: 'Сегодня днём приехали мои двоюродные братья.'
+          Why: 'esta tarde → perfecto'
+  - id: perfecto-ya-poner-mesa
+    prompt: 'Ya ___ la mesa. (poner, nosotros)'
+    alternatives:
+      - answer: [hemos puesto]
+        example: 'Ya hemos puesto la mesa.'
+        reveal:
+          Translation: 'Мы уже накрыли на стол.'
+          Why: 'ya → perfecto, poner → puesto'
+  - id: perfecto-ano-romper-brazo
+    prompt: 'Este año me ___ el brazo dos veces. (romper, yo)'
+    alternatives:
+      - answer: [he roto]
+        example: 'Este año me he roto el brazo dos veces.'
+        reveal:
+          Translation: 'В этом году я дважды ломал руку.'
+          Why: 'este año → perfecto, romper → roto'
+  - id: gustar-cafe
+    prompt: 'Me ___ el café. (gustar)'
+    alternatives:
+      - answer: [gusta]
+        example: 'Me gusta el café.'
+        reveal:
+          Translation: 'Я люблю кофе.'
+          Why: 'подлежащее — предмет: один → gusta'
+  - id: gustar-manzanas
+    prompt: 'Me ___ las manzanas. (gustar)'
+    alternatives:
+      - answer: [gustan]
+        example: 'Me gustan las manzanas.'
+        reveal:
+          Translation: 'Я люблю яблоки.'
+          Why: 'предметов несколько → gustan'
+  - id: gustar-hermana-bailar
+    prompt: 'A mi hermana le ___ bailar. (gustar)'
+    alternatives:
+      - answer: [gusta]
+        example: 'A mi hermana le gusta bailar.'
+        reveal:
+          Translation: 'Моей сестре нравится танцевать.'
+          Why: 'после инфинитива → gusta'
+  - id: gustar-peliculas-miedo
+    prompt: '¿Te ___ las películas de miedo? (gustar)'
+    alternatives:
+      - answer: [gustan]
+        example: '¿Te gustan las películas de miedo?'
+        reveal:
+          Translation: 'Тебе нравятся фильмы ужасов?'
+          Why: 'предметов несколько → gustan'
+  - id: gustar-nosotros-playa
+    prompt: 'A nosotros nos ___ la playa. (gustar)'
+    alternatives:
+      - answer: [gusta]
+        example: 'A nosotros nos gusta la playa.'
+        reveal:
+          Translation: 'Нам нравится пляж.'
+          Why: 'подлежащее — предмет: один → gusta'
+  - id: gustar-padres-verduras
+    prompt: 'A mis padres no les ___ las verduras. (gustar)'
+    alternatives:
+      - answer: [gustan]
+        example: 'A mis padres no les gustan las verduras.'
+        reveal:
+          Translation: 'Моим родителям не нравятся овощи.'
+          Why: 'предметов несколько → gustan'
+  - id: gustar-madrugar
+    prompt: 'No me ___ madrugar. (gustar)'
+    alternatives:
+      - answer: [gusta]
+        example: 'No me gusta madrugar.'
+        reveal:
+          Translation: 'Я не люблю рано вставать.'
+          Why: 'после инфинитива → gusta'
+  - id: gustar-os-musica
+    prompt: '¿Os ___ esta música? (gustar)'
+    alternatives:
+      - answer: [gusta]
+        example: '¿Os gusta esta música?'
+        reveal:
+          Translation: 'Вам нравится эта музыка?'
+          Why: 'подлежащее — предмет: один → gusta'
+  - id: gustar-encantar-chocolate
+    prompt: 'Me ___ el chocolate. (encantar)'
+    alternatives:
+      - answer: [encanta]
+        example: 'Me encanta el chocolate.'
+        reveal:
+          Translation: 'Я обожаю шоколад.'
+          Why: 'как gustar: один предмет → encanta'
+  - id: gustar-encantar-gatos
+    prompt: 'A Lucía le ___ los gatos. (encantar)'
+    alternatives:
+      - answer: [encantan]
+        example: 'A Lucía le encantan los gatos.'
+        reveal:
+          Translation: 'Лусия обожает кошек.'
+          Why: 'предметов несколько → encantan'
+  - id: gustar-encantar-viajar
+    prompt: 'Nos ___ viajar en tren. (encantar)'
+    alternatives:
+      - answer: [encanta]
+        example: 'Nos encanta viajar en tren.'
+        reveal:
+          Translation: 'Мы обожаем путешествовать на поезде.'
+          Why: 'после инфинитива → encanta'
+  - id: gustar-interesar-historia
+    prompt: 'Me ___ la historia. (interesar)'
+    alternatives:
+      - answer: [interesa]
+        example: 'Me interesa la historia.'
+        reveal:
+          Translation: 'Меня интересует история.'
+          Why: 'как gustar: один предмет → interesa'
+  - id: gustar-interesar-idiomas
+    prompt: 'A mi padre le ___ los idiomas. (interesar)'
+    alternatives:
+      - answer: [interesan]
+        example: 'A mi padre le interesan los idiomas.'
+        reveal:
+          Translation: 'Моего отца интересуют языки.'
+          Why: 'предметов несколько → interesan'
+  - id: gustar-doler-cabeza
+    prompt: 'Me ___ la cabeza. (doler)'
+    alternatives:
+      - answer: [duele]
+        example: 'Me duele la cabeza.'
+        reveal:
+          Translation: 'У меня болит голова.'
+          Why: 'болит один предмет → duele'
+  - id: gustar-doler-pies
+    prompt: 'Me ___ los pies. (doler)'
+    alternatives:
+      - answer: [duelen]
+        example: 'Me duelen los pies.'
+        reveal:
+          Translation: 'У меня болят ноги.'
+          Why: 'болят несколько → duelen'
+  - id: gustar-doler-estomago
+    prompt: '¿Te ___ el estómago? (doler)'
+    alternatives:
+      - answer: [duele]
+        example: '¿Te duele el estómago?'
+        reveal:
+          Translation: 'У тебя болит живот?'
+          Why: 'болит один предмет → duele'
+  - id: gustar-doler-muelas
+    prompt: 'A Pablo le ___ las muelas. (doler)'
+    alternatives:
+      - answer: [duelen]
+        example: 'A Pablo le duelen las muelas.'
+        reveal:
+          Translation: 'У Пабло болят зубы.'
+          Why: 'болят несколько → duelen'
+  - id: gustar-doler-espalda
+    prompt: 'A mi abuelo le ___ la espalda. (doler)'
+    alternatives:
+      - answer: [duele]
+        example: 'A mi abuelo le duele la espalda.'
+        reveal:
+          Translation: 'У моего дедушки болит спина.'
+          Why: 'болит один предмет → duele'
+  - id: gustar-parecer-idea
+    prompt: 'Me ___ una buena idea. (parecer)'
+    alternatives:
+      - answer: [parece]
+        example: 'Me parece una buena idea.'
+        reveal:
+          Translation: 'Мне кажется, это хорошая идея.'
+          Why: 'как gustar: один предмет → parece'
+  - id: gustar-parecer-amigos
+    prompt: 'Me ___ muy simpáticos tus amigos. (parecer)'
+    alternatives:
+      - answer: [parecen]
+        example: 'Me parecen muy simpáticos tus amigos.'
+        reveal:
+          Translation: 'Твои друзья кажутся мне очень приятными.'
+          Why: 'предметов несколько → parecen'
+  - id: gustar-parecer-vestido
+    prompt: '¿Qué te ___ este vestido? (parecer)'
+    alternatives:
+      - answer: [parece]
+        example: '¿Qué te parece este vestido?'
+        reveal:
+          Translation: 'Как тебе это платье?'
+          Why: 'один предмет → parece'
+  - id: gustar-faltar-euros
+    prompt: 'Me ___ dos euros. (faltar)'
+    alternatives:
+      - answer: [faltan]
+        example: 'Me faltan dos euros.'
+        reveal:
+          Translation: 'Мне не хватает двух евро.'
+          Why: 'предметов несколько → faltan'
+  - id: gustar-faltar-tiempo
+    prompt: 'Nos ___ tiempo. (faltar)'
+    alternatives:
+      - answer: [falta]
+        example: 'Nos falta tiempo.'
+        reveal:
+          Translation: 'Нам не хватает времени.'
+          Why: 'один предмет → falta'
+  - id: gustar-importar-esperar
+    prompt: 'No me ___ esperar. (importar)'
+    alternatives:
+      - answer: [importa]
+        example: 'No me importa esperar.'
+        reveal:
+          Translation: 'Я не против подождать.'
+          Why: 'после инфинитива → importa'
+  - id: gustar-molestar-ruido
+    prompt: 'Me ___ el ruido. (molestar)'
+    alternatives:
+      - answer: [molesta]
+        example: 'Me molesta el ruido.'
+        reveal:
+          Translation: 'Мне мешает шум.'
+          Why: 'один предмет → molesta'
+  - id: gustar-molestar-ruidos
+    prompt: 'A mi madre le ___ los ruidos de la calle. (molestar)'
+    alternatives:
+      - answer: [molestan]
+        example: 'A mi madre le molestan los ruidos de la calle.'
+        reveal:
+          Translation: 'Моей маме мешает уличный шум.'
+          Why: 'предметов несколько → molestan'
+  - id: gustar-quedar-camisa
+    prompt: 'Esa camisa te ___ muy bien. (quedar)'
+    alternatives:
+      - answer: [queda]
+        example: 'Esa camisa te queda muy bien.'
+        reveal:
+          Translation: 'Эта рубашка тебе очень идёт.'
+          Why: 'один предмет → queda'
+  - id: gustar-quedar-pantalones
+    prompt: 'Los pantalones te ___ grandes. (quedar)'
+    alternatives:
+      - answer: [quedan]
+        example: 'Los pantalones te quedan grandes.'
+        reveal:
+          Translation: 'Брюки тебе велики.'
+          Why: 'предметов несколько → quedan'
+  - id: gustar-apetecer-cafe
+    prompt: '¿Te ___ un café? (apetecer)'
+    alternatives:
+      - answer: [apetece]
+        example: '¿Te apetece un café?'
+        reveal:
+          Translation: 'Хочешь кофе?'
+          Why: 'один предмет → apetece'
+  - id: gustar-apetecer-patatas
+    prompt: 'No me ___ las patatas fritas. (apetecer)'
+    alternatives:
+      - answer: [apetecen]
+        example: 'No me apetecen las patatas fritas.'
+        reveal:
+          Translation: 'Мне не хочется картошки фри.'
+          Why: 'предметов несколько → apetecen'
+  - id: gustar-preocupar-examen
+    prompt: 'Me ___ el examen. (preocupar)'
+    alternatives:
+      - answer: [preocupa]
+        example: 'Me preocupa el examen.'
+        reveal:
+          Translation: 'Меня беспокоит экзамен.'
+          Why: 'один предмет → preocupa'
+  - id: gustar-fascinar-museos
+    prompt: 'A Marta le ___ los museos. (fascinar)'
+    alternatives:
+      - answer: [fascinan]
+        example: 'A Marta le fascinan los museos.'
+        reveal:
+          Translation: 'Марта без ума от музеев.'
+          Why: 'предметов несколько → fascinan'
+  - id: gustar-gustar-trenes-nino
+    prompt: 'De niño me ___ los trenes. (gustar)'
+    alternatives:
+      - answer: [gustaban]
+        example: 'De niño me gustaban los trenes.'
+        reveal:
+          Translation: 'В детстве мне нравились поезда.'
+          Why: 'de niño → imperfecto, предметов несколько'
+  - id: gustar-interesar-vosotros-libros
+    prompt: '¿Os ___ estos libros? (interesar)'
+    alternatives:
+      - answer: [interesan]
+        example: '¿Os interesan estos libros?'
+        reveal:
+          Translation: 'Вас интересуют эти книги?'
+          Why: 'предметов несколько → interesan'
+  - id: gustar-a-ti-deportes
+    prompt: '¿A ti te ___ los deportes? (gustar)'
+    alternatives:
+      - answer: [gustan]
+        example: '¿A ti te gustan los deportes?'
+        reveal:
+          Translation: 'Тебе нравится спорт?'
+          Why: 'предметов несколько → gustan'
+  - id: gustar-a-mi-ciudad
+    prompt: 'A mí me ___ mucho esta ciudad. (gustar)'
+    alternatives:
+      - answer: [gusta]
+        example: 'A mí me gusta mucho esta ciudad.'
+        reveal:
+          Translation: 'Мне очень нравится этот город.'
+          Why: 'подлежащее — предмет: один → gusta'
+  - id: saber-conocer-nadar
+    prompt: 'Yo ___ nadar muy bien. (saber / conocer)'
+    alternatives:
+      - answer: [sé]
+        example: 'Yo sé nadar muy bien.'
+        reveal:
+          Translation: 'Я очень хорошо умею плавать.'
+          Why: 'saber: знать факт, уметь (yo → sé)'
+  - id: saber-conocer-marta
+    prompt: 'Yo ___ a Marta desde hace años. (saber / conocer)'
+    alternatives:
+      - answer: [conozco]
+        example: 'Yo conozco a Marta desde hace años.'
+        reveal:
+          Translation: 'Я знаком с Мартой уже много лет.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-donde-vive
+    prompt: '¿___ dónde vive Pedro? (saber / conocer, tú)'
+    alternatives:
+      - answer: [sabes]
+        example: '¿Sabes dónde vive Pedro?'
+        reveal:
+          Translation: 'Ты знаешь, где живёт Педро?'
+          Why: 'saber: знать факт, уметь'
+  - id: saber-conocer-madrid
+    prompt: '¿___ Madrid? (saber / conocer, tú)'
+    alternatives:
+      - answer: [conoces]
+        example: '¿Conoces Madrid?'
+        reveal:
+          Translation: 'Ты бывал в Мадриде?'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-hora
+    prompt: 'No ___ qué hora es. (saber / conocer, yo)'
+    alternatives:
+      - answer: [sé]
+        example: 'No sé qué hora es.'
+        reveal:
+          Translation: 'Я не знаю, который час.'
+          Why: 'saber: знать факт, уметь (yo → sé)'
+  - id: saber-conocer-restaurante
+    prompt: 'Mis padres ___ un restaurante muy bueno. (saber / conocer)'
+    alternatives:
+      - answer: [conocen]
+        example: 'Mis padres conocen un restaurante muy bueno.'
+        reveal:
+          Translation: 'Мои родители знают один очень хороший ресторан.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-cocinar-paella
+    prompt: 'Mi hermano ___ cocinar paella. (saber / conocer)'
+    alternatives:
+      - answer: [sabe]
+        example: 'Mi hermano sabe cocinar paella.'
+        reveal:
+          Translation: 'Мой брат умеет готовить паэлью.'
+          Why: 'saber + инфинитив: уметь'
+  - id: saber-conocer-vecinos
+    prompt: 'Nosotros ___ a todos los vecinos. (saber / conocer)'
+    alternatives:
+      - answer: [conocemos]
+        example: 'Nosotros conocemos a todos los vecinos.'
+        reveal:
+          Translation: 'Мы знаем всех соседей.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-respuesta
+    prompt: 'Nadie ___ la respuesta. (saber / conocer)'
+    alternatives:
+      - answer: [sabe]
+        example: 'Nadie sabe la respuesta.'
+        reveal:
+          Translation: 'Никто не знает ответа.'
+          Why: 'saber: знать факт, уметь'
+  - id: saber-conocer-guitarra
+    prompt: '¿___ tocar la guitarra? (saber / conocer, vosotros)'
+    alternatives:
+      - answer: [sabéis]
+        example: '¿Sabéis tocar la guitarra?'
+        reveal:
+          Translation: 'Вы умеете играть на гитаре?'
+          Why: 'saber + инфинитив: уметь'
+  - id: saber-conocer-novio
+    prompt: 'Todavía no ___ a tu novio. (saber / conocer, yo)'
+    alternatives:
+      - answer: [conozco]
+        example: 'Todavía no conozco a tu novio.'
+        reveal:
+          Translation: 'Я ещё не знаком с твоим парнем.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-telefono
+    prompt: 'No ___ su número de teléfono. (saber / conocer, nosotros)'
+    alternatives:
+      - answer: [sabemos]
+        example: 'No sabemos su número de teléfono.'
+        reveal:
+          Translation: 'Мы не знаем его номер телефона.'
+          Why: 'saber: знать факт, уметь'
+  - id: saber-conocer-cantante
+    prompt: '¿___ a este cantante? (saber / conocer, tú)'
+    alternatives:
+      - answer: [conoces]
+        example: '¿Conoces a este cantante?'
+        reveal:
+          Translation: 'Ты знаешь этого певца?'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-sevilla
+    prompt: 'Ana ___ bien Sevilla, porque vivió allí. (saber / conocer)'
+    alternatives:
+      - answer: [conoce]
+        example: 'Ana conoce bien Sevilla, porque vivió allí.'
+        reveal:
+          Translation: 'Ана хорошо знает Севилью, потому что жила там.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-tres-idiomas
+    prompt: 'Ella ___ hablar tres idiomas. (saber / conocer)'
+    alternatives:
+      - answer: [sabe]
+        example: 'Ella sabe hablar tres idiomas.'
+        reveal:
+          Translation: 'Она говорит на трёх языках.'
+          Why: 'saber + инфинитив: уметь'
+  - id: saber-conocer-verdad
+    prompt: 'Ellos ya ___ la verdad. (saber / conocer)'
+    alternatives:
+      - answer: [saben]
+        example: 'Ellos ya saben la verdad.'
+        reveal:
+          Translation: 'Они уже знают правду.'
+          Why: 'saber: знать факт, уметь'
+  - id: saber-conocer-profesor
+    prompt: '¿___ al nuevo profesor? (saber / conocer, vosotros)'
+    alternatives:
+      - answer: [conocéis]
+        example: '¿Conocéis al nuevo profesor?'
+        reveal:
+          Translation: 'Вы знакомы с новым учителем?'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-leer
+    prompt: 'Mi hijo ya ___ leer. (saber / conocer)'
+    alternatives:
+      - answer: [sabe]
+        example: 'Mi hijo ya sabe leer.'
+        reveal:
+          Translation: 'Мой сын уже умеет читать.'
+          Why: 'saber + инфинитив: уметь'
+  - id: saber-conocer-tren
+    prompt: 'No ___ cuándo llega el tren. (saber / conocer, yo)'
+    alternatives:
+      - answer: [sé]
+        example: 'No sé cuándo llega el tren.'
+        reveal:
+          Translation: 'Я не знаю, когда приходит поезд.'
+          Why: 'saber: знать факт, уметь (yo → sé)'
+  - id: saber-conocer-portugal
+    prompt: 'Yo no ___ Portugal. (saber / conocer)'
+    alternatives:
+      - answer: [conozco]
+        example: 'Yo no conozco Portugal.'
+        reveal:
+          Translation: 'Я не бывал в Португалии.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: saber-conocer-luis-casa
+    prompt: '¿___ que Luis se casa en mayo? (saber / conocer, tú)'
+    alternatives:
+      - answer: [sabes]
+        example: '¿Sabes que Luis se casa en mayo?'
+        reveal:
+          Translation: 'Ты знаешь, что Луис женится в мае?'
+          Why: 'saber: знать факт, уметь'
+  - id: saber-conocer-bucear
+    prompt: 'Nosotros ___ nadar, pero no bucear. (saber / conocer)'
+    alternatives:
+      - answer: [sabemos]
+        example: 'Nosotros sabemos nadar, pero no bucear.'
+        reveal:
+          Translation: 'Мы умеем плавать, но не нырять.'
+          Why: 'saber + инфинитив: уметь'
+  - id: saber-conocer-conocen-ciudad
+    prompt: 'Mis tíos ___ muy bien esta ciudad. (saber / conocer)'
+    alternatives:
+      - answer: [conocen]
+        example: 'Mis tíos conocen muy bien esta ciudad.'
+        reveal:
+          Translation: 'Мои дяди очень хорошо знают этот город.'
+          Why: 'conocer: быть знакомым с человеком, местом'
+  - id: pedir-preguntar-cafe
+    prompt: 'Siempre ___ un café con leche. (pedir / preguntar, yo)'
+    alternatives:
+      - answer: [pido]
+        example: 'Siempre pido un café con leche.'
+        reveal:
+          Translation: 'Я всегда заказываю кофе с молоком.'
+          Why: 'pedir: просить, заказать'
+  - id: pedir-preguntar-hora
+    prompt: 'Voy a ___ la hora. (pedir / preguntar)'
+    alternatives:
+      - answer: [preguntar]
+        example: 'Voy a preguntar la hora.'
+        reveal:
+          Translation: 'Я спрошу, который час.'
+          Why: 'preguntar: задать вопрос'
+  - id: pedir-preguntar-madre-comido
+    prompt: 'Mi madre me ___ cada día si he comido. (pedir / preguntar)'
+    alternatives:
+      - answer: [pregunta]
+        example: 'Mi madre me pregunta cada día si he comido.'
+        reveal:
+          Translation: 'Мама каждый день спрашивает меня, поел ли я.'
+          Why: 'preguntar: задать вопрос'
+  - id: pedir-preguntar-taxi
+    prompt: '¿Me ___ un taxi, por favor? (pedir / preguntar, tú)'
+    alternatives:
+      - answer: [pides]
+        example: '¿Me pides un taxi, por favor?'
+        reveal:
+          Translation: 'Закажешь мне такси, пожалуйста?'
+          Why: 'pedir: просить, заказать'
+  - id: pedir-preguntar-camarero
+    prompt: 'El camarero nos ___ qué queremos beber. (pedir / preguntar)'
+    alternatives:
+      - answer: [pregunta]
+        example: 'El camarero nos pregunta qué queremos beber.'
+        reveal:
+          Translation: 'Официант спрашивает нас, что мы хотим пить.'
+          Why: 'preguntar: задать вопрос'
+  - id: pedir-preguntar-hijos-dinero
+    prompt: 'Mis hijos siempre me ___ dinero. (pedir / preguntar)'
+    alternatives:
+      - answer: [piden]
+        example: 'Mis hijos siempre me piden dinero.'
+        reveal:
+          Translation: 'Мои дети всегда просят у меня деньги.'
+          Why: 'pedir: просить, заказать'
+  - id: pedir-preguntar-precio
+    prompt: 'Yo ___ por el precio del hotel. (pedir / preguntar)'
+    alternatives:
+      - answer: [pregunto]
+        example: 'Yo pregunto por el precio del hotel.'
+        reveal:
+          Translation: 'Я спрашиваю о цене отеля.'
+          Why: 'preguntar: задать вопрос'
+  - id: pedir-preguntar-ayuda
+    prompt: 'Les ___ ayuda a los vecinos. (pedir / preguntar, nosotros)'
+    alternatives:
+      - answer: [pedimos]
+        example: 'Les pedimos ayuda a los vecinos.'
+        reveal:
+          Translation: 'Мы просим соседей о помощи.'
+          Why: 'pedir: просить, заказать'
+  - id: pedir-preguntar-perdon
+    prompt: 'Ana ___ perdón por llegar tarde. (pedir / preguntar)'
+    alternatives:
+      - answer: [pide]
+        example: 'Ana pide perdón por llegar tarde.'
+        reveal:
+          Translation: 'Ана просит прощения за опоздание.'
+          Why: 'pedir: просить, заказать'
+  - id: pedir-preguntar-profesora
+    prompt: '¿Por qué no ___ a la profesora? (pedir / preguntar, vosotros)'
+    alternatives:
+      - answer: [preguntáis]
+        example: '¿Por qué no preguntáis a la profesora?'
+        reveal:
+          Translation: 'Почему бы вам не спросить учительницу?'
+          Why: 'preguntar: задать вопрос'
