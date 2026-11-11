@@ -76,6 +76,11 @@ class ImportedArticleTests(TestCase):
 
         self.assertEqual({card.article for card in cards.values()}, {""})
 
+    def test_a_lower_case_sentence_front_ending_in_a_period_gets_none(self):
+        cards = self.import_rows([("die Katze schläft.", "vocabulary")])
+
+        self.assertEqual(cards["die Katze schläft."].article, "")
+
     def test_a_capitalised_article_gets_none(self):
         cards = self.import_rows([("Der Alltag", "vocabulary")])
 
