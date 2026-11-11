@@ -17,10 +17,8 @@ from decks.models import Deck
 from reviews.analytics import record_trainer_session
 from reviews.models import TrainerAttempt
 from video_study.forms import VideoUrlForm
-from video_study.metadata import ARTICLE_TO_GENDER
 from video_study.models import PodcastEpisode, TranscriptVideo, WordTranslation
-from video_study.nl.capture import NL_ARTICLE_TO_GENDER, resolve_capture_nl
-from video_study.normalization import resolve_capture
+from video_study.resolvers import capture_for_language
 from video_study.services import (
     PodcastUnavailable,
     TranscriptUnavailable,
@@ -294,10 +292,10 @@ def translate_word(request):
     except TranslationUnavailable as exc:
         return JsonResponse({"error": str(exc)}, status=400)
 
-    source_language = payload.get("source_language", "de")
+    source_language = payload.get("source_language", get_source_language(language_mode))
     if source_language not in SOURCE_LANGUAGES:
         return JsonResponse({"error": "Unsupported source language."}, status=400)
-    if (source_language == "nl") != (get_source_language(language_mode) == "nl"):
+    if source_language not in _allowed_source_languages(language_mode):
         return JsonResponse(
             {"error": "Source language does not match the active study mode."}, status=400
         )
@@ -307,8 +305,7 @@ def translate_word(request):
 
     budget_start = time.monotonic()
 
-    resolver = resolve_capture_nl if source_language == "nl" else resolve_capture
-    genders = NL_ARTICLE_TO_GENDER if source_language == "nl" else ARTICLE_TO_GENDER
+    resolver, genders = capture_for_language(source_language)
     resolution = resolver(source_form, context, budget_start=budget_start)
     lemma = resolution.lemma
     suggestion = {

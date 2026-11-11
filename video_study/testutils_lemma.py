@@ -10,14 +10,14 @@ TEST_LEMMA_CACHE_DIR = Path(settings.BASE_DIR) / "temp" / "test_lemma_cache"
 
 
 def build_test_lemma_cache():
-    """Build the German and Dutch tries once into `TEST_LEMMA_CACHE_DIR`.
+    """Build the German, Dutch and Spanish tries once into `TEST_LEMMA_CACHE_DIR`.
 
     Guarded by file existence so repeated test runs are instant; keeps
     tests off the repo's `lemma_cache/` and its shared build.
     """
     TEST_LEMMA_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     factory = TrieDictionaryFactory(disk_cache_dir=str(TEST_LEMMA_CACHE_DIR))
-    for lang, probe in (("de", "Haus"), ("nl", "huis")):
+    for lang, probe in (("de", "Haus"), ("nl", "huis"), ("es", "casa")):
         cache_path = TEST_LEMMA_CACHE_DIR / f"{lang}.dic"
         if cache_path.exists():
             continue

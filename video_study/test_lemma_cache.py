@@ -53,6 +53,25 @@ class BuildLemmaCacheTests(SimpleTestCase):
             with self.assertRaises(CommandError):
                 call_command("build_lemma_cache", "--check", stdout=StringIO())
 
+    def test_build_creates_the_spanish_cache_and_check_verifies_it(self):
+        with (
+            tempfile.TemporaryDirectory(dir="temp") as cache_dir,
+            override_settings(LEMMA_CACHE_DIR=cache_dir),
+        ):
+            call_command("build_lemma_cache", stdout=StringIO())
+            self.assertTrue((Path(cache_dir) / "es.dic").exists())
+            call_command("build_lemma_cache", "--check", stdout=StringIO())
+
+    def test_check_fails_when_only_the_spanish_cache_is_missing(self):
+        with (
+            tempfile.TemporaryDirectory(dir="temp") as cache_dir,
+            override_settings(LEMMA_CACHE_DIR=cache_dir),
+        ):
+            call_command("build_lemma_cache", stdout=StringIO())
+            (Path(cache_dir) / "es.dic").unlink()
+            with self.assertRaises(CommandError):
+                call_command("build_lemma_cache", "--check", stdout=StringIO())
+
 
 class LemmaCacheFailClosedTests(SimpleTestCase):
     """`get_lemmatizer()` must never build the trie in-process at runtime

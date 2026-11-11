@@ -244,7 +244,7 @@ class NlTranslateWordTests(AuthedTestCase):
 
     @patch("video_study.views.request_translation")
     @patch(
-        "video_study.views.resolve_capture_nl",
+        "video_study.resolvers.resolve_capture_nl",
         return_value=CaptureResolution(
             lemma="huis",
             article="het",
@@ -270,7 +270,7 @@ class NlTranslateWordTests(AuthedTestCase):
 
     @patch("video_study.views.request_translation", return_value="to call")
     @patch(
-        "video_study.views.resolve_capture_nl",
+        "video_study.resolvers.resolve_capture_nl",
         return_value=CaptureResolution(
             lemma="tafel",
             article="",
@@ -285,9 +285,9 @@ class NlTranslateWordTests(AuthedTestCase):
         self.assertEqual(self._post("tafel", "Een tafel.").json()["translation"], "to call")
         provider.assert_called_once()
 
-    @patch("video_study.views.resolve_capture")
+    @patch("video_study.resolvers.resolve_capture")
     @patch(
-        "video_study.views.resolve_capture_nl",
+        "video_study.resolvers.resolve_capture_nl",
         return_value=CaptureResolution(
             lemma="huis",
             article="het",

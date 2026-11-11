@@ -6,12 +6,12 @@ from simplemma.strategies.dictionaries import TrieDictionaryFactory
 
 from video_study.metadata import LemmaCacheUnavailable, PrebuiltTrieDictionaryFactory
 
-LEMMA_CACHES = (("de", "Haus"), ("nl", "huis"))
+LEMMA_CACHES = (("de", "Haus"), ("nl", "huis"), ("es", "casa"))
 
 
 class Command(BaseCommand):
     help = (
-        "Build the marisa-trie-backed German and Dutch lemma dictionaries at "
+        "Build the marisa-trie-backed German, Dutch and Spanish lemma dictionaries at "
         "settings.LEMMA_CACHE_DIR. Must run at Docker image build time: "
         "building the trie peaks at ~350 MB, which would OOM-kill the "
         "256 MB production machine if it ran there instead."

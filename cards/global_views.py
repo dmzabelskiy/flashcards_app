@@ -1,16 +1,18 @@
 import json
 
 from django.contrib import messages
+from django.db.models import Q
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.views.decorators.http import require_POST
 
 from cards.models import GLOBAL_DECK_RETIRE_STREAK, Card
 from core.language_modes import get_language_mode, get_source_language
+from core.language_packs import pack_for_mode
 from decks.services import get_global_deck
-from video_study.nl.capture import resolve_capture_nl
-from video_study.normalization import resolve_capture
+from video_study.resolvers import capture_for_language
 from video_study.services import clean_translation_text
+from video_study.views import _allowed_source_languages
 
 
 @require_POST
@@ -34,13 +36,13 @@ def add_to_global_deck(request):
         )
 
     context = " ".join(str(payload.get("context", "")).split()).strip()
-    source_language = payload.get("source_language", "de")
     language_mode = get_language_mode(request)
-    if (source_language == "nl") != (get_source_language(language_mode) == "nl"):
+    source_language = payload.get("source_language", get_source_language(language_mode))
+    if source_language not in _allowed_source_languages(language_mode):
         return JsonResponse(
             {"error": "Source language does not match the active study mode."}, status=400
         )
-    resolver = resolve_capture_nl if source_language == "nl" else resolve_capture
+    resolver, _genders = capture_for_language(source_language)
     resolution = resolver(source_form, context)
     if not resolution.trustworthy:
         return JsonResponse(
@@ -56,6 +58,13 @@ def add_to_global_deck(request):
 
     deck = get_global_deck(request.user, language_mode)
     existing = deck.cards.filter(front__iexact=word).first()
+    if existing is None and not resolution.article and not resolution.part_of_speech:
+        # Without an article or a part of speech the word cannot be told from a list
+        # card that carries its article in the front ("el coche" for "coche").
+        listed = Q()
+        for article in pack_for_mode(language_mode).articles:
+            listed |= Q(front__iexact=f"{article} {word}")
+        existing = deck.cards.filter(listed).first()
     if existing:
         return JsonResponse(
             {

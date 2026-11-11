@@ -218,8 +218,8 @@ class NlGlobalDeckTests(AuthedTestCase):
         session["language_mode"] = Deck.LanguageMode.NL_EN
         session.save()
 
-    @patch("cards.global_views.resolve_capture_nl")
-    @patch("cards.global_views.resolve_capture")
+    @patch("video_study.resolvers.resolve_capture_nl")
+    @patch("video_study.resolvers.resolve_capture")
     def test_dutch_capture_uses_the_dutch_resolver(self, resolve_de, resolve_nl):
         resolve_nl.return_value = CaptureResolution(
             lemma="huis",
