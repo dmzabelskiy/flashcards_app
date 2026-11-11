@@ -1,0 +1,8 @@
+code: es
+name: Spanish
+articles: [el, la]
+article_genders: [Masculine, Feminine]
+speech_locale: es-ES
+media:
+  video_channel: dreaming-spanish
+  podcast: false

@@ -79,13 +79,28 @@ class MediaChannel:
     name: str
     feed_url: str
     source_language: str
+    extra_feed_urls: tuple[str, ...] = ()
+
+    @property
+    def feed_urls(self):
+        return (self.feed_url, *self.extra_feed_urls)
 
 
 CHANNEL_FEED_PREFIX = "https://www.youtube.com/feeds/videos.xml?channel_id="
 KURZGESAGT_DE = MediaChannel(KURZGESAGT_DE_CHANNEL_KEY, "Kurzgesagt", KURZGESAGT_DE_FEED_URL, "de")
 NL_CHANNEL_ID = "UCmyAAcFzmkD5SHIa0olqhgw"
 NL_CHANNEL = MediaChannel("nl-channel", "Dutch channel", CHANNEL_FEED_PREFIX + NL_CHANNEL_ID, "nl")
-MEDIA_CHANNELS = {channel.key: channel for channel in (KURZGESAGT_DE, NL_CHANNEL)}
+# Dreaming Spanish draws on two playlists (Beginner and the beginner podcast), not on
+# the whole channel, whose feed mixes every level and Shorts.
+PLAYLIST_FEED_PREFIX = "https://www.youtube.com/feeds/videos.xml?playlist_id="
+DREAMING_SPANISH = MediaChannel(
+    "dreaming-spanish",
+    "Dreaming Spanish",
+    PLAYLIST_FEED_PREFIX + "PLlpPf-YgbU7HWrrenMs3-nuhxgzyAiA-C",
+    "es",
+    extra_feed_urls=(PLAYLIST_FEED_PREFIX + "PLlpPf-YgbU7HDyS2Ic86G7tc1I0Tpr2Ty",),
+)
+MEDIA_CHANNELS = {channel.key: channel for channel in (KURZGESAGT_DE, NL_CHANNEL, DREAMING_SPANISH)}
 
 
 def channel_for_mode(language_mode):
@@ -161,7 +176,17 @@ def refresh_channel_catalog(channel, now=None):
     from video_study.models import ChannelVideo
 
     synced_at = now or timezone.now()
-    videos = fetch_channel_videos(channel.feed_url, name=channel.name)
+    # One feed failing must not lose the videos of the others; the refresh fails only
+    # when every feed does.
+    videos = []
+    failure = None
+    for feed_url in channel.feed_urls:
+        try:
+            videos.extend(fetch_channel_videos(feed_url, name=channel.name))
+        except ChannelUnavailable as exc:
+            failure = exc
+    if failure is not None and not videos:
+        raise failure
     for video in videos:
         ChannelVideo.objects.update_or_create(
             channel_key=channel.key,

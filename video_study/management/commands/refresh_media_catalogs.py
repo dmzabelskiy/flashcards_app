@@ -6,7 +6,7 @@ from django.utils import timezone
 
 from video_study.services import (
     KURZGESAGT_DE,
-    NL_CHANNEL,
+    MEDIA_CHANNELS,
     ChannelUnavailable,
     PodcastUnavailable,
     is_catalog_fresh,
@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 class Command(BaseCommand):
     help = (
-        "Refresh the Kurzgesagt video and 14 Minuten podcast catalogs from their "
+        "Refresh the video channel catalogs and the 14 Minuten podcast catalog from their "
         "upstream sources. Run this on a schedule (e.g. daily) so the dashboard "
         "never has to fetch inside a request."
     )
@@ -40,6 +40,30 @@ class Command(BaseCommand):
                 "per window without hitting the upstream on every machine start."
             ),
         )
+
+    def _refresh_channel(self, channel, hours, now):
+        """Refresh one video channel's catalog and prefetch its transcripts."""
+        from video_study.models import ChannelVideo
+
+        if is_catalog_fresh(ChannelVideo, hours, now, channel_key=channel.key):
+            self.stdout.write(f"{channel.name} catalog is fresh; skipping.")
+        else:
+            try:
+                videos = refresh_channel_catalog(channel)
+                self.stdout.write(
+                    self.style.SUCCESS(f"Refreshed {len(videos)} {channel.name} video(s).")
+                )
+            except ChannelUnavailable as exc:
+                logger.warning("%s catalog refresh failed: %s", channel.name, exc)
+                self.stderr.write(self.style.WARNING(f"{channel.name} unavailable: {exc}"))
+
+        if settings.VIDEO_STUDY_TRANSCRIPT_PREFETCH:
+            prefetch_summary = prefetch_channel_transcripts(channel)
+            self.stdout.write(
+                self.style.SUCCESS(f"{channel.name} transcript prefetch: {prefetch_summary}")
+            )
+        else:
+            self.stdout.write(f"{channel.name} transcript prefetch disabled; skipping.")
 
     def handle(self, *args, **options):
         # Imported lazily so the command still loads if models move.
@@ -68,25 +92,10 @@ class Command(BaseCommand):
         else:
             self.stdout.write("Kurzgesagt transcript prefetch disabled; skipping.")
 
-        if is_catalog_fresh(ChannelVideo, hours, now, channel_key=NL_CHANNEL.key):
-            self.stdout.write("Dutch channel catalog is fresh; skipping.")
-        else:
-            try:
-                videos = refresh_channel_catalog(NL_CHANNEL)
-                self.stdout.write(
-                    self.style.SUCCESS(f"Refreshed {len(videos)} Dutch channel video(s).")
-                )
-            except ChannelUnavailable as exc:
-                logger.warning("Dutch channel catalog refresh failed: %s", exc)
-                self.stderr.write(self.style.WARNING(f"Dutch channel unavailable: {exc}"))
-
-        if settings.VIDEO_STUDY_TRANSCRIPT_PREFETCH:
-            prefetch_summary = prefetch_channel_transcripts(NL_CHANNEL)
-            self.stdout.write(
-                self.style.SUCCESS(f"Dutch channel transcript prefetch: {prefetch_summary}")
-            )
-        else:
-            self.stdout.write("Dutch channel transcript prefetch disabled; skipping.")
+        for channel in MEDIA_CHANNELS.values():
+            if channel is KURZGESAGT_DE:
+                continue
+            self._refresh_channel(channel, hours, now)
 
         if is_catalog_fresh(PodcastEpisode, hours, now):
             self.stdout.write("14 Minuten catalog is fresh; skipping.")

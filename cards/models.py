@@ -57,6 +57,8 @@ class Card(models.Model):
         DAS = "das", "das"
         DE = "de", "de"
         HET = "het", "het"
+        EL = "el", "el"
+        LA = "la", "la"
 
     deck = models.ForeignKey(Deck, on_delete=models.CASCADE, related_name="cards")
     front = models.TextField()

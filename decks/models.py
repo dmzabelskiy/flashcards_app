@@ -14,6 +14,7 @@ class Deck(models.Model):
         DE_RU = "DE-RU", "Russian"
         DE_ES = "DE-ES", "Spanish"
         NL_EN = "NL-EN", "English"
+        ES_RU = "ES-RU", "Russian"
 
     owner = models.ForeignKey(
         settings.AUTH_USER_MODEL,

@@ -571,6 +571,8 @@ tbody tr:hover td { background: var(--sky-50); }
 .article-das { color: var(--das); }
 .article-de { color: var(--der); }
 .article-het { color: var(--das); }
+.article-el { color: var(--der); }
+.article-la { color: var(--die); }
 .article-choice small { display: block; color: var(--ink-2); font-size: 0.8125rem; font-weight: 600; }
 .article-choice strong { display: block; color: var(--ink); font-size: 2.25rem; font-stretch: 112%; font-weight: 700; line-height: 1; }
 .article-choice kbd {

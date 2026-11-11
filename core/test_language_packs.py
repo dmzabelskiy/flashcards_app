@@ -7,6 +7,8 @@ from core.testutils import AuthedTestCase
 from decks.models import Deck
 from video_study.services import MEDIA_CHANNELS
 
+SPANISH = PACKS["es"]
+
 
 class LanguagePackTests(SimpleTestCase):
     def test_modes_map_to_packs(self):
@@ -28,6 +30,21 @@ class LanguagePackTests(SimpleTestCase):
         self.assertEqual(DUTCH.features, frozenset({"article_drill", "video"}))
         self.assertEqual(DUTCH.video_channel_key, "nl-channel")
         self.assertIs(pack_for_source("nl"), DUTCH)
+
+    def test_es_ru_maps_to_the_spanish_pack(self):
+        self.assertIs(pack_for_mode("ES-RU"), SPANISH)
+        self.assertIs(pack_for_source("es"), SPANISH)
+        self.assertEqual(get_source_language("ES-RU"), "es")
+        self.assertEqual(get_target_language("ES-RU"), "ru")
+
+    def test_known_answer_spanish_pack(self):
+        self.assertEqual(SPANISH.code, "es")
+        self.assertEqual(SPANISH.name, "Spanish")
+        self.assertEqual(SPANISH.articles, ("el", "la"))
+        self.assertEqual(SPANISH.article_genders, ("Masculine", "Feminine"))
+        self.assertEqual(SPANISH.video_channel_key, "dreaming-spanish")
+        self.assertEqual(SPANISH.speech_locale, "es-ES")
+        self.assertEqual(SPANISH.features, frozenset({"article_drill", "video"}))
 
     def test_german_pack_has_every_feature(self):
         self.assertEqual(
@@ -83,6 +100,7 @@ class LanguagePackTests(SimpleTestCase):
         descriptions = {o["value"]: o["description"] for o in get_language_mode_options("NL-EN")}
         self.assertEqual(descriptions["NL-EN"], "Dutch → English")
         self.assertEqual(descriptions["DE-RU"], "German → Russian")
+        self.assertEqual(descriptions["ES-RU"], "Spanish → Russian")
 
 
 class LanguageSelectorTests(AuthedTestCase):

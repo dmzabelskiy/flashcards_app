@@ -74,3 +74,22 @@ class CardFormArticleTests(TestCase):
         form = CardForm(language_mode=Deck.LanguageMode.NL_EN, user=self.owner)
         values = [value for value, _label in form.fields["article"].choices]
         self.assertEqual(values, ["", "de", "het"])
+
+    def test_es_ru_field_choices_offer_el_and_la(self):
+        form = CardForm(language_mode=Deck.LanguageMode.ES_RU, user=self.owner)
+        values = [value for value, _label in form.fields["article"].choices]
+        self.assertEqual(values, ["", "el", "la"])
+
+    def test_es_ru_form_accepts_el_and_rejects_der(self):
+        deck = Deck.objects.create(
+            owner=self.owner, name="ES", language_mode=Deck.LanguageMode.ES_RU
+        )
+        accepted = CardForm(
+            data=self._data(deck, "el"), language_mode=Deck.LanguageMode.ES_RU, user=self.owner
+        )
+        rejected = CardForm(
+            data=self._data(deck, "der"), language_mode=Deck.LanguageMode.ES_RU, user=self.owner
+        )
+        self.assertTrue(accepted.is_valid(), accepted.errors)
+        self.assertFalse(rejected.is_valid())
+        self.assertIn("article", rejected.errors)

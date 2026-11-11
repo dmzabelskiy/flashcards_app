@@ -163,5 +163,5 @@ class RefreshMediaCatalogsNlTests(TestCase):
         call_command(
             "refresh_media_catalogs", "--if-stale", "24", stdout=StringIO(), stderr=StringIO()
         )
-        refresh_nl.assert_called_once_with(NL_CHANNEL)
-        prefetch_nl.assert_called_once_with(NL_CHANNEL)
+        refresh_nl.assert_any_call(NL_CHANNEL)
+        prefetch_nl.assert_any_call(NL_CHANNEL)
