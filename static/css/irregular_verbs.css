@@ -80,6 +80,12 @@
   padding: 9px 10px;
 }
 
+/* A drill with one field has one row: it fills the width instead of leaving the
+   grid's line colour showing in an empty second cell. */
+.verb-feedback-row:only-child {
+  grid-column: 1 / -1;
+}
+
 .verb-result-marker {
   color: var(--good);
 }
