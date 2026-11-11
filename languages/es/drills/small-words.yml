@@ -7,7 +7,7 @@ order: 30
 round_size: 20
 targets: [ru]
 pictogram: link
-instruction: Fill the gap with the missing small word. A brackets cue names the choice.
+instruction: Fill the gap with the missing small word. A brackets cue names the choice, a Russian word in brackets the meaning.
 hint: Accents count · a gap can take two words, as in se lo · the reason is shown after your answer
 fields:
   - key: answer
@@ -25,7 +25,7 @@ items:
           Translation: 'Этот подарок для моей мамы.'
           Why: 'получатель → para'
   - id: por-para-flores-abuela
-    prompt: 'Compré flores ___ mi abuela. (por / para)'
+    prompt: 'Compré flores ___ mi abuela. (por / para, для)'
     alternatives:
       - answer: [para]
         example: 'Compré flores para mi abuela.'
@@ -425,7 +425,7 @@ items:
           Translation: 'Я хочу бросить курить.'
           Why: 'глагол требует этого предлога: dejar de'
   - id: prep-verbo-acabar-llegar
-    prompt: 'Acabo ___ llegar a casa.'
+    prompt: 'Acabo ___ llegar a casa. (только что)'
     alternatives:
       - answer: [de]
         example: 'Acabo de llegar a casa.'
@@ -465,7 +465,7 @@ items:
           Translation: 'Моя мама беспокоится обо мне.'
           Why: 'глагол требует этого предлога: preocuparse por'
   - id: prep-verbo-salir-casa
-    prompt: 'Salgo ___ casa a las ocho.'
+    prompt: 'Salgo ___ casa a las ocho. (из)'
     alternatives:
       - answer: [de]
         example: 'Salgo de casa a las ocho.'
@@ -473,7 +473,7 @@ items:
           Translation: 'Я выхожу из дома в восемь.'
           Why: 'глагол требует этого предлога: salir de'
   - id: prep-verbo-llegar-madrid
-    prompt: 'Llegamos ___ Madrid a las diez.'
+    prompt: 'Llegamos ___ Madrid a las diez. (куда)'
     alternatives:
       - answer: [a]
         example: 'Llegamos a Madrid a las diez.'
@@ -505,7 +505,7 @@ items:
           Translation: 'Завтра я пойду куплю хлеб.'
           Why: 'ir a + инфинитив: ближайшее будущее'
   - id: prep-verbo-hablar-director
-    prompt: 'Quiero hablar ___ el director.'
+    prompt: 'Quiero hablar ___ el director. (с)'
     alternatives:
       - answer: [con]
         example: 'Quiero hablar con el director.'
@@ -689,7 +689,7 @@ items:
           Translation: 'Мой брат очень силён в математике.'
           Why: 'прилагательное: bueno en'
   - id: prep-lugar-casa-en
-    prompt: 'Hoy estoy ___ casa.'
+    prompt: 'Hoy estoy ___ casa. (в)'
     alternatives:
       - answer: [en]
         example: 'Hoy estoy en casa.'
@@ -699,21 +699,21 @@ items:
   - id: prep-lugar-casa-abuela
     prompt: 'Voy ___ casa de mi abuela.'
     alternatives:
-      - answer: [a]
+      - answer: [a, para, hacia]
         example: 'Voy a casa de mi abuela.'
         reveal:
           Translation: 'Я иду к бабушке.'
-          Why: 'куда? → a'
+          Why: 'куда? → a (допустимо и para, hacia)'
   - id: prep-lugar-playa-a
     prompt: 'Voy ___ la playa con mis primos.'
     alternatives:
-      - answer: [a]
+      - answer: [a, para, hacia]
         example: 'Voy a la playa con mis primos.'
         reveal:
           Translation: 'Я иду на пляж с двоюродными братьями.'
-          Why: 'куда? → a'
+          Why: 'куда? → a (допустимо и para, hacia)'
   - id: prep-lugar-hospital-en
-    prompt: 'Mi madre trabaja ___ un hospital.'
+    prompt: 'Mi madre trabaja ___ un hospital. (в)'
     alternatives:
       - answer: [en]
         example: 'Mi madre trabaja en un hospital.'
@@ -721,7 +721,7 @@ items:
           Translation: 'Моя мама работает в больнице.'
           Why: 'где? → en'
   - id: prep-lugar-italia-de
-    prompt: 'Mi amigo viene ___ Italia.'
+    prompt: 'Mi amigo viene ___ Italia. (откуда)'
     alternatives:
       - answer: [de]
         example: 'Mi amigo viene de Italia.'
@@ -745,7 +745,7 @@ items:
           Translation: 'Банк находится между аптекой и супермаркетом.'
           Why: 'между → entre'
   - id: prep-lugar-sobre
-    prompt: 'El avión vuela ___ las nubes.'
+    prompt: 'El avión vuela ___ las nubes. (над)'
     alternatives:
       - answer: [sobre, encima de, por encima de]
         example: 'El avión vuela sobre las nubes.'
@@ -825,7 +825,7 @@ items:
           Translation: 'Дети не дома.'
           Why: fuera de
   - id: prep-lugar-con
-    prompt: 'Voy al cine ___ mis amigos.'
+    prompt: 'Voy al cine ___ mis amigos. (с)'
     alternatives:
       - answer: [con]
         example: 'Voy al cine con mis amigos.'
@@ -833,7 +833,7 @@ items:
           Translation: 'Я иду в кино с друзьями.'
           Why: 'вместе с → con'
   - id: prep-lugar-sin
-    prompt: 'Quiero un café ___ azúcar.'
+    prompt: 'Quiero un café ___ azúcar. (без)'
     alternatives:
       - answer: [sin]
         example: 'Quiero un café sin azúcar.'
@@ -883,11 +883,11 @@ items:
   - id: prep-tiempo-lunes-a-viernes
     prompt: 'Trabajo de lunes ___ viernes.'
     alternatives:
-      - answer: [a]
+      - answer: [a, hasta]
         example: 'Trabajo de lunes a viernes.'
         reveal:
           Translation: 'Я работаю с понедельника по пятницу.'
-          Why: 'de … a …'
+          Why: 'de … a … (допустимо и hasta)'
   - id: prep-tiempo-desde-2018
     prompt: 'Vivo en Sevilla ___ 2018.'
     alternatives:
@@ -897,7 +897,7 @@ items:
           Translation: 'Я живу в Севилье с 2018 года.'
           Why: 'начало периода → desde'
   - id: prep-tiempo-hasta-seis
-    prompt: 'Espero aquí ___ las seis.'
+    prompt: 'Espero aquí ___ las seis. (до)'
     alternatives:
       - answer: [hasta]
         example: 'Espero aquí hasta las seis.'
@@ -905,7 +905,7 @@ items:
           Translation: 'Я жду здесь до шести.'
           Why: 'конец периода → hasta'
   - id: prep-tiempo-tienda-hasta
-    prompt: 'La tienda está abierta ___ las ocho.'
+    prompt: 'La tienda está abierta ___ las ocho. (до)'
     alternatives:
       - answer: [hasta]
         example: 'La tienda está abierta hasta las ocho.'
@@ -929,7 +929,7 @@ items:
           Translation: 'Я позвоню тебе через десять минут.'
           Why: 'через какое время → en / dentro de'
   - id: prep-tiempo-desde-lunes
-    prompt: 'Estoy en Madrid ___ el lunes.'
+    prompt: 'Estoy en Madrid ___ el lunes. (с)'
     alternatives:
       - answer: [desde]
         example: 'Estoy en Madrid desde el lunes.'
@@ -961,7 +961,7 @@ items:
           Translation: 'Сегодня вечером я иду в кино.'
           Why: 'a + el → al'
   - id: al-del-mercado-vengo
-    prompt: 'Vengo ___ mercado.'
+    prompt: 'Vengo ___ mercado. (откуда)'
     alternatives:
       - answer: [del]
         example: 'Vengo del mercado.'
@@ -1009,7 +1009,7 @@ items:
           Translation: 'Я иду на пляж.'
           Why: 'a + la — без слияния'
   - id: al-del-oficina-la
-    prompt: 'Vengo ___ la oficina.'
+    prompt: 'Vengo ___ la oficina. (откуда)'
     alternatives:
       - answer: [de]
         example: 'Vengo de la oficina.'
@@ -1025,7 +1025,7 @@ items:
           Translation: 'Дом моей бабушки большой.'
           Why: 'de + mi — без слияния'
   - id: al-del-salgo-trabajo
-    prompt: 'Salgo ___ trabajo a las seis.'
+    prompt: 'Salgo ___ trabajo a las seis. (откуда)'
     alternatives:
       - answer: [del]
         example: 'Salgo del trabajo a las seis.'
@@ -1033,7 +1033,7 @@ items:
           Translation: 'Я ухожу с работы в шесть.'
           Why: 'de + el → del'
   - id: al-del-aeropuerto
-    prompt: 'Mi hermano llega ___ aeropuerto a las ocho.'
+    prompt: 'Mi hermano llega ___ aeropuerto a las ocho. (куда)'
     alternatives:
       - answer: [al]
         example: 'Mi hermano llega al aeropuerto a las ocho.'
@@ -1070,7 +1070,7 @@ items:
       - answer: [al]
         example: 'Pregunto al camarero por la cuenta.'
         reveal:
-          Translation: 'Я спрашиваю у официанта счёт.'
+          Translation: 'Я спрашиваю официанта о счёте.'
           Why: 'a + el → al'
   - id: al-del-enfrente-supermercado
     prompt: 'Enfrente ___ supermercado hay una farmacia.'
@@ -1113,7 +1113,7 @@ items:
           Translation: 'Это день рождения дедушки.'
           Why: 'de + el → del'
   - id: al-del-oficina-la-a
-    prompt: 'Mi madre vuelve ___ la oficina a las tres.'
+    prompt: 'Mi madre vuelve ___ la oficina a las tres. (куда)'
     alternatives:
       - answer: [a]
         example: 'Mi madre vuelve a la oficina a las tres.'
@@ -1391,7 +1391,7 @@ items:
         example: 'A ti te voy a llamar mañana.'
         reveal:
           Translation: 'Тебе я позвоню завтра.'
-          Why: 'косвенное дополнение: te'
+          Why: 'прямое дополнение: te'
   - id: pronombre-vosotros-os
     prompt: 'A vosotros ___ espero a las seis.'
     alternatives:
@@ -1407,7 +1407,7 @@ items:
         example: 'A mí mis padres me llaman cada domingo.'
         reveal:
           Translation: 'Мне родители звонят каждое воскресенье.'
-          Why: 'косвенное дополнение: me'
+          Why: 'прямое дополнение: me'
   - id: pronombre-regalo-lo
     prompt: '¿Dónde está el regalo? Se ___ doy a Ana mañana.'
     alternatives:
@@ -1441,7 +1441,7 @@ items:
           Translation: '—Передашь мне соль? —Да, сейчас передам.'
           Why: 'te la: te = тебе'
   - id: pronombre-reflexivo-se
-    prompt: 'Mi hermano ___ levanta a las siete.'
+    prompt: 'Mi hermano ___ levanta a las siete. (levantarse)'
     alternatives:
       - answer: [se]
         example: 'Mi hermano se levanta a las siete.'
@@ -1449,7 +1449,7 @@ items:
           Translation: 'Мой брат встаёт в семь.'
           Why: 'возвратный глагол: él → se'
   - id: pronombre-reflexivo-me
-    prompt: 'Yo ___ ducho por la mañana.'
+    prompt: 'Yo ___ ducho por la mañana. (ducharse)'
     alternatives:
       - answer: [me]
         example: 'Yo me ducho por la mañana.'
@@ -1457,7 +1457,7 @@ items:
           Translation: 'Я принимаю душ по утрам.'
           Why: 'возвратный глагол: yo → me'
   - id: pronombre-reflexivo-nos
-    prompt: 'Nosotros ___ acostamos tarde.'
+    prompt: 'Nosotros ___ acostamos tarde. (acostarse)'
     alternatives:
       - answer: [nos]
         example: 'Nosotros nos acostamos tarde.'
@@ -1465,7 +1465,7 @@ items:
           Translation: 'Мы ложимся поздно.'
           Why: 'возвратный глагол: nosotros → nos'
   - id: pronombre-reflexivo-te
-    prompt: '¿A qué hora ___ levantas?'
+    prompt: '¿A qué hora ___ levantas? (levantarse)'
     alternatives:
       - answer: [te]
         example: '¿A qué hora te levantas?'
@@ -1473,7 +1473,7 @@ items:
           Translation: 'Во сколько ты встаёшь?'
           Why: 'возвратный глагол: tú → te'
   - id: pronombre-reflexivo-os
-    prompt: 'Vosotros ___ laváis las manos antes de comer.'
+    prompt: 'Vosotros ___ laváis las manos antes de comer. (lavarse)'
     alternatives:
       - answer: [os]
         example: 'Vosotros os laváis las manos antes de comer.'
@@ -1729,7 +1729,7 @@ items:
           Translation: 'Я ничего не хочу, спасибо.'
           Why: 'no + отрицание → nada'
   - id: algo-nada-puerta
-    prompt: 'En la puerta hay ___. (algo / nada / alguien / nadie)'
+    prompt: 'En la puerta hay ___. (algo / nada / alguien / nadie, кто-то)'
     alternatives:
       - answer: [alguien]
         example: 'En la puerta hay alguien.'
@@ -1737,7 +1737,7 @@ items:
           Translation: 'У двери кто-то есть.'
           Why: 'неизвестный человек → alguien'
   - id: algo-nada-casa-nadie
-    prompt: 'No hay ___ en casa. (algo / nada / alguien / nadie)'
+    prompt: 'No hay ___ en casa. (algo / nada / alguien / nadie, никого)'
     alternatives:
       - answer: [nadie]
         example: 'No hay nadie en casa.'
@@ -1865,7 +1865,7 @@ items:
           Translation: 'Есть кто-нибудь, кто говорит по-русски?'
           Why: 'вопрос о человеке → alguien'
   - id: algo-nada-pasa
-    prompt: 'No pasa ___. (algo / nada / alguien / nadie)'
+    prompt: 'No pasa ___. (algo / nada / alguien / nadie, ничего)'
     alternatives:
       - answer: [nada]
         example: 'No pasa nada.'
