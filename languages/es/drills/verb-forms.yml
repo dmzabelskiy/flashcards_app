@@ -1,0 +1,1633 @@
+# Spanish verb forms: the form of a verb in a given tense and person.
+slug: verb-forms
+trainer: es_verb_form
+label: Verb forms
+description: Conjugate common Spanish verbs, regular and irregular, in the present, the preterite and the imperfect, plus irregular participles and gerunds.
+order: 10
+round_size: 20
+targets: [ru]
+pictogram: verb
+instruction: Write the Spanish verb form for the tense and person shown.
+hint: Accents count, so hablo and habló are different answers · vosotros is the Spain form
+fields:
+  - key: answer
+    label: Answer
+    kind: typed
+    normalise: spanish
+    placeholder: Type the verb form
+items:
+  - id: hablar-presente-yo
+    prompt: hablar · presente · yo
+    alternatives:
+      - answer: [hablo]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-presente-tu
+    prompt: hablar · presente · tú
+    alternatives:
+      - answer: [hablas]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-presente-el
+    prompt: hablar · presente · él
+    alternatives:
+      - answer: [habla]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-presente-nosotros
+    prompt: hablar · presente · nosotros
+    alternatives:
+      - answer: [hablamos]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-presente-vosotros
+    prompt: hablar · presente · vosotros
+    alternatives:
+      - answer: [habláis]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-presente-ellos
+    prompt: hablar · presente · ellos
+    alternatives:
+      - answer: [hablan]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: comer-presente-yo
+    prompt: comer · presente · yo
+    alternatives:
+      - answer: [como]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-presente-tu
+    prompt: comer · presente · tú
+    alternatives:
+      - answer: [comes]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-presente-el
+    prompt: comer · presente · él
+    alternatives:
+      - answer: [come]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-presente-nosotros
+    prompt: comer · presente · nosotros
+    alternatives:
+      - answer: [comemos]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-presente-vosotros
+    prompt: comer · presente · vosotros
+    alternatives:
+      - answer: [coméis]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-presente-ellos
+    prompt: comer · presente · ellos
+    alternatives:
+      - answer: [comen]
+        reveal: {Translation: 'есть, кушать'}
+  - id: vivir-presente-yo
+    prompt: vivir · presente · yo
+    alternatives:
+      - answer: [vivo]
+        reveal: {Translation: 'жить'}
+  - id: vivir-presente-tu
+    prompt: vivir · presente · tú
+    alternatives:
+      - answer: [vives]
+        reveal: {Translation: 'жить'}
+  - id: vivir-presente-el
+    prompt: vivir · presente · él
+    alternatives:
+      - answer: [vive]
+        reveal: {Translation: 'жить'}
+  - id: vivir-presente-nosotros
+    prompt: vivir · presente · nosotros
+    alternatives:
+      - answer: [vivimos]
+        reveal: {Translation: 'жить'}
+  - id: vivir-presente-vosotros
+    prompt: vivir · presente · vosotros
+    alternatives:
+      - answer: [vivís]
+        reveal: {Translation: 'жить'}
+  - id: vivir-presente-ellos
+    prompt: vivir · presente · ellos
+    alternatives:
+      - answer: [viven]
+        reveal: {Translation: 'жить'}
+  - id: levantarse-presente-yo
+    prompt: levantarse · presente · yo
+    alternatives:
+      - answer: [me levanto]
+        reveal: {Translation: 'вставать, подниматься'}
+  - id: levantarse-presente-tu
+    prompt: levantarse · presente · tú
+    alternatives:
+      - answer: [te levantas]
+        reveal: {Translation: 'вставать, подниматься'}
+  - id: levantarse-presente-el
+    prompt: levantarse · presente · él
+    alternatives:
+      - answer: [se levanta]
+        reveal: {Translation: 'вставать, подниматься'}
+  - id: levantarse-presente-nosotros
+    prompt: levantarse · presente · nosotros
+    alternatives:
+      - answer: [nos levantamos]
+        reveal: {Translation: 'вставать, подниматься'}
+  - id: levantarse-presente-vosotros
+    prompt: levantarse · presente · vosotros
+    alternatives:
+      - answer: [os levantáis]
+        reveal: {Translation: 'вставать, подниматься'}
+  - id: levantarse-presente-ellos
+    prompt: levantarse · presente · ellos
+    alternatives:
+      - answer: [se levantan]
+        reveal: {Translation: 'вставать, подниматься'}
+  - id: pensar-presente-yo
+    prompt: pensar · presente · yo
+    alternatives:
+      - answer: [pienso]
+        reveal: {Translation: 'думать'}
+  - id: pensar-presente-nosotros
+    prompt: pensar · presente · nosotros
+    alternatives:
+      - answer: [pensamos]
+        reveal: {Translation: 'думать'}
+  - id: pensar-presente-ellos
+    prompt: pensar · presente · ellos
+    alternatives:
+      - answer: [piensan]
+        reveal: {Translation: 'думать'}
+  - id: querer-presente-yo
+    prompt: querer · presente · yo
+    alternatives:
+      - answer: [quiero]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: querer-presente-nosotros
+    prompt: querer · presente · nosotros
+    alternatives:
+      - answer: [queremos]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: querer-presente-ellos
+    prompt: querer · presente · ellos
+    alternatives:
+      - answer: [quieren]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: empezar-presente-yo
+    prompt: empezar · presente · yo
+    alternatives:
+      - answer: [empiezo]
+        reveal: {Translation: 'начинать'}
+  - id: empezar-presente-nosotros
+    prompt: empezar · presente · nosotros
+    alternatives:
+      - answer: [empezamos]
+        reveal: {Translation: 'начинать'}
+  - id: empezar-presente-ellos
+    prompt: empezar · presente · ellos
+    alternatives:
+      - answer: [empiezan]
+        reveal: {Translation: 'начинать'}
+  - id: preferir-presente-yo
+    prompt: preferir · presente · yo
+    alternatives:
+      - answer: [prefiero]
+        reveal: {Translation: 'предпочитать'}
+  - id: preferir-presente-nosotros
+    prompt: preferir · presente · nosotros
+    alternatives:
+      - answer: [preferimos]
+        reveal: {Translation: 'предпочитать'}
+  - id: preferir-presente-ellos
+    prompt: preferir · presente · ellos
+    alternatives:
+      - answer: [prefieren]
+        reveal: {Translation: 'предпочитать'}
+  - id: poder-presente-yo
+    prompt: poder · presente · yo
+    alternatives:
+      - answer: [puedo]
+        reveal: {Translation: 'мочь'}
+  - id: poder-presente-nosotros
+    prompt: poder · presente · nosotros
+    alternatives:
+      - answer: [podemos]
+        reveal: {Translation: 'мочь'}
+  - id: poder-presente-ellos
+    prompt: poder · presente · ellos
+    alternatives:
+      - answer: [pueden]
+        reveal: {Translation: 'мочь'}
+  - id: dormir-presente-yo
+    prompt: dormir · presente · yo
+    alternatives:
+      - answer: [duermo]
+        reveal: {Translation: 'спать'}
+  - id: dormir-presente-nosotros
+    prompt: dormir · presente · nosotros
+    alternatives:
+      - answer: [dormimos]
+        reveal: {Translation: 'спать'}
+  - id: dormir-presente-ellos
+    prompt: dormir · presente · ellos
+    alternatives:
+      - answer: [duermen]
+        reveal: {Translation: 'спать'}
+  - id: volver-presente-yo
+    prompt: volver · presente · yo
+    alternatives:
+      - answer: [vuelvo]
+        reveal: {Translation: 'возвращаться'}
+  - id: volver-presente-nosotros
+    prompt: volver · presente · nosotros
+    alternatives:
+      - answer: [volvemos]
+        reveal: {Translation: 'возвращаться'}
+  - id: volver-presente-ellos
+    prompt: volver · presente · ellos
+    alternatives:
+      - answer: [vuelven]
+        reveal: {Translation: 'возвращаться'}
+  - id: encontrar-presente-yo
+    prompt: encontrar · presente · yo
+    alternatives:
+      - answer: [encuentro]
+        reveal: {Translation: 'находить'}
+  - id: encontrar-presente-nosotros
+    prompt: encontrar · presente · nosotros
+    alternatives:
+      - answer: [encontramos]
+        reveal: {Translation: 'находить'}
+  - id: encontrar-presente-ellos
+    prompt: encontrar · presente · ellos
+    alternatives:
+      - answer: [encuentran]
+        reveal: {Translation: 'находить'}
+  - id: pedir-presente-yo
+    prompt: pedir · presente · yo
+    alternatives:
+      - answer: [pido]
+        reveal: {Translation: 'просить, заказывать'}
+  - id: pedir-presente-nosotros
+    prompt: pedir · presente · nosotros
+    alternatives:
+      - answer: [pedimos]
+        reveal: {Translation: 'просить, заказывать'}
+  - id: pedir-presente-ellos
+    prompt: pedir · presente · ellos
+    alternatives:
+      - answer: [piden]
+        reveal: {Translation: 'просить, заказывать'}
+  - id: seguir-presente-yo
+    prompt: seguir · presente · yo
+    alternatives:
+      - answer: [sigo]
+        reveal: {Translation: 'следовать, продолжать'}
+  - id: seguir-presente-nosotros
+    prompt: seguir · presente · nosotros
+    alternatives:
+      - answer: [seguimos]
+        reveal: {Translation: 'следовать, продолжать'}
+  - id: seguir-presente-ellos
+    prompt: seguir · presente · ellos
+    alternatives:
+      - answer: [siguen]
+        reveal: {Translation: 'следовать, продолжать'}
+  - id: jugar-presente-yo
+    prompt: jugar · presente · yo
+    alternatives:
+      - answer: [juego]
+        reveal: {Translation: 'играть'}
+  - id: jugar-presente-nosotros
+    prompt: jugar · presente · nosotros
+    alternatives:
+      - answer: [jugamos]
+        reveal: {Translation: 'играть'}
+  - id: jugar-presente-ellos
+    prompt: jugar · presente · ellos
+    alternatives:
+      - answer: [juegan]
+        reveal: {Translation: 'играть'}
+  - id: cerrar-presente-yo
+    prompt: cerrar · presente · yo
+    alternatives:
+      - answer: [cierro]
+        reveal: {Translation: 'закрывать'}
+  - id: cerrar-presente-nosotros
+    prompt: cerrar · presente · nosotros
+    alternatives:
+      - answer: [cerramos]
+        reveal: {Translation: 'закрывать'}
+  - id: cerrar-presente-ellos
+    prompt: cerrar · presente · ellos
+    alternatives:
+      - answer: [cierran]
+        reveal: {Translation: 'закрывать'}
+  - id: entender-presente-yo
+    prompt: entender · presente · yo
+    alternatives:
+      - answer: [entiendo]
+        reveal: {Translation: 'понимать'}
+  - id: entender-presente-nosotros
+    prompt: entender · presente · nosotros
+    alternatives:
+      - answer: [entendemos]
+        reveal: {Translation: 'понимать'}
+  - id: entender-presente-ellos
+    prompt: entender · presente · ellos
+    alternatives:
+      - answer: [entienden]
+        reveal: {Translation: 'понимать'}
+  - id: recordar-presente-yo
+    prompt: recordar · presente · yo
+    alternatives:
+      - answer: [recuerdo]
+        reveal: {Translation: 'помнить, вспоминать'}
+  - id: recordar-presente-nosotros
+    prompt: recordar · presente · nosotros
+    alternatives:
+      - answer: [recordamos]
+        reveal: {Translation: 'помнить, вспоминать'}
+  - id: recordar-presente-ellos
+    prompt: recordar · presente · ellos
+    alternatives:
+      - answer: [recuerdan]
+        reveal: {Translation: 'помнить, вспоминать'}
+  - id: hacer-presente-yo
+    prompt: hacer · presente · yo
+    alternatives:
+      - answer: [hago]
+        reveal: {Translation: 'делать'}
+  - id: poner-presente-yo
+    prompt: poner · presente · yo
+    alternatives:
+      - answer: [pongo]
+        reveal: {Translation: 'класть, ставить'}
+  - id: salir-presente-yo
+    prompt: salir · presente · yo
+    alternatives:
+      - answer: [salgo]
+        reveal: {Translation: 'выходить, уходить'}
+  - id: traer-presente-yo
+    prompt: traer · presente · yo
+    alternatives:
+      - answer: [traigo]
+        reveal: {Translation: 'приносить'}
+  - id: saber-presente-yo
+    prompt: saber · presente · yo
+    alternatives:
+      - answer: [sé]
+        reveal: {Translation: 'знать'}
+  - id: conocer-presente-yo
+    prompt: conocer · presente · yo
+    alternatives:
+      - answer: [conozco]
+        reveal: {Translation: 'знать, быть знакомым'}
+  - id: ver-presente-yo
+    prompt: ver · presente · yo
+    alternatives:
+      - answer: [veo]
+        reveal: {Translation: 'видеть'}
+  - id: dar-presente-yo
+    prompt: dar · presente · yo
+    alternatives:
+      - answer: [doy]
+        reveal: {Translation: 'давать'}
+  - id: traducir-presente-yo
+    prompt: traducir · presente · yo
+    alternatives:
+      - answer: [traduzco]
+        reveal: {Translation: 'переводить'}
+  - id: caer-presente-yo
+    prompt: caer · presente · yo
+    alternatives:
+      - answer: [caigo]
+        reveal: {Translation: 'падать'}
+  - id: parecer-presente-yo
+    prompt: parecer · presente · yo
+    alternatives:
+      - answer: [parezco]
+        reveal: {Translation: 'казаться'}
+  - id: tener-presente-yo
+    prompt: tener · presente · yo
+    alternatives:
+      - answer: [tengo]
+        reveal: {Translation: 'иметь'}
+  - id: tener-presente-tu
+    prompt: tener · presente · tú
+    alternatives:
+      - answer: [tienes]
+        reveal: {Translation: 'иметь'}
+  - id: tener-presente-el
+    prompt: tener · presente · él
+    alternatives:
+      - answer: [tiene]
+        reveal: {Translation: 'иметь'}
+  - id: tener-presente-nosotros
+    prompt: tener · presente · nosotros
+    alternatives:
+      - answer: [tenemos]
+        reveal: {Translation: 'иметь'}
+  - id: tener-presente-vosotros
+    prompt: tener · presente · vosotros
+    alternatives:
+      - answer: [tenéis]
+        reveal: {Translation: 'иметь'}
+  - id: tener-presente-ellos
+    prompt: tener · presente · ellos
+    alternatives:
+      - answer: [tienen]
+        reveal: {Translation: 'иметь'}
+  - id: venir-presente-yo
+    prompt: venir · presente · yo
+    alternatives:
+      - answer: [vengo]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-presente-tu
+    prompt: venir · presente · tú
+    alternatives:
+      - answer: [vienes]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-presente-el
+    prompt: venir · presente · él
+    alternatives:
+      - answer: [viene]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-presente-nosotros
+    prompt: venir · presente · nosotros
+    alternatives:
+      - answer: [venimos]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-presente-vosotros
+    prompt: venir · presente · vosotros
+    alternatives:
+      - answer: [venís]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-presente-ellos
+    prompt: venir · presente · ellos
+    alternatives:
+      - answer: [vienen]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: decir-presente-yo
+    prompt: decir · presente · yo
+    alternatives:
+      - answer: [digo]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-presente-tu
+    prompt: decir · presente · tú
+    alternatives:
+      - answer: [dices]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-presente-el
+    prompt: decir · presente · él
+    alternatives:
+      - answer: [dice]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-presente-nosotros
+    prompt: decir · presente · nosotros
+    alternatives:
+      - answer: [decimos]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-presente-vosotros
+    prompt: decir · presente · vosotros
+    alternatives:
+      - answer: [decís]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-presente-ellos
+    prompt: decir · presente · ellos
+    alternatives:
+      - answer: [dicen]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: oir-presente-yo
+    prompt: oír · presente · yo
+    alternatives:
+      - answer: [oigo]
+        reveal: {Translation: 'слышать'}
+  - id: oir-presente-tu
+    prompt: oír · presente · tú
+    alternatives:
+      - answer: [oyes]
+        reveal: {Translation: 'слышать'}
+  - id: oir-presente-el
+    prompt: oír · presente · él
+    alternatives:
+      - answer: [oye]
+        reveal: {Translation: 'слышать'}
+  - id: oir-presente-nosotros
+    prompt: oír · presente · nosotros
+    alternatives:
+      - answer: [oímos]
+        reveal: {Translation: 'слышать'}
+  - id: oir-presente-vosotros
+    prompt: oír · presente · vosotros
+    alternatives:
+      - answer: [oís]
+        reveal: {Translation: 'слышать'}
+  - id: oir-presente-ellos
+    prompt: oír · presente · ellos
+    alternatives:
+      - answer: [oyen]
+        reveal: {Translation: 'слышать'}
+  - id: ser-presente-yo
+    prompt: ser · presente · yo
+    alternatives:
+      - answer: [soy]
+        reveal: {Translation: 'быть'}
+  - id: ser-presente-tu
+    prompt: ser · presente · tú
+    alternatives:
+      - answer: [eres]
+        reveal: {Translation: 'быть'}
+  - id: ser-presente-el
+    prompt: ser · presente · él
+    alternatives:
+      - answer: [es]
+        reveal: {Translation: 'быть'}
+  - id: ser-presente-nosotros
+    prompt: ser · presente · nosotros
+    alternatives:
+      - answer: [somos]
+        reveal: {Translation: 'быть'}
+  - id: ser-presente-vosotros
+    prompt: ser · presente · vosotros
+    alternatives:
+      - answer: [sois]
+        reveal: {Translation: 'быть'}
+  - id: ser-presente-ellos
+    prompt: ser · presente · ellos
+    alternatives:
+      - answer: [son]
+        reveal: {Translation: 'быть'}
+  - id: estar-presente-yo
+    prompt: estar · presente · yo
+    alternatives:
+      - answer: [estoy]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-presente-tu
+    prompt: estar · presente · tú
+    alternatives:
+      - answer: [estás]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-presente-el
+    prompt: estar · presente · él
+    alternatives:
+      - answer: [está]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-presente-nosotros
+    prompt: estar · presente · nosotros
+    alternatives:
+      - answer: [estamos]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-presente-vosotros
+    prompt: estar · presente · vosotros
+    alternatives:
+      - answer: [estáis]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-presente-ellos
+    prompt: estar · presente · ellos
+    alternatives:
+      - answer: [están]
+        reveal: {Translation: 'находиться, быть'}
+  - id: ir-presente-yo
+    prompt: ir · presente · yo
+    alternatives:
+      - answer: [voy]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-presente-tu
+    prompt: ir · presente · tú
+    alternatives:
+      - answer: [vas]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-presente-el
+    prompt: ir · presente · él
+    alternatives:
+      - answer: [va]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-presente-nosotros
+    prompt: ir · presente · nosotros
+    alternatives:
+      - answer: [vamos]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-presente-vosotros
+    prompt: ir · presente · vosotros
+    alternatives:
+      - answer: [vais]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-presente-ellos
+    prompt: ir · presente · ellos
+    alternatives:
+      - answer: [van]
+        reveal: {Translation: 'идти, ехать'}
+  - id: haber-presente-yo
+    prompt: haber · presente · yo
+    alternatives:
+      - answer: [he]
+        reveal: {Translation: 'быть (вспомогательный глагол)'}
+  - id: haber-presente-tu
+    prompt: haber · presente · tú
+    alternatives:
+      - answer: [has]
+        reveal: {Translation: 'быть (вспомогательный глагол)'}
+  - id: haber-presente-el
+    prompt: haber · presente · él
+    alternatives:
+      - answer: [ha]
+        reveal: {Translation: 'быть (вспомогательный глагол)'}
+  - id: haber-presente-nosotros
+    prompt: haber · presente · nosotros
+    alternatives:
+      - answer: [hemos]
+        reveal: {Translation: 'быть (вспомогательный глагол)'}
+  - id: haber-presente-vosotros
+    prompt: haber · presente · vosotros
+    alternatives:
+      - answer: [habéis]
+        reveal: {Translation: 'быть (вспомогательный глагол)'}
+  - id: haber-presente-ellos
+    prompt: haber · presente · ellos
+    alternatives:
+      - answer: [han]
+        reveal: {Translation: 'быть (вспомогательный глагол)'}
+  - id: hablar-indefinido-yo
+    prompt: hablar · indefinido · yo
+    alternatives:
+      - answer: [hablé]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-indefinido-tu
+    prompt: hablar · indefinido · tú
+    alternatives:
+      - answer: [hablaste]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-indefinido-el
+    prompt: hablar · indefinido · él
+    alternatives:
+      - answer: [habló]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-indefinido-nosotros
+    prompt: hablar · indefinido · nosotros
+    alternatives:
+      - answer: [hablamos]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-indefinido-vosotros
+    prompt: hablar · indefinido · vosotros
+    alternatives:
+      - answer: [hablasteis]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-indefinido-ellos
+    prompt: hablar · indefinido · ellos
+    alternatives:
+      - answer: [hablaron]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: comer-indefinido-yo
+    prompt: comer · indefinido · yo
+    alternatives:
+      - answer: [comí]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-indefinido-tu
+    prompt: comer · indefinido · tú
+    alternatives:
+      - answer: [comiste]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-indefinido-el
+    prompt: comer · indefinido · él
+    alternatives:
+      - answer: [comió]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-indefinido-nosotros
+    prompt: comer · indefinido · nosotros
+    alternatives:
+      - answer: [comimos]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-indefinido-vosotros
+    prompt: comer · indefinido · vosotros
+    alternatives:
+      - answer: [comisteis]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-indefinido-ellos
+    prompt: comer · indefinido · ellos
+    alternatives:
+      - answer: [comieron]
+        reveal: {Translation: 'есть, кушать'}
+  - id: vivir-indefinido-yo
+    prompt: vivir · indefinido · yo
+    alternatives:
+      - answer: [viví]
+        reveal: {Translation: 'жить'}
+  - id: vivir-indefinido-tu
+    prompt: vivir · indefinido · tú
+    alternatives:
+      - answer: [viviste]
+        reveal: {Translation: 'жить'}
+  - id: vivir-indefinido-el
+    prompt: vivir · indefinido · él
+    alternatives:
+      - answer: [vivió]
+        reveal: {Translation: 'жить'}
+  - id: vivir-indefinido-nosotros
+    prompt: vivir · indefinido · nosotros
+    alternatives:
+      - answer: [vivimos]
+        reveal: {Translation: 'жить'}
+  - id: vivir-indefinido-vosotros
+    prompt: vivir · indefinido · vosotros
+    alternatives:
+      - answer: [vivisteis]
+        reveal: {Translation: 'жить'}
+  - id: vivir-indefinido-ellos
+    prompt: vivir · indefinido · ellos
+    alternatives:
+      - answer: [vivieron]
+        reveal: {Translation: 'жить'}
+  - id: ser-indefinido-yo
+    prompt: ser · indefinido · yo
+    alternatives:
+      - answer: [fui]
+        reveal: {Translation: 'быть'}
+  - id: ser-indefinido-tu
+    prompt: ser · indefinido · tú
+    alternatives:
+      - answer: [fuiste]
+        reveal: {Translation: 'быть'}
+  - id: ser-indefinido-el
+    prompt: ser · indefinido · él
+    alternatives:
+      - answer: [fue]
+        reveal: {Translation: 'быть'}
+  - id: ser-indefinido-nosotros
+    prompt: ser · indefinido · nosotros
+    alternatives:
+      - answer: [fuimos]
+        reveal: {Translation: 'быть'}
+  - id: ser-indefinido-vosotros
+    prompt: ser · indefinido · vosotros
+    alternatives:
+      - answer: [fuisteis]
+        reveal: {Translation: 'быть'}
+  - id: ser-indefinido-ellos
+    prompt: ser · indefinido · ellos
+    alternatives:
+      - answer: [fueron]
+        reveal: {Translation: 'быть'}
+  - id: ir-indefinido-yo
+    prompt: ir · indefinido · yo
+    alternatives:
+      - answer: [fui]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-indefinido-tu
+    prompt: ir · indefinido · tú
+    alternatives:
+      - answer: [fuiste]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-indefinido-el
+    prompt: ir · indefinido · él
+    alternatives:
+      - answer: [fue]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-indefinido-nosotros
+    prompt: ir · indefinido · nosotros
+    alternatives:
+      - answer: [fuimos]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-indefinido-vosotros
+    prompt: ir · indefinido · vosotros
+    alternatives:
+      - answer: [fuisteis]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-indefinido-ellos
+    prompt: ir · indefinido · ellos
+    alternatives:
+      - answer: [fueron]
+        reveal: {Translation: 'идти, ехать'}
+  - id: dar-indefinido-yo
+    prompt: dar · indefinido · yo
+    alternatives:
+      - answer: [di]
+        reveal: {Translation: 'давать'}
+  - id: dar-indefinido-tu
+    prompt: dar · indefinido · tú
+    alternatives:
+      - answer: [diste]
+        reveal: {Translation: 'давать'}
+  - id: dar-indefinido-el
+    prompt: dar · indefinido · él
+    alternatives:
+      - answer: [dio]
+        reveal: {Translation: 'давать'}
+  - id: dar-indefinido-nosotros
+    prompt: dar · indefinido · nosotros
+    alternatives:
+      - answer: [dimos]
+        reveal: {Translation: 'давать'}
+  - id: dar-indefinido-vosotros
+    prompt: dar · indefinido · vosotros
+    alternatives:
+      - answer: [disteis]
+        reveal: {Translation: 'давать'}
+  - id: dar-indefinido-ellos
+    prompt: dar · indefinido · ellos
+    alternatives:
+      - answer: [dieron]
+        reveal: {Translation: 'давать'}
+  - id: ver-indefinido-yo
+    prompt: ver · indefinido · yo
+    alternatives:
+      - answer: [vi]
+        reveal: {Translation: 'видеть'}
+  - id: ver-indefinido-tu
+    prompt: ver · indefinido · tú
+    alternatives:
+      - answer: [viste]
+        reveal: {Translation: 'видеть'}
+  - id: ver-indefinido-el
+    prompt: ver · indefinido · él
+    alternatives:
+      - answer: [vio]
+        reveal: {Translation: 'видеть'}
+  - id: ver-indefinido-nosotros
+    prompt: ver · indefinido · nosotros
+    alternatives:
+      - answer: [vimos]
+        reveal: {Translation: 'видеть'}
+  - id: ver-indefinido-vosotros
+    prompt: ver · indefinido · vosotros
+    alternatives:
+      - answer: [visteis]
+        reveal: {Translation: 'видеть'}
+  - id: ver-indefinido-ellos
+    prompt: ver · indefinido · ellos
+    alternatives:
+      - answer: [vieron]
+        reveal: {Translation: 'видеть'}
+  - id: tener-indefinido-yo
+    prompt: tener · indefinido · yo
+    alternatives:
+      - answer: [tuve]
+        reveal: {Translation: 'иметь'}
+  - id: tener-indefinido-el
+    prompt: tener · indefinido · él
+    alternatives:
+      - answer: [tuvo]
+        reveal: {Translation: 'иметь'}
+  - id: tener-indefinido-ellos
+    prompt: tener · indefinido · ellos
+    alternatives:
+      - answer: [tuvieron]
+        reveal: {Translation: 'иметь'}
+  - id: tener-indefinido-nosotros
+    prompt: tener · indefinido · nosotros
+    alternatives:
+      - answer: [tuvimos]
+        reveal: {Translation: 'иметь'}
+  - id: tener-indefinido-vosotros
+    prompt: tener · indefinido · vosotros
+    alternatives:
+      - answer: [tuvisteis]
+        reveal: {Translation: 'иметь'}
+  - id: estar-indefinido-yo
+    prompt: estar · indefinido · yo
+    alternatives:
+      - answer: [estuve]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-indefinido-el
+    prompt: estar · indefinido · él
+    alternatives:
+      - answer: [estuvo]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-indefinido-ellos
+    prompt: estar · indefinido · ellos
+    alternatives:
+      - answer: [estuvieron]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-indefinido-tu
+    prompt: estar · indefinido · tú
+    alternatives:
+      - answer: [estuviste]
+        reveal: {Translation: 'находиться, быть'}
+  - id: hacer-indefinido-yo
+    prompt: hacer · indefinido · yo
+    alternatives:
+      - answer: [hice]
+        reveal: {Translation: 'делать'}
+  - id: hacer-indefinido-el
+    prompt: hacer · indefinido · él
+    alternatives:
+      - answer: [hizo]
+        reveal: {Translation: 'делать'}
+  - id: hacer-indefinido-ellos
+    prompt: hacer · indefinido · ellos
+    alternatives:
+      - answer: [hicieron]
+        reveal: {Translation: 'делать'}
+  - id: hacer-indefinido-nosotros
+    prompt: hacer · indefinido · nosotros
+    alternatives:
+      - answer: [hicimos]
+        reveal: {Translation: 'делать'}
+  - id: hacer-indefinido-vosotros
+    prompt: hacer · indefinido · vosotros
+    alternatives:
+      - answer: [hicisteis]
+        reveal: {Translation: 'делать'}
+  - id: hacer-indefinido-tu
+    prompt: hacer · indefinido · tú
+    alternatives:
+      - answer: [hiciste]
+        reveal: {Translation: 'делать'}
+  - id: poder-indefinido-yo
+    prompt: poder · indefinido · yo
+    alternatives:
+      - answer: [pude]
+        reveal: {Translation: 'мочь'}
+  - id: poder-indefinido-el
+    prompt: poder · indefinido · él
+    alternatives:
+      - answer: [pudo]
+        reveal: {Translation: 'мочь'}
+  - id: poder-indefinido-ellos
+    prompt: poder · indefinido · ellos
+    alternatives:
+      - answer: [pudieron]
+        reveal: {Translation: 'мочь'}
+  - id: poder-indefinido-nosotros
+    prompt: poder · indefinido · nosotros
+    alternatives:
+      - answer: [pudimos]
+        reveal: {Translation: 'мочь'}
+  - id: poner-indefinido-yo
+    prompt: poner · indefinido · yo
+    alternatives:
+      - answer: [puse]
+        reveal: {Translation: 'класть, ставить'}
+  - id: poner-indefinido-el
+    prompt: poner · indefinido · él
+    alternatives:
+      - answer: [puso]
+        reveal: {Translation: 'класть, ставить'}
+  - id: poner-indefinido-ellos
+    prompt: poner · indefinido · ellos
+    alternatives:
+      - answer: [pusieron]
+        reveal: {Translation: 'класть, ставить'}
+  - id: saber-indefinido-yo
+    prompt: saber · indefinido · yo
+    alternatives:
+      - answer: [supe]
+        reveal: {Translation: 'знать'}
+  - id: saber-indefinido-el
+    prompt: saber · indefinido · él
+    alternatives:
+      - answer: [supo]
+        reveal: {Translation: 'знать'}
+  - id: saber-indefinido-ellos
+    prompt: saber · indefinido · ellos
+    alternatives:
+      - answer: [supieron]
+        reveal: {Translation: 'знать'}
+  - id: querer-indefinido-yo
+    prompt: querer · indefinido · yo
+    alternatives:
+      - answer: [quise]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: querer-indefinido-el
+    prompt: querer · indefinido · él
+    alternatives:
+      - answer: [quiso]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: querer-indefinido-ellos
+    prompt: querer · indefinido · ellos
+    alternatives:
+      - answer: [quisieron]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: venir-indefinido-yo
+    prompt: venir · indefinido · yo
+    alternatives:
+      - answer: [vine]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-indefinido-el
+    prompt: venir · indefinido · él
+    alternatives:
+      - answer: [vino]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-indefinido-ellos
+    prompt: venir · indefinido · ellos
+    alternatives:
+      - answer: [vinieron]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: venir-indefinido-tu
+    prompt: venir · indefinido · tú
+    alternatives:
+      - answer: [viniste]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: decir-indefinido-yo
+    prompt: decir · indefinido · yo
+    alternatives:
+      - answer: [dije]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-indefinido-el
+    prompt: decir · indefinido · él
+    alternatives:
+      - answer: [dijo]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-indefinido-ellos
+    prompt: decir · indefinido · ellos
+    alternatives:
+      - answer: [dijeron]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-indefinido-nosotros
+    prompt: decir · indefinido · nosotros
+    alternatives:
+      - answer: [dijimos]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: decir-indefinido-tu
+    prompt: decir · indefinido · tú
+    alternatives:
+      - answer: [dijiste]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: traer-indefinido-yo
+    prompt: traer · indefinido · yo
+    alternatives:
+      - answer: [traje]
+        reveal: {Translation: 'приносить'}
+  - id: traer-indefinido-el
+    prompt: traer · indefinido · él
+    alternatives:
+      - answer: [trajo]
+        reveal: {Translation: 'приносить'}
+  - id: traer-indefinido-ellos
+    prompt: traer · indefinido · ellos
+    alternatives:
+      - answer: [trajeron]
+        reveal: {Translation: 'приносить'}
+  - id: leer-indefinido-el
+    prompt: leer · indefinido · él
+    alternatives:
+      - answer: [leyó]
+        reveal: {Translation: 'читать'}
+  - id: leer-indefinido-ellos
+    prompt: leer · indefinido · ellos
+    alternatives:
+      - answer: [leyeron]
+        reveal: {Translation: 'читать'}
+  - id: oir-indefinido-el
+    prompt: oír · indefinido · él
+    alternatives:
+      - answer: [oyó]
+        reveal: {Translation: 'слышать'}
+  - id: oir-indefinido-ellos
+    prompt: oír · indefinido · ellos
+    alternatives:
+      - answer: [oyeron]
+        reveal: {Translation: 'слышать'}
+  - id: creer-indefinido-el
+    prompt: creer · indefinido · él
+    alternatives:
+      - answer: [creyó]
+        reveal: {Translation: 'верить, думать'}
+  - id: creer-indefinido-ellos
+    prompt: creer · indefinido · ellos
+    alternatives:
+      - answer: [creyeron]
+        reveal: {Translation: 'верить, думать'}
+  - id: caer-indefinido-el
+    prompt: caer · indefinido · él
+    alternatives:
+      - answer: [cayó]
+        reveal: {Translation: 'падать'}
+  - id: caer-indefinido-ellos
+    prompt: caer · indefinido · ellos
+    alternatives:
+      - answer: [cayeron]
+        reveal: {Translation: 'падать'}
+  - id: dormir-indefinido-el
+    prompt: dormir · indefinido · él
+    alternatives:
+      - answer: [durmió]
+        reveal: {Translation: 'спать'}
+  - id: dormir-indefinido-ellos
+    prompt: dormir · indefinido · ellos
+    alternatives:
+      - answer: [durmieron]
+        reveal: {Translation: 'спать'}
+  - id: pedir-indefinido-el
+    prompt: pedir · indefinido · él
+    alternatives:
+      - answer: [pidió]
+        reveal: {Translation: 'просить, заказывать'}
+  - id: pedir-indefinido-ellos
+    prompt: pedir · indefinido · ellos
+    alternatives:
+      - answer: [pidieron]
+        reveal: {Translation: 'просить, заказывать'}
+  - id: preferir-indefinido-el
+    prompt: preferir · indefinido · él
+    alternatives:
+      - answer: [prefirió]
+        reveal: {Translation: 'предпочитать'}
+  - id: preferir-indefinido-ellos
+    prompt: preferir · indefinido · ellos
+    alternatives:
+      - answer: [prefirieron]
+        reveal: {Translation: 'предпочитать'}
+  - id: seguir-indefinido-el
+    prompt: seguir · indefinido · él
+    alternatives:
+      - answer: [siguió]
+        reveal: {Translation: 'следовать, продолжать'}
+  - id: seguir-indefinido-ellos
+    prompt: seguir · indefinido · ellos
+    alternatives:
+      - answer: [siguieron]
+        reveal: {Translation: 'следовать, продолжать'}
+  - id: morir-indefinido-el
+    prompt: morir · indefinido · él
+    alternatives:
+      - answer: [murió]
+        reveal: {Translation: 'умирать'}
+  - id: morir-indefinido-ellos
+    prompt: morir · indefinido · ellos
+    alternatives:
+      - answer: [murieron]
+        reveal: {Translation: 'умирать'}
+  - id: sentir-indefinido-el
+    prompt: sentir · indefinido · él
+    alternatives:
+      - answer: [sintió]
+        reveal: {Translation: 'чувствовать'}
+  - id: sentir-indefinido-ellos
+    prompt: sentir · indefinido · ellos
+    alternatives:
+      - answer: [sintieron]
+        reveal: {Translation: 'чувствовать'}
+  - id: servir-indefinido-el
+    prompt: servir · indefinido · él
+    alternatives:
+      - answer: [sirvió]
+        reveal: {Translation: 'подавать, служить'}
+  - id: servir-indefinido-ellos
+    prompt: servir · indefinido · ellos
+    alternatives:
+      - answer: [sirvieron]
+        reveal: {Translation: 'подавать, служить'}
+  - id: leer-indefinido-yo
+    prompt: leer · indefinido · yo
+    alternatives:
+      - answer: [leí]
+        reveal: {Translation: 'читать'}
+  - id: oir-indefinido-yo
+    prompt: oír · indefinido · yo
+    alternatives:
+      - answer: [oí]
+        reveal: {Translation: 'слышать'}
+  - id: creer-indefinido-yo
+    prompt: creer · indefinido · yo
+    alternatives:
+      - answer: [creí]
+        reveal: {Translation: 'верить, думать'}
+  - id: buscar-indefinido-yo
+    prompt: buscar · indefinido · yo
+    alternatives:
+      - answer: [busqué]
+        reveal: {Translation: 'искать'}
+  - id: tocar-indefinido-yo
+    prompt: tocar · indefinido · yo
+    alternatives:
+      - answer: [toqué]
+        reveal: {Translation: 'трогать, играть на инструменте'}
+  - id: sacar-indefinido-yo
+    prompt: sacar · indefinido · yo
+    alternatives:
+      - answer: [saqué]
+        reveal: {Translation: 'доставать, вынимать'}
+  - id: llegar-indefinido-yo
+    prompt: llegar · indefinido · yo
+    alternatives:
+      - answer: [llegué]
+        reveal: {Translation: 'прибывать, приходить'}
+  - id: pagar-indefinido-yo
+    prompt: pagar · indefinido · yo
+    alternatives:
+      - answer: [pagué]
+        reveal: {Translation: 'платить'}
+  - id: jugar-indefinido-yo
+    prompt: jugar · indefinido · yo
+    alternatives:
+      - answer: [jugué]
+        reveal: {Translation: 'играть'}
+  - id: empezar-indefinido-yo
+    prompt: empezar · indefinido · yo
+    alternatives:
+      - answer: [empecé]
+        reveal: {Translation: 'начинать'}
+  - id: comenzar-indefinido-yo
+    prompt: comenzar · indefinido · yo
+    alternatives:
+      - answer: [comencé]
+        reveal: {Translation: 'начинать'}
+  - id: almorzar-indefinido-yo
+    prompt: almorzar · indefinido · yo
+    alternatives:
+      - answer: [almorcé]
+        reveal: {Translation: 'обедать'}
+  - id: practicar-indefinido-yo
+    prompt: practicar · indefinido · yo
+    alternatives:
+      - answer: [practiqué]
+        reveal: {Translation: 'практиковать, тренироваться'}
+  - id: explicar-indefinido-yo
+    prompt: explicar · indefinido · yo
+    alternatives:
+      - answer: [expliqué]
+        reveal: {Translation: 'объяснять'}
+  - id: apagar-indefinido-yo
+    prompt: apagar · indefinido · yo
+    alternatives:
+      - answer: [apagué]
+        reveal: {Translation: 'выключать, тушить'}
+  - id: hablar-imperfecto-yo
+    prompt: hablar · imperfecto · yo
+    alternatives:
+      - answer: [hablaba]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-imperfecto-tu
+    prompt: hablar · imperfecto · tú
+    alternatives:
+      - answer: [hablabas]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-imperfecto-el
+    prompt: hablar · imperfecto · él
+    alternatives:
+      - answer: [hablaba]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-imperfecto-nosotros
+    prompt: hablar · imperfecto · nosotros
+    alternatives:
+      - answer: [hablábamos]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-imperfecto-vosotros
+    prompt: hablar · imperfecto · vosotros
+    alternatives:
+      - answer: [hablabais]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: hablar-imperfecto-ellos
+    prompt: hablar · imperfecto · ellos
+    alternatives:
+      - answer: [hablaban]
+        reveal: {Translation: 'говорить, разговаривать'}
+  - id: comer-imperfecto-yo
+    prompt: comer · imperfecto · yo
+    alternatives:
+      - answer: [comía]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-imperfecto-tu
+    prompt: comer · imperfecto · tú
+    alternatives:
+      - answer: [comías]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-imperfecto-el
+    prompt: comer · imperfecto · él
+    alternatives:
+      - answer: [comía]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-imperfecto-nosotros
+    prompt: comer · imperfecto · nosotros
+    alternatives:
+      - answer: [comíamos]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-imperfecto-vosotros
+    prompt: comer · imperfecto · vosotros
+    alternatives:
+      - answer: [comíais]
+        reveal: {Translation: 'есть, кушать'}
+  - id: comer-imperfecto-ellos
+    prompt: comer · imperfecto · ellos
+    alternatives:
+      - answer: [comían]
+        reveal: {Translation: 'есть, кушать'}
+  - id: vivir-imperfecto-yo
+    prompt: vivir · imperfecto · yo
+    alternatives:
+      - answer: [vivía]
+        reveal: {Translation: 'жить'}
+  - id: vivir-imperfecto-nosotros
+    prompt: vivir · imperfecto · nosotros
+    alternatives:
+      - answer: [vivíamos]
+        reveal: {Translation: 'жить'}
+  - id: vivir-imperfecto-ellos
+    prompt: vivir · imperfecto · ellos
+    alternatives:
+      - answer: [vivían]
+        reveal: {Translation: 'жить'}
+  - id: ser-imperfecto-yo
+    prompt: ser · imperfecto · yo
+    alternatives:
+      - answer: [era]
+        reveal: {Translation: 'быть'}
+  - id: ser-imperfecto-tu
+    prompt: ser · imperfecto · tú
+    alternatives:
+      - answer: [eras]
+        reveal: {Translation: 'быть'}
+  - id: ser-imperfecto-el
+    prompt: ser · imperfecto · él
+    alternatives:
+      - answer: [era]
+        reveal: {Translation: 'быть'}
+  - id: ser-imperfecto-nosotros
+    prompt: ser · imperfecto · nosotros
+    alternatives:
+      - answer: [éramos]
+        reveal: {Translation: 'быть'}
+  - id: ser-imperfecto-vosotros
+    prompt: ser · imperfecto · vosotros
+    alternatives:
+      - answer: [erais]
+        reveal: {Translation: 'быть'}
+  - id: ser-imperfecto-ellos
+    prompt: ser · imperfecto · ellos
+    alternatives:
+      - answer: [eran]
+        reveal: {Translation: 'быть'}
+  - id: ir-imperfecto-yo
+    prompt: ir · imperfecto · yo
+    alternatives:
+      - answer: [iba]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-imperfecto-tu
+    prompt: ir · imperfecto · tú
+    alternatives:
+      - answer: [ibas]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-imperfecto-el
+    prompt: ir · imperfecto · él
+    alternatives:
+      - answer: [iba]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-imperfecto-nosotros
+    prompt: ir · imperfecto · nosotros
+    alternatives:
+      - answer: [íbamos]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-imperfecto-vosotros
+    prompt: ir · imperfecto · vosotros
+    alternatives:
+      - answer: [ibais]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ir-imperfecto-ellos
+    prompt: ir · imperfecto · ellos
+    alternatives:
+      - answer: [iban]
+        reveal: {Translation: 'идти, ехать'}
+  - id: ver-imperfecto-yo
+    prompt: ver · imperfecto · yo
+    alternatives:
+      - answer: [veía]
+        reveal: {Translation: 'видеть'}
+  - id: ver-imperfecto-tu
+    prompt: ver · imperfecto · tú
+    alternatives:
+      - answer: [veías]
+        reveal: {Translation: 'видеть'}
+  - id: ver-imperfecto-el
+    prompt: ver · imperfecto · él
+    alternatives:
+      - answer: [veía]
+        reveal: {Translation: 'видеть'}
+  - id: ver-imperfecto-nosotros
+    prompt: ver · imperfecto · nosotros
+    alternatives:
+      - answer: [veíamos]
+        reveal: {Translation: 'видеть'}
+  - id: ver-imperfecto-vosotros
+    prompt: ver · imperfecto · vosotros
+    alternatives:
+      - answer: [veíais]
+        reveal: {Translation: 'видеть'}
+  - id: ver-imperfecto-ellos
+    prompt: ver · imperfecto · ellos
+    alternatives:
+      - answer: [veían]
+        reveal: {Translation: 'видеть'}
+  - id: tener-imperfecto-yo
+    prompt: tener · imperfecto · yo
+    alternatives:
+      - answer: [tenía]
+        reveal: {Translation: 'иметь'}
+  - id: tener-imperfecto-ellos
+    prompt: tener · imperfecto · ellos
+    alternatives:
+      - answer: [tenían]
+        reveal: {Translation: 'иметь'}
+  - id: estar-imperfecto-yo
+    prompt: estar · imperfecto · yo
+    alternatives:
+      - answer: [estaba]
+        reveal: {Translation: 'находиться, быть'}
+  - id: estar-imperfecto-nosotros
+    prompt: estar · imperfecto · nosotros
+    alternatives:
+      - answer: [estábamos]
+        reveal: {Translation: 'находиться, быть'}
+  - id: hacer-imperfecto-el
+    prompt: hacer · imperfecto · él
+    alternatives:
+      - answer: [hacía]
+        reveal: {Translation: 'делать'}
+  - id: hacer-imperfecto-nosotros
+    prompt: hacer · imperfecto · nosotros
+    alternatives:
+      - answer: [hacíamos]
+        reveal: {Translation: 'делать'}
+  - id: jugar-imperfecto-yo
+    prompt: jugar · imperfecto · yo
+    alternatives:
+      - answer: [jugaba]
+        reveal: {Translation: 'играть'}
+  - id: jugar-imperfecto-nosotros
+    prompt: jugar · imperfecto · nosotros
+    alternatives:
+      - answer: [jugábamos]
+        reveal: {Translation: 'играть'}
+  - id: querer-imperfecto-yo
+    prompt: querer · imperfecto · yo
+    alternatives:
+      - answer: [quería]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: querer-imperfecto-ellos
+    prompt: querer · imperfecto · ellos
+    alternatives:
+      - answer: [querían]
+        reveal: {Translation: 'хотеть, любить'}
+  - id: poder-imperfecto-el
+    prompt: poder · imperfecto · él
+    alternatives:
+      - answer: [podía]
+        reveal: {Translation: 'мочь'}
+  - id: hacer-participio
+    prompt: hacer · participio
+    alternatives:
+      - answer: [hecho]
+        reveal: {Translation: 'делать'}
+  - id: decir-participio
+    prompt: decir · participio
+    alternatives:
+      - answer: [dicho]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: ver-participio
+    prompt: ver · participio
+    alternatives:
+      - answer: [visto]
+        reveal: {Translation: 'видеть'}
+  - id: escribir-participio
+    prompt: escribir · participio
+    alternatives:
+      - answer: [escrito]
+        reveal: {Translation: 'писать'}
+  - id: poner-participio
+    prompt: poner · participio
+    alternatives:
+      - answer: [puesto]
+        reveal: {Translation: 'класть, ставить'}
+  - id: abrir-participio
+    prompt: abrir · participio
+    alternatives:
+      - answer: [abierto]
+        reveal: {Translation: 'открывать'}
+  - id: volver-participio
+    prompt: volver · participio
+    alternatives:
+      - answer: [vuelto]
+        reveal: {Translation: 'возвращаться'}
+  - id: romper-participio
+    prompt: romper · participio
+    alternatives:
+      - answer: [roto]
+        reveal: {Translation: 'ломать, разбивать'}
+  - id: morir-participio
+    prompt: morir · participio
+    alternatives:
+      - answer: [muerto]
+        reveal: {Translation: 'умирать'}
+  - id: descubrir-participio
+    prompt: descubrir · participio
+    alternatives:
+      - answer: [descubierto]
+        reveal: {Translation: 'обнаруживать, открывать'}
+  - id: devolver-participio
+    prompt: devolver · participio
+    alternatives:
+      - answer: [devuelto]
+        reveal: {Translation: 'возвращать'}
+  - id: ser-participio
+    prompt: ser · participio
+    alternatives:
+      - answer: [sido]
+        reveal: {Translation: 'быть'}
+  - id: ir-participio
+    prompt: ir · participio
+    alternatives:
+      - answer: [ido]
+        reveal: {Translation: 'идти, ехать'}
+  - id: leer-participio
+    prompt: leer · participio
+    alternatives:
+      - answer: [leído]
+        reveal: {Translation: 'читать'}
+  - id: traer-participio
+    prompt: traer · participio
+    alternatives:
+      - answer: [traído]
+        reveal: {Translation: 'приносить'}
+  - id: oir-participio
+    prompt: oír · participio
+    alternatives:
+      - answer: [oído]
+        reveal: {Translation: 'слышать'}
+  - id: creer-participio
+    prompt: creer · participio
+    alternatives:
+      - answer: [creído]
+        reveal: {Translation: 'верить, думать'}
+  - id: decir-gerundio
+    prompt: decir · gerundio
+    alternatives:
+      - answer: [diciendo]
+        reveal: {Translation: 'сказать, говорить'}
+  - id: dormir-gerundio
+    prompt: dormir · gerundio
+    alternatives:
+      - answer: [durmiendo]
+        reveal: {Translation: 'спать'}
+  - id: pedir-gerundio
+    prompt: pedir · gerundio
+    alternatives:
+      - answer: [pidiendo]
+        reveal: {Translation: 'просить, заказывать'}
+  - id: seguir-gerundio
+    prompt: seguir · gerundio
+    alternatives:
+      - answer: [siguiendo]
+        reveal: {Translation: 'следовать, продолжать'}
+  - id: venir-gerundio
+    prompt: venir · gerundio
+    alternatives:
+      - answer: [viniendo]
+        reveal: {Translation: 'приходить, приезжать'}
+  - id: poder-gerundio
+    prompt: poder · gerundio
+    alternatives:
+      - answer: [pudiendo]
+        reveal: {Translation: 'мочь'}
+  - id: leer-gerundio
+    prompt: leer · gerundio
+    alternatives:
+      - answer: [leyendo]
+        reveal: {Translation: 'читать'}
+  - id: oir-gerundio
+    prompt: oír · gerundio
+    alternatives:
+      - answer: [oyendo]
+        reveal: {Translation: 'слышать'}
+  - id: ir-gerundio
+    prompt: ir · gerundio
+    alternatives:
+      - answer: [yendo]
+        reveal: {Translation: 'идти, ехать'}
+  - id: traer-gerundio
+    prompt: traer · gerundio
+    alternatives:
+      - answer: [trayendo]
+        reveal: {Translation: 'приносить'}
+  - id: sentir-gerundio
+    prompt: sentir · gerundio
+    alternatives:
+      - answer: [sintiendo]
+        reveal: {Translation: 'чувствовать'}
+  - id: preferir-gerundio
+    prompt: preferir · gerundio
+    alternatives:
+      - answer: [prefiriendo]
+        reveal: {Translation: 'предпочитать'}
+  - id: morir-gerundio
+    prompt: morir · gerundio
+    alternatives:
+      - answer: [muriendo]
+        reveal: {Translation: 'умирать'}
+  - id: servir-gerundio
+    prompt: servir · gerundio
+    alternatives:
+      - answer: [sirviendo]
+        reveal: {Translation: 'подавать, служить'}
+  - id: creer-gerundio
+    prompt: creer · gerundio
+    alternatives:
+      - answer: [creyendo]
+        reveal: {Translation: 'верить, думать'}
+  - id: caer-gerundio
+    prompt: caer · gerundio
+    alternatives:
+      - answer: [cayendo]
+        reveal: {Translation: 'падать'}
+  - id: vestir-gerundio
+    prompt: vestir · gerundio
+    alternatives:
+      - answer: [vistiendo]
+        reveal: {Translation: 'одевать'}
+  - id: repetir-gerundio
+    prompt: repetir · gerundio
+    alternatives:
+      - answer: [repitiendo]
+        reveal: {Translation: 'повторять'}
