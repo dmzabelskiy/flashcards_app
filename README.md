@@ -90,7 +90,7 @@ checked against German Wiktionary for article, plural and an example before it
 is translated and saved as a finished card. Dutch uses English Wiktionary.
 Spanish has no dictionary behind it: the word is reduced to its lemma offline
 and translated, and a captured noun has no article until you set one on the
-card. In Spanish → Russian the daily video comes from Dreaming Spanish.
+card. In Spanish → Russian the daily video comes from Spanish After Hours.
 Translations are cached globally per language pair. Providers, captions,
 proxy and prefetch settings: [docs/video_study.md](docs/video_study.md).
 

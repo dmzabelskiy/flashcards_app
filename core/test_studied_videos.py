@@ -10,8 +10,8 @@ from decks.models import Deck
 from reviews.daily_plan import _media_item
 from video_study.models import ChannelVideo
 from video_study.services import (
-    DREAMING_SPANISH,
     KURZGESAGT_DE,
+    SPANISH_AFTER_HOURS,
     get_channel_video_of_day,
     get_kurzgesagt_video_of_day,
 )
@@ -75,13 +75,13 @@ class StudiedVideoIdsTests(AuthedTestCase):
 
 class VideoOfTheDayExclusionTests(AuthedTestCase):
     def test_excluded_ids_are_never_picked_over_a_run_longer_than_the_catalog(self):
-        ids = make_catalog(DREAMING_SPANISH, 5)
+        ids = make_catalog(SPANISH_AFTER_HOURS, 5)
         excluded = frozenset(ids[:2])
         now = timezone.now()
 
         picks = {
             get_channel_video_of_day(
-                DREAMING_SPANISH, now=now + datetime.timedelta(days=day), exclude_ids=excluded
+                SPANISH_AFTER_HOURS, now=now + datetime.timedelta(days=day), exclude_ids=excluded
             ).youtube_id
             for day in range(20)
         }
@@ -89,12 +89,12 @@ class VideoOfTheDayExclusionTests(AuthedTestCase):
         self.assertEqual(picks, set(ids[2:]))
 
     def test_the_default_excludes_nothing(self):
-        ids = make_catalog(DREAMING_SPANISH, 3)
+        ids = make_catalog(SPANISH_AFTER_HOURS, 3)
         now = timezone.now()
 
         picks = {
             get_channel_video_of_day(
-                DREAMING_SPANISH, now=now + datetime.timedelta(days=day)
+                SPANISH_AFTER_HOURS, now=now + datetime.timedelta(days=day)
             ).youtube_id
             for day in range(12)
         }
@@ -102,9 +102,9 @@ class VideoOfTheDayExclusionTests(AuthedTestCase):
         self.assertEqual(picks, set(ids))
 
     def test_nothing_is_left_when_every_video_is_excluded(self):
-        ids = make_catalog(DREAMING_SPANISH, 2)
+        ids = make_catalog(SPANISH_AFTER_HOURS, 2)
 
-        self.assertIsNone(get_channel_video_of_day(DREAMING_SPANISH, exclude_ids=frozenset(ids)))
+        self.assertIsNone(get_channel_video_of_day(SPANISH_AFTER_HOURS, exclude_ids=frozenset(ids)))
 
     def test_the_kurzgesagt_helper_takes_the_same_parameter(self):
         ids = make_catalog(KURZGESAGT_DE, 4)
@@ -125,7 +125,7 @@ class MediaItemStudiedVideosTests(AuthedTestCase):
         super().setUp()
         self.today = timezone.localdate()
         self.yesterday = self.today - datetime.timedelta(days=1)
-        self.ids = make_catalog(DREAMING_SPANISH, 4)
+        self.ids = make_catalog(SPANISH_AFTER_HOURS, 4)
 
     def media_on(self, offset_days, mode=ES):
         day = self.today + datetime.timedelta(days=offset_days)
@@ -211,7 +211,7 @@ class DashboardStudiedVideosTests(AuthedTestCase):
         session["language_mode"] = ES
         session.save()
         self.today = timezone.localdate()
-        self.ids = make_catalog(DREAMING_SPANISH, 2)
+        self.ids = make_catalog(SPANISH_AFTER_HOURS, 2)
 
     def mark_all_studied(self):
         for index, youtube_id in enumerate(self.ids, start=1):

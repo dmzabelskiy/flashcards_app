@@ -42,7 +42,7 @@ class LanguagePackTests(SimpleTestCase):
         self.assertEqual(SPANISH.name, "Spanish")
         self.assertEqual(SPANISH.articles, ("el", "la"))
         self.assertEqual(SPANISH.article_genders, ("Masculine", "Feminine"))
-        self.assertEqual(SPANISH.video_channel_key, "dreaming-spanish")
+        self.assertEqual(SPANISH.video_channel_key, "spanish-after-hours")
         self.assertEqual(SPANISH.speech_locale, "es-ES")
         self.assertEqual(SPANISH.features, frozenset({"article_drill", "video"}))
 

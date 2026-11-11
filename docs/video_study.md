@@ -29,15 +29,16 @@ Open `/videos/` or choose **Video study** in the main navigation.
 ## The video of the day
 
 Each mode has one channel (`media.video_channel` of its pack): Kurzgesagt for
-the German modes, a Dutch channel, and Dreaming Spanish for ES → RU. The
+the German modes, a Dutch channel, and Spanish After Hours for ES → RU. The
 dashboard picks one video a day from the channel's catalog by a fixed
 rotation, and `refresh_media_catalogs` refreshes every channel's catalog.
 
-- Dreaming Spanish draws on two playlists, Beginner and the beginner podcast,
-  not on the whole channel. A channel may list several feeds
-  (`MediaChannel.extra_feed_urls`); the catalog accumulates across refreshes,
-  and one feed failing does not lose the videos of the other. Its captions are
-  YouTube's generated Spanish track, which the app accepts.
+- Spanish After Hours draws on its uploads feed (long videos only, no Shorts)
+  and three playlists: Beginner Spanish, Comprehensible Input and VLOGS. A
+  channel may list several feeds (`MediaChannel.extra_feed_urls`); the catalog
+  accumulates across refreshes, and one feed failing does not lose the videos
+  of the others. Its captions are YouTube's generated Spanish track, which the
+  app accepts.
 - A video counts as studied by an account in a mode when its **Mark media done
   for today** mark (a `DailyTaskCompletion` of task `media`) carries the label
   `video:<youtube id>`. A studied video is never the video of the day again;

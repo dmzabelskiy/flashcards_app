@@ -28,7 +28,7 @@ Every field is required; unknown fields are rejected.
 - `speech_locale`: locale of the speech button on card faces (`de-DE`).
 - `media.video_channel`: a key of `MEDIA_CHANNELS` in
   `video_study/services.py`, or `null`. A channel lists one feed, or more
-  through `extra_feed_urls` (Dreaming Spanish lists two playlists).
+  through `extra_feed_urls` (Spanish After Hours lists its uploads and three playlists).
 - `media.podcast`: `true` or `false`.
 
 Features derive from these: video from a channel, podcast from

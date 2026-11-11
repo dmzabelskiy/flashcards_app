@@ -90,17 +90,23 @@ CHANNEL_FEED_PREFIX = "https://www.youtube.com/feeds/videos.xml?channel_id="
 KURZGESAGT_DE = MediaChannel(KURZGESAGT_DE_CHANNEL_KEY, "Kurzgesagt", KURZGESAGT_DE_FEED_URL, "de")
 NL_CHANNEL_ID = "UCmyAAcFzmkD5SHIa0olqhgw"
 NL_CHANNEL = MediaChannel("nl-channel", "Dutch channel", CHANNEL_FEED_PREFIX + NL_CHANNEL_ID, "nl")
-# Dreaming Spanish draws on two playlists (Beginner and the beginner podcast), not on
-# the whole channel, whose feed mixes every level and Shorts.
+# Spanish After Hours draws on its uploads (long videos only, no Shorts) and on three
+# playlists: Beginner Spanish, Comprehensible Input and VLOGS.
 PLAYLIST_FEED_PREFIX = "https://www.youtube.com/feeds/videos.xml?playlist_id="
-DREAMING_SPANISH = MediaChannel(
-    "dreaming-spanish",
-    "Dreaming Spanish",
-    PLAYLIST_FEED_PREFIX + "PLlpPf-YgbU7HWrrenMs3-nuhxgzyAiA-C",
+SPANISH_AFTER_HOURS = MediaChannel(
+    "spanish-after-hours",
+    "Spanish After Hours",
+    PLAYLIST_FEED_PREFIX + "UULFfG2VhlQgy5bHGmkpeKcjVA",
     "es",
-    extra_feed_urls=(PLAYLIST_FEED_PREFIX + "PLlpPf-YgbU7HDyS2Ic86G7tc1I0Tpr2Ty",),
+    extra_feed_urls=(
+        PLAYLIST_FEED_PREFIX + "PLLFFrODykXG95MQpEK28TGfV4qL0LUlMe",
+        PLAYLIST_FEED_PREFIX + "PLLFFrODykXG96ZZ-JQ4Upppexe_CCVRFo",
+        PLAYLIST_FEED_PREFIX + "PLLFFrODykXG96K3DvC1lmWFzjEctkOLuJ",
+    ),
 )
-MEDIA_CHANNELS = {channel.key: channel for channel in (KURZGESAGT_DE, NL_CHANNEL, DREAMING_SPANISH)}
+MEDIA_CHANNELS = {
+    channel.key: channel for channel in (KURZGESAGT_DE, NL_CHANNEL, SPANISH_AFTER_HOURS)
+}
 
 
 def channel_for_mode(language_mode):
