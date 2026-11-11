@@ -22,7 +22,7 @@
   <header class="video-study__titlebar">
     <div>
       <h1>Video study</h1>
-      <p class="muted">{% if allow_bilingual %}Load Dutch captions and click a Dutch word or select a phrase for an English translation.{% else %}Load German or English captions and click a word or select a phrase for a {{ target_language_label }} translation.{% endif %}</p>
+      <p class="muted">{% if allow_bilingual %}Load Dutch captions and click a Dutch word or select a phrase for an English translation.{% else %}Load {{ offered_languages }} captions and click a word or select a phrase for a {{ target_language_label }} translation.{% endif %}</p>
     </div>
     {% if video %}
       <a class="video-study__youtube-link" href="{{ video.source_url }}"
@@ -183,7 +183,7 @@
       <span class="video-study-empty__index" aria-hidden="true">01</span>
       <div>
         <h2>Choose a video to begin</h2>
-        <p>Try a captioned video from the Kurzgesagt channel. The video stays on YouTube; only its transcript is cached here.</p>
+        <p>Paste a YouTube video with {{ source_language_label }} captions. The video stays on YouTube; only its transcript is cached here.</p>
       </div>
     </div>
   {% endif %}

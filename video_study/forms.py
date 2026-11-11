@@ -8,6 +8,7 @@ class VideoUrlForm(forms.Form):
         ("de", "German"),
         ("en", "English"),
         ("nl", "Dutch"),
+        ("es", "Spanish"),
     )
 
     url = forms.CharField(

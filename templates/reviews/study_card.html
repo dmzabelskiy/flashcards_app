@@ -14,7 +14,7 @@
     <div class="flip-card-inner">
       <div class="flip-card-face flip-card-front">
         {% if is_reverse %}
-          <p class="muted">{{ target_language_label }} &rarr; Deutsch</p>
+          <p class="muted">{{ target_language_label }} &rarr; {{ source_language_label }}</p>
           <h1>{{ card.back|linebreaksbr }}</h1>
         {% else %}
           <p class="muted">{{ card.get_card_type_display }}</p>
@@ -65,7 +65,7 @@
       {% csrf_token %}
       <input type="hidden" name="action" value="check">
       <input type="hidden" name="submission" value="{{ submission_token }}">
-      <input name="answer" autofocus autocomplete="off" placeholder="{% if is_reverse %}Type the German word{% else %}Type translation{% endif %}">
+      <input name="answer" autofocus autocomplete="off" placeholder="{% if is_reverse %}Type the {{ source_language_label }} word{% else %}Type translation{% endif %}">
       <button class="button primary" type="submit">Check</button>
     </form>
   {% endif %}

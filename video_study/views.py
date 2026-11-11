@@ -40,10 +40,11 @@ SOURCE_LANGUAGES = dict(VideoUrlForm.SOURCE_LANGUAGE_CHOICES)
 
 
 def _allowed_source_languages(language_mode):
-    """Dutch mode offers only `nl`; every German mode offers everything else."""
-    if get_source_language(language_mode) == "nl":
-        return {"nl"}
-    return {code for code in SOURCE_LANGUAGES if code != "nl"}
+    """The German modes offer German and English captions; any other mode, its own language."""
+    source_language = get_source_language(language_mode)
+    if source_language == "de":
+        return {"de", "en"}
+    return {source_language}
 
 
 # These pages show whether the signed-in account finished today's media task.
@@ -206,6 +207,9 @@ def video_workspace(request):
         "target_language_label": get_target_language_label(language_mode),
         "source_language": active_source_language,
         "source_language_label": SOURCE_LANGUAGES[active_source_language],
+        "offered_languages": " or ".join(
+            name for code, name in SOURCE_LANGUAGES.items() if code in allowed_sources
+        ),
         "media_complete_today": task_is_complete(request.user, "media", language_mode),
         "allow_bilingual": allow_bilingual,
         "bilingual": bilingual,
