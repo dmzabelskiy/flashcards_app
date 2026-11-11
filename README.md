@@ -1,7 +1,7 @@
 # German Flashcards
 
 A multi-user Django app for studying German vocabulary and grammar in the
-browser, with a smaller Dutch mode. Each account owns its own decks, cards and
+browser, with smaller Dutch and Spanish modes. Each account owns its own decks, cards and
 progress. It is deliberately not an Anki clone: the focus is clear code,
 CSV import and a practical daily study routine.
 
@@ -19,9 +19,10 @@ CSV import and a practical daily study routine.
   flashcard mode. Three correct answers in a row on an item offer an optional
   Retire action; nothing retires automatically.
 - Video study: YouTube and podcast transcripts with click-to-translate and
-  word capture into a global deck.
-- Three language modes, chosen in the top bar on every page: German → Russian,
-  German → Spanish and Dutch → English. Decks, cards, stats, imports, daily
+  word capture into a global deck. A video studied on an earlier day is not
+  suggested again.
+- Four language modes, chosen in the top bar on every page: German → Russian,
+  German → Spanish, Dutch → English and Spanish → Russian. Decks, cards, stats, imports, daily
   plan and translations follow the active mode.
 - Dashboard with the daily plan, streaks, activity heatmap and retention.
 
@@ -67,8 +68,8 @@ answer; `1` Again, `2` Hard, `3` Good, `4` Easy.
 
 **Study.** `Start studying` on the dashboard begins typed study. Type the
 translation and press `Enter`; `I was right` overrides a wrong mark. `Reverse`
-next to it shows the translation and asks for the German word, with or without
-its article and with umlauts spelled either way; `Study reversed` on a deck
+next to it shows the translation and asks for the word in the language studied
+(in German, with or without its article and with umlauts spelled either way); `Study reversed` on a deck
 page does the same for that deck. Answers ignore case and whitespace, accept
 several translations (`;`, comma, slash or newline) and tolerate one wrong
 letter or one swapped pair. After the daily goal the dashboard button reads
@@ -87,6 +88,9 @@ words or select phrases to translate them into the mode's target language. A
 German word is reduced to its dictionary form with an offline lemmatiser and
 checked against German Wiktionary for article, plural and an example before it
 is translated and saved as a finished card. Dutch uses English Wiktionary.
+Spanish has no dictionary behind it: the word is reduced to its lemma offline
+and translated, and a captured noun has no article until you set one on the
+card. In Spanish → Russian the daily video comes from Dreaming Spanish.
 Translations are cached globally per language pair. Providers, captions,
 proxy and prefetch settings: [docs/video_study.md](docs/video_study.md).
 
@@ -94,7 +98,10 @@ proxy and prefetch settings: [docs/video_study.md](docs/video_study.md).
 
 Required columns `front,back`; optional `example_sentence,notes,tags,card_type`.
 The importer strips whitespace, skips empty rows, reports row-level errors and
-creates cards as due immediately. Format and `card_type` values:
+creates cards as due immediately. A vocabulary card whose front starts with a
+lower-case article of the language (`der Alltag`, `el coche`) is stored with
+that article set, so the article drill can use it. Format and `card_type`
+values:
 [docs/csv_format.md](docs/csv_format.md).
 
 Starter sets are in `card_sets/<mode>/`: `card_sets/DE-RU/german_test.csv` is

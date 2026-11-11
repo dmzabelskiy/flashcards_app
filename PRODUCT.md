@@ -14,14 +14,15 @@ gunicorn and WhiteNoise on Fly.io.
 
 ## Users and scene
 
-- Primary user: a learner at roughly B1–B2 level, plus a few invited learners
-  whose accounts the owner creates in Django admin. No public signup.
+- Primary user: a learner at roughly B1–B2 level in German and A1–A2 in
+  Spanish, plus a few invited learners whose accounts the owner creates in
+  Django admin. No public signup.
 - Scene: short daily study sessions, mostly on a laptop; the phone must work
   but is secondary.
 - Job: keep a daily habit going: study 20 words, run one drill, watch or
   listen to something captioned. Study is German → Russian or German →
-  Spanish; a smaller Dutch → English mode has cards, the article drill and
-  video. The mode is chosen per session and stored on each deck
+  Spanish; smaller Dutch → English and Spanish → Russian modes have cards, the
+  article drill and video (Spanish adds three trainers). The mode is chosen per session and stored on each deck
   (`core/language_modes.py`).
 
 ## What the product does
@@ -30,8 +31,9 @@ gunicorn and WhiteNoise on Fly.io.
   and edited in a library.
 - Spaced review of due cards with a simple scheduler; typed study with typo
   tolerance and a daily goal of 20 correct words.
-- Drills on one shared engine: der/die/das articles, adjective + preposition
-  + case, verb + preposition, irregular verbs, and a flashcard memory mode.
+- Drills on one shared engine: der/die/das articles (el/la in Spanish),
+  adjective + preposition + case, verb + preposition, irregular verbs, Spanish
+  verb forms, verbs in context and small words, and a flashcard memory mode.
 - Watch & listen: YouTube and podcast transcripts with click-to-translate and
   a global deck of captured words, one per account and language mode.
 - Dashboard "Today" with the daily plan, streak, weekly stats and activity.
@@ -54,7 +56,8 @@ vocabulary, a drill and media into one loop, and drills specific to German
 - Accessibility floor already in the codebase: 44 px targets, visible
   focus, `aria-live` feedback, never colour alone for state, semantic
   fieldsets in drills, reduced-motion respected.
-- Article colours (der / die / das) are a learning device and must stay
+- Article colours (der / die / das; `el` and `la` take the colours of `der`
+  and `die`) are a learning device and must stay
   distinguishable from one another and from success/error state.
 
 ## Brand commitments

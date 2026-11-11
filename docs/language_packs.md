@@ -13,7 +13,8 @@ languages/<code>/
 
 A study mode is `<source>-<target>`, such as `DE-RU`: the language studied,
 then the language of the translations. The source picks the pack, the target
-picks the answers of a drill. The packs `de` and `nl` must exist.
+picks the answers of a drill. The packs `de` and `nl` must exist; `es` is the
+third (`ES-RU`, with `el` and `la`).
 
 ## pack.yml
 
@@ -26,7 +27,8 @@ Every field is required; unknown fields are rejected.
   for a card's article.
 - `speech_locale`: locale of the speech button on card faces (`de-DE`).
 - `media.video_channel`: a key of `MEDIA_CHANNELS` in
-  `video_study/services.py`, or `null`.
+  `video_study/services.py`, or `null`. A channel lists one feed, or more
+  through `extra_feed_urls` (Dreaming Spanish lists two playlists).
 - `media.podcast`: `true` or `false`.
 
 Features derive from these: video from a channel, podcast from
@@ -145,11 +147,11 @@ migration changes.
 1. Create `languages/<code>/pack.yml`, and `drills/` if it has drills. A video
    channel needs a `MediaChannel` in `video_study/services.py`.
 2. Add one entry to `Deck.LanguageMode` in `decks/models.py`, for example
-   `ES_RU = "ES-RU", "Russian"`: the value is `<SOURCE>-<TARGET>`, the label
+   `NL_EN = "NL-EN", "English"`: the value is `<SOURCE>-<TARGET>`, the label
    the target language.
 3. If the pack has articles that `Card.Article` in `cards/models.py` lacks,
    add them there. A card's `article` is a fixed choice list (today `der`,
-   `die`, `das`, `de`, `het`), and each article is at most three characters.
+   `die`, `das`, `de`, `het`, `el`, `la`), and each article is at most three characters.
 4. Run `python3 manage.py makemigrations`. The migrations change the `choices`
    of the mode fields and of `Card.article`.
 

@@ -6,8 +6,8 @@ Open `/videos/` or choose **Video study** in the main navigation.
 
 1. Choose the dashboard's language mode, then paste a YouTube video URL.
 2. Choose an available transcript language: German or English in the German
-   modes, or Dutch in NL → EN. The server extracts that caption track and
-   caches its timestamped segments in SQLite.
+   modes, Dutch in NL → EN, or Spanish in ES → RU. The server extracts that
+   caption track and caches its timestamped segments in SQLite.
 3. The page embeds the YouTube player next to the transcript.
 4. Playback highlights the current transcript segment. Selecting a timestamp
    seeks the player.
@@ -25,6 +25,38 @@ Open `/videos/` or choose **Video study** in the main navigation.
 - On small screens, use **Transcript** to open and close the transcript drawer.
   In short landscape windows, scroll the player area to reach caption, media
   completion and retry controls.
+
+## The video of the day
+
+Each mode has one channel (`media.video_channel` of its pack): Kurzgesagt for
+the German modes, a Dutch channel, and Dreaming Spanish for ES → RU. The
+dashboard picks one video a day from the channel's catalog by a fixed
+rotation, and `refresh_media_catalogs` refreshes every channel's catalog.
+
+- Dreaming Spanish draws on two playlists, Beginner and the beginner podcast,
+  not on the whole channel. A channel may list several feeds
+  (`MediaChannel.extra_feed_urls`); the catalog accumulates across refreshes,
+  and one feed failing does not lose the videos of the other. Its captions are
+  YouTube's generated Spanish track, which the app accepts.
+- A video counts as studied by an account in a mode when its **Mark media done
+  for today** mark (a `DailyTaskCompletion` of task `media`) carries the label
+  `video:<youtube id>`. A studied video is never the video of the day again;
+  the rule holds in every mode, per account and mode. Today's own mark does
+  not change today's video, and only one mark is stored per day, so a second
+  video marked on the same day can come up again.
+- When every video of the catalog is studied, there is no video of the day:
+  the dashboard says so and points to video study, where any video can be
+  loaded by URL and marked done. The podcast of the day is unchanged.
+
+## Spanish word capture
+
+Clicking a Spanish word reduces it to its lemma with the offline lemmatiser
+(`tengo` → `tener`) and translates the lemma into Russian through the provider
+chain. No dictionary is consulted: a captured word has no article, plural or
+part of speech, and the owner sets an article on the card. A selection of
+several words is saved as a phrase, unlemmatised. Saving a word that the
+global deck already holds with its article (`el coche` for `coche`) returns
+that card. Without the lemma cache, saving is refused until it is rebuilt.
 
 ## Dutch + English video captions
 
@@ -72,12 +104,20 @@ Live, embed URLs, and raw 11-character video IDs.
   - `libretranslate`: used when `VIDEO_STUDY_LIBRETRANSLATE_ENDPOINT` is set.
   - `mymemory`: the no-key fallback.
 - Word capture reads German Wiktionary (German) or English Wiktionary (Dutch)
-  for dictionary data, before translating.
+  for dictionary data, before translating. Spanish capture reads no
+  dictionary.
 
 Only the word or phrase the user selected is sent to a provider; the
 surrounding sentence stays local. Russian results without Cyrillic characters
 are rejected and not cached. No video or audio is downloaded; only caption
 JSON and word translations are stored.
+
+## Lemma cache
+
+`python3 manage.py build_lemma_cache` builds the German, Dutch and Spanish
+lemma dictionaries at image build time (`--check` verifies them); a missing
+file makes capture return tokens unlemmatised, and saving is refused unless a
+dictionary confirms the word.
 
 ## Settings
 
