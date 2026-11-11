@@ -108,7 +108,10 @@ values:
 Starter sets are in `card_sets/<mode>/`: `card_sets/DE-RU/german_test.csv` is
 a 100-word German verb list, and `card_sets/ES-RU/spanish_a1_a2_vocabulary.csv`
 is about 1,000 Castilian Spanish words and phrases at A1–A2 with Russian
-glosses, to import into the `ES-RU` global deck.
+glosses. An `ES-RU` global deck that holds no card starts with
+`card_sets/ES-RU/spanish_a2_starter.csv`, 100 A2 words from that list, so the
+daily plan has something to study at once. Import the full list on top of it;
+the 100 words already there are skipped.
 
 ## Deployment
 

@@ -7,7 +7,7 @@ from django.urls import reverse
 from cards.models import Card
 from core.testutils import AuthedTestCase
 from decks.models import Deck
-from decks.services import get_global_deck
+from decks.services import STARTER_SETS, get_global_deck
 from video_study.dictionary import DictionaryResult
 from video_study.es.capture import resolve_capture_es
 from video_study.es.lemma import lemmatize_spanish
@@ -68,6 +68,10 @@ class ResolveCaptureEsTests(LemmaCacheTestMixin, SimpleTestCase):
 class EsCaptureViewsTests(LemmaCacheTestMixin, AuthedTestCase):
     def setUp(self):
         super().setUp()
+        # These tests start from an empty global deck, so the starter set stays out.
+        starter_sets = patch.dict(STARTER_SETS, clear=True)
+        starter_sets.start()
+        self.addCleanup(starter_sets.stop)
         session = self.client.session
         session["language_mode"] = Deck.LanguageMode.ES_RU
         session.save()
