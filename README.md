@@ -98,7 +98,8 @@ proxy and prefetch settings: [docs/video_study.md](docs/video_study.md).
 
 Required columns `front,back`; optional `example_sentence,notes,tags,card_type`.
 The importer strips whitespace, skips empty rows, reports row-level errors and
-creates cards as due immediately. A vocabulary card whose front starts with a
+creates cards as due immediately. A row whose front is already in the deck, or
+earlier in the file, is skipped and counted. A vocabulary card whose front starts with a
 lower-case article of the language (`der Alltag`, `el coche`) is stored with
 that article set, so the article drill can use it. Format and `card_type`
 values:

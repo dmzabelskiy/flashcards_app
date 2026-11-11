@@ -2,6 +2,8 @@ import csv
 from dataclasses import dataclass, field
 from io import StringIO
 
+from django.db import transaction
+
 from cards.articles import parse_leading_article
 from cards.models import Card
 from core.language_packs import pack_for_mode
@@ -16,6 +18,7 @@ class CsvImportError:
 @dataclass
 class CsvImportResult:
     imported_count: int = 0
+    skipped_count: int = 0
     errors: list[CsvImportError] = field(default_factory=list)
 
 
@@ -47,6 +50,19 @@ def _article_for(front, card_type, articles):
 
 
 def import_cards_from_csv(deck, csv_text):
+    """Import the rows of a CSV text into a deck.
+
+    A row whose front (trimmed, compared exactly) is already a front in the deck, or
+    of an earlier row of the file, is skipped and counted.  Reading the fronts and
+    writing the cards share one transaction, which on this database (transaction mode
+    IMMEDIATE) holds the write lock from its start, so two imports cannot both miss
+    a front the other is adding.
+    """
+    with transaction.atomic():
+        return _import_cards(deck, csv_text)
+
+
+def _import_cards(deck, csv_text):
     result = CsvImportResult()
     articles = pack_for_mode(deck.language_mode).articles
     reader = csv.DictReader(StringIO(csv_text))
@@ -65,6 +81,7 @@ def import_cards_from_csv(deck, csv_text):
         )
         return result
 
+    seen_fronts = set(deck.cards.values_list("front", flat=True))
     cards = []
     for row_number, row in enumerate(reader, start=2):
         normalized = {key.strip(): _clean(value) for key, value in row.items() if key}
@@ -85,6 +102,11 @@ def import_cards_from_csv(deck, csv_text):
                 CsvImportError(row_number=row_number, message=f"Unknown card_type '{card_type}'.")
             )
             continue
+
+        if front in seen_fronts:
+            result.skipped_count += 1
+            continue
+        seen_fronts.add(front)
 
         cards.append(
             Card(

@@ -32,3 +32,5 @@ A `vocabulary` card whose front starts with a lower-case article of the deck's l
 
 The importer strips surrounding whitespace, skips empty rows, reports invalid rows, and creates valid cards as due immediately.
 
+A row whose front, after trimming, equals the front of a card already in the deck (archived or not), or of an earlier row of the same file, is not imported. The comparison is exact and case-sensitive: `Essen` and `essen` are different cards. The import page reports how many rows were already in the deck, so importing the same file twice adds nothing the second time. This holds in every mode.
+

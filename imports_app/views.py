@@ -18,6 +18,10 @@ def import_cards(request):
             result = import_cards_from_csv(form.cleaned_data["deck"], csv_text)
             if result.imported_count:
                 messages.success(request, f"Imported {result.imported_count} card(s).")
+            if result.skipped_count:
+                messages.info(
+                    request, f"{result.skipped_count} already in the deck, so not imported."
+                )
             if result.errors:
                 messages.warning(request, f"{len(result.errors)} row(s) had errors.")
     else:

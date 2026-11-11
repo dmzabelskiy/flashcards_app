@@ -11,6 +11,7 @@
   <section>
     <h2>Result</h2>
     <p>Imported {{ result.imported_count }} card(s).</p>
+    {% if result.skipped_count %}<p>{{ result.skipped_count }} already in the deck, so not imported.</p>{% endif %}
     {% if result.errors %}
       <table class="responsive-table">
         <thead><tr><th>Row</th><th>Error</th></tr></thead>

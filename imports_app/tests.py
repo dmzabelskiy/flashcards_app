@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from django.conf import settings
+from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 
@@ -41,6 +42,80 @@ class CsvImportTests(TestCase):
         self.assertEqual(result.imported_count, 1)
         self.assertEqual(result.errors, [])
         self.assertEqual(Card.objects.get().front, "Hallo")
+
+
+class DuplicateFrontTests(AuthedTestCase):
+    def setUp(self):
+        super().setUp()
+        self.deck = Deck.objects.create(name="German", owner=self.user)
+
+    def test_importing_the_same_file_twice_adds_nothing_the_second_time(self):
+        csv_text = "front,back\nder Tisch,table\nHallo,hello\n"
+
+        first = import_cards_from_csv(self.deck, csv_text)
+        second = import_cards_from_csv(self.deck, csv_text)
+
+        self.assertEqual((first.imported_count, first.skipped_count), (2, 0))
+        self.assertEqual((second.imported_count, second.skipped_count), (0, 2))
+        self.assertEqual(self.deck.cards.count(), 2)
+
+    def test_a_front_repeated_in_the_file_is_imported_once(self):
+        csv_text = "front,back\nHallo,hello\nHallo,hi\n"
+
+        result = import_cards_from_csv(self.deck, csv_text)
+
+        self.assertEqual((result.imported_count, result.skipped_count), (1, 1))
+        self.assertEqual(self.deck.cards.get().back, "hello")
+
+    def test_the_comparison_trims_the_front(self):
+        Card.objects.create(deck=self.deck, front="Hallo", back="hello")
+
+        result = import_cards_from_csv(self.deck, 'front,back\n"  Hallo ",hi\n')
+
+        self.assertEqual((result.imported_count, result.skipped_count), (0, 1))
+
+    def test_the_comparison_is_case_sensitive(self):
+        result = import_cards_from_csv(self.deck, "front,back\nessen,to eat\nEssen,meal\n")
+
+        self.assertEqual((result.imported_count, result.skipped_count), (2, 0))
+        self.assertEqual(set(self.deck.cards.values_list("front", flat=True)), {"essen", "Essen"})
+
+    def test_an_archived_card_still_counts_as_in_the_deck(self):
+        Card.objects.create(deck=self.deck, front="Hallo", back="hello", is_retired=True)
+
+        result = import_cards_from_csv(self.deck, "front,back\nHallo,hello\n")
+
+        self.assertEqual((result.imported_count, result.skipped_count), (0, 1))
+
+    def test_a_front_in_another_deck_does_not_count(self):
+        other = Deck.objects.create(name="Other", owner=self.user)
+        Card.objects.create(deck=other, front="Hallo", back="hello")
+
+        result = import_cards_from_csv(self.deck, "front,back\nHallo,hello\n")
+
+        self.assertEqual((result.imported_count, result.skipped_count), (1, 0))
+
+    def test_rows_with_errors_are_still_reported(self):
+        Card.objects.create(deck=self.deck, front="Hallo", back="hello")
+        csv_text = "front,back\nHallo,hello\n,missing front\nTisch,table\n"
+
+        result = import_cards_from_csv(self.deck, csv_text)
+
+        self.assertEqual((result.imported_count, result.skipped_count), (1, 1))
+        self.assertEqual([error.row_number for error in result.errors], [3])
+
+    def test_the_import_page_says_how_many_were_already_in_the_deck(self):
+        Card.objects.create(deck=self.deck, front="Hallo", back="hello")
+        upload = SimpleUploadedFile("cards.csv", b"front,back\nHallo,hello\nTisch,table\n")
+
+        response = self.client.post(
+            reverse("imports_app:import_cards"),
+            {"deck": self.deck.pk, "csv_file": upload},
+            follow=True,
+        )
+
+        self.assertContains(response, "1 already in the deck")
+        self.assertContains(response, "Imported 1 card(s).")
 
 
 class ImportedArticleTests(TestCase):
