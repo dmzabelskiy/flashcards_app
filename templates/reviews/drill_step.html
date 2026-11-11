@@ -7,14 +7,15 @@ file, and feedback as one row per field plus the example.
 {% block drill_heading %}{{ drill.label }}{% endblock %}
 {% block drill_kicker %}{{ description }}{% endblock %}
 {% block feedback_class %}verb-feedback {% endblock %}
-{% block prompt_class %}verb-prompt-panel{% endblock %}
+{# A prompt longer than 18 characters (the longest German one is 17) is a verb form or a sentence, not a word: it gets the smaller style. #}
+{% block prompt_class %}verb-prompt-panel{% if drill_prompt|length > 18 %} drill-prompt-long{% endif %}{% endblock %}
 
 {% block feedback %}
       <div class="feedback-heading">
         <svg class="pic status-marker" aria-hidden="true"><use href="#pic-{% if last.correct %}check{% else %}cross{% endif %}"></use></svg>
         <strong>{% if last.correct %}Correct{% else %}Review the marked fields{% endif %}</strong>
       </div>
-      <p class="verb-feedback-title">{{ last.prompt }}{% for pair in last.reveal %} <span class="answer-tag">{{ pair.0 }}: {{ pair.1 }}</span>{% endfor %}</p>
+      <p class="verb-feedback-title{% if last.prompt|length > 18 %} drill-feedback-long{% endif %}">{{ last.prompt }}{% for pair in last.reveal %} <span class="answer-tag">{{ pair.0 }}: {{ pair.1 }}</span>{% endfor %}</p>
       <div class="verb-feedback-grid">
         {% for row in last.rows %}
           <div class="verb-feedback-row {% if row.correct %}correct{% else %}incorrect{% endif %}">

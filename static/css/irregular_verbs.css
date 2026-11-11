@@ -45,6 +45,23 @@
   font-weight: 650;
 }
 
+/* A sentence prompt: body-size text, each reveal on its own line, no overflow. */
+.verb-feedback-title.drill-feedback-long {
+  font-size: 1rem;
+  font-stretch: 100%;
+  line-height: 1.4;
+}
+
+.verb-feedback-title.drill-feedback-long .answer-tag {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 6px;
+  font-stretch: 100%;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
 .verb-feedback-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

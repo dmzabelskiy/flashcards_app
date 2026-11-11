@@ -489,6 +489,15 @@ tbody tr:hover td { background: var(--sky-50); }
   margin: 0 0 12px;
 }
 .drill-prompt-panel h2 span { color: var(--blue); }
+/* A verb form or a sentence: the display word is too large to read as a line of text. */
+.drill-prompt-panel.drill-prompt-long { padding: 30px 28px 26px; }
+.drill-prompt-panel.drill-prompt-long h2 {
+  font-size: clamp(1.5rem, 4.4vw, 2.25rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-wrap: balance;
+}
 .drill-prompt-panel > p { color: var(--ink-band); margin: 0; }
 .drill-prompt-panel > p + p { margin-top: 4px; }
 .drill-prompt-instruction { color: var(--ink-band); font-size: 0.875rem; font-weight: 600; margin: 8px 0 0; }
@@ -685,7 +694,7 @@ tbody tr:hover td { background: var(--sky-50); }
   .article-choice small { margin: 0; }
   .article-choice strong { font-size: 1.75rem; }
   .article-choice kbd { margin: 0; }
-  .drill-prompt-panel { padding: 30px 18px 26px; }
+  .drill-prompt-panel, .drill-prompt-panel.drill-prompt-long { padding: 30px 18px 26px; }
   .completion-panel { padding: 36px 20px; }
   .completion-actions { flex-direction: column; }
   .completion-actions .button { width: 100%; }

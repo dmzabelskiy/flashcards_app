@@ -346,6 +346,7 @@ A three-value world: white ground, a five-step light-blue scale for fields and b
 **Character:** One grotesk in two widths. Headings and figures are Archivo stretched to 112% at weight 650 with -0.02em tracking, which gives the signage voice of the Munich program; the single big prompt word is set at normal width, weight 700, -0.03em, so the German word reads as the object of study rather than as a heading. Body is regular weight at 16px/1.5. Italic (the second variable file) marks example sentences only.
 
 ### Hierarchy
+- **Display, long** (700, `clamp(1.5rem, 4.4vw, 2.25rem)`, line-height 1.2, stretch 100%, -0.02em, balanced wrapping): the drill prompt when it is longer than 18 characters, a verb form or a sentence (`.drill-prompt-long`); its feedback line drops to 1rem and puts each reveal on its own line.
 - **Display** (700, `clamp(3rem, 7vw, 4.5rem)`, line-height 1, stretch 100%, -0.03em): the drill prompt word on the light-blue field; the flashcard question scales to `clamp(2.7rem, 8vw, 5rem)` with the same setting; the completion percentage goes to `clamp(4.5rem, 14vw, 7.5rem)` at stretch 112% and -0.05em.
 - **Headline** (650, 1.875rem, 1.15, stretch 112%, -0.02em): page `h1` and the Today band heading (2.25rem there). Drill title bars use 1.5rem.
 - **Title** (650, 1.25rem, 1.15, stretch 112%): `h2` section headings; the session panel heading is 1.375rem, rail and drill-card headings 1.125rem, `h3` 1rem.
