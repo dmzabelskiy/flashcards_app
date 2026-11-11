@@ -131,7 +131,8 @@ class GermanNormaliserTests(SimpleTestCase):
 
     def test_every_name_a_drill_file_may_use_is_registered(self):
         self.assertEqual(
-            set(NORMALISERS), {"german", "russian", "translation", "preposition", "exact"}
+            set(NORMALISERS),
+            {"german", "russian", "translation", "preposition", "spanish", "exact"},
         )
 
     def test_an_empty_answer_never_matches(self):

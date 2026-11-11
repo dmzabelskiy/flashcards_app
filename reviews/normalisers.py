@@ -45,6 +45,11 @@ def normalise_preposition(value):
     )
 
 
+def normalise_spanish(value):
+    value = unicodedata.normalize("NFC", value).strip().casefold()
+    return " ".join(value.strip("¿¡.,;:!? \t\n").split())
+
+
 def normalise_exact(value):
     return value.strip().casefold()
 
@@ -54,6 +59,7 @@ NORMALISERS = {
     "russian": normalise_russian,
     "translation": normalise_translation,
     "preposition": normalise_preposition,
+    "spanish": normalise_spanish,
     "exact": normalise_exact,
 }
 

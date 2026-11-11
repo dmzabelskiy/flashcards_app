@@ -77,6 +77,9 @@ and `pool_choice` fields default to `exact`. All of them trim and casefold.
   character becomes a space; runs of whitespace collapse.
 - `preposition`: `ae oe ue` become `ä ö ü`, `ß` becomes `ss`, then accents are
   removed, so `ä` and `ae` both give `a`. Inner whitespace is kept.
+- `spanish`: Unicode NFC; the characters `¿ ¡ . , ; : ! ?` are removed at both
+  ends; runs of whitespace collapse. Accents, `ñ` and `ü` are significant, so
+  `hablo` and `habló` are different answers.
 
 ### Items
 
@@ -102,7 +105,7 @@ A file fails to load when:
 - `fields` or `items` is empty, or two fields share a `key`;
 - `order` is not an integer, or `round_size` is not a positive integer;
 - `targets` is not a non-empty list of strings;
-- `normalise` is missing on a `typed` field or is not one of the five names;
+- `normalise` is missing on a `typed` field or is not one of the six names;
 - `options` is set on a field that is not `choice`, or has fewer than two
   entries or a repeated value; `distractors` is set on a field that is not
   `pool_choice`;
