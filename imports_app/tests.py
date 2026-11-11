@@ -43,6 +43,65 @@ class CsvImportTests(TestCase):
         self.assertEqual(Card.objects.get().front, "Hallo")
 
 
+class ImportedArticleTests(TestCase):
+    def setUp(self):
+        self.owner = create_user()
+
+    def import_rows(self, rows, mode=Deck.LanguageMode.DE_RU):
+        deck = Deck.objects.create(name="Words", language_mode=mode, owner=self.owner)
+        csv_text = "front,back,card_type\n" + "".join(
+            f'"{front}",gloss,{card_type}\n' for front, card_type in rows
+        )
+        result = import_cards_from_csv(deck, csv_text)
+        self.assertEqual(result.errors, [])
+        return {card.front: card for card in Card.objects.filter(deck=deck)}
+
+    def test_a_vocabulary_front_with_a_pack_article_sets_it_and_stays_unchanged(self):
+        cards = self.import_rows(
+            [("der Alltag", "vocabulary"), ("die Art und Weise", "vocabulary")]
+        )
+
+        self.assertEqual(cards["der Alltag"].article, "der")
+        self.assertEqual(cards["die Art und Weise"].article, "die")
+
+    def test_a_sentence_front_gets_no_article(self):
+        cards = self.import_rows([("Die Katze schläft.", "vocabulary")])
+
+        self.assertEqual(cards["Die Katze schläft."].article, "")
+
+    def test_a_sentence_front_ending_in_a_question_or_exclamation_gets_none(self):
+        cards = self.import_rows(
+            [("die Katze schläft!", "vocabulary"), ("das Haus brennt?", "vocabulary")]
+        )
+
+        self.assertEqual({card.article for card in cards.values()}, {""})
+
+    def test_a_capitalised_article_gets_none(self):
+        cards = self.import_rows([("Der Alltag", "vocabulary")])
+
+        self.assertEqual(cards["Der Alltag"].article, "")
+
+    def test_a_front_that_is_only_an_article_gets_none(self):
+        cards = self.import_rows([("der", "vocabulary")])
+
+        self.assertEqual(cards["der"].article, "")
+
+    def test_another_card_type_gets_none(self):
+        cards = self.import_rows([("der Alltag", "grammar")])
+
+        self.assertEqual(cards["der Alltag"].article, "")
+
+    def test_an_article_of_another_pack_gets_none(self):
+        cards = self.import_rows([("het huis", "vocabulary")])
+
+        self.assertEqual(cards["het huis"].article, "")
+
+    def test_a_dutch_deck_takes_the_dutch_articles(self):
+        cards = self.import_rows([("het huis", "vocabulary")], mode=Deck.LanguageMode.NL_EN)
+
+        self.assertEqual(cards["het huis"].article, "het")
+
+
 class B2VocabularyCardSetTests(TestCase):
     def test_b2_vocabulary_card_set_loads_through_the_importer(self):
         path = Path(settings.BASE_DIR, "card_sets", "DE-RU", "german_b2_vocabulary.csv")
