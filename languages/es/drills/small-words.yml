@@ -1,0 +1,1874 @@
+# Spanish small words: por and para, prepositions, al and del, personal a, pronouns, muy and mucho, también and tampoco, algo and nada.
+slug: small-words
+trainer: es_small_word
+label: Small words
+description: Fill the gap in a short sentence with the small word that belongs there, such as por or para, a preposition after a verb, al or del, a pronoun, or algo and nada.
+order: 30
+round_size: 20
+targets: [ru]
+pictogram: link
+instruction: Fill the gap with the missing small word. A brackets cue names the choice.
+hint: Accents count · a gap can take two words, as in se lo · the reason is shown after your answer
+fields:
+  - key: answer
+    label: Answer
+    kind: typed
+    normalise: spanish
+    placeholder: Type the missing word
+items:
+  - id: por-para-regalo-madre
+    prompt: 'Este regalo es ___ mi madre. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Este regalo es para mi madre.'
+        reveal:
+          Translation: 'Этот подарок для моей мамы.'
+          Why: 'получатель → para'
+  - id: por-para-flores-abuela
+    prompt: 'Compré flores ___ mi abuela. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Compré flores para mi abuela.'
+        reveal:
+          Translation: 'Я купил цветы для бабушки.'
+          Why: 'получатель → para'
+  - id: por-para-habitacion-ninos
+    prompt: 'La habitación es ___ los niños. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'La habitación es para los niños.'
+        reveal:
+          Translation: 'Эта комната для детей.'
+          Why: 'получатель → para'
+  - id: por-para-tren-madrid
+    prompt: 'Sale un tren ___ Madrid a las ocho. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Sale un tren para Madrid a las ocho.'
+        reveal:
+          Translation: 'В восемь отправляется поезд на Мадрид.'
+          Why: 'направление → para'
+  - id: por-para-estudio-amigos
+    prompt: 'Estudio español ___ hablar con mis amigos de Madrid. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Estudio español para hablar con mis amigos de Madrid.'
+        reveal:
+          Translation: 'Я учу испанский, чтобы говорить с моими друзьями из Мадрида.'
+          Why: 'цель + инфинитив → para'
+  - id: por-para-deporte-forma
+    prompt: 'Hago deporte ___ estar en forma. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Hago deporte para estar en forma.'
+        reveal:
+          Translation: 'Я занимаюсь спортом, чтобы быть в форме.'
+          Why: 'цель + инфинитив → para'
+  - id: por-para-cenar
+    prompt: '¿Qué quieres ___ cenar? (por / para)'
+    alternatives:
+      - answer: [para]
+        example: '¿Qué quieres para cenar?'
+        reveal:
+          Translation: 'Что ты хочешь на ужин?'
+          Why: 'цель + инфинитив → para'
+  - id: por-para-informe-lunes
+    prompt: 'Necesito el informe ___ el lunes. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Necesito el informe para el lunes.'
+        reveal:
+          Translation: 'Мне нужен отчёт к понедельнику.'
+          Why: 'срок → para'
+  - id: por-para-trabajo-manana
+    prompt: 'Tengo que terminar el trabajo ___ mañana. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Tengo que terminar el trabajo para mañana.'
+        reveal:
+          Translation: 'Мне нужно закончить работу к завтрашнему дню.'
+          Why: 'срок → para'
+  - id: por-para-empresa-alemana
+    prompt: 'Mi hermana trabaja ___ una empresa alemana. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Mi hermana trabaja para una empresa alemana.'
+        reveal:
+          Translation: 'Моя сестра работает в немецкой компании.'
+          Why: 'на кого работаешь → para'
+  - id: por-para-opinion-pelicula
+    prompt: '___ mí, esta película es muy buena. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Para mí, esta película es muy buena.'
+        reveal:
+          Translation: 'По-моему, этот фильм очень хороший.'
+          Why: 'мнение → para'
+  - id: por-para-joven-cocina
+    prompt: '___ ser tan joven, cocina muy bien. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Para ser tan joven, cocina muy bien.'
+        reveal:
+          Translation: 'Для такого молодого он очень хорошо готовит.'
+          Why: 'сравнение → para'
+  - id: por-para-medicina-tos
+    prompt: 'Esta medicina es ___ la tos. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Esta medicina es para la tos.'
+        reveal:
+          Translation: 'Это лекарство от кашля.'
+          Why: 'назначение → para'
+  - id: por-para-primo-medico
+    prompt: 'Mi primo estudia ___ médico. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Mi primo estudia para médico.'
+        reveal:
+          Translation: 'Мой двоюродный брат учится на врача.'
+          Why: 'будущая профессия → para'
+  - id: por-para-sillas-jardin
+    prompt: 'Necesitamos dos sillas ___ el jardín. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Necesitamos dos sillas para el jardín.'
+        reveal:
+          Translation: 'Нам нужны два стула для сада.'
+          Why: 'назначение → para'
+  - id: por-para-taza-cafe
+    prompt: 'Esta taza es ___ el café. (por / para)'
+    alternatives:
+      - answer: [para]
+        example: 'Esta taza es para el café.'
+        reveal:
+          Translation: 'Эта чашка для кофе.'
+          Why: 'назначение → para'
+  - id: por-para-gracias-ayuda
+    prompt: 'Gracias ___ tu ayuda. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Gracias por tu ayuda.'
+        reveal:
+          Translation: 'Спасибо за твою помощь.'
+          Why: 'благодарность за → por'
+  - id: por-para-gracias-venir
+    prompt: 'Gracias ___ venir. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Gracias por venir.'
+        reveal:
+          Translation: 'Спасибо, что пришли.'
+          Why: 'благодарность за → por'
+  - id: por-para-telefono
+    prompt: 'Hablamos ___ teléfono todos los días. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Hablamos por teléfono todos los días.'
+        reveal:
+          Translation: 'Мы говорим по телефону каждый день.'
+          Why: 'средство связи → por'
+  - id: por-para-correo
+    prompt: 'Te envío el documento ___ correo electrónico. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Te envío el documento por correo electrónico.'
+        reveal:
+          Translation: 'Я отправлю тебе документ по электронной почте.'
+          Why: 'средство → por'
+  - id: por-para-pasear-parque
+    prompt: 'Paseamos ___ el parque. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Paseamos por el parque.'
+        reveal:
+          Translation: 'Мы гуляем по парку.'
+          Why: 'перемещение по месту → por'
+  - id: por-para-viajar-europa
+    prompt: 'Es la primera vez que viajo ___ Europa. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Es la primera vez que viajo por Europa.'
+        reveal:
+          Translation: 'Я впервые путешествую по Европе.'
+          Why: 'перемещение по месту → por'
+  - id: por-para-ventana-gato
+    prompt: 'El gato entró ___ la ventana. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'El gato entró por la ventana.'
+        reveal:
+          Translation: 'Кот вошёл через окно.'
+          Why: 'через → por'
+  - id: por-para-estudio-manana
+    prompt: 'Estudio ___ la mañana. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Estudio por la mañana.'
+        reveal:
+          Translation: 'Я занимаюсь по утрам.'
+          Why: 'часть дня → por'
+  - id: por-para-llamo-tarde
+    prompt: 'Te llamo ___ la tarde. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Te llamo por la tarde.'
+        reveal:
+          Translation: 'Я позвоню тебе во второй половине дня.'
+          Why: 'часть дня → por'
+  - id: por-para-noche-frio
+    prompt: '___ la noche hace frío. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Por la noche hace frío.'
+        reveal:
+          Translation: 'Ночью холодно.'
+          Why: 'часть дня → por'
+  - id: por-para-pague-libro
+    prompt: 'Pagué diez euros ___ el libro. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Pagué diez euros por el libro.'
+        reveal:
+          Translation: 'Я заплатил за книгу десять евро.'
+          Why: 'обмен, цена → por'
+  - id: por-para-cambie-bici
+    prompt: 'Cambié mi bici ___ una moto. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Cambié mi bici por una moto.'
+        reveal:
+          Translation: 'Я обменял велосипед на мотоцикл.'
+          Why: 'обмен → por'
+  - id: por-para-kilo
+    prompt: 'Las manzanas cuestan dos euros ___ kilo. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Las manzanas cuestan dos euros por kilo.'
+        reveal:
+          Translation: 'Яблоки стоят два евро за килограмм.'
+          Why: '«за» единицу → por'
+  - id: por-para-gimnasio-semana
+    prompt: 'Voy al gimnasio tres veces ___ semana. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Voy al gimnasio tres veces por semana.'
+        reveal:
+          Translation: 'Я хожу в спортзал три раза в неделю.'
+          Why: '«в» неделю → por'
+  - id: por-para-roma-semanas
+    prompt: 'Viví en Roma ___ dos semanas. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Viví en Roma por dos semanas.'
+        reveal:
+          Translation: 'Я прожил в Риме две недели.'
+          Why: 'срок действия → por'
+  - id: por-para-enfermo
+    prompt: 'No fui al trabajo ___ estar enfermo. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'No fui al trabajo por estar enfermo.'
+        reveal:
+          Translation: 'Я не пошёл на работу, потому что болел.'
+          Why: 'причина → por'
+  - id: por-para-lluvia
+    prompt: 'Nos quedamos en casa ___ la lluvia. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Nos quedamos en casa por la lluvia.'
+        reveal:
+          Translation: 'Мы остались дома из-за дождя.'
+          Why: 'причина → por'
+  - id: por-para-amor
+    prompt: 'Lo hago ___ amor. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Lo hago por amor.'
+        reveal:
+          Translation: 'Я делаю это из любви.'
+          Why: 'причина, мотив → por'
+  - id: por-para-contento-ti
+    prompt: 'Estoy contento ___ ti. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Estoy contento por ti.'
+        reveal:
+          Translation: 'Я рад за тебя.'
+          Why: 'ради кого, за кого → por'
+  - id: por-para-por-eso
+    prompt: '___ eso no quiero ir. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Por eso no quiero ir.'
+        reveal:
+          Translation: 'Поэтому я не хочу идти.'
+          Why: 'por eso — устойчивое сочетание'
+  - id: por-para-por-favor
+    prompt: '¿Me ayudas, ___ favor? (por / para)'
+    alternatives:
+      - answer: [por]
+        example: '¿Me ayudas, por favor?'
+        reveal:
+          Translation: 'Поможешь мне, пожалуйста?'
+          Why: 'por favor — устойчивое сочетание'
+  - id: por-para-por-ejemplo
+    prompt: '___ ejemplo, tú puedes venir el sábado. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Por ejemplo, tú puedes venir el sábado.'
+        reveal:
+          Translation: 'Например, ты можешь прийти в субботу.'
+          Why: 'por ejemplo — устойчивое сочетание'
+  - id: por-para-por-fin
+    prompt: '___ fin es viernes. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Por fin es viernes.'
+        reveal:
+          Translation: 'Наконец-то пятница.'
+          Why: 'por fin — устойчивое сочетание'
+  - id: por-para-por-aqui
+    prompt: 'Mi casa está ___ aquí. (por / para)'
+    alternatives:
+      - answer: [por]
+        example: 'Mi casa está por aquí.'
+        reveal:
+          Translation: 'Мой дом где-то здесь.'
+          Why: 'примерное место → por'
+  - id: prep-verbo-pensar-ti
+    prompt: 'Pienso ___ ti.'
+    alternatives:
+      - answer: [en]
+        example: 'Pienso en ti.'
+        reveal:
+          Translation: 'Я думаю о тебе.'
+          Why: 'глагол требует этого предлога: pensar en'
+  - id: prep-verbo-sonar-abuela
+    prompt: 'Anoche soñé ___ mi abuela.'
+    alternatives:
+      - answer: [con]
+        example: 'Anoche soñé con mi abuela.'
+        reveal:
+          Translation: 'Этой ночью мне приснилась бабушка.'
+          Why: 'глагол требует этого предлога: soñar con'
+  - id: prep-verbo-depender
+    prompt: 'Todo depende ___ ti.'
+    alternatives:
+      - answer: [de]
+        example: 'Todo depende de ti.'
+        reveal:
+          Translation: 'Всё зависит от тебя.'
+          Why: 'глагол требует этого предлога: depender de'
+  - id: prep-verbo-acordarse
+    prompt: '¿Te acuerdas ___ mi nombre?'
+    alternatives:
+      - answer: [de]
+        example: '¿Te acuerdas de mi nombre?'
+        reveal:
+          Translation: 'Ты помнишь моё имя?'
+          Why: 'глагол требует этого предлога: acordarse de'
+  - id: prep-verbo-empezar-trabajar
+    prompt: 'Mañana empiezo ___ trabajar.'
+    alternatives:
+      - answer: [a]
+        example: 'Mañana empiezo a trabajar.'
+        reveal:
+          Translation: 'Завтра я начинаю работать.'
+          Why: 'глагол требует этого предлога: empezar a'
+  - id: prep-verbo-aprender-nadar
+    prompt: 'Mi hijo está aprendiendo ___ nadar.'
+    alternatives:
+      - answer: [a]
+        example: 'Mi hijo está aprendiendo a nadar.'
+        reveal:
+          Translation: 'Мой сын учится плавать.'
+          Why: 'глагол требует этого предлога: aprender a'
+  - id: prep-verbo-ayudar-cocinar
+    prompt: '¿Me ayudas ___ cocinar?'
+    alternatives:
+      - answer: [a]
+        example: '¿Me ayudas a cocinar?'
+        reveal:
+          Translation: 'Поможешь мне готовить?'
+          Why: 'глагол требует этого предлога: ayudar a'
+  - id: prep-verbo-volver-llamar
+    prompt: 'Voy a volver ___ llamar mañana.'
+    alternatives:
+      - answer: [a]
+        example: 'Voy a volver a llamar mañana.'
+        reveal:
+          Translation: 'Я позвоню ещё раз завтра.'
+          Why: 'глагол требует этого предлога: volver a (снова)'
+  - id: prep-verbo-tardar-llegar
+    prompt: 'El tren tarda diez minutos ___ llegar.'
+    alternatives:
+      - answer: [en]
+        example: 'El tren tarda diez minutos en llegar.'
+        reveal:
+          Translation: 'Поезду нужно десять минут, чтобы приехать.'
+          Why: 'глагол требует этого предлога: tardar en'
+  - id: prep-verbo-terminar-seis
+    prompt: 'Termino ___ trabajar a las seis.'
+    alternatives:
+      - answer: [de]
+        example: 'Termino de trabajar a las seis.'
+        reveal:
+          Translation: 'Я заканчиваю работать в шесть.'
+          Why: 'глагол требует этого предлога: terminar de'
+  - id: prep-verbo-dejar-fumar
+    prompt: 'Quiero dejar ___ fumar.'
+    alternatives:
+      - answer: [de]
+        example: 'Quiero dejar de fumar.'
+        reveal:
+          Translation: 'Я хочу бросить курить.'
+          Why: 'глагол требует этого предлога: dejar de'
+  - id: prep-verbo-acabar-llegar
+    prompt: 'Acabo ___ llegar a casa.'
+    alternatives:
+      - answer: [de]
+        example: 'Acabo de llegar a casa.'
+        reveal:
+          Translation: 'Я только что пришёл домой.'
+          Why: 'глагол требует этого предлога: acabar de (только что)'
+  - id: prep-verbo-enamorarse
+    prompt: 'Se enamoró ___ una chica de Sevilla.'
+    alternatives:
+      - answer: [de]
+        example: 'Se enamoró de una chica de Sevilla.'
+        reveal:
+          Translation: 'Он влюбился в девушку из Севильи.'
+          Why: 'глагол требует этого предлога: enamorarse de'
+  - id: prep-verbo-casarse
+    prompt: 'Mi hermana se casa ___ su novio en junio.'
+    alternatives:
+      - answer: [con]
+        example: 'Mi hermana se casa con su novio en junio.'
+        reveal:
+          Translation: 'Моя сестра выходит замуж за своего парня в июне.'
+          Why: 'глагол требует этого предлога: casarse con'
+  - id: prep-verbo-quedar-marta
+    prompt: 'He quedado ___ Marta a las seis.'
+    alternatives:
+      - answer: [con]
+        example: 'He quedado con Marta a las seis.'
+        reveal:
+          Translation: 'Я договорился встретиться с Мартой в шесть.'
+          Why: 'глагол требует этого предлога: quedar con'
+  - id: prep-verbo-preocuparse-madre
+    prompt: 'Mi madre se preocupa ___ mí.'
+    alternatives:
+      - answer: [por]
+        example: 'Mi madre se preocupa por mí.'
+        reveal:
+          Translation: 'Моя мама беспокоится обо мне.'
+          Why: 'глагол требует этого предлога: preocuparse por'
+  - id: prep-verbo-salir-casa
+    prompt: 'Salgo ___ casa a las ocho.'
+    alternatives:
+      - answer: [de]
+        example: 'Salgo de casa a las ocho.'
+        reveal:
+          Translation: 'Я выхожу из дома в восемь.'
+          Why: 'глагол требует этого предлога: salir de'
+  - id: prep-verbo-llegar-madrid
+    prompt: 'Llegamos ___ Madrid a las diez.'
+    alternatives:
+      - answer: [a]
+        example: 'Llegamos a Madrid a las diez.'
+        reveal:
+          Translation: 'Мы приезжаем в Мадрид в десять.'
+          Why: 'глагол требует этого предлога: llegar a'
+  - id: prep-verbo-confiar
+    prompt: 'Confío ___ mis amigos.'
+    alternatives:
+      - answer: [en]
+        example: 'Confío en mis amigos.'
+        reveal:
+          Translation: 'Я доверяю своим друзьям.'
+          Why: 'глагол требует этого предлога: confiar en'
+  - id: prep-verbo-contar
+    prompt: 'Puedes contar ___ mi ayuda.'
+    alternatives:
+      - answer: [con]
+        example: 'Puedes contar con mi ayuda.'
+        reveal:
+          Translation: 'Ты можешь рассчитывать на мою помощь.'
+          Why: 'глагол требует этого предлога: contar con'
+  - id: prep-verbo-ir-comprar
+    prompt: 'Mañana voy ___ comprar pan.'
+    alternatives:
+      - answer: [a]
+        example: 'Mañana voy a comprar pan.'
+        reveal:
+          Translation: 'Завтра я пойду куплю хлеб.'
+          Why: 'ir a + инфинитив: ближайшее будущее'
+  - id: prep-verbo-hablar-director
+    prompt: 'Quiero hablar ___ el director.'
+    alternatives:
+      - answer: [con]
+        example: 'Quiero hablar con el director.'
+        reveal:
+          Translation: 'Я хочу поговорить с директором.'
+          Why: 'глагол требует этого предлога: hablar con'
+  - id: prep-verbo-hablar-futbol
+    prompt: 'Hablamos ___ fútbol.'
+    alternatives:
+      - answer: [de, sobre]
+        example: 'Hablamos de fútbol.'
+        reveal:
+          Translation: 'Мы говорим о футболе.'
+          Why: 'глагол требует этого предлога: hablar de (допустимо и sobre)'
+  - id: prep-verbo-vivir-piso
+    prompt: 'Vivo ___ un piso pequeño.'
+    alternatives:
+      - answer: [en]
+        example: 'Vivo en un piso pequeño.'
+        reveal:
+          Translation: 'Я живу в маленькой квартире.'
+          Why: 'глагол требует этого предлога: vivir en'
+  - id: prep-verbo-reirse
+    prompt: 'Siempre se ríe ___ mis chistes.'
+    alternatives:
+      - answer: [de]
+        example: 'Siempre se ríe de mis chistes.'
+        reveal:
+          Translation: 'Он всегда смеётся над моими шутками.'
+          Why: 'глагол требует этого предлога: reírse de'
+  - id: prep-verbo-fijarse
+    prompt: 'Fíjate ___ ese coche.'
+    alternatives:
+      - answer: [en]
+        example: 'Fíjate en ese coche.'
+        reveal:
+          Translation: 'Посмотри на ту машину.'
+          Why: 'глагол требует этого предлога: fijarse en'
+  - id: prep-verbo-tratar
+    prompt: 'Trato ___ dormir ocho horas.'
+    alternatives:
+      - answer: [de]
+        example: 'Trato de dormir ocho horas.'
+        reveal:
+          Translation: 'Я стараюсь спать восемь часов.'
+          Why: 'глагол требует этого предлога: tratar de'
+  - id: prep-verbo-insistir
+    prompt: 'Mi madre insiste ___ pagar la cuenta.'
+    alternatives:
+      - answer: [en]
+        example: 'Mi madre insiste en pagar la cuenta.'
+        reveal:
+          Translation: 'Мама настаивает на том, чтобы заплатить по счёту.'
+          Why: 'глагол требует этого предлога: insistir en'
+  - id: prep-verbo-tener-que
+    prompt: 'Tengo ___ estudiar esta noche.'
+    alternatives:
+      - answer: [que]
+        example: 'Tengo que estudiar esta noche.'
+        reveal:
+          Translation: 'Мне нужно заниматься сегодня вечером.'
+          Why: 'tener que + инфинитив: долженствование'
+  - id: prep-verbo-tener-que-descansar
+    prompt: 'Tienes ___ descansar un poco.'
+    alternatives:
+      - answer: [que]
+        example: 'Tienes que descansar un poco.'
+        reveal:
+          Translation: 'Тебе нужно немного отдохнуть.'
+          Why: 'tener que + инфинитив: долженствование'
+  - id: prep-verbo-metro
+    prompt: 'Voy a la oficina ___ metro.'
+    alternatives:
+      - answer: [en]
+        example: 'Voy a la oficina en metro.'
+        reveal:
+          Translation: 'Я езжу в офис на метро.'
+          Why: 'транспорт → en'
+  - id: prep-verbo-a-pie
+    prompt: 'Voy al trabajo ___ pie.'
+    alternatives:
+      - answer: [a]
+        example: 'Voy al trabajo a pie.'
+        reveal:
+          Translation: 'Я хожу на работу пешком.'
+          Why: 'a pie — устойчивое сочетание'
+  - id: prep-adj-cansado
+    prompt: 'Estoy cansado ___ esperar.'
+    alternatives:
+      - answer: [de]
+        example: 'Estoy cansado de esperar.'
+        reveal:
+          Translation: 'Я устал ждать.'
+          Why: 'прилагательное: cansado de'
+  - id: prep-adj-lleno
+    prompt: 'El frigorífico está lleno ___ fruta.'
+    alternatives:
+      - answer: [de]
+        example: 'El frigorífico está lleno de fruta.'
+        reveal:
+          Translation: 'Холодильник полон фруктов.'
+          Why: 'прилагательное: lleno de'
+  - id: prep-adj-contento
+    prompt: 'Estoy muy contento ___ mi nuevo trabajo.'
+    alternatives:
+      - answer: [con, de]
+        example: 'Estoy muy contento con mi nuevo trabajo.'
+        reveal:
+          Translation: 'Я очень доволен новой работой.'
+          Why: 'прилагательное: contento con'
+  - id: prep-adj-enfadado
+    prompt: 'Marta está enfadada ___ su hermano.'
+    alternatives:
+      - answer: [con]
+        example: 'Marta está enfadada con su hermano.'
+        reveal:
+          Translation: 'Марта злится на своего брата.'
+          Why: 'прилагательное: enfadado con'
+  - id: prep-adj-orgulloso
+    prompt: 'Estoy orgulloso ___ mis hijos.'
+    alternatives:
+      - answer: [de]
+        example: 'Estoy orgulloso de mis hijos.'
+        reveal:
+          Translation: 'Я горжусь своими детьми.'
+          Why: 'прилагательное: orgulloso de'
+  - id: prep-adj-aficionado
+    prompt: 'Mi padre es aficionado ___ la pesca.'
+    alternatives:
+      - answer: [a]
+        example: 'Mi padre es aficionado a la pesca.'
+        reveal:
+          Translation: 'Мой отец увлекается рыбалкой.'
+          Why: 'прилагательное: aficionado a'
+  - id: prep-adj-casado
+    prompt: 'Está casado ___ una médica.'
+    alternatives:
+      - answer: [con]
+        example: 'Está casado con una médica.'
+        reveal:
+          Translation: 'Он женат на враче.'
+          Why: 'прилагательное: casado con'
+  - id: prep-adj-harto
+    prompt: 'Estoy harto ___ la lluvia.'
+    alternatives:
+      - answer: [de]
+        example: 'Estoy harto de la lluvia.'
+        reveal:
+          Translation: 'Мне надоел дождь.'
+          Why: 'прилагательное: harto de'
+  - id: prep-adj-parecido
+    prompt: 'Eres muy parecido ___ tu padre.'
+    alternatives:
+      - answer: [a]
+        example: 'Eres muy parecido a tu padre.'
+        reveal:
+          Translation: 'Ты очень похож на отца.'
+          Why: 'прилагательное: parecido a'
+  - id: prep-adj-listo
+    prompt: 'Estoy listo ___ salir.'
+    alternatives:
+      - answer: [para]
+        example: 'Estoy listo para salir.'
+        reveal:
+          Translation: 'Я готов выходить.'
+          Why: 'прилагательное: listo para'
+  - id: prep-adj-famoso
+    prompt: 'Valencia es famosa ___ sus playas y su paella.'
+    alternatives:
+      - answer: [por]
+        example: 'Valencia es famosa por sus playas y su paella.'
+        reveal:
+          Translation: 'Валенсия известна пляжами и паэльей.'
+          Why: 'прилагательное: famoso por'
+  - id: prep-adj-bueno-matematicas
+    prompt: 'Mi hermano es muy bueno ___ matemáticas.'
+    alternatives:
+      - answer: [en]
+        example: 'Mi hermano es muy bueno en matemáticas.'
+        reveal:
+          Translation: 'Мой брат очень силён в математике.'
+          Why: 'прилагательное: bueno en'
+  - id: prep-lugar-casa-en
+    prompt: 'Hoy estoy ___ casa.'
+    alternatives:
+      - answer: [en]
+        example: 'Hoy estoy en casa.'
+        reveal:
+          Translation: 'Сегодня я дома.'
+          Why: 'где? → en'
+  - id: prep-lugar-casa-abuela
+    prompt: 'Voy ___ casa de mi abuela.'
+    alternatives:
+      - answer: [a]
+        example: 'Voy a casa de mi abuela.'
+        reveal:
+          Translation: 'Я иду к бабушке.'
+          Why: 'куда? → a'
+  - id: prep-lugar-playa-a
+    prompt: 'Voy ___ la playa con mis primos.'
+    alternatives:
+      - answer: [a]
+        example: 'Voy a la playa con mis primos.'
+        reveal:
+          Translation: 'Я иду на пляж с двоюродными братьями.'
+          Why: 'куда? → a'
+  - id: prep-lugar-hospital-en
+    prompt: 'Mi madre trabaja ___ un hospital.'
+    alternatives:
+      - answer: [en]
+        example: 'Mi madre trabaja en un hospital.'
+        reveal:
+          Translation: 'Моя мама работает в больнице.'
+          Why: 'где? → en'
+  - id: prep-lugar-italia-de
+    prompt: 'Mi amigo viene ___ Italia.'
+    alternatives:
+      - answer: [de]
+        example: 'Mi amigo viene de Italia.'
+        reveal:
+          Translation: 'Мой друг приехал из Италии.'
+          Why: 'откуда? → de'
+  - id: prep-lugar-casa-llegar
+    prompt: 'Llego ___ casa a las seis.'
+    alternatives:
+      - answer: [a]
+        example: 'Llego a casa a las seis.'
+        reveal:
+          Translation: 'Я прихожу домой в шесть.'
+          Why: llegar a casa
+  - id: prep-lugar-entre
+    prompt: 'El banco está ___ la farmacia y el supermercado.'
+    alternatives:
+      - answer: [entre]
+        example: 'El banco está entre la farmacia y el supermercado.'
+        reveal:
+          Translation: 'Банк находится между аптекой и супермаркетом.'
+          Why: 'между → entre'
+  - id: prep-lugar-sobre
+    prompt: 'El avión vuela ___ las nubes.'
+    alternatives:
+      - answer: [sobre, encima de, por encima de]
+        example: 'El avión vuela sobre las nubes.'
+        reveal:
+          Translation: 'Самолёт летит над облаками.'
+          Why: 'над → sobre (или encima de)'
+  - id: prep-lugar-cerca
+    prompt: 'La escuela está cerca ___ mi casa.'
+    alternatives:
+      - answer: [de]
+        example: 'La escuela está cerca de mi casa.'
+        reveal:
+          Translation: 'Школа находится недалеко от моего дома.'
+          Why: cerca de
+  - id: prep-lugar-lejos
+    prompt: 'El hotel está lejos ___ la estación.'
+    alternatives:
+      - answer: [de]
+        example: 'El hotel está lejos de la estación.'
+        reveal:
+          Translation: 'Отель находится далеко от вокзала.'
+          Why: lejos de
+  - id: prep-lugar-delante
+    prompt: 'El coche está delante ___ la casa.'
+    alternatives:
+      - answer: [de]
+        example: 'El coche está delante de la casa.'
+        reveal:
+          Translation: 'Машина стоит перед домом.'
+          Why: delante de
+  - id: prep-lugar-detras
+    prompt: 'El jardín está detrás ___ la casa.'
+    alternatives:
+      - answer: [de]
+        example: 'El jardín está detrás de la casa.'
+        reveal:
+          Translation: 'Сад находится позади дома.'
+          Why: detrás de
+  - id: prep-lugar-enfrente
+    prompt: 'Mi oficina está enfrente ___ un banco.'
+    alternatives:
+      - answer: [de]
+        example: 'Mi oficina está enfrente de un banco.'
+        reveal:
+          Translation: 'Мой офис напротив банка.'
+          Why: enfrente de
+  - id: prep-lugar-encima
+    prompt: 'El libro está encima ___ la mesa.'
+    alternatives:
+      - answer: [de]
+        example: 'El libro está encima de la mesa.'
+        reveal:
+          Translation: 'Книга лежит на столе.'
+          Why: encima de
+  - id: prep-lugar-debajo
+    prompt: 'El gato duerme debajo ___ la cama.'
+    alternatives:
+      - answer: [de]
+        example: 'El gato duerme debajo de la cama.'
+        reveal:
+          Translation: 'Кот спит под кроватью.'
+          Why: debajo de
+  - id: prep-lugar-al-lado
+    prompt: 'Hay un parque al lado ___ mi escuela.'
+    alternatives:
+      - answer: [de]
+        example: 'Hay un parque al lado de mi escuela.'
+        reveal:
+          Translation: 'Рядом с моей школой есть парк.'
+          Why: al lado de
+  - id: prep-lugar-fuera
+    prompt: 'Los niños están fuera ___ casa.'
+    alternatives:
+      - answer: [de]
+        example: 'Los niños están fuera de casa.'
+        reveal:
+          Translation: 'Дети не дома.'
+          Why: fuera de
+  - id: prep-lugar-con
+    prompt: 'Voy al cine ___ mis amigos.'
+    alternatives:
+      - answer: [con]
+        example: 'Voy al cine con mis amigos.'
+        reveal:
+          Translation: 'Я иду в кино с друзьями.'
+          Why: 'вместе с → con'
+  - id: prep-lugar-sin
+    prompt: 'Quiero un café ___ azúcar.'
+    alternatives:
+      - answer: [sin]
+        example: 'Quiero un café sin azúcar.'
+        reveal:
+          Translation: 'Я хочу кофе без сахара.'
+          Why: 'без → sin'
+  - id: prep-tiempo-hora-a
+    prompt: 'Me levanto ___ las siete en punto.'
+    alternatives:
+      - answer: [a]
+        example: 'Me levanto a las siete en punto.'
+        reveal:
+          Translation: 'Я встаю ровно в семь.'
+          Why: 'время суток → a las'
+  - id: prep-tiempo-clase-a
+    prompt: 'La clase empieza ___ las nueve en punto.'
+    alternatives:
+      - answer: [a]
+        example: 'La clase empieza a las nueve en punto.'
+        reveal:
+          Translation: 'Урок начинается ровно в девять.'
+          Why: 'время суток → a las'
+  - id: prep-tiempo-mes-en
+    prompt: 'Mi cumpleaños es ___ marzo.'
+    alternatives:
+      - answer: [en]
+        example: 'Mi cumpleaños es en marzo.'
+        reveal:
+          Translation: 'Мой день рождения в марте.'
+          Why: 'месяц → en'
+  - id: prep-tiempo-ano-en
+    prompt: 'Nací ___ 1995.'
+    alternatives:
+      - answer: [en]
+        example: 'Nací en 1995.'
+        reveal:
+          Translation: 'Я родился в 1995 году.'
+          Why: 'год → en'
+  - id: prep-tiempo-verano-en
+    prompt: '___ verano hace mucho calor.'
+    alternatives:
+      - answer: [en]
+        example: 'En verano hace mucho calor.'
+        reveal:
+          Translation: 'Летом очень жарко.'
+          Why: 'время года → en'
+  - id: prep-tiempo-lunes-a-viernes
+    prompt: 'Trabajo de lunes ___ viernes.'
+    alternatives:
+      - answer: [a]
+        example: 'Trabajo de lunes a viernes.'
+        reveal:
+          Translation: 'Я работаю с понедельника по пятницу.'
+          Why: 'de … a …'
+  - id: prep-tiempo-desde-2018
+    prompt: 'Vivo en Sevilla ___ 2018.'
+    alternatives:
+      - answer: [desde]
+        example: 'Vivo en Sevilla desde 2018.'
+        reveal:
+          Translation: 'Я живу в Севилье с 2018 года.'
+          Why: 'начало периода → desde'
+  - id: prep-tiempo-hasta-seis
+    prompt: 'Espero aquí ___ las seis.'
+    alternatives:
+      - answer: [hasta]
+        example: 'Espero aquí hasta las seis.'
+        reveal:
+          Translation: 'Я жду здесь до шести.'
+          Why: 'конец периода → hasta'
+  - id: prep-tiempo-tienda-hasta
+    prompt: 'La tienda está abierta ___ las ocho.'
+    alternatives:
+      - answer: [hasta]
+        example: 'La tienda está abierta hasta las ocho.'
+        reveal:
+          Translation: 'Магазин открыт до восьми.'
+          Why: 'конец периода → hasta'
+  - id: prep-tiempo-hasta-manana
+    prompt: '___ mañana, ¡buenas noches!'
+    alternatives:
+      - answer: [hasta]
+        example: 'Hasta mañana, ¡buenas noches!'
+        reveal:
+          Translation: 'До завтра, спокойной ночи!'
+          Why: 'hasta mañana — устойчивое сочетание'
+  - id: prep-tiempo-llamo-diez-minutos
+    prompt: 'Te llamo ___ diez minutos.'
+    alternatives:
+      - answer: [en, dentro de]
+        example: 'Te llamo en diez minutos.'
+        reveal:
+          Translation: 'Я позвоню тебе через десять минут.'
+          Why: 'через какое время → en / dentro de'
+  - id: prep-tiempo-desde-lunes
+    prompt: 'Estoy en Madrid ___ el lunes.'
+    alternatives:
+      - answer: [desde]
+        example: 'Estoy en Madrid desde el lunes.'
+        reveal:
+          Translation: 'Я в Мадриде с понедельника.'
+          Why: 'начало периода → desde'
+  - id: prep-tiempo-antes
+    prompt: 'Antes ___ dormir, leo un rato.'
+    alternatives:
+      - answer: [de]
+        example: 'Antes de dormir, leo un rato.'
+        reveal:
+          Translation: 'Перед сном я немного читаю.'
+          Why: antes de
+  - id: prep-tiempo-despues
+    prompt: 'Después ___ comer, salimos a pasear.'
+    alternatives:
+      - answer: [de]
+        example: 'Después de comer, salimos a pasear.'
+        reveal:
+          Translation: 'После обеда мы идём гулять.'
+          Why: después de
+  - id: al-del-cine
+    prompt: 'Voy ___ cine esta noche.'
+    alternatives:
+      - answer: [al]
+        example: 'Voy al cine esta noche.'
+        reveal:
+          Translation: 'Сегодня вечером я иду в кино.'
+          Why: 'a + el → al'
+  - id: al-del-mercado-vengo
+    prompt: 'Vengo ___ mercado.'
+    alternatives:
+      - answer: [del]
+        example: 'Vengo del mercado.'
+        reveal:
+          Translation: 'Я иду с рынка.'
+          Why: 'de + el → del'
+  - id: al-del-coche-vecino
+    prompt: 'Este es el coche ___ vecino.'
+    alternatives:
+      - answer: [del]
+        example: 'Este es el coche del vecino.'
+        reveal:
+          Translation: 'Это машина соседа.'
+          Why: 'de + el → del'
+  - id: al-del-medico
+    prompt: 'Llamo ___ médico.'
+    alternatives:
+      - answer: [al]
+        example: 'Llamo al médico.'
+        reveal:
+          Translation: 'Я звоню врачу.'
+          Why: 'a + el → al'
+  - id: al-del-camarero-gracias
+    prompt: 'Doy las gracias ___ camarero.'
+    alternatives:
+      - answer: [al]
+        example: 'Doy las gracias al camarero.'
+        reveal:
+          Translation: 'Я благодарю официанта.'
+          Why: 'a + el → al'
+  - id: al-del-libro-nino
+    prompt: 'El libro ___ niño está en la mesa.'
+    alternatives:
+      - answer: [del]
+        example: 'El libro del niño está en la mesa.'
+        reveal:
+          Translation: 'Книга мальчика лежит на столе.'
+          Why: 'de + el → del'
+  - id: al-del-playa-la
+    prompt: 'Voy ___ la playa.'
+    alternatives:
+      - answer: [a]
+        example: 'Voy a la playa.'
+        reveal:
+          Translation: 'Я иду на пляж.'
+          Why: 'a + la — без слияния'
+  - id: al-del-oficina-la
+    prompt: 'Vengo ___ la oficina.'
+    alternatives:
+      - answer: [de]
+        example: 'Vengo de la oficina.'
+        reveal:
+          Translation: 'Я иду из офиса.'
+          Why: 'de + la — без слияния'
+  - id: al-del-casa-abuela
+    prompt: 'La casa ___ mi abuela es grande.'
+    alternatives:
+      - answer: [de]
+        example: 'La casa de mi abuela es grande.'
+        reveal:
+          Translation: 'Дом моей бабушки большой.'
+          Why: 'de + mi — без слияния'
+  - id: al-del-salgo-trabajo
+    prompt: 'Salgo ___ trabajo a las seis.'
+    alternatives:
+      - answer: [del]
+        example: 'Salgo del trabajo a las seis.'
+        reveal:
+          Translation: 'Я ухожу с работы в шесть.'
+          Why: 'de + el → del'
+  - id: al-del-aeropuerto
+    prompt: 'Mi hermano llega ___ aeropuerto a las ocho.'
+    alternatives:
+      - answer: [al]
+        example: 'Mi hermano llega al aeropuerto a las ocho.'
+        reveal:
+          Translation: 'Мой брат приезжает в аэропорт в восемь.'
+          Why: 'a + el → al'
+  - id: al-del-zoo
+    prompt: 'Mañana vamos ___ zoo.'
+    alternatives:
+      - answer: [al]
+        example: 'Mañana vamos al zoo.'
+        reveal:
+          Translation: 'Завтра мы идём в зоопарк.'
+          Why: 'a + el → al'
+  - id: al-del-final-libro
+    prompt: 'El final ___ libro es muy triste.'
+    alternatives:
+      - answer: [del]
+        example: 'El final del libro es muy triste.'
+        reveal:
+          Translation: 'Конец книги очень грустный.'
+          Why: 'de + el → del'
+  - id: al-del-cerca-banco
+    prompt: 'Vivo cerca ___ banco.'
+    alternatives:
+      - answer: [del]
+        example: 'Vivo cerca del banco.'
+        reveal:
+          Translation: 'Я живу рядом с банком.'
+          Why: 'de + el → del'
+  - id: al-del-preguntar-camarero
+    prompt: 'Pregunto ___ camarero por la cuenta.'
+    alternatives:
+      - answer: [al]
+        example: 'Pregunto al camarero por la cuenta.'
+        reveal:
+          Translation: 'Я спрашиваю у официанта счёт.'
+          Why: 'a + el → al'
+  - id: al-del-enfrente-supermercado
+    prompt: 'Enfrente ___ supermercado hay una farmacia.'
+    alternatives:
+      - answer: [del]
+        example: 'Enfrente del supermercado hay una farmacia.'
+        reveal:
+          Translation: 'Напротив супермаркета есть аптека.'
+          Why: 'de + el → del'
+  - id: al-del-baloncesto
+    prompt: 'Los niños juegan ___ baloncesto.'
+    alternatives:
+      - answer: [al]
+        example: 'Los niños juegan al baloncesto.'
+        reveal:
+          Translation: 'Дети играют в баскетбол.'
+          Why: 'jugar a + el → al'
+  - id: al-del-telefono-colegio
+    prompt: 'El teléfono ___ colegio está ocupado.'
+    alternatives:
+      - answer: [del]
+        example: 'El teléfono del colegio está ocupado.'
+        reveal:
+          Translation: 'Телефон школы занят.'
+          Why: 'de + el → del'
+  - id: al-del-mercado-sabados
+    prompt: 'Vamos ___ mercado los sábados.'
+    alternatives:
+      - answer: [al]
+        example: 'Vamos al mercado los sábados.'
+        reveal:
+          Translation: 'По субботам мы ходим на рынок.'
+          Why: 'a + el → al'
+  - id: al-del-cumple-abuelo
+    prompt: 'Es el cumpleaños ___ abuelo.'
+    alternatives:
+      - answer: [del]
+        example: 'Es el cumpleaños del abuelo.'
+        reveal:
+          Translation: 'Это день рождения дедушки.'
+          Why: 'de + el → del'
+  - id: al-del-oficina-la-a
+    prompt: 'Mi madre vuelve ___ la oficina a las tres.'
+    alternatives:
+      - answer: [a]
+        example: 'Mi madre vuelve a la oficina a las tres.'
+        reveal:
+          Translation: 'Мама возвращается в офис в три.'
+          Why: 'a + la — без слияния'
+  - id: al-del-parque-del
+    prompt: 'Estamos a la salida ___ parque.'
+    alternatives:
+      - answer: [del]
+        example: 'Estamos a la salida del parque.'
+        reveal:
+          Translation: 'Мы у выхода из парка.'
+          Why: 'de + el → del'
+  - id: a-personal-hermana
+    prompt: 'Veo ___ mi hermana en la calle.'
+    alternatives:
+      - answer: [a]
+        example: 'Veo a mi hermana en la calle.'
+        reveal:
+          Translation: 'Я вижу сестру на улице.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-gato
+    prompt: 'Busco ___ mi gato, no lo encuentro.'
+    alternatives:
+      - answer: [a]
+        example: 'Busco a mi gato, no lo encuentro.'
+        reveal:
+          Translation: 'Я ищу своего кота, не могу найти.'
+          Why: 'прямое дополнение — любимое животное → a'
+  - id: a-personal-marta
+    prompt: '¿Conoces ___ Marta?'
+    alternatives:
+      - answer: [a]
+        example: '¿Conoces a Marta?'
+        reveal:
+          Translation: 'Ты знаешь Марту?'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-madre
+    prompt: 'Escucho ___ mi madre con atención.'
+    alternatives:
+      - answer: [a]
+        example: 'Escucho a mi madre con atención.'
+        reveal:
+          Translation: 'Я внимательно слушаю маму.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-abuelos
+    prompt: 'Quiero mucho ___ mis abuelos.'
+    alternatives:
+      - answer: [a]
+        example: 'Quiero mucho a mis abuelos.'
+        reveal:
+          Translation: 'Я очень люблю бабушку с дедушкой.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-invitar
+    prompt: 'Invito ___ mis amigos a cenar.'
+    alternatives:
+      - answer: [a]
+        example: 'Invito a mis amigos a cenar.'
+        reveal:
+          Translation: 'Я приглашаю друзей на ужин.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-pablo-cine
+    prompt: 'Ayer vi ___ Pablo en el cine.'
+    alternatives:
+      - answer: [a]
+        example: 'Ayer vi a Pablo en el cine.'
+        reveal:
+          Translation: 'Вчера я видел Пабло в кино.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-admirar
+    prompt: 'Admiro ___ mi profesora.'
+    alternatives:
+      - answer: [a]
+        example: 'Admiro a mi profesora.'
+        reveal:
+          Translation: 'Я восхищаюсь своей учительницей.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-abrazar
+    prompt: 'Abrazo ___ mi hijo.'
+    alternatives:
+      - answer: [a]
+        example: 'Abrazo a mi hijo.'
+        reveal:
+          Translation: 'Я обнимаю сына.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-cuidar
+    prompt: 'Mi madre cuida ___ los niños.'
+    alternatives:
+      - answer: [a]
+        example: 'Mi madre cuida a los niños.'
+        reveal:
+          Translation: 'Моя мама присматривает за детьми.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-esperar
+    prompt: 'Esperamos ___ los invitados.'
+    alternatives:
+      - answer: [a]
+        example: 'Esperamos a los invitados.'
+        reveal:
+          Translation: 'Мы ждём гостей.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-hermano-visto
+    prompt: '¿Has visto ___ mi hermano?'
+    alternatives:
+      - answer: [a]
+        example: '¿Has visto a mi hermano?'
+        reveal:
+          Translation: 'Ты не видел моего брата?'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-echar-menos
+    prompt: 'Echo de menos ___ mi familia.'
+    alternatives:
+      - answer: [a]
+        example: 'Echo de menos a mi familia.'
+        reveal:
+          Translation: 'Я скучаю по своей семье.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-visitar
+    prompt: 'Mis padres visitan ___ mis tíos cada domingo.'
+    alternatives:
+      - answer: [a]
+        example: 'Mis padres visitan a mis tíos cada domingo.'
+        reveal:
+          Translation: 'Мои родители каждое воскресенье навещают моих дядей.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-llevar-hija
+    prompt: 'Llevo ___ mi hija a la escuela.'
+    alternatives:
+      - answer: [a]
+        example: 'Llevo a mi hija a la escuela.'
+        reveal:
+          Translation: 'Я отвожу дочь в школу.'
+          Why: 'прямое дополнение — человек → a'
+  - id: a-personal-profesor-al
+    prompt: 'Veo ___ profesor en el pasillo.'
+    alternatives:
+      - answer: [al]
+        example: 'Veo al profesor en el pasillo.'
+        reveal:
+          Translation: 'Я вижу учителя в коридоре.'
+          Why: 'a + el → al, человек'
+  - id: a-personal-cantante-al
+    prompt: 'Escucho ___ cantante con mucha atención.'
+    alternatives:
+      - answer: [al]
+        example: 'Escucho al cantante con mucha atención.'
+        reveal:
+          Translation: 'Я очень внимательно слушаю певца.'
+          Why: 'a + el → al, человек'
+  - id: pronombre-llave-la
+    prompt: '¿Dónde está la llave? No ___ encuentro.'
+    alternatives:
+      - answer: [la]
+        example: '¿Dónde está la llave? No la encuentro.'
+        reveal:
+          Translation: 'Где ключ? Я его не нахожу.'
+          Why: 'прямое дополнение: la (ж. р.)'
+  - id: pronombre-libro-lo
+    prompt: '¿Tienes mi libro? Sí, ___ tengo aquí.'
+    alternatives:
+      - answer: [lo]
+        example: '¿Tienes mi libro? Sí, lo tengo aquí.'
+        reveal:
+          Translation: 'У тебя моя книга? Да, она у меня здесь.'
+          Why: 'прямое дополнение: lo (м. р.)'
+  - id: pronombre-manzanas-las
+    prompt: 'Las manzanas están buenas. ___ compro.'
+    alternatives:
+      - answer: [las]
+        example: 'Las manzanas están buenas. Las compro.'
+        reveal:
+          Translation: 'Яблоки хорошие. Я их покупаю.'
+          Why: 'прямое дополнение: las (ж. р., мн. ч.)'
+  - id: pronombre-zapatos-los
+    prompt: 'Aquí están los zapatos. Mi madre ___ compró ayer.'
+    alternatives:
+      - answer: [los]
+        example: 'Aquí están los zapatos. Mi madre los compró ayer.'
+        reveal:
+          Translation: 'Вот ботинки. Мама купила их вчера.'
+          Why: 'прямое дополнение: los (м. р., мн. ч.)'
+  - id: pronombre-amigos-los
+    prompt: 'Mis amigos vienen hoy. ___ espero en la estación.'
+    alternatives:
+      - answer: [los]
+        example: 'Mis amigos vienen hoy. Los espero en la estación.'
+        reveal:
+          Translation: 'Мои друзья приезжают сегодня. Я жду их на вокзале.'
+          Why: 'прямое дополнение: los (м. р., мн. ч.)'
+  - id: pronombre-ana-la
+    prompt: '¿Ves a Ana? Sí, ___ veo.'
+    alternatives:
+      - answer: [la]
+        example: '¿Ves a Ana? Sí, la veo.'
+        reveal:
+          Translation: 'Ты видишь Ану? Да, вижу её.'
+          Why: 'прямое дополнение: la (ж. р.)'
+  - id: pronombre-padres-los
+    prompt: '¿Conoces a mis padres? Sí, ___ conozco.'
+    alternatives:
+      - answer: [los]
+        example: '¿Conoces a mis padres? Sí, los conozco.'
+        reveal:
+          Translation: 'Ты знаешь моих родителей? Да, знаю их.'
+          Why: 'прямое дополнение: los (м. р., мн. ч.)'
+  - id: pronombre-camisa-la
+    prompt: 'Esta camisa es bonita; ___ voy a comprar.'
+    alternatives:
+      - answer: [la]
+        example: 'Esta camisa es bonita; la voy a comprar.'
+        reveal:
+          Translation: 'Эта рубашка красивая; я её куплю.'
+          Why: 'прямое дополнение: la (ж. р.)'
+  - id: pronombre-llaves-las
+    prompt: 'No tengo las llaves; no sé dónde ___ he dejado.'
+    alternatives:
+      - answer: [las]
+        example: 'No tengo las llaves; no sé dónde las he dejado.'
+        reveal:
+          Translation: 'У меня нет ключей; не знаю, где я их оставил.'
+          Why: 'прямое дополнение: las (ж. р., мн. ч.)'
+  - id: pronombre-queso-lo
+    prompt: '¿Dónde está el queso? No ___ veo.'
+    alternatives:
+      - answer: [lo]
+        example: '¿Dónde está el queso? No lo veo.'
+        reveal:
+          Translation: 'Где сыр? Я его не вижу.'
+          Why: 'прямое дополнение: lo (м. р.)'
+  - id: pronombre-pelicula-la
+    prompt: 'Me gusta esa película. ___ vi ayer.'
+    alternatives:
+      - answer: [la]
+        example: 'Me gusta esa película. La vi ayer.'
+        reveal:
+          Translation: 'Мне нравится этот фильм. Я смотрел его вчера.'
+          Why: 'прямое дополнение: la (ж. р.)'
+  - id: pronombre-hermana-le
+    prompt: 'A mi hermana ___ doy un libro.'
+    alternatives:
+      - answer: [le]
+        example: 'A mi hermana le doy un libro.'
+        reveal:
+          Translation: 'Я дарю сестре книгу.'
+          Why: 'косвенное дополнение: le (ед. ч.)'
+  - id: pronombre-padres-les
+    prompt: 'A mis padres ___ escribo una carta.'
+    alternatives:
+      - answer: [les]
+        example: 'A mis padres les escribo una carta.'
+        reveal:
+          Translation: 'Я пишу родителям письмо.'
+          Why: 'косвенное дополнение: les (мн. ч.)'
+  - id: pronombre-pedro-le
+    prompt: 'A Pedro ___ regalo una camisa.'
+    alternatives:
+      - answer: [le]
+        example: 'A Pedro le regalo una camisa.'
+        reveal:
+          Translation: 'Я дарю Педро рубашку.'
+          Why: 'косвенное дополнение: le (ед. ч.)'
+  - id: pronombre-nosotros-nos
+    prompt: 'A nosotros el profesor ___ explica la lección.'
+    alternatives:
+      - answer: [nos]
+        example: 'A nosotros el profesor nos explica la lección.'
+        reveal:
+          Translation: 'Нам учитель объясняет урок.'
+          Why: 'косвенное дополнение: nos'
+  - id: pronombre-ti-te
+    prompt: 'A ti ___ voy a llamar mañana.'
+    alternatives:
+      - answer: [te]
+        example: 'A ti te voy a llamar mañana.'
+        reveal:
+          Translation: 'Тебе я позвоню завтра.'
+          Why: 'косвенное дополнение: te'
+  - id: pronombre-vosotros-os
+    prompt: 'A vosotros ___ espero a las seis.'
+    alternatives:
+      - answer: [os]
+        example: 'A vosotros os espero a las seis.'
+        reveal:
+          Translation: 'Вас я жду в шесть.'
+          Why: 'прямое дополнение: os'
+  - id: pronombre-mi-me
+    prompt: 'A mí mis padres ___ llaman cada domingo.'
+    alternatives:
+      - answer: [me]
+        example: 'A mí mis padres me llaman cada domingo.'
+        reveal:
+          Translation: 'Мне родители звонят каждое воскресенье.'
+          Why: 'косвенное дополнение: me'
+  - id: pronombre-regalo-lo
+    prompt: '¿Dónde está el regalo? Se ___ doy a Ana mañana.'
+    alternatives:
+      - answer: [lo]
+        example: '¿Dónde está el regalo? Se lo doy a Ana mañana.'
+        reveal:
+          Translation: 'Где подарок? Завтра я отдам его Ане.'
+          Why: 'se lo: le + lo → se lo, lo = подарок (м. р.)'
+  - id: pronombre-foto-la
+    prompt: 'Si quieres la foto, te ___ envío.'
+    alternatives:
+      - answer: [la]
+        example: 'Si quieres la foto, te la envío.'
+        reveal:
+          Translation: 'Если хочешь фото, я тебе его отправлю.'
+          Why: 'te la: la = фото (ж. р.)'
+  - id: pronombre-libro-se
+    prompt: 'Ana quiere el libro. ___ lo doy hoy.'
+    alternatives:
+      - answer: [se]
+        example: 'Ana quiere el libro. Se lo doy hoy.'
+        reveal:
+          Translation: 'Ана хочет книгу. Я отдам ей её сегодня.'
+          Why: 'le + lo → se lo'
+  - id: pronombre-sal-te
+    prompt: '—¿Me pasas la sal? —Sí, ahora ___ la paso.'
+    alternatives:
+      - answer: [te]
+        example: '—¿Me pasas la sal? —Sí, ahora te la paso.'
+        reveal:
+          Translation: '—Передашь мне соль? —Да, сейчас передам.'
+          Why: 'te la: te = тебе'
+  - id: pronombre-reflexivo-se
+    prompt: 'Mi hermano ___ levanta a las siete.'
+    alternatives:
+      - answer: [se]
+        example: 'Mi hermano se levanta a las siete.'
+        reveal:
+          Translation: 'Мой брат встаёт в семь.'
+          Why: 'возвратный глагол: él → se'
+  - id: pronombre-reflexivo-me
+    prompt: 'Yo ___ ducho por la mañana.'
+    alternatives:
+      - answer: [me]
+        example: 'Yo me ducho por la mañana.'
+        reveal:
+          Translation: 'Я принимаю душ по утрам.'
+          Why: 'возвратный глагол: yo → me'
+  - id: pronombre-reflexivo-nos
+    prompt: 'Nosotros ___ acostamos tarde.'
+    alternatives:
+      - answer: [nos]
+        example: 'Nosotros nos acostamos tarde.'
+        reveal:
+          Translation: 'Мы ложимся поздно.'
+          Why: 'возвратный глагол: nosotros → nos'
+  - id: pronombre-reflexivo-te
+    prompt: '¿A qué hora ___ levantas?'
+    alternatives:
+      - answer: [te]
+        example: '¿A qué hora te levantas?'
+        reveal:
+          Translation: 'Во сколько ты встаёшь?'
+          Why: 'возвратный глагол: tú → te'
+  - id: pronombre-reflexivo-os
+    prompt: 'Vosotros ___ laváis las manos antes de comer.'
+    alternatives:
+      - answer: [os]
+        example: 'Vosotros os laváis las manos antes de comer.'
+        reveal:
+          Translation: 'Вы моете руки перед едой.'
+          Why: 'возвратный глагол: vosotros → os'
+  - id: muy-mucho-cansado
+    prompt: 'Estoy ___ cansado. (muy / mucho)'
+    alternatives:
+      - answer: [muy]
+        example: 'Estoy muy cansado.'
+        reveal:
+          Translation: 'Я очень устал.'
+          Why: 'muy + прилагательное'
+  - id: muy-mucho-rapido
+    prompt: 'Mi hermana corre ___ rápido. (muy / mucho)'
+    alternatives:
+      - answer: [muy]
+        example: 'Mi hermana corre muy rápido.'
+        reveal:
+          Translation: 'Моя сестра бегает очень быстро.'
+          Why: 'muy + наречие'
+  - id: muy-mucho-sopa
+    prompt: 'Esta sopa está ___ buena. (muy / mucho)'
+    alternatives:
+      - answer: [muy]
+        example: 'Esta sopa está muy buena.'
+        reveal:
+          Translation: 'Этот суп очень вкусный.'
+          Why: 'muy + прилагательное'
+  - id: muy-mucho-bien
+    prompt: 'Ella habla ___ bien español. (muy / mucho)'
+    alternatives:
+      - answer: [muy]
+        example: 'Ella habla muy bien español.'
+        reveal:
+          Translation: 'Она очень хорошо говорит по-испански.'
+          Why: 'muy + наречие'
+  - id: muy-mucho-tarde
+    prompt: 'Es ___ tarde. (muy / mucho)'
+    alternatives:
+      - answer: [muy]
+        example: 'Es muy tarde.'
+        reveal:
+          Translation: 'Очень поздно.'
+          Why: 'muy + наречие'
+  - id: muy-mucho-trabajo
+    prompt: 'Trabajo ___ los lunes. (muy / mucho)'
+    alternatives:
+      - answer: [mucho]
+        example: 'Trabajo mucho los lunes.'
+        reveal:
+          Translation: 'По понедельникам я много работаю.'
+          Why: 'mucho после глагола'
+  - id: muy-mucho-calor
+    prompt: 'Hace ___ calor en verano. (muy / mucho)'
+    alternatives:
+      - answer: [mucho]
+        example: 'Hace mucho calor en verano.'
+        reveal:
+          Translation: 'Летом очень жарко.'
+          Why: 'mucho + существительное (calor)'
+  - id: muy-mucho-llueve
+    prompt: 'Aquí llueve ___ en otoño. (muy / mucho)'
+    alternatives:
+      - answer: [mucho]
+        example: 'Aquí llueve mucho en otoño.'
+        reveal:
+          Translation: 'Здесь осенью часто идут дожди.'
+          Why: 'mucho после глагола'
+  - id: muy-mucho-cena
+    prompt: 'No como ___ por la noche. (muy / mucho)'
+    alternatives:
+      - answer: [mucho]
+        example: 'No como mucho por la noche.'
+        reveal:
+          Translation: 'Вечером я много не ем.'
+          Why: 'mucho после глагола'
+  - id: muy-mucho-amigos
+    prompt: 'Tengo ___ amigos en Valencia. (muy / mucho)'
+    alternatives:
+      - answer: [muchos]
+        example: 'Tengo muchos amigos en Valencia.'
+        reveal:
+          Translation: 'У меня много друзей в Валенсии.'
+          Why: 'mucho согласуется с существительным'
+  - id: muy-mucho-gente
+    prompt: 'Hay ___ gente en la calle. (muy / mucho)'
+    alternatives:
+      - answer: [mucha]
+        example: 'Hay mucha gente en la calle.'
+        reveal:
+          Translation: 'На улице много людей.'
+          Why: 'mucho согласуется с существительным'
+  - id: muy-mucho-gracias
+    prompt: '___ gracias por todo. (muy / mucho)'
+    alternatives:
+      - answer: [muchas]
+        example: 'Muchas gracias por todo.'
+        reveal:
+          Translation: 'Большое спасибо за всё.'
+          Why: 'mucho согласуется с существительным'
+  - id: muy-mucho-hambre
+    prompt: 'Tengo ___ hambre. (muy / mucho)'
+    alternatives:
+      - answer: [mucha]
+        example: 'Tengo mucha hambre.'
+        reveal:
+          Translation: 'Я очень голоден.'
+          Why: 'hambre — ж. р.: mucha'
+  - id: muy-mucho-parques
+    prompt: 'Esta ciudad tiene ___ parques. (muy / mucho)'
+    alternatives:
+      - answer: [muchos]
+        example: 'Esta ciudad tiene muchos parques.'
+        reveal:
+          Translation: 'В этом городе много парков.'
+          Why: 'mucho согласуется с существительным'
+  - id: muy-mucho-horas
+    prompt: 'Estudiamos ___ horas. (muy / mucho)'
+    alternatives:
+      - answer: [muchas]
+        example: 'Estudiamos muchas horas.'
+        reveal:
+          Translation: 'Мы занимаемся много часов.'
+          Why: 'mucho согласуется с существительным'
+  - id: tambien-tampoco-te
+    prompt: 'Me gusta el té y a mi hermana ___. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: 'Me gusta el té y a mi hermana también.'
+        reveal:
+          Translation: 'Я люблю чай, и моя сестра тоже.'
+          Why: 'согласие в утверждении → también'
+  - id: tambien-tampoco-hambre
+    prompt: 'No tengo hambre y mi hermano ___. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: 'No tengo hambre y mi hermano tampoco.'
+        reveal:
+          Translation: 'Я не голоден, и мой брат тоже.'
+          Why: 'согласие в отрицании → tampoco'
+  - id: tambien-tampoco-ingles
+    prompt: 'Yo hablo inglés y ella ___. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: 'Yo hablo inglés y ella también.'
+        reveal:
+          Translation: 'Я говорю по-английски, и она тоже.'
+          Why: 'согласие в утверждении → también'
+  - id: tambien-tampoco-futbol
+    prompt: 'No me gusta el fútbol y a ti ___. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: 'No me gusta el fútbol y a ti tampoco.'
+        reveal:
+          Translation: 'Мне не нравится футбол, и тебе тоже.'
+          Why: 'согласие в отрицании → tampoco'
+  - id: tambien-tampoco-fuman
+    prompt: 'Mis padres no fuman y yo ___. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: 'Mis padres no fuman y yo tampoco.'
+        reveal:
+          Translation: 'Мои родители не курят, и я тоже.'
+          Why: 'согласие в отрицании → tampoco'
+  - id: tambien-tampoco-cansada
+    prompt: 'Estoy cansada y mi marido ___. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: 'Estoy cansada y mi marido también.'
+        reveal:
+          Translation: 'Я устала, и мой муж тоже.'
+          Why: 'согласие в утверждении → también'
+  - id: tambien-tampoco-fiesta
+    prompt: 'Ellos no vienen a la fiesta y nosotros ___. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: 'Ellos no vienen a la fiesta y nosotros tampoco.'
+        reveal:
+          Translation: 'Они не придут на вечеринку, и мы тоже.'
+          Why: 'согласие в отрицании → tampoco'
+  - id: tambien-tampoco-agua
+    prompt: 'Quiero un café y ___ un vaso de agua. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: 'Quiero un café y también un vaso de agua.'
+        reveal:
+          Translation: 'Я хочу кофе и ещё стакан воды.'
+          Why: 'добавление → también'
+  - id: tambien-tampoco-cocinar
+    prompt: 'No sé cocinar y ___ quiero aprender. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: 'No sé cocinar y tampoco quiero aprender.'
+        reveal:
+          Translation: 'Я не умею готовить и не хочу учиться.'
+          Why: 'добавление в отрицании → tampoco'
+  - id: tambien-tampoco-marta
+    prompt: 'Marta no habla alemán. Yo ___. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: 'Marta no habla alemán. Yo tampoco.'
+        reveal:
+          Translation: 'Марта не говорит по-немецки. Я тоже.'
+          Why: 'согласие в отрицании → tampoco'
+  - id: tambien-tampoco-sueno
+    prompt: '—Tengo sueño. —Yo ___. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: '—Tengo sueño. —Yo también.'
+        reveal:
+          Translation: '—Я хочу спать. —Я тоже.'
+          Why: 'согласие в утверждении → también'
+  - id: tambien-tampoco-dinero
+    prompt: '—No tengo dinero. —Yo ___. (también / tampoco)'
+    alternatives:
+      - answer: [tampoco]
+        example: '—No tengo dinero. —Yo tampoco.'
+        reveal:
+          Translation: '—У меня нет денег. —У меня тоже.'
+          Why: 'согласие в отрицании → tampoco'
+  - id: tambien-tampoco-cancion
+    prompt: '—Me encanta esta canción. —A mí ___. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: '—Me encanta esta canción. —A mí también.'
+        reveal:
+          Translation: '—Обожаю эту песню. —Я тоже.'
+          Why: 'согласие в утверждении → también'
+  - id: tambien-tampoco-cine
+    prompt: 'Vamos al cine, y ___ a cenar. (también / tampoco)'
+    alternatives:
+      - answer: [también]
+        example: 'Vamos al cine, y también a cenar.'
+        reveal:
+          Translation: 'Мы идём в кино, а ещё поужинать.'
+          Why: 'добавление → también'
+  - id: algo-nada-beber
+    prompt: '¿Quieres ___ de beber? (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [algo]
+        example: '¿Quieres algo de beber?'
+        reveal:
+          Translation: 'Хочешь чего-нибудь выпить?'
+          Why: 'вопрос о предмете → algo'
+  - id: algo-nada-no-quiero
+    prompt: 'No quiero ___, gracias. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nada]
+        example: 'No quiero nada, gracias.'
+        reveal:
+          Translation: 'Я ничего не хочу, спасибо.'
+          Why: 'no + отрицание → nada'
+  - id: algo-nada-puerta
+    prompt: 'En la puerta hay ___. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [alguien]
+        example: 'En la puerta hay alguien.'
+        reveal:
+          Translation: 'У двери кто-то есть.'
+          Why: 'неизвестный человек → alguien'
+  - id: algo-nada-casa-nadie
+    prompt: 'No hay ___ en casa. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nadie]
+        example: 'No hay nadie en casa.'
+        reveal:
+          Translation: 'Дома никого нет.'
+          Why: 'no + отрицание → nadie'
+  - id: algo-nada-comer
+    prompt: '¿Tienes ___ para comer? (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [algo]
+        example: '¿Tienes algo para comer?'
+        reveal:
+          Translation: 'У тебя есть что-нибудь поесть?'
+          Why: 'вопрос о предмете → algo'
+  - id: algo-nada-que-hacer
+    prompt: 'No tengo ___ que hacer hoy. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nada]
+        example: 'No tengo nada que hacer hoy.'
+        reveal:
+          Translation: 'Мне сегодня нечего делать.'
+          Why: 'no + отрицание → nada'
+  - id: algo-nada-conoces-alguien
+    prompt: '¿Conoces a ___ en Madrid? (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [alguien]
+        example: '¿Conoces a alguien en Madrid?'
+        reveal:
+          Translation: 'Ты знаешь кого-нибудь в Мадриде?'
+          Why: 'вопрос о человеке → alguien'
+  - id: algo-nada-fiesta-nadie
+    prompt: 'No conozco a ___ en esta fiesta. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nadie]
+        example: 'No conozco a nadie en esta fiesta.'
+        reveal:
+          Translation: 'Я никого не знаю на этой вечеринке.'
+          Why: 'no … a + отрицание → nadie'
+  - id: algo-nada-mercado
+    prompt: 'Ayer no compré ___ en el mercado. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nada]
+        example: 'Ayer no compré nada en el mercado.'
+        reveal:
+          Translation: 'Вчера я ничего не купил на рынке.'
+          Why: 'no + отрицание → nada'
+  - id: algo-nada-clase-vacia
+    prompt: 'La clase está vacía: no ha venido ___. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nadie]
+        example: 'La clase está vacía: no ha venido nadie.'
+        reveal:
+          Translation: 'Класс пуст: никто не пришёл.'
+          Why: 'no + отрицание → nadie'
+  - id: algo-nada-llamado
+    prompt: '¿Ha llamado ___ por teléfono? (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [alguien]
+        example: '¿Ha llamado alguien por teléfono?'
+        reveal:
+          Translation: 'Кто-нибудь звонил по телефону?'
+          Why: 'вопрос о человеке → alguien'
+  - id: algo-nada-importante
+    prompt: 'Quiero decirte ___ importante. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [algo]
+        example: 'Quiero decirte algo importante.'
+        reveal:
+          Translation: 'Я хочу сказать тебе кое-что важное.'
+          Why: 'что-то → algo'
+  - id: algo-nada-no-digas
+    prompt: 'No digas ___, por favor. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nada]
+        example: 'No digas nada, por favor.'
+        reveal:
+          Translation: 'Ничего не говори, пожалуйста.'
+          Why: 'no + отрицание → nada'
+  - id: algo-nada-nevera
+    prompt: 'En la nevera no hay ___; tengo que ir a comprar. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nada]
+        example: 'En la nevera no hay nada; tengo que ir a comprar.'
+        reveal:
+          Translation: 'В холодильнике ничего нет; мне нужно идти за покупками.'
+          Why: 'no + отрицание → nada'
+  - id: algo-nada-tocando
+    prompt: 'Mira, ___ está llamando a la puerta. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [alguien]
+        example: 'Mira, alguien está llamando a la puerta.'
+        reveal:
+          Translation: 'Смотри, кто-то стучит в дверь.'
+          Why: 'неизвестный человек → alguien'
+  - id: algo-nada-dinero
+    prompt: 'Necesito ___ de dinero. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [algo]
+        example: 'Necesito algo de dinero.'
+        reveal:
+          Translation: 'Мне нужно немного денег.'
+          Why: 'немного → algo de'
+  - id: algo-nada-pedir
+    prompt: '¿Vas a pedir ___? (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [algo]
+        example: '¿Vas a pedir algo?'
+        reveal:
+          Translation: 'Ты что-нибудь закажешь?'
+          Why: 'вопрос о предмете → algo'
+  - id: algo-nada-calle-nadie
+    prompt: 'No veo a ___ en la calle. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nadie]
+        example: 'No veo a nadie en la calle.'
+        reveal:
+          Translation: 'Я никого не вижу на улице.'
+          Why: 'no … a + отрицание → nadie'
+  - id: algo-nada-ruso
+    prompt: '¿Hay ___ que hable ruso? (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [alguien]
+        example: '¿Hay alguien que hable ruso?'
+        reveal:
+          Translation: 'Есть кто-нибудь, кто говорит по-русски?'
+          Why: 'вопрос о человеке → alguien'
+  - id: algo-nada-pasa
+    prompt: 'No pasa ___. (algo / nada / alguien / nadie)'
+    alternatives:
+      - answer: [nada]
+        example: 'No pasa nada.'
+        reveal:
+          Translation: 'Ничего страшного.'
+          Why: 'no + отрицание → nada'
