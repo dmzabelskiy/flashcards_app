@@ -82,7 +82,7 @@ class RetryMistakesTests(AuthedTestCase):
 
         self.assertEqual(self.client.session["study_session"]["direction"], "reverse")
         page = self.client.get(reverse("reviews:study_current"))
-        self.assertContains(page, "Deutsch")
+        self.assertContains(page, "Type the German word")
 
     def test_a_forward_session_retries_forward(self):
         self.study({self.cards[2].pk})
