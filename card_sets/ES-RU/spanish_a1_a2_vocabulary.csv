@@ -1,0 +1,1049 @@
+front,back,example_sentence,notes,tags,card_type
+yo,я,Yo vivo en Madrid.,A1,spanish A1 pronouns,vocabulary
+tú,ты,¿Tú eres de Valencia?,"A1; informal singular ""you""",spanish A1 pronouns,vocabulary
+usted,вы (вежливо),"¿Usted trabaja aquí, señor López?","A1; formal ""you""; written Ud.",spanish A1 pronouns,vocabulary
+él,он,Él es mi hermano.,"A1; with an accent; el without an accent is ""the""",spanish A1 pronouns,vocabulary
+ella,она,Ella trabaja en un banco.,A1,spanish A1 pronouns,vocabulary
+nosotros,мы,Nosotros comemos a las dos.,A1; feminine: nosotras,spanish A1 pronouns,vocabulary
+vosotros,вы (мн.),¿Vosotros venís a la fiesta?,A1; Spain only; feminine: vosotras; LatAm: ustedes,spanish A1 pronouns,vocabulary
+ellos,они,Ellos viven cerca de aquí.,A1; feminine: ellas,spanish A1 pronouns,vocabulary
+ustedes,вы (мн.; вежливо),Ustedes pueden sentarse aquí.,"A2; formal plural ""you"" in Spain; LatAm: the only plural ""you""",spanish A2 pronouns,vocabulary
+me,меня; мне; себя,Mi hermano me llama cada día.,A1; object pronoun; also reflexive,spanish A1 pronouns,vocabulary
+te,тебя; тебе; себя,Te quiero mucho.,A1; object pronoun; also reflexive,spanish A1 pronouns,vocabulary
+le,ему; ей; вам,Le doy el libro a Ana.,A2; indirect object; before lo/la it becomes se,spanish A2 pronouns,vocabulary
+lo,его; это,No lo sé.,"A1; direct object; also ""it"" for a general idea",spanish A1 pronouns,vocabulary
+nos,нас; нам; себя,Mis padres nos visitan en verano.,A2; object pronoun; also reflexive,spanish A2 pronouns,vocabulary
+os,вас; вам; себя,Os espero en la puerta.,A2; Spain only; plural of te,spanish A2 pronouns,vocabulary
+se,себя; -ся,Ella se levanta a las siete.,A1; reflexive pronoun; also replaces le/les before lo/la,spanish A1 pronouns,vocabulary
+mí,мне; меня (после предлога),Este regalo es para mí.,"A1; with an accent after a preposition; mi without an accent is ""my""",spanish A1 pronouns,vocabulary
+ti,тебе; тебя (после предлога),Pienso mucho en ti.,A1; after a preposition,spanish A1 pronouns,vocabulary
+conmigo,со мной,¿Vienes conmigo al cine?,A1,spanish A1 pronouns,vocabulary
+contigo,с тобой,Me gusta hablar contigo.,A1,spanish A1 pronouns,vocabulary
+sí,да,"Sí, tengo hambre.","A1; with an accent; si without an accent is ""if""",spanish A1 pronouns,vocabulary
+no,нет; не,No hablo alemán.,A1,spanish A1 pronouns,vocabulary
+mi,мой,Mi casa es pequeña.,A1; plural: mis,spanish A1 determiners,vocabulary
+tu,твой,¿Cómo se llama tu hermana?,A1; plural: tus,spanish A1 determiners,vocabulary
+su,его; её; их,Su coche es rojo.,"A1; plural: sus; also ""your"" with usted",spanish A1 determiners,vocabulary
+nuestro,наш,Nuestro piso está en el centro.,A1; feminine: nuestra,spanish A1 determiners,vocabulary
+vuestro,ваш (мн.),¿Dónde está vuestra casa?,A2; Spain only; feminine: vuestra,spanish A2 determiners,vocabulary
+este,этот,Este libro es muy bueno.,"A1; feminine: esta; plural: estos, estas",spanish A1 determiners,vocabulary
+ese,тот; этот,Ese chico es mi amigo.,"A1; feminine: esa; plural: esos, esas",spanish A1 determiners,vocabulary
+aquel,тот (дальний),Aquel edificio es muy antiguo.,"A2; feminine: aquella; plural: aquellos, aquellas",spanish A2 determiners,vocabulary
+esto,это,¿Qué es esto?,A1; neuter; has no plural,spanish A1 determiners,vocabulary
+eso,это; то,Eso es verdad.,A1; neuter,spanish A1 determiners,vocabulary
+todo,весь; всё,Todo el día llueve.,"A1; feminine: toda; plural: todos, todas",spanish A1 determiners,vocabulary
+otro,другой; ещё один,Quiero otro café.,A1; feminine: otra,spanish A1 determiners,vocabulary
+mismo,тот же; самый,Vivimos en el mismo barrio.,A2; feminine: misma,spanish A2 determiners,vocabulary
+cada,каждый,Cada mañana corro un poco.,A1; invariable,spanish A1 determiners,vocabulary
+algo,что-то,¿Quieres algo de beber?,A1,spanish A1 determiners,vocabulary
+nada,ничего,"No quiero nada, gracias.",A1,spanish A1 determiners,vocabulary
+alguien,кто-то,Alguien llama a la puerta.,A2,spanish A2 determiners,vocabulary
+nadie,никто,Aquí no vive nadie.,A2,spanish A2 determiners,vocabulary
+alguno,какой-нибудь; некоторый,¿Tienes alguna idea?,A2; apocope: algún before a masculine singular noun,spanish A2 determiners,vocabulary
+ninguno,никакой; ни один,No tengo ninguna pregunta.,A2; apocope: ningún before a masculine singular noun,spanish A2 determiners,vocabulary
+varios,несколько,Tengo varios amigos en Londres.,A2; feminine: varias,spanish A2 determiners,vocabulary
+a,в; на; к,Voy a la playa.,A1; personal a before a person as object,spanish A1 prepositions,vocabulary
+de,из; от; о,Soy de Sevilla.,A1,spanish A1 prepositions,vocabulary
+en,в; на,Mis llaves están en la mesa.,A1,spanish A1 prepositions,vocabulary
+con,с,Vivo con mi hermana.,A1,spanish A1 prepositions,vocabulary
+sin,без,Tomo el café sin azúcar.,A1,spanish A1 prepositions,vocabulary
+por,по; через; за,Paseamos por el parque.,A1,spanish A1 prepositions,vocabulary
+para,для; чтобы,Este regalo es para ti.,A1,spanish A1 prepositions,vocabulary
+desde,с; от,Vivo aquí desde 2020.,A2,spanish A2 prepositions,vocabulary
+hasta,до; даже,Trabajo hasta las seis.,A1,spanish A1 prepositions,vocabulary
+entre,между,Mi casa está entre el banco y la farmacia.,A1,spanish A1 prepositions,vocabulary
+hacia,к; в сторону,Caminamos hacia la estación.,A2,spanish A2 prepositions,vocabulary
+sobre,на; над; о,El libro está sobre la mesa.,"A2; also the noun el sobre, ""envelope""",spanish A2 prepositions,vocabulary
+contra,против,Juego contra mi hermano.,A2,spanish A2 prepositions,vocabulary
+según,согласно; по словам,"Según mi madre, hoy llueve.",A2,spanish A2 prepositions,vocabulary
+durante,в течение; во время,Duermo durante el viaje.,A2,spanish A2 prepositions,vocabulary
+delante de,перед; впереди,El coche está delante de la casa.,A1,spanish A1 prepositions,vocabulary
+detrás de,за; позади,El jardín está detrás de la casa.,A1,spanish A1 prepositions,vocabulary
+encima de,над; на,El gato duerme encima de la cama.,A1,spanish A1 prepositions,vocabulary
+debajo de,под,Mis zapatos están debajo de la cama.,A1,spanish A1 prepositions,vocabulary
+al lado de,рядом с,Vivo al lado de la estación.,A1,spanish A1 prepositions,vocabulary
+cerca de,близко от,Mi colegio está cerca de aquí.,A1,spanish A1 prepositions,vocabulary
+lejos de,далеко от,Mi oficina está lejos de casa.,A1,spanish A1 prepositions,vocabulary
+dentro de,внутри; через (о времени),Salgo dentro de diez minutos.,A2,spanish A2 prepositions,vocabulary
+fuera de,вне; за пределами,Vivimos fuera de la ciudad.,A2,spanish A2 prepositions,vocabulary
+enfrente de,напротив,El banco está enfrente de la plaza.,A2,spanish A2 prepositions,vocabulary
+antes de,до; перед,Me lavo las manos antes de comer.,A1,spanish A1 prepositions,vocabulary
+después de,после,Después de clase voy a casa.,A1,spanish A1 prepositions,vocabulary
+y,и,Tengo un hermano y una hermana.,A1; becomes e before words starting with i-,spanish A1 conjunctions,vocabulary
+o,или,¿Quieres té o café?,A1; becomes u before words starting with o-,spanish A1 conjunctions,vocabulary
+pero,но; однако,"Quiero ir, pero no puedo.",A1,spanish A1 conjunctions,vocabulary
+sino,а; но; кроме,"No es rojo, sino azul.","A2; after a negative, contrasting",spanish A2 conjunctions,vocabulary
+que,что; который; чем,Creo que tienes razón.,A1,spanish A1 conjunctions,vocabulary
+porque,потому что,No salgo porque llueve.,A1,spanish A1 conjunctions,vocabulary
+como,как; так как,"Como no tengo tiempo, me quedo en casa.","A2; also ""as"" or ""like""; with an accent, cómo is a question word",spanish A2 conjunctions,vocabulary
+si,если; ли,"Si llueve, me quedo en casa.","A1; without an accent; sí with an accent is ""yes""",spanish A1 conjunctions,vocabulary
+aunque,хотя; даже если,Voy a correr aunque llueva.,A2,spanish A2 conjunctions,vocabulary
+cuando,когда,"Cuando llego a casa, ceno.",A1,spanish A1 conjunctions,vocabulary
+mientras,пока; в то время как,Leo mientras como.,A2,spanish A2 conjunctions,vocabulary
+entonces,тогда; значит,Entonces nos vemos mañana.,A1,spanish A1 conjunctions,vocabulary
+así que,поэтому; так что,"Estoy cansado, así que me acuesto.",A2,spanish A2 conjunctions,vocabulary
+por eso,поэтому,"Tengo hambre, por eso como ahora.",A1,spanish A1 conjunctions,vocabulary
+además,кроме того; к тому же,Es barato y además es bueno.,A2,spanish A2 conjunctions,vocabulary
+sin embargo,однако,"Es pequeño; sin embargo, es muy cómodo.",A2,spanish A2 conjunctions,vocabulary
+es decir,то есть,"Llego a las ocho, es decir, temprano.",A2,spanish A2 conjunctions,vocabulary
+qué,что; какой,¿Qué quieres beber?,A1,spanish A1 questions,vocabulary
+quién,кто,¿Quién es ese chico?,A1; plural: quiénes,spanish A1 questions,vocabulary
+cuál,какой; который,¿Cuál es tu teléfono?,A1; plural: cuáles,spanish A1 questions,vocabulary
+cuándo,когда,¿Cuándo vienes?,A1,spanish A1 questions,vocabulary
+dónde,где,¿Dónde vives?,A1,spanish A1 questions,vocabulary
+adónde,куда,¿Adónde vas?,A2; also written a dónde,spanish A2 questions,vocabulary
+de dónde,откуда,¿De dónde eres?,A1,spanish A1 questions,vocabulary
+cómo,как,¿Cómo te llamas?,A1,spanish A1 questions,vocabulary
+cuánto,сколько,¿Cuánto cuesta esto?,"A1; feminine: cuánta; plural: cuántos, cuántas",spanish A1 questions,vocabulary
+por qué,почему,¿Por qué estudias español?,A1,spanish A1 questions,vocabulary
+para qué,зачем; для чего,¿Para qué sirve esto?,A2,spanish A2 questions,vocabulary
+aquí,здесь; сюда,Aquí hay mucha gente.,A1,spanish A1 adverbs,vocabulary
+ahí,там (рядом); тут,Tus llaves están ahí.,A1,spanish A1 adverbs,vocabulary
+allí,там,Allí hay un banco.,A1,spanish A1 adverbs,vocabulary
+cerca,близко,La estación está cerca.,A1,spanish A1 adverbs,vocabulary
+lejos,далеко,Mi casa está lejos.,A1,spanish A1 adverbs,vocabulary
+dentro,внутри,Dentro hace calor.,A2,spanish A2 adverbs,vocabulary
+fuera,снаружи; вне,Fuera llueve mucho.,A2,spanish A2 adverbs,vocabulary
+arriba,наверху; вверх,Mi habitación está arriba.,A2,spanish A2 adverbs,vocabulary
+abajo,внизу; вниз,Los niños juegan abajo.,A2,spanish A2 adverbs,vocabulary
+ahora,сейчас,Ahora estoy en casa.,A1,spanish A1 adverbs,vocabulary
+hoy,сегодня,Hoy hace mucho sol.,A1,spanish A1 adverbs,vocabulary
+ayer,вчера,Ayer fui al cine.,A1,spanish A1 adverbs,vocabulary
+mañana,завтра,Mañana tengo clase.,"A1; as a noun la mañana is ""morning""",spanish A1 adverbs,vocabulary
+anoche,вчера вечером; прошлой ночью,Anoche dormí muy bien.,A2,spanish A2 adverbs,vocabulary
+anteayer,позавчера,Anteayer llovió todo el día.,A2,spanish A2 adverbs,vocabulary
+pasado mañana,послезавтра,Pasado mañana empiezan las vacaciones.,A2,spanish A2 adverbs,vocabulary
+antes,раньше; до,Antes vivía en el campo.,A1,spanish A1 adverbs,vocabulary
+después,потом; после,Primero cenamos y después vemos una película.,A1,spanish A1 adverbs,vocabulary
+luego,потом; затем,Hasta luego.,A1,spanish A1 adverbs,vocabulary
+pronto,скоро; рано,Nos vemos pronto.,A1,spanish A1 adverbs,vocabulary
+temprano,рано,Me levanto muy temprano.,A1,spanish A1 adverbs,vocabulary
+tarde,поздно,Llego tarde al trabajo.,"A1; adverb; as a noun la tarde is ""afternoon""",spanish A1 adverbs,vocabulary
+siempre,всегда,Siempre desayuno en casa.,A1,spanish A1 adverbs,vocabulary
+nunca,никогда,Nunca bebo café por la noche.,A1,spanish A1 adverbs,vocabulary
+a veces,иногда,A veces voy al trabajo en bici.,A1,spanish A1 adverbs,vocabulary
+a menudo,часто,Voy a menudo al cine.,A2,spanish A2 adverbs,vocabulary
+casi,почти,Casi son las ocho.,A2,spanish A2 adverbs,vocabulary
+ya,уже,Ya son las diez.,A1,spanish A1 adverbs,vocabulary
+todavía,ещё; всё ещё,Todavía tengo sueño.,A2,spanish A2 adverbs,vocabulary
+de repente,вдруг; внезапно,De repente empieza a llover.,A2,spanish A2 adverbs,vocabulary
+enseguida,сразу; сейчас же,Enseguida le traigo la cuenta.,A2,spanish A2 adverbs,vocabulary
+por fin,наконец,¡Por fin es viernes!,A2,spanish A2 adverbs,vocabulary
+al final,в конце; в итоге,Al final nos quedamos en casa.,A2,spanish A2 adverbs,vocabulary
+muy,очень,Esta sopa está muy buena.,A1,spanish A1 adverbs,vocabulary
+mucho,много; очень,Como mucho pan.,"A1; adjective: mucha, muchos, muchas",spanish A1 adverbs,vocabulary
+poco,мало; немного,Duermo poco.,"A1; adjective: poca, pocos, pocas",spanish A1 adverbs,vocabulary
+bastante,довольно; достаточно,Es bastante caro.,A2,spanish A2 adverbs,vocabulary
+demasiado,слишком,Hace demasiado frío.,A2,spanish A2 adverbs,vocabulary
+más,больше; более; ещё,Quiero más agua.,A1; with an accent,spanish A1 adverbs,vocabulary
+menos,меньше; менее,Hoy hay menos gente.,A1,spanish A1 adverbs,vocabulary
+tan,так; такой,No es tan difícil.,A2,spanish A2 adverbs,vocabulary
+tanto,так много; столько,No hablo tanto como tú.,A2,spanish A2 adverbs,vocabulary
+también,тоже; также,Yo también tengo hambre.,A1,spanish A1 adverbs,vocabulary
+tampoco,тоже не; также не,Yo tampoco tengo tiempo.,A2,spanish A2 adverbs,vocabulary
+solo,только; один,Solo quiero un café.,"A1; as an adjective: ""alone"", feminine sola",spanish A1 adverbs,vocabulary
+quizás,может быть,Quizás vamos a la playa.,A2; also: quizá,spanish A2 adverbs,vocabulary
+tal vez,возможно; может быть,Tal vez llueva mañana.,A2,spanish A2 adverbs,vocabulary
+bien,хорошо,Hablas muy bien.,A1,spanish A1 adverbs,vocabulary
+mal,плохо,Hoy duermo mal.,A1,spanish A1 adverbs,vocabulary
+mejor,лучше,Mejor llamo mañana.,"A2; also an adjective: ""better""",spanish A2 adverbs,vocabulary
+peor,хуже,Hoy me siento peor.,"A2; also an adjective: ""worse""",spanish A2 adverbs,vocabulary
+deprisa,быстро,No hables tan deprisa.,A2,spanish A2 adverbs,vocabulary
+despacio,медленно,"Habla más despacio, por favor.",A1,spanish A1 adverbs,vocabulary
+juntos,вместе,Vamos juntos al trabajo.,A2; feminine: juntas,spanish A2 adverbs,vocabulary
+cero,ноль,La temperatura es cero grados.,A1,spanish A1 numbers,vocabulary
+uno,один,Tengo un hermano y una hermana.,"A1; un before a masculine noun, una before a feminine noun",spanish A1 numbers,vocabulary
+dos,два,Tengo dos gatos.,A1,spanish A1 numbers,vocabulary
+tres,три,Vivo aquí desde hace tres años.,A1,spanish A1 numbers,vocabulary
+cuatro,четыре,En mi familia somos cuatro.,A1,spanish A1 numbers,vocabulary
+cinco,пять,Son las cinco de la tarde.,A1,spanish A1 numbers,vocabulary
+seis,шесть,Me levanto a las seis.,A1,spanish A1 numbers,vocabulary
+siete,семь,La semana tiene siete días.,A1,spanish A1 numbers,vocabulary
+ocho,восемь,Trabajo ocho horas al día.,A1,spanish A1 numbers,vocabulary
+nueve,девять,La clase empieza a las nueve.,A1,spanish A1 numbers,vocabulary
+diez,десять,Mi casa está a diez minutos de aquí.,A1,spanish A1 numbers,vocabulary
+once,одиннадцать,Hay once jugadores en un equipo de fútbol.,A1,spanish A1 numbers,vocabulary
+doce,двенадцать,El año tiene doce meses.,A1,spanish A1 numbers,vocabulary
+trece,тринадцать,Mi hijo tiene trece años.,A1,spanish A1 numbers,vocabulary
+catorce,четырнадцать,Hoy es el catorce de febrero.,A1,spanish A1 numbers,vocabulary
+quince,пятнадцать,Espero quince minutos.,A1,spanish A1 numbers,vocabulary
+dieciséis,шестнадцать,Mi prima tiene dieciséis años.,"A1; one word from 16 to 29: diecisiete, dieciocho, diecinueve",spanish A1 numbers,vocabulary
+veinte,двадцать,Hay veinte alumnos en clase.,A1,spanish A1 numbers,vocabulary
+treinta,тридцать,Esta camisa cuesta treinta euros.,A1,spanish A1 numbers,vocabulary
+cuarenta,сорок,Mi padre tiene cuarenta años.,A1,spanish A1 numbers,vocabulary
+cincuenta,пятьдесят,Hay cincuenta personas en la sala.,A1,spanish A1 numbers,vocabulary
+sesenta,шестьдесят,Una hora tiene sesenta minutos.,A1,spanish A1 numbers,vocabulary
+setenta,семьдесят,Mi abuela tiene setenta años.,A1,spanish A1 numbers,vocabulary
+ochenta,восемьдесят,El tren va a ochenta kilómetros por hora.,A1,spanish A1 numbers,vocabulary
+noventa,девяносто,Mi abuelo tiene noventa años.,A1,spanish A1 numbers,vocabulary
+cien,сто,Este libro cuesta cien euros.,A1; ciento before another number: ciento diez,spanish A1 numbers,vocabulary
+doscientos,двести,Hay doscientos libros en mi casa.,A2; feminine: doscientas,spanish A2 numbers,vocabulary
+quinientos,пятьсот,El viaje cuesta quinientos euros.,A2; irregular: not cincocientos; feminine: quinientas,spanish A2 numbers,vocabulary
+mil,тысяча,Una bici buena cuesta mil euros.,A1,spanish A1 numbers,vocabulary
+el millón,миллион,En mi ciudad viven un millón de personas.,A2; followed by de before a noun,spanish A2 numbers,vocabulary
+primero,первый,Mi primer día de trabajo fue ayer.,A1; primer before a masculine singular noun; feminine: primera,spanish A1 numbers,vocabulary
+segundo,второй,Vivo en el segundo piso.,"A1; feminine: segunda; el segundo is also ""second"" of time",spanish A1 numbers,vocabulary
+tercero,третий,Mi oficina está en el tercer piso.,A2; tercer before a masculine singular noun; feminine: tercera,spanish A2 numbers,vocabulary
+último,последний,Es el último día de clase.,A2; feminine: última,spanish A2 numbers,vocabulary
+la mitad,половина,La mitad de la clase es de Rusia.,A2,spanish A2 numbers,vocabulary
+medio,половинный; полу-,Quiero medio kilo de manzanas.,A2; adjective; feminine: media,spanish A2 numbers,vocabulary
+la hora,час; время,¿Qué hora es?,A1,spanish A1 time,vocabulary
+el minuto,минута,Espero cinco minutos.,A1,spanish A1 time,vocabulary
+el momento,момент; минута,"Un momento, por favor.",A1,spanish A1 time,vocabulary
+la vez,раз,Voy al gimnasio dos veces por semana.,A1; plural: veces,spanish A1 time,vocabulary
+otra vez,ещё раз; снова,¿Puedes repetirlo otra vez?,A1,spanish A1 time,vocabulary
+el día,день,Hoy es un día muy bonito.,A1; masculine despite the -a ending,spanish A1 time,vocabulary
+la semana,неделя,Trabajo cinco días a la semana.,A1,spanish A1 time,vocabulary
+el mes,месяц,El mes que viene viajo a Italia.,A1,spanish A1 time,vocabulary
+el año,год,Este año voy a aprender español.,A1,spanish A1 time,vocabulary
+el fin de semana,выходные,El fin de semana descanso en casa.,A1,spanish A1 time,vocabulary
+la mañana,утро,Por la mañana hago deporte.,"A1; as an adverb mañana is ""tomorrow""",spanish A1 time,vocabulary
+la tarde,вторая половина дня; вечер,Por la tarde estudio español.,A1; until about nine in the evening,spanish A1 time,vocabulary
+la noche,ночь; вечер,Me acuesto tarde por la noche.,A1,spanish A1 time,vocabulary
+por la mañana,утром,Por la mañana desayuno fruta.,A1,spanish A1 time,vocabulary
+por la tarde,днём; вечером,Por la tarde salgo con mis amigos.,A1,spanish A1 time,vocabulary
+por la noche,ночью; вечером,Por la noche leo un libro.,A1,spanish A1 time,vocabulary
+la fecha,дата,¿Cuál es la fecha de hoy?,A2,spanish A2 time,vocabulary
+el cumpleaños,день рождения,Mi cumpleaños es en mayo.,A1; singular and plural are the same,spanish A1 time,vocabulary
+el futuro,будущее,En el futuro quiero vivir en España.,A2,spanish A2 time,vocabulary
+pasado,прошлый,La semana pasada estuve enfermo.,A2; adjective; feminine: pasada,spanish A2 time,vocabulary
+próximo,следующий; ближайший,El próximo tren sale a las ocho.,A2; feminine: próxima,spanish A2 time,vocabulary
+el lunes,понедельник,El lunes tengo clase de inglés.,"A1; ""el lunes"" means ""on Monday""",spanish A1 days,vocabulary
+el martes,вторник,El martes voy al médico.,A1,spanish A1 days,vocabulary
+el miércoles,среда,El miércoles juego al tenis.,A1,spanish A1 days,vocabulary
+el jueves,четверг,El jueves cenamos con mis padres.,A1,spanish A1 days,vocabulary
+el viernes,пятница,El viernes salgo temprano.,A1,spanish A1 days,vocabulary
+el sábado,суббота,El sábado hacemos la compra.,A1,spanish A1 days,vocabulary
+el domingo,воскресенье,El domingo descanso en casa.,A1,spanish A1 days,vocabulary
+enero,январь,En enero hace mucho frío.,A1; masculine; no article; months are written in lower case,spanish A1 months,vocabulary
+febrero,февраль,Febrero es el mes más corto.,A1; masculine; no article,spanish A1 months,vocabulary
+marzo,март,En marzo empieza la primavera.,A1; masculine; no article,spanish A1 months,vocabulary
+abril,апрель,En abril llueve mucho.,A1; masculine; no article,spanish A1 months,vocabulary
+mayo,май,Mi cumpleaños es en mayo.,A1; masculine; no article,spanish A1 months,vocabulary
+junio,июнь,En junio empiezan las vacaciones.,A1; masculine; no article,spanish A1 months,vocabulary
+julio,июль,En julio hace mucho calor.,A1; masculine; no article,spanish A1 months,vocabulary
+agosto,август,Casi todos viajan en agosto.,A1; masculine; no article,spanish A1 months,vocabulary
+septiembre,сентябрь,En septiembre vuelvo al trabajo.,A1; masculine; no article; also: setiembre,spanish A1 months,vocabulary
+octubre,октябрь,En octubre hace fresco.,A1; masculine; no article,spanish A1 months,vocabulary
+noviembre,ноябрь,En noviembre oscurece pronto.,A1; masculine; no article,spanish A1 months,vocabulary
+diciembre,декабрь,En diciembre celebramos la Navidad.,A1; masculine; no article,spanish A1 months,vocabulary
+la primavera,весна,En primavera hay muchas flores.,A1,spanish A1 seasons,vocabulary
+el verano,лето,En verano vamos a la playa.,A1,spanish A1 seasons,vocabulary
+el otoño,осень,En otoño caen las hojas.,A1,spanish A1 seasons,vocabulary
+el invierno,зима,En invierno hace mucho frío.,A1,spanish A1 seasons,vocabulary
+hola,привет; здравствуйте,"Hola, ¿qué tal?",A1,spanish A1 greetings,vocabulary
+adiós,до свидания; пока,"Adiós, hasta mañana.",A1,spanish A1 greetings,vocabulary
+buenos días,доброе утро; добрый день,"Buenos días, señora.",A1; used until about midday,spanish A1 greetings,vocabulary
+buenas tardes,добрый день; добрый вечер,"Buenas tardes, ¿qué desea?",A1,spanish A1 greetings,vocabulary
+buenas noches,добрый вечер; спокойной ночи,"Buenas noches, que descanses.",A1,spanish A1 greetings,vocabulary
+hasta luego,до скорого; пока,"Hasta luego, Marta.",A1,spanish A1 greetings,vocabulary
+hasta mañana,до завтра,"Hasta mañana, chicos.",A1,spanish A1 greetings,vocabulary
+por favor,пожалуйста (просьба),"Un café, por favor.",A1,spanish A1 greetings,vocabulary
+gracias,спасибо,Gracias por tu ayuda.,A1,spanish A1 greetings,vocabulary
+muchas gracias,большое спасибо,Muchas gracias por la comida.,A1,spanish A1 greetings,vocabulary
+de nada,не за что,—Gracias. —De nada.,A1,spanish A1 greetings,vocabulary
+lo siento,мне жаль; извините,"Lo siento, llego tarde.",A1,spanish A1 greetings,vocabulary
+perdón,извините; прошу прощения,"Perdón, ¿dónde está el baño?",A1,spanish A1 greetings,vocabulary
+disculpe,извините,"Disculpe, ¿tiene hora?",A2; formal; informal: disculpa,spanish A2 greetings,vocabulary
+con permiso,разрешите; с вашего позволения,"Con permiso, ¿puedo pasar?",A2,spanish A2 greetings,vocabulary
+qué tal,как дела,"Hola, ¿qué tal?",A1,spanish A1 greetings,vocabulary
+mucho gusto,очень приятно,"Mucho gusto, soy Ana.",A1,spanish A1 greetings,vocabulary
+encantado,очень приятно,Encantado de conocerte.,A1; feminine: encantada,spanish A1 greetings,vocabulary
+bienvenido,добро пожаловать,Bienvenido a mi casa.,A1; feminine: bienvenida; plural: bienvenidos,spanish A1 greetings,vocabulary
+de acuerdo,согласен; хорошо,"De acuerdo, nos vemos a las ocho.",A1,spanish A1 greetings,vocabulary
+vale,хорошо; ладно,—¿Cenamos a las nueve? —Vale.,"A1; Spain; LatAm: dale, bueno, está bien",spanish A1 greetings,vocabulary
+no pasa nada,ничего страшного,"No pasa nada, no te preocupes.",A2,spanish A2 greetings,vocabulary
+buen provecho,приятного аппетита,Buen provecho a todos.,A2,spanish A2 greetings,vocabulary
+felicidades,поздравляю,Felicidades por tu cumpleaños.,A2,spanish A2 greetings,vocabulary
+ojalá,хоть бы; дай бог,Ojalá haga buen tiempo.,A2; used with the subjunctive,spanish A2 greetings,vocabulary
+cómo se dice,как сказать,"¿Cómo se dice ""table"" en español?",A1,spanish A1 greetings,vocabulary
+no entiendo,не понимаю,"Perdón, no entiendo.",A1,spanish A1 greetings,vocabulary
+no sé,не знаю,No sé dónde está mi móvil.,A1,spanish A1 greetings,vocabulary
+hay,есть; имеется,Hay un banco en esta calle.,A1; impersonal form of haber; same form for singular and plural,spanish A1 greetings,vocabulary
+tener hambre,хотеть есть,Tengo hambre; vamos a comer.,"A1; irregular: tengo, tuve",spanish A1 greetings,vocabulary
+tener sed,хотеть пить,Tengo sed; quiero agua.,"A1; irregular: tengo, tuve",spanish A1 greetings,vocabulary
+tener sueño,хотеть спать,Tengo sueño después de comer.,"A1; irregular: tengo, tuve",spanish A1 greetings,vocabulary
+tener frío,мёрзнуть; быть холодно,Tengo frío; cierra la ventana.,"A1; irregular: tengo, tuve",spanish A1 greetings,vocabulary
+tener calor,чувствовать жару,Tengo calor; abro la ventana.,"A1; irregular: tengo, tuve",spanish A1 greetings,vocabulary
+tener prisa,торопиться,"Tengo prisa, llego tarde.","A2; irregular: tengo, tuve",spanish A2 greetings,vocabulary
+tener razón,быть правым,Tienes razón.,"A2; irregular: tengo, tuve",spanish A2 greetings,vocabulary
+tener ganas de,хотеть; иметь желание,Tengo ganas de salir.,"A2; irregular: tengo, tuve",spanish A2 greetings,vocabulary
+tener que,должен; нужно,Tengo que estudiar.,"A1; irregular: tengo, tuve; followed by an infinitive",spanish A1 greetings,vocabulary
+la familia,семья,Mi familia vive en Toledo.,A1,spanish A1 family,vocabulary
+el padre,отец,Mi padre trabaja en un hospital.,A1,spanish A1 family,vocabulary
+la madre,мать,Mi madre cocina muy bien.,A1,spanish A1 family,vocabulary
+padres,родители,Mis padres viven en el campo.,"A1; plural of el padre, used for ""parents""; not for a single parent",spanish A1 family,vocabulary
+el hermano,брат,Mi hermano estudia medicina.,"A1; plural los hermanos can mean ""brothers and sisters""",spanish A1 family,vocabulary
+la hermana,сестра,Mi hermana tiene veinte años.,A1,spanish A1 family,vocabulary
+el hijo,сын,Mi hijo juega al fútbol.,A1,spanish A1 family,vocabulary
+la hija,дочь,Mi hija va al colegio.,A1,spanish A1 family,vocabulary
+el abuelo,дедушка,Mi abuelo cuenta muchas historias.,A1,spanish A1 family,vocabulary
+la abuela,бабушка,Mi abuela vive con nosotros.,A1,spanish A1 family,vocabulary
+el tío,дядя,Mi tío vive en Bilbao.,A1,spanish A1 family,vocabulary
+la tía,тётя,Mi tía es profesora.,A1,spanish A1 family,vocabulary
+el primo,двоюродный брат,Mi primo trabaja en Madrid.,A1; feminine: la prima,spanish A1 family,vocabulary
+el marido,муж,Su marido es cocinero.,A1; also: el esposo,spanish A1 family,vocabulary
+la mujer,женщина; жена,Esa mujer es mi vecina.,"A1; also ""wife""",spanish A1 family,vocabulary
+el novio,парень; жених,Mi hermana tiene novio.,A1; feminine: la novia,spanish A1 family,vocabulary
+el bebé,младенец; малыш,El bebé duerme en su cuarto.,A1; el bebé is used for a baby of either sex,spanish A1 family,vocabulary
+el niño,мальчик; ребёнок,El niño juega en el parque.,A1; feminine: la niña,spanish A1 family,vocabulary
+el chico,парень; мальчик,Ese chico es mi vecino.,A1; feminine: la chica,spanish A1 family,vocabulary
+el hombre,мужчина; человек,El hombre lee el periódico.,A1,spanish A1 family,vocabulary
+el amigo,друг,Mi amigo vive en Cádiz.,A1; feminine: la amiga,spanish A1 family,vocabulary
+el vecino,сосед,Mi vecino toca la guitarra.,A1; feminine: la vecina,spanish A1 family,vocabulary
+la gente,люди,Hay mucha gente en la calle.,A1; singular in Spanish: la gente es,spanish A1 family,vocabulary
+la persona,человек,Es una persona muy simpática.,"A1; always feminine, also for a man",spanish A1 family,vocabulary
+el señor,господин; мужчина,El señor López está aquí.,A1; feminine: la señora,spanish A1 family,vocabulary
+el compañero,товарищ; коллега,Mi compañero de clase se llama Pablo.,A2; feminine: la compañera,spanish A2 family,vocabulary
+el jefe,начальник,Mi jefe es muy amable.,A2; feminine: la jefa,spanish A2 family,vocabulary
+estudiante,студент; учащийся,Mi hermano es estudiante de física.,"A1; masculine and feminine: el estudiante, la estudiante",spanish A1 family,vocabulary
+el profesor,преподаватель; учитель,Mi profesor habla muy despacio.,A1; feminine: la profesora,spanish A1 professions,vocabulary
+el maestro,школьный учитель,El maestro lee un cuento.,A2; feminine: la maestra; primary school,spanish A2 professions,vocabulary
+el médico,врач,El médico me recibe a las cinco.,A1; feminine: la médica,spanish A1 professions,vocabulary
+el camarero,официант,El camarero trae la cuenta.,A1; feminine: la camarera; LatAm: el mesero,spanish A1 professions,vocabulary
+el cocinero,повар,El cocinero prepara la sopa.,A2; feminine: la cocinera,spanish A2 professions,vocabulary
+el policía,полицейский,El policía regula el tráfico.,"A2; the woman police officer: la policía; la policía also means ""the police""",spanish A2 professions,vocabulary
+el conductor,водитель,El conductor del autobús es muy simpático.,A2; feminine: la conductora,spanish A2 professions,vocabulary
+el abogado,адвокат; юрист,Mi tío es abogado.,A2; feminine: la abogada,spanish A2 professions,vocabulary
+el ingeniero,инженер,Mi marido es ingeniero.,A2; feminine: la ingeniera,spanish A2 professions,vocabulary
+el dependiente,продавец,El dependiente me ayuda con la talla.,A2; feminine: la dependienta,spanish A2 professions,vocabulary
+el cliente,клиент; покупатель,El cliente paga con tarjeta.,A2; feminine: la clienta; also el/la cliente,spanish A2 professions,vocabulary
+turista,турист,El turista hace fotos de la plaza.,"A1; masculine and feminine: el turista, la turista",spanish A1 professions,vocabulary
+el cuerpo,тело,Hago deporte para cuidar mi cuerpo.,A1,spanish A1 body,vocabulary
+la cabeza,голова,Me duele la cabeza.,A1,spanish A1 body,vocabulary
+la cara,лицо,Me lavo la cara por la mañana.,A1,spanish A1 body,vocabulary
+el pelo,волосы,Mi hermana tiene el pelo largo.,A1; singular in Spanish,spanish A1 body,vocabulary
+el ojo,глаз,Tengo los ojos azules.,A1,spanish A1 body,vocabulary
+la oreja,ухо,El niño tiene frío en las orejas.,A1; the outer ear; the inner ear and hearing: el oído,spanish A1 body,vocabulary
+la nariz,нос,Tengo la nariz roja por el frío.,A1; plural: las narices,spanish A1 body,vocabulary
+la boca,рот,"Abre la boca, por favor.",A1,spanish A1 body,vocabulary
+el diente,зуб,Me lavo los dientes tres veces al día.,A1,spanish A1 body,vocabulary
+la lengua,язык,Me duele la lengua.,"A2; also ""language""",spanish A2 body,vocabulary
+el cuello,шея,Me duele el cuello.,A2,spanish A2 body,vocabulary
+el hombro,плечо,Tengo dolor en el hombro.,A2,spanish A2 body,vocabulary
+el brazo,рука (от плеча до кисти),Me duele el brazo derecho.,A1,spanish A1 body,vocabulary
+la mano,рука (кисть); ладонь,Lávate las manos antes de comer.,A1; feminine despite the -o ending,spanish A1 body,vocabulary
+el dedo,палец,Me duele el dedo.,A1,spanish A1 body,vocabulary
+la pierna,нога,Me duele la pierna izquierda.,A1,spanish A1 body,vocabulary
+el pie,ступня; нога,Me duelen los pies.,A1,spanish A1 body,vocabulary
+la rodilla,колено,Me duele la rodilla.,A2,spanish A2 body,vocabulary
+la espalda,спина,Me duele la espalda.,A1,spanish A1 body,vocabulary
+el estómago,желудок; живот,Me duele el estómago.,A1,spanish A1 body,vocabulary
+el corazón,сердце,Mi corazón late muy rápido.,A2,spanish A2 body,vocabulary
+la sangre,кровь,Me sale sangre de la nariz.,A2,spanish A2 body,vocabulary
+la salud,здоровье,La salud es lo más importante.,A1; also a toast: ¡Salud!,spanish A1 health,vocabulary
+el dolor,боль,Tengo un dolor fuerte en la espalda.,A1,spanish A1 health,vocabulary
+doler,болеть,Me duele la cabeza.,A1; o→ue: duele; used like gustar,spanish A1 health,vocabulary
+la fiebre,температура; жар,Tengo fiebre y estoy cansado.,A2,spanish A2 health,vocabulary
+la tos,кашель,Tengo tos desde ayer.,A2,spanish A2 health,vocabulary
+el resfriado,простуда,Tengo un resfriado fuerte.,A2,spanish A2 health,vocabulary
+la gripe,грипп,Mi hermano tiene la gripe.,A2,spanish A2 health,vocabulary
+el hospital,больница,Mi madre trabaja en el hospital.,A1,spanish A1 health,vocabulary
+la medicina,лекарство; медицина,Tomo una medicina para la tos.,A2,spanish A2 health,vocabulary
+la pastilla,таблетка,Tomo una pastilla por la noche.,A2,spanish A2 health,vocabulary
+la receta,рецепт,El médico me da una receta.,"A2; also ""cooking recipe""",spanish A2 health,vocabulary
+la cita,приём; встреча; свидание,Tengo una cita con el médico.,A2; also a date or any arranged meeting,spanish A2 health,vocabulary
+la farmacia,аптека,La farmacia está cerca de aquí.,A1,spanish A1 health,vocabulary
+enfermo,больной,Mi hijo está enfermo.,A1; feminine: enferma,spanish A1 health,vocabulary
+sano,здоровый,Quiero comer de forma sana.,A2; feminine: sana,spanish A2 health,vocabulary
+cansado,усталый,Estoy muy cansado hoy.,A1; feminine: cansada,spanish A1 health,vocabulary
+cuidar,заботиться; беречь,Cuido a mi abuela.,A2,spanish A2 health,vocabulary
+la comida,еда; обед,La comida de mi madre es deliciosa.,"A1; also ""lunch"" or ""meal""",spanish A1 food,vocabulary
+el desayuno,завтрак,El desayuno es a las ocho.,A1,spanish A1 food,vocabulary
+el almuerzo,обед; второй завтрак,El almuerzo es a las dos.,A2; in Spain also a mid-morning snack; the main meal there is la comida,spanish A2 food,vocabulary
+la cena,ужин,La cena está lista.,A1,spanish A1 food,vocabulary
+el pan,хлеб,Compro pan en la panadería.,A1,spanish A1 food,vocabulary
+la mantequilla,сливочное масло,Pongo mantequilla en el pan.,A1,spanish A1 food,vocabulary
+el queso,сыр,Me gusta el queso con pan.,A1,spanish A1 food,vocabulary
+el jamón,ветчина; хамон,Quiero un bocadillo de jamón.,A1,spanish A1 food,vocabulary
+la leche,молоко,Bebo leche por la mañana.,A1,spanish A1 food,vocabulary
+el huevo,яйцо,Desayuno dos huevos.,A1,spanish A1 food,vocabulary
+el arroz,рис,Hoy comemos arroz con pollo.,A1,spanish A1 food,vocabulary
+la pasta,макароны; паста,Cocino pasta con tomate.,"A1; also ""paste"" or ""money"" in colloquial Spain",spanish A1 food,vocabulary
+la sopa,суп,La sopa está muy caliente.,A1,spanish A1 food,vocabulary
+la ensalada,салат,Como una ensalada de tomate.,A1,spanish A1 food,vocabulary
+la carne,мясо,No como mucha carne.,A1,spanish A1 food,vocabulary
+el pollo,курица,Cenamos pollo con patatas.,A1,spanish A1 food,vocabulary
+la ternera,говядина; телятина,Quiero un filete de ternera.,A2; LatAm: also la carne de res,spanish A2 food,vocabulary
+el pescado,рыба (как еда),Los viernes comemos pescado.,A1,spanish A1 food,vocabulary
+la gamba,креветка,Pido unas gambas a la plancha.,A2; LatAm: el camarón,spanish A2 food,vocabulary
+la verdura,овощ; овощи,Como mucha verdura.,A1,spanish A1 food,vocabulary
+la fruta,фрукт; фрукты,Tomo fruta de postre.,A1,spanish A1 food,vocabulary
+la patata,картофель,Quiero tortilla de patatas.,A1; LatAm: la papa,spanish A1 food,vocabulary
+el tomate,помидор,El tomate está fresco.,A1,spanish A1 food,vocabulary
+la cebolla,лук,Corto una cebolla.,A1,spanish A1 food,vocabulary
+el ajo,чеснок,Pongo ajo en la sopa.,A2,spanish A2 food,vocabulary
+la zanahoria,морковь,Como una zanahoria.,A1,spanish A1 food,vocabulary
+la lechuga,салат (латук),Compro una lechuga y tomates.,A2,spanish A2 food,vocabulary
+el pimiento,перец,Corto un pimiento rojo.,A2,spanish A2 food,vocabulary
+la judía verde,стручковая фасоль,Hoy hay judías verdes con jamón.,"A2; LatAm: el ejote, el poroto",spanish A2 food,vocabulary
+el guisante,горох; зелёный горошек,Los guisantes están en la sopa.,"A2; LatAm: la arveja, el chícharo",spanish A2 food,vocabulary
+la manzana,яблоко,Como una manzana cada día.,A1,spanish A1 food,vocabulary
+la naranja,апельсин,Bebo zumo de naranja.,"A1; also the invariable colour adjective naranja, ""orange""",spanish A1 food,vocabulary
+el plátano,банан,Desayuno un plátano.,A1; LatAm: la banana,spanish A1 food,vocabulary
+el limón,лимон,Echo limón al pescado.,A1,spanish A1 food,vocabulary
+la fresa,клубника,Me encantan las fresas.,A1; LatAm: la frutilla in some countries,spanish A1 food,vocabulary
+la uva,виноград (ягода),Compro un kilo de uvas.,A2,spanish A2 food,vocabulary
+el melocotón,персик,Este melocotón está muy dulce.,A2; LatAm: el durazno,spanish A2 food,vocabulary
+agua,вода,Quiero un vaso de agua.,"A1; feminine, but takes el in the singular: el agua fría, las aguas",spanish A1 food,vocabulary
+el zumo,сок,Quiero un zumo de naranja.,A1; LatAm: el jugo,spanish A1 food,vocabulary
+el café,кофе,Tomo un café por la mañana.,A1,spanish A1 food,vocabulary
+el té,чай,¿Quieres té con limón?,A1,spanish A1 food,vocabulary
+la cerveza,пиво,"Una cerveza, por favor.",A1,spanish A1 food,vocabulary
+el vino,вино,Mi padre bebe vino tinto.,A1,spanish A1 food,vocabulary
+el azúcar,сахар,El azúcar es dulce.,A1; masculine: el azúcar blanco,spanish A1 food,vocabulary
+la sal,соль,Falta sal en la sopa.,A1,spanish A1 food,vocabulary
+el aceite,масло (растительное),Frío el pescado con aceite.,A2,spanish A2 food,vocabulary
+la salsa,соус,Me gusta la salsa de tomate.,A2,spanish A2 food,vocabulary
+el bocadillo,бутерброд,Como un bocadillo de queso.,A1; LatAm: el sándwich,spanish A1 food,vocabulary
+la tortilla,омлет; тортилья,La tortilla de patatas está muy rica.,A1; in Spain: omelette; in Mexico: a flat corn bread,spanish A1 food,vocabulary
+la pizza,пицца,Pedimos una pizza grande.,A1,spanish A1 food,vocabulary
+el helado,мороженое,Quiero un helado de chocolate.,A1,spanish A1 food,vocabulary
+la tarta,торт; пирог,La tarta de manzana está muy rica.,A2,spanish A2 food,vocabulary
+la galleta,печенье,Como una galleta con la leche.,A2,spanish A2 food,vocabulary
+el chocolate,шоколад,Tomo chocolate caliente.,A1,spanish A1 food,vocabulary
+el postre,десерт,De postre quiero helado.,A1,spanish A1 food,vocabulary
+el plato,тарелка; блюдо,El plato está en la mesa.,A1,spanish A1 food,vocabulary
+la cuchara,ложка,Uso una cuchara para la sopa.,A1,spanish A1 food,vocabulary
+el tenedor,вилка,Pongo el tenedor a la izquierda.,A1,spanish A1 food,vocabulary
+el cuchillo,нож,Corto el pan con un cuchillo.,A1,spanish A1 food,vocabulary
+el vaso,стакан,Quiero un vaso de agua.,A1,spanish A1 food,vocabulary
+la taza,чашка,"Una taza de té, por favor.",A1,spanish A1 food,vocabulary
+la botella,бутылка,"Una botella de agua, por favor.",A1,spanish A1 food,vocabulary
+la sartén,сковорода,Frío los huevos en una sartén.,A2; feminine in Spain; LatAm: sometimes el sartén,spanish A2 food,vocabulary
+el menú,меню; комплексный обед,Quiero el menú del día.,A1; in Spain el menú del día is a fixed-price lunch,spanish A1 food,vocabulary
+la carta,меню (в ресторане); письмо,"¿Me trae la carta, por favor?","A2; also ""letter""",spanish A2 food,vocabulary
+la cuenta,счёт,"La cuenta, por favor.","A1; also ""account""",spanish A1 food,vocabulary
+la propina,чаевые,Dejo una propina pequeña.,A2,spanish A2 food,vocabulary
+el restaurante,ресторан,Cenamos en un restaurante.,A1,spanish A1 food,vocabulary
+el bar,бар,Tomamos algo en el bar.,A1,spanish A1 food,vocabulary
+la cafetería,кафе,Nos vemos en la cafetería.,A1,spanish A1 food,vocabulary
+la tapa,тапас; закуска,Pedimos unas tapas con la cerveza.,A2; a small portion served with a drink in Spain,spanish A2 food,vocabulary
+la casa,дом,Mi casa está en el centro.,A1,spanish A1 house,vocabulary
+el piso,квартира; этаж,Vivo en un piso pequeño.,"A1; Spain: flat; LatAm: el apartamento, el departamento",spanish A1 house,vocabulary
+la habitación,комната; спальня,Mi habitación es pequeña.,"A1; LatAm: el cuarto, la pieza, la recámara (Mexico)",spanish A1 house,vocabulary
+el cuarto,комната; четверть,Mi cuarto tiene una ventana grande.,"A2; also ""quarter""",spanish A2 house,vocabulary
+el dormitorio,спальня,El dormitorio tiene una cama grande.,A2,spanish A2 house,vocabulary
+el salón,гостиная,Vemos la tele en el salón.,A1; LatAm: la sala,spanish A1 house,vocabulary
+la cocina,кухня,Mi madre está en la cocina.,"A1; also ""cooking""",spanish A1 house,vocabulary
+el baño,ванная; туалет,El baño está al final del pasillo.,"A1; also ""bath""",spanish A1 house,vocabulary
+el pasillo,коридор,El pasillo es largo.,A2,spanish A2 house,vocabulary
+la puerta,дверь,"Cierra la puerta, por favor.",A1,spanish A1 house,vocabulary
+la ventana,окно,Abro la ventana por la mañana.,A1,spanish A1 house,vocabulary
+la pared,стена,Hay un cuadro en la pared.,A1,spanish A1 house,vocabulary
+el suelo,пол; земля,El suelo está limpio.,A1,spanish A1 house,vocabulary
+el techo,потолок,El techo es blanco.,A2,spanish A2 house,vocabulary
+la escalera,лестница,Subo por la escalera.,A1,spanish A1 house,vocabulary
+el ascensor,лифт,El ascensor no funciona.,A1,spanish A1 house,vocabulary
+el balcón,балкон,Tomo el café en el balcón.,A2,spanish A2 house,vocabulary
+la terraza,терраса; веранда,Cenamos en la terraza.,A2,spanish A2 house,vocabulary
+el jardín,сад,Los niños juegan en el jardín.,A1,spanish A1 house,vocabulary
+el garaje,гараж,El coche está en el garaje.,A2,spanish A2 house,vocabulary
+la mesa,стол,La mesa es de madera.,A1,spanish A1 house,vocabulary
+la silla,стул,Siéntate en esa silla.,A1,spanish A1 house,vocabulary
+el sofá,диван,Veo la tele en el sofá.,A1,spanish A1 house,vocabulary
+la cama,кровать,Mi cama es muy cómoda.,A1,spanish A1 house,vocabulary
+el armario,шкаф,La ropa está en el armario.,A1,spanish A1 house,vocabulary
+la estantería,полка; стеллаж,Los libros están en la estantería.,A2,spanish A2 house,vocabulary
+la lámpara,лампа,Enciendo la lámpara para leer.,A2,spanish A2 house,vocabulary
+la luz,свет,"Apaga la luz, por favor.",A1; plural: las luces,spanish A1 house,vocabulary
+el espejo,зеркало,Me miro en el espejo.,A2,spanish A2 house,vocabulary
+la alfombra,ковёр,El gato duerme en la alfombra.,A2,spanish A2 house,vocabulary
+la manta,одеяло; плед,Tengo frío; traigo una manta.,"A2; LatAm: la cobija, la frazada",spanish A2 house,vocabulary
+la toalla,полотенце,Necesito una toalla limpia.,A1,spanish A1 house,vocabulary
+el jabón,мыло,Me lavo las manos con jabón.,A2,spanish A2 house,vocabulary
+la ducha,душ,Me doy una ducha por la mañana.,A1,spanish A1 house,vocabulary
+el grifo,кран,"Cierra el grifo, por favor.","A2; Spain; LatAm: la llave, la canilla",spanish A2 house,vocabulary
+el frigorífico,холодильник,La leche está en el frigorífico.,"A1; Spain, also: la nevera; LatAm: el refrigerador",spanish A1 house,vocabulary
+la lavadora,стиральная машина,La lavadora hace mucho ruido.,A2,spanish A2 house,vocabulary
+el horno,духовка; печь,Pongo el pollo en el horno.,A2,spanish A2 house,vocabulary
+la basura,мусор,Saco la basura por la noche.,A1,spanish A1 house,vocabulary
+la llave,ключ,No encuentro mi llave.,A1,spanish A1 house,vocabulary
+la televisión,телевидение; телевизор,Veo la televisión por la noche.,A1; usually shortened to la tele,spanish A1 house,vocabulary
+la radio,радио,Escucho la radio en el coche.,A1; feminine,spanish A1 house,vocabulary
+el reloj,часы,Mi reloj no funciona.,A1,spanish A1 house,vocabulary
+el alquiler,аренда; квартплата,El alquiler es muy caro.,A2,spanish A2 house,vocabulary
+alquilar,снимать; арендовать,Quiero alquilar un piso.,A2,spanish A2 house,vocabulary
+la ropa,одежда,Compro ropa nueva.,A1; singular in Spanish,spanish A1 clothes,vocabulary
+la camisa,рубашка,Llevo una camisa blanca.,A1,spanish A1 clothes,vocabulary
+la camiseta,футболка,Llevo una camiseta roja.,"A1; LatAm: la remera, la playera",spanish A1 clothes,vocabulary
+el pantalón,брюки,Este pantalón es muy cómodo.,A1; usually plural: los pantalones,spanish A1 clothes,vocabulary
+la falda,юбка,Mi hermana lleva una falda negra.,A1,spanish A1 clothes,vocabulary
+el vestido,платье,Ella lleva un vestido azul.,A1,spanish A1 clothes,vocabulary
+el jersey,свитер,Hace frío; me pongo un jersey.,"A1; Spain; LatAm: el suéter, la sudadera",spanish A1 clothes,vocabulary
+la chaqueta,куртка; жакет,Hoy necesito una chaqueta.,"A1; LatAm: la campera, la chamarra",spanish A1 clothes,vocabulary
+el abrigo,пальто,En invierno llevo un abrigo.,A1,spanish A1 clothes,vocabulary
+el zapato,туфля; ботинок,Estos zapatos son nuevos.,A1,spanish A1 clothes,vocabulary
+la zapatilla,кроссовок; тапочка,Compro unas zapatillas para correr.,A2; LatAm: el tenis (Mexico),spanish A2 clothes,vocabulary
+el calcetín,носок,Un calcetín está roto.,A2,spanish A2 clothes,vocabulary
+la gorra,кепка,Llevo una gorra por el sol.,A2,spanish A2 clothes,vocabulary
+la bufanda,шарф,Llevo una bufanda de lana.,A2,spanish A2 clothes,vocabulary
+gafas,очки,Sin gafas no veo bien.,"A1; plural, feminine: las gafas; LatAm: los lentes, los anteojos",spanish A1 clothes,vocabulary
+el bolso,сумка (дамская),Mi bolso es marrón.,A2; LatAm: la cartera,spanish A2 clothes,vocabulary
+la mochila,рюкзак,Llevo la mochila a la escuela.,A1,spanish A1 clothes,vocabulary
+la talla,размер (одежды),¿Qué talla tienes?,A2; for shoes: el número in Spain,spanish A2 clothes,vocabulary
+ponerse,надевать; становиться,Me pongo el abrigo.,"A1; irregular: me pongo, me puse",spanish A1 clothes,vocabulary
+llevar,носить; нести; везти,Llevo una chaqueta roja.,A1,spanish A1 clothes,vocabulary
+la ciudad,город,Madrid es una ciudad grande.,A1,spanish A1 town,vocabulary
+el pueblo,деревня; посёлок,Mis abuelos viven en un pueblo.,"A1; also ""people (nation)""",spanish A1 town,vocabulary
+el barrio,район; квартал,Mi barrio es muy tranquilo.,A1,spanish A1 town,vocabulary
+el centro,центр,Vivo en el centro de la ciudad.,A1,spanish A1 town,vocabulary
+la calle,улица,Vivo en esta calle.,A1,spanish A1 town,vocabulary
+la plaza,площадь,Quedamos en la plaza a las seis.,A1,spanish A1 town,vocabulary
+la esquina,угол,El banco está en la esquina.,A1,spanish A1 town,vocabulary
+la acera,тротуар,Camina por la acera.,A2,spanish A2 town,vocabulary
+el puente,мост,Cruzamos el puente a pie.,A2,spanish A2 town,vocabulary
+el parque,парк,Corro en el parque cada mañana.,A1,spanish A1 town,vocabulary
+la iglesia,церковь,La iglesia es muy antigua.,A1,spanish A1 town,vocabulary
+el museo,музей,El museo abre a las diez.,A1,spanish A1 town,vocabulary
+el cine,кино; кинотеатр,Vamos al cine el sábado.,A1,spanish A1 town,vocabulary
+el teatro,театр,Mi hermana trabaja en el teatro.,A2,spanish A2 town,vocabulary
+la biblioteca,библиотека,Estudio en la biblioteca.,A1,spanish A1 town,vocabulary
+el banco,банк; скамейка,Voy al banco por la mañana.,"A1; also ""bench""",spanish A1 town,vocabulary
+el correo,почта,Voy al correo a enviar una carta.,"A2; also ""mail""",spanish A2 town,vocabulary
+el supermercado,супермаркет,Compro la comida en el supermercado.,A1,spanish A1 town,vocabulary
+la tienda,магазин,La tienda cierra a las ocho.,A1,spanish A1 town,vocabulary
+el mercado,рынок,Compro fruta en el mercado.,A1,spanish A1 town,vocabulary
+la panadería,булочная,Compro pan en la panadería.,A1,spanish A1 town,vocabulary
+la librería,книжный магазин,Compro libros en la librería.,A2,spanish A2 town,vocabulary
+la oficina,офис,Mi oficina está en el centro.,A1,spanish A1 town,vocabulary
+la escuela,школа,Mi hijo va a la escuela.,A1,spanish A1 town,vocabulary
+el colegio,школа,Mi colegio está cerca de casa.,A1; in Spain: the school for children and teenagers,spanish A1 town,vocabulary
+la universidad,университет,Mi hermana estudia en la universidad.,A1,spanish A1 town,vocabulary
+el hotel,отель,Reservo una habitación en el hotel.,A1,spanish A1 town,vocabulary
+el aeropuerto,аэропорт,El aeropuerto está lejos del centro.,A1,spanish A1 town,vocabulary
+la estación,вокзал; станция,La estación está cerca.,"A1; also ""season""",spanish A1 town,vocabulary
+la parada,остановка,La parada de autobús está aquí.,A1,spanish A1 town,vocabulary
+el ayuntamiento,мэрия; городской совет,El ayuntamiento está en la plaza.,A2,spanish A2 town,vocabulary
+la playa,пляж,Vamos a la playa en verano.,A1,spanish A1 town,vocabulary
+la dirección,адрес; направление,¿Cuál es tu dirección?,A1,spanish A1 town,vocabulary
+el mapa,карта (географическая),Busco la calle en el mapa.,A1; masculine despite the -a ending,spanish A1 town,vocabulary
+el semáforo,светофор,Para en el semáforo rojo.,A2,spanish A2 town,vocabulary
+el tráfico,движение; пробки,Hay mucho tráfico por la mañana.,A2; also: el tránsito in LatAm,spanish A2 town,vocabulary
+la derecha,правая сторона; право,Gira a la derecha.,A1,spanish A1 town,vocabulary
+la izquierda,левая сторона; лево,Gira a la izquierda.,A1,spanish A1 town,vocabulary
+todo recto,прямо,Siga todo recto hasta la plaza.,A1; LatAm: todo derecho,spanish A1 town,vocabulary
+el coche,автомобиль; машина,Mi coche es rojo.,"A1; LatAm: el carro, el auto",spanish A1 transport,vocabulary
+el autobús,автобус,Voy al trabajo en autobús.,"A1; LatAm: el bus, el camión (Mexico), el colectivo (Argentina)",spanish A1 transport,vocabulary
+el tren,поезд,Viajo en tren a Barcelona.,A1,spanish A1 transport,vocabulary
+el metro,метро,Voy en metro al centro.,A1,spanish A1 transport,vocabulary
+el taxi,такси,Tomo un taxi al aeropuerto.,A1,spanish A1 transport,vocabulary
+el avión,самолёт,El avión sale a las ocho.,A1,spanish A1 transport,vocabulary
+la bicicleta,велосипед,Voy a la escuela en bicicleta.,A1; also: la bici,spanish A1 transport,vocabulary
+la moto,мотоцикл,Mi hermano tiene una moto.,A2; feminine; short for la motocicleta,spanish A2 transport,vocabulary
+el billete,билет (на транспорт),Compro un billete de tren.,"A1; Spain; LatAm: el boleto, el pasaje",spanish A1 transport,vocabulary
+la entrada,билет (на мероприятие); вход,Compro dos entradas para el cine.,"A2; also ""entrance""",spanish A2 transport,vocabulary
+el viaje,поездка; путешествие,El viaje dura tres horas.,A1,spanish A1 transport,vocabulary
+la maleta,чемодан,Hago la maleta para el viaje.,A1,spanish A1 transport,vocabulary
+el equipaje,багаж,Mi equipaje es muy pesado.,A2,spanish A2 transport,vocabulary
+el pasaporte,паспорт,Llevo el pasaporte en la mochila.,A2,spanish A2 transport,vocabulary
+vacaciones,отпуск; каникулы,Mis vacaciones empiezan en julio.,A1; plural feminine: las vacaciones; no singular in this sense,spanish A1 transport,vocabulary
+el mar,море,El mar está muy tranquilo hoy.,"A1; usually masculine, also feminine in poetry",spanish A1 transport,vocabulary
+conducir,водить (машину),Conduzco cada día al trabajo.,"A1; irregular: conduzco, conduje; LatAm: manejar",spanish A1 transport,vocabulary
+aparcar,парковать,No puedo aparcar aquí.,A2; c→qu: aparqué; LatAm: estacionar,spanish A2 transport,vocabulary
+viajar,путешествовать; ехать,Me gusta viajar en tren.,A1,spanish A1 transport,vocabulary
+volar,летать,Volamos a París en dos horas.,"A2; o→ue: vuelo, vuelas",spanish A2 transport,vocabulary
+la naturaleza,природа,Me encanta la naturaleza.,A2,spanish A2 nature,vocabulary
+el campo,деревня; поле,Mis abuelos viven en el campo.,"A1; also ""field""",spanish A1 nature,vocabulary
+el árbol,дерево,Hay un árbol grande en el parque.,A1,spanish A1 nature,vocabulary
+la flor,цветок,Esta flor huele muy bien.,A1,spanish A1 nature,vocabulary
+la montaña,гора,Esquiamos en la montaña.,A1,spanish A1 nature,vocabulary
+el río,река,El río pasa por la ciudad.,A1,spanish A1 nature,vocabulary
+el lago,озеро,Nadamos en el lago.,A2,spanish A2 nature,vocabulary
+la isla,остров,Vamos a una isla en verano.,A2,spanish A2 nature,vocabulary
+el bosque,лес,Caminamos por el bosque.,A2,spanish A2 nature,vocabulary
+el cielo,небо,El cielo está muy azul.,A1,spanish A1 nature,vocabulary
+el sol,солнце,Hoy hay mucho sol.,A1,spanish A1 nature,vocabulary
+la luna,луна,La luna está llena.,A1,spanish A1 nature,vocabulary
+la estrella,звезда,Por la noche vemos las estrellas.,A2,spanish A2 nature,vocabulary
+el mundo,мир; свет,Quiero viajar por todo el mundo.,A1,spanish A1 nature,vocabulary
+el tiempo,погода; время,¿Qué tiempo hace hoy?,"A1; also ""time""",spanish A1 weather,vocabulary
+el clima,климат,El clima de mi ciudad es seco.,A2,spanish A2 weather,vocabulary
+llover,идти (о дожде),Hoy llueve mucho.,A1; o→ue: llueve; impersonal,spanish A1 weather,vocabulary
+la lluvia,дождь,La lluvia empieza por la tarde.,A1,spanish A1 weather,vocabulary
+nevar,идти (о снеге),En invierno nieva en la montaña.,A2; e→ie: nieva; impersonal,spanish A2 weather,vocabulary
+la nieve,снег,La nieve cubre la montaña.,A1,spanish A1 weather,vocabulary
+el viento,ветер,Hoy hace mucho viento.,A1,spanish A1 weather,vocabulary
+la nube,облако,Hay muchas nubes en el cielo.,A2,spanish A2 weather,vocabulary
+la tormenta,гроза; буря,Hay una tormenta esta noche.,A2,spanish A2 weather,vocabulary
+el calor,жара; тепло,En verano hace mucho calor.,A1,spanish A1 weather,vocabulary
+el frío,холод,En invierno hace mucho frío.,"A1; the adjective frío, fría means ""cold"": el agua está fría",spanish A1 weather,vocabulary
+la temperatura,температура,La temperatura baja por la noche.,A2,spanish A2 weather,vocabulary
+el animal,животное,El gato es un animal doméstico.,A1,spanish A1 animals,vocabulary
+el perro,собака,Mi perro se llama Rex.,A1; feminine: la perra,spanish A1 animals,vocabulary
+el gato,кот; кошка,Mi gato duerme en el sofá.,A1; feminine: la gata,spanish A1 animals,vocabulary
+el pájaro,птица,Un pájaro canta en el árbol.,A1,spanish A1 animals,vocabulary
+el pez,рыба (живая),Tengo un pez en casa.,A2; plural: peces; as food it is el pescado,spanish A2 animals,vocabulary
+la vaca,корова,La vaca da leche.,A2,spanish A2 animals,vocabulary
+el caballo,лошадь,Mi hermana monta a caballo.,A2,spanish A2 animals,vocabulary
+el cerdo,свинья; свинина,El cerdo vive en la granja.,A2; as meat also la carne de cerdo,spanish A2 animals,vocabulary
+el ratón,мышь,El gato persigue al ratón.,A2; also the computer mouse,spanish A2 animals,vocabulary
+la mascota,домашнее животное,Mi mascota es un conejo.,A2,spanish A2 animals,vocabulary
+el trabajo,работа,Mi trabajo es muy interesante.,A1,spanish A1 work,vocabulary
+la empresa,компания; предприятие,Trabajo en una empresa pequeña.,A2,spanish A2 work,vocabulary
+la reunión,встреча; собрание,Tenemos una reunión a las diez.,A2,spanish A2 work,vocabulary
+el horario,расписание; график,Mi horario es de nueve a cinco.,A2,spanish A2 work,vocabulary
+el sueldo,зарплата,Mi sueldo es bastante bueno.,A2; also: el salario,spanish A2 work,vocabulary
+trabajar,работать,Trabajo en un banco.,A1,spanish A1 work,vocabulary
+ganar,зарабатывать; выигрывать,Gano poco dinero.,A2,spanish A2 work,vocabulary
+la clase,урок; класс,La clase empieza a las nueve.,A1,spanish A1 school,vocabulary
+la lección,урок,La lección de hoy es fácil.,A2,spanish A2 school,vocabulary
+el curso,курс; учебный год,Este curso estudio español.,A2,spanish A2 school,vocabulary
+el examen,экзамен,Mañana tengo un examen.,A1; plural: exámenes,spanish A1 school,vocabulary
+la nota,оценка; заметка,Saqué una nota muy buena.,A2,spanish A2 school,vocabulary
+la tarea,задание; домашнее задание,Tengo mucha tarea hoy.,"A2; Spain: also los deberes, in the plural",spanish A2 school,vocabulary
+el libro,книга,Leo un libro cada semana.,A1,spanish A1 school,vocabulary
+el cuaderno,тетрадь,Escribo en mi cuaderno.,A1,spanish A1 school,vocabulary
+el bolígrafo,шариковая ручка,¿Tienes un bolígrafo?,"A1; LatAm: la pluma, la lapicera",spanish A1 school,vocabulary
+el lápiz,карандаш,Escribo con lápiz.,A1; plural: lápices,spanish A1 school,vocabulary
+el papel,бумага,Necesito una hoja de papel.,A1,spanish A1 school,vocabulary
+la hoja,лист,Necesito una hoja de papel.,"A2; also ""leaf""",spanish A2 school,vocabulary
+la palabra,слово,No sé esta palabra.,A1,spanish A1 school,vocabulary
+la frase,фраза; предложение,Escribo una frase corta.,A1,spanish A1 school,vocabulary
+la pregunta,вопрос,Tengo una pregunta.,A1,spanish A1 school,vocabulary
+la respuesta,ответ,No sé la respuesta.,A1,spanish A1 school,vocabulary
+el idioma,язык,El español es un idioma bonito.,A1; masculine despite the -a ending,spanish A1 school,vocabulary
+el español,испанский язык,Estudio español todos los días.,"A1; also ""Spaniard"", feminine la española",spanish A1 school,vocabulary
+el ruso,русский язык,Mi madre habla ruso.,A1,spanish A1 school,vocabulary
+el inglés,английский язык,Hablo un poco de inglés.,A1,spanish A1 school,vocabulary
+el alemán,немецкий язык,Mi amigo habla alemán.,A1,spanish A1 school,vocabulary
+el francés,французский язык,Mi hermana estudia francés.,A1,spanish A1 school,vocabulary
+el error,ошибка,Hay un error en la frase.,A2,spanish A2 school,vocabulary
+el ejemplo,пример,"Dame un ejemplo, por favor.",A2,spanish A2 school,vocabulary
+el tema,тема,El tema de la clase es la familia.,A2; masculine despite the -a ending,spanish A2 school,vocabulary
+el problema,проблема; задача,Tengo un problema con el coche.,A1; masculine despite the -a ending,spanish A1 school,vocabulary
+el programa,программа; передача,Mi programa favorito es de cocina.,A2; masculine despite the -a ending,spanish A2 school,vocabulary
+la historia,история; рассказ,Me gusta la historia de España.,A2,spanish A2 school,vocabulary
+aprender,учить; учиться,Quiero aprender español.,A1,spanish A1 school,vocabulary
+estudiar,учиться; изучать,Estudio español por la tarde.,A1,spanish A1 school,vocabulary
+enseñar,учить; преподавать; показывать,Mi madre enseña inglés.,A2,spanish A2 school,vocabulary
+leer,читать,Leo el periódico cada mañana.,A1,spanish A1 school,vocabulary
+escribir,писать,Escribo un correo a mi jefe.,A1; irregular participle: escrito,spanish A1 school,vocabulary
+entender,понимать,No entiendo esta palabra.,A1; e→ie: entiendo,spanish A1 school,vocabulary
+recordar,помнить; вспоминать,No recuerdo su nombre.,A2; o→ue: recuerdo,spanish A2 school,vocabulary
+olvidar,забывать,Olvido las llaves muy a menudo.,A2,spanish A2 school,vocabulary
+repetir,повторять,"¿Puede repetir, por favor?","A1; e→i: repito, repetí",spanish A1 school,vocabulary
+traducir,переводить,Traduzco un texto al ruso.,"A2; irregular: traduzco, traduje",spanish A2 school,vocabulary
+el ordenador,компьютер,Mi ordenador es nuevo.,"A1; Spain; LatAm: la computadora, el computador",spanish A1 tech,vocabulary
+el portátil,ноутбук,Trabajo con el portátil en la cafetería.,"A1; LatAm: la laptop, la computadora portátil",spanish A1 tech,vocabulary
+el móvil,мобильный телефон,Mi móvil no tiene batería.,A1; Spain; LatAm: el celular,spanish A1 tech,vocabulary
+el teléfono,телефон,Mi teléfono no funciona.,A1,spanish A1 tech,vocabulary
+la llamada,звонок,Tengo una llamada importante.,A2,spanish A2 tech,vocabulary
+el mensaje,сообщение,Te envío un mensaje.,A1,spanish A1 tech,vocabulary
+el correo electrónico,электронная почта,Te escribo un correo electrónico.,"A2; also: el email, el mail",spanish A2 tech,vocabulary
+el internet,интернет,El internet va muy lento.,A2; in Spain often used without the article,spanish A2 tech,vocabulary
+la contraseña,пароль,Olvidé mi contraseña.,A2,spanish A2 tech,vocabulary
+la pantalla,экран,La pantalla del móvil está rota.,A2,spanish A2 tech,vocabulary
+la foto,фотография,Hago una foto de la plaza.,"A1; feminine, short for la fotografía",spanish A1 tech,vocabulary
+la aplicación,приложение,Tengo una aplicación para aprender idiomas.,A2; also: la app,spanish A2 tech,vocabulary
+el vídeo,видео,Veo un vídeo en el móvil.,A1,spanish A1 tech,vocabulary
+el periódico,газета,Leo el periódico por la mañana.,A1,spanish A1 tech,vocabulary
+la revista,журнал,Compro una revista de cocina.,A2,spanish A2 tech,vocabulary
+la noticia,новость,Es una noticia muy buena.,A2,spanish A2 tech,vocabulary
+la película,фильм,Vemos una película el sábado.,A1,spanish A1 tech,vocabulary
+la serie,сериал,Veo una serie en casa.,A2,spanish A2 tech,vocabulary
+el deporte,спорт,Mi deporte favorito es el tenis.,A1,spanish A1 leisure,vocabulary
+el fútbol,футбол,Mi hijo juega al fútbol.,A1,spanish A1 leisure,vocabulary
+el tenis,теннис,Juego al tenis los sábados.,A1,spanish A1 leisure,vocabulary
+el baloncesto,баскетбол,Mi hermano juega al baloncesto.,A2,spanish A2 leisure,vocabulary
+el equipo,команда; оборудование,Mi equipo gana hoy.,A2,spanish A2 leisure,vocabulary
+el partido,матч; партия,El partido empieza a las ocho.,A2,spanish A2 leisure,vocabulary
+el gimnasio,спортзал,Voy al gimnasio tres veces a la semana.,A1,spanish A1 leisure,vocabulary
+la música,музыка,Escucho música en el coche.,A1,spanish A1 leisure,vocabulary
+la canción,песня,Esta canción es muy bonita.,A1,spanish A1 leisure,vocabulary
+el concierto,концерт,Voy a un concierto el sábado.,A1,spanish A1 leisure,vocabulary
+la guitarra,гитара,Mi padre toca la guitarra.,A1,spanish A1 leisure,vocabulary
+el juego,игра,Es un juego de mesa.,A2,spanish A2 leisure,vocabulary
+la fiesta,вечеринка; праздник,Hay una fiesta en casa de Ana.,A1,spanish A1 leisure,vocabulary
+el regalo,подарок,Compro un regalo para mi madre.,A1,spanish A1 leisure,vocabulary
+el tiempo libre,свободное время,En mi tiempo libre leo.,A2,spanish A2 leisure,vocabulary
+el paseo,прогулка,Damos un paseo por el parque.,A2,spanish A2 leisure,vocabulary
+jugar,играть,Juego al tenis con mi hermano.,A1; u→ue: juego; jugar a + sport,spanish A1 leisure,vocabulary
+tocar,играть (на инструменте); трогать,Mi hermano toca la guitarra.,A1; c→qu: toqué,spanish A1 leisure,vocabulary
+cantar,петь,Mi madre canta en el coro.,A1,spanish A1 leisure,vocabulary
+bailar,танцевать,Me gusta bailar con mis amigos.,A1,spanish A1 leisure,vocabulary
+nadar,плавать,Nado en el mar en verano.,A1,spanish A1 leisure,vocabulary
+correr,бегать,Corro por el parque cada mañana.,A1,spanish A1 leisure,vocabulary
+pasear,гулять,Paseo con el perro por la tarde.,A1,spanish A1 leisure,vocabulary
+descansar,отдыхать,Descanso un poco después de comer.,A1,spanish A1 leisure,vocabulary
+divertirse,веселиться; развлекаться,Me divierto mucho en las fiestas.,"A2; e→ie: me divierto, me divertí",spanish A2 leisure,vocabulary
+el dinero,деньги,No tengo mucho dinero.,A1; singular in Spanish,spanish A1 shopping,vocabulary
+el euro,евро,Un café cuesta dos euros.,A1,spanish A1 shopping,vocabulary
+el precio,цена,¿Cuál es el precio?,A1,spanish A1 shopping,vocabulary
+la tarjeta,карта; открытка,Pago con tarjeta.,A1,spanish A1 shopping,vocabulary
+el efectivo,наличные,Pago en efectivo.,A2,spanish A2 shopping,vocabulary
+la compra,покупка,Hago la compra los sábados.,A1; hacer la compra: to do the shopping,spanish A1 shopping,vocabulary
+el cambio,сдача; обмен; перемена,"Me da el cambio, por favor.",A2,spanish A2 shopping,vocabulary
+el descuento,скидка,Hay un descuento del veinte por ciento.,A2,spanish A2 shopping,vocabulary
+rebajas,распродажа,En enero hay rebajas en todas las tiendas.,A2; plural feminine: las rebajas,spanish A2 shopping,vocabulary
+la bolsa,пакет; сумка,Necesito una bolsa para la compra.,A2,spanish A2 shopping,vocabulary
+la caja,касса; коробка,Pago en la caja.,A2,spanish A2 shopping,vocabulary
+costar,стоить,¿Cuánto cuesta este jersey?,A1; o→ue: cuesta,spanish A1 shopping,vocabulary
+pagar,платить,Pago con tarjeta.,A1; g→gu: pagué,spanish A1 shopping,vocabulary
+comprar,покупать,Compro pan cada día.,A1,spanish A1 shopping,vocabulary
+vender,продавать,Vendo mi coche viejo.,A1,spanish A1 shopping,vocabulary
+gastar,тратить,Gasto mucho dinero en libros.,A2,spanish A2 shopping,vocabulary
+cambiar,менять; меняться,Quiero cambiar esta camisa.,A2,spanish A2 shopping,vocabulary
+ser,быть; являться,Mi hermano es médico.,"A1; irregular: soy, eres, es, fui; identity, origin, profession, time",spanish A1 verbs,vocabulary
+estar,быть; находиться,Estoy en casa ahora.,"A1; irregular: estoy, estuve; place, state, mood",spanish A1 verbs,vocabulary
+tener,иметь; быть (о возрасте),Tengo dos hermanos.,"A1; irregular: tengo, tuve; e→ie: tienes",spanish A1 verbs,vocabulary
+haber,иметь (вспомогательный глагол),"Ya he comido, gracias.","A1; irregular: he, has, ha, hubo; auxiliary of the perfect tenses",spanish A1 verbs,vocabulary
+ir,идти; ехать,Voy a la escuela en autobús.,"A1; irregular: voy, vas, fui; ir a + infinitive is the near future",spanish A1 verbs,vocabulary
+venir,приходить; приезжать,¿Vienes a mi fiesta?,"A1; irregular: vengo, vienes, vine",spanish A1 verbs,vocabulary
+hacer,делать; (о погоде) быть,Hoy hace mucho calor.,"A1; irregular: hago, hice, hecho; weather: hace frío, hace calor",spanish A1 verbs,vocabulary
+decir,говорить; сказать,Mi madre dice que llega tarde.,"A1; irregular: digo, dices, dije, dicho",spanish A1 verbs,vocabulary
+poder,мочь,¿Puedo abrir la ventana?,A1; o→ue: puedo; irregular: pude,spanish A1 verbs,vocabulary
+querer,хотеть; любить,"Quiero un café, por favor.",A1; e→ie: quiero; irregular: quise,spanish A1 verbs,vocabulary
+saber,знать; уметь,No sé la respuesta.,"A1; irregular: sé, supe; saber + infinitive: to know how to",spanish A1 verbs,vocabulary
+conocer,знать (кого-то); быть знакомым,Conozco a tu hermana.,A1; irregular: conozco; to know a person or a place,spanish A1 verbs,vocabulary
+ver,видеть; смотреть,Veo la televisión por la noche.,"A1; irregular: veo, vi, visto",spanish A1 verbs,vocabulary
+mirar,смотреть,Miro por la ventana.,A1,spanish A1 verbs,vocabulary
+oír,слышать,No oigo nada.,"A2; irregular: oigo, oyes, oyó",spanish A2 verbs,vocabulary
+escuchar,слушать,Escucho música todo el día.,A1,spanish A1 verbs,vocabulary
+dar,давать,Te doy mi número de teléfono.,"A1; irregular: doy, di",spanish A1 verbs,vocabulary
+poner,класть; ставить,Pongo el libro en la mesa.,"A1; irregular: pongo, puse, puesto",spanish A1 verbs,vocabulary
+salir,выходить; уходить,Salgo de casa a las ocho.,"A1; irregular: salgo, saldré",spanish A1 verbs,vocabulary
+llegar,приходить; прибывать,Llego al trabajo a las nueve.,A1; g→gu: llegué,spanish A1 verbs,vocabulary
+volver,возвращаться,Vuelvo a casa a las seis.,A1; o→ue: vuelvo; irregular participle: vuelto,spanish A1 verbs,vocabulary
+seguir,следовать; продолжать,Sigue todo recto hasta la plaza.,"A2; e→i: sigo, siguió; also seguir + gerund: to keep doing",spanish A2 verbs,vocabulary
+empezar,начинать; начинаться,La clase empieza a las nueve.,A1; e→ie: empiezo; z→c: empecé,spanish A1 verbs,vocabulary
+terminar,заканчивать; заканчиваться,Termino de trabajar a las cinco.,A1,spanish A1 verbs,vocabulary
+acabar,заканчивать; кончаться,La película acaba a las diez.,A2; acabar de + infinitive: to have just done,spanish A2 verbs,vocabulary
+pensar,думать; полагать,Pienso en mi familia.,A1; e→ie: pienso; pensar en = to think about; pensar + infinitive = to plan to,spanish A1 verbs,vocabulary
+creer,верить; полагать,Creo que tienes razón.,A1; irregular: creyó (third person indefinido),spanish A1 verbs,vocabulary
+parecer,казаться; выглядеть,Parece que va a llover.,A2; irregular: parezco,spanish A2 verbs,vocabulary
+sentir,чувствовать; сожалеть,Lo siento mucho.,"A2; e→ie: siento, sintió",spanish A2 verbs,vocabulary
+sentirse,чувствовать себя,Me siento mal hoy.,A2; e→ie: me siento,spanish A2 verbs,vocabulary
+vivir,жить,Vivo en Madrid.,A1,spanish A1 verbs,vocabulary
+comer,есть; обедать,Como a las dos.,A1,spanish A1 verbs,vocabulary
+beber,пить,Bebo mucha agua.,A1,spanish A1 verbs,vocabulary
+tomar,пить; брать; принимать,Tomo un café por la mañana.,A1,spanish A1 verbs,vocabulary
+desayunar,завтракать,Desayuno a las ocho.,A1,spanish A1 verbs,vocabulary
+almorzar,обедать,Almuerzo en el trabajo.,A2; o→ue: almuerzo; z→c: almorcé,spanish A2 verbs,vocabulary
+cenar,ужинать,Cenamos a las nueve.,A1,spanish A1 verbs,vocabulary
+cocinar,готовить (еду),Mi padre cocina muy bien.,A1,spanish A1 verbs,vocabulary
+preparar,готовить; подготавливать,Preparo la cena para mis amigos.,A1,spanish A1 verbs,vocabulary
+necesitar,нуждаться; требоваться,Necesito un bolígrafo.,A1,spanish A1 verbs,vocabulary
+usar,использовать; пользоваться,Uso el móvil todo el día.,A1,spanish A1 verbs,vocabulary
+abrir,открывать,Abro la ventana.,A1; irregular participle: abierto,spanish A1 verbs,vocabulary
+cerrar,закрывать,Cierro la puerta.,A1; e→ie: cierro,spanish A1 verbs,vocabulary
+esperar,ждать; надеяться,Espero el autobús en la parada.,A1,spanish A1 verbs,vocabulary
+buscar,искать,Busco mis llaves.,A1; c→qu: busqué,spanish A1 verbs,vocabulary
+encontrar,находить; встречать,No encuentro mis gafas.,A1; o→ue: encuentro,spanish A1 verbs,vocabulary
+perder,терять; проигрывать; опаздывать,Pierdo las llaves cada semana.,A1; e→ie: pierdo,spanish A1 verbs,vocabulary
+pedir,просить; заказывать,Pido un café con leche.,"A1; e→i: pido, pidió",spanish A1 verbs,vocabulary
+preguntar,спрашивать,Pregunto la hora a un señor.,A1,spanish A1 verbs,vocabulary
+responder,отвечать,Respondo al correo de mi jefe.,A2,spanish A2 verbs,vocabulary
+contestar,отвечать,No contesta al teléfono.,A2,spanish A2 verbs,vocabulary
+hablar,говорить,Hablo español e inglés.,A1,spanish A1 verbs,vocabulary
+llamar,звать; звонить,Te llamo mañana.,A1,spanish A1 verbs,vocabulary
+llamarse,называться; зваться,Me llamo Pablo.,A1,spanish A1 verbs,vocabulary
+contar,рассказывать; считать,Mi abuelo cuenta historias muy buenas.,A2; o→ue: cuento,spanish A2 verbs,vocabulary
+explicar,объяснять,El profesor explica la lección.,A2; c→qu: expliqué,spanish A2 verbs,vocabulary
+mostrar,показывать,Te muestro mis fotos.,A2; o→ue: muestro,spanish A2 verbs,vocabulary
+enviar,отправлять,Te envío un correo mañana.,A2; accent: envío,spanish A2 verbs,vocabulary
+recibir,получать,Recibo muchos correos cada día.,A1,spanish A1 verbs,vocabulary
+ayudar,помогать,¿Me puedes ayudar?,A1,spanish A1 verbs,vocabulary
+dejar,оставлять; разрешать; бросать,Dejo las llaves en la mesa.,A2; dejar + infinitive: to let,spanish A2 verbs,vocabulary
+traer,приносить; привозить,Te traigo un regalo.,"A1; irregular: traigo, traje",spanish A1 verbs,vocabulary
+coger,брать; ловить,Cojo el autobús todos los días.,"A1; Spain; LatAm: tomar, agarrar (coger is vulgar in some countries)",spanish A1 verbs,vocabulary
+subir,подниматься; поднимать,Subo por la escalera.,A1,spanish A1 verbs,vocabulary
+bajar,спускаться; снижать,Bajo del autobús en la plaza.,A1,spanish A1 verbs,vocabulary
+entrar,входить,Entro en la oficina a las nueve.,A1; entrar en + place,spanish A1 verbs,vocabulary
+pasar,проходить; происходить; проводить,¿Qué pasa aquí?,A1,spanish A1 verbs,vocabulary
+quedar,встречаться; оставаться,Quedo con Ana a las seis.,A2; quedar con alguien: to arrange to meet,spanish A2 verbs,vocabulary
+quedarse,оставаться,Me quedo en casa hoy.,A1,spanish A1 verbs,vocabulary
+levantarse,вставать,Me levanto a las siete.,A1,spanish A1 verbs,vocabulary
+acostarse,ложиться спать,Me acuesto a las once.,A1; o→ue: me acuesto,spanish A1 verbs,vocabulary
+despertarse,просыпаться,Me despierto a las seis.,A1; e→ie: me despierto,spanish A1 verbs,vocabulary
+dormir,спать,Duermo ocho horas.,A1; o→ue: duermo; durmió in the third person indefinido,spanish A1 verbs,vocabulary
+ducharse,принимать душ,Me ducho por la mañana.,A1,spanish A1 verbs,vocabulary
+lavarse,мыться; умываться,Me lavo las manos.,A1,spanish A1 verbs,vocabulary
+vestirse,одеваться,Me visto en cinco minutos.,"A2; e→i: me visto, se vistió",spanish A2 verbs,vocabulary
+sentarse,садиться,Me siento en la silla.,A1; e→ie: me siento,spanish A1 verbs,vocabulary
+gustar,нравиться,Me gusta el café.,"A1; used like doler: me gusta, me gustan",spanish A1 verbs,vocabulary
+encantar,очень нравиться; восхищать,Me encanta este libro.,A1; used like gustar,spanish A1 verbs,vocabulary
+preferir,предпочитать,Prefiero el té al café.,A2; e→ie: prefiero,spanish A2 verbs,vocabulary
+nacer,родиться,Mi hijo nació en mayo.,A2; irregular: nazco,spanish A2 verbs,vocabulary
+morir,умирать,Mi abuelo murió hace años.,A2; o→ue: muero; irregular participle: muerto,spanish A2 verbs,vocabulary
+crecer,расти,Mis hijos crecen muy rápido.,A2; irregular: crezco,spanish A2 verbs,vocabulary
+caminar,идти пешком; ходить,Camino a la oficina cada día.,A1,spanish A1 verbs,vocabulary
+andar,ходить; идти,Ando por el parque.,A2; irregular: anduve,spanish A2 verbs,vocabulary
+cruzar,пересекать; переходить,Cruzo la calle con cuidado.,A2; z→c: crucé,spanish A2 verbs,vocabulary
+limpiar,убирать; чистить,Limpio la casa los sábados.,A1,spanish A1 verbs,vocabulary
+lavar,мыть; стирать,Lavo los platos después de cenar.,A1,spanish A1 verbs,vocabulary
+cortar,резать; стричь,Corto el pan con un cuchillo.,A2,spanish A2 verbs,vocabulary
+romper,ломать; разбивать,Rompí un vaso.,A2; irregular participle: roto,spanish A2 verbs,vocabulary
+encender,включать; зажигать,Enciendo la luz.,A2; e→ie: enciendo,spanish A2 verbs,vocabulary
+apagar,выключать; гасить,Apago la tele a las once.,A2; g→gu: apagué,spanish A2 verbs,vocabulary
+funcionar,работать; функционировать,El ascensor no funciona.,A1,spanish A1 verbs,vocabulary
+reír,смеяться,Me río mucho con mi hermano.,"A2; e→i: río, rió; also reírse",spanish A2 verbs,vocabulary
+llorar,плакать,El bebé llora por la noche.,A2,spanish A2 verbs,vocabulary
+visitar,посещать; навещать,Visito a mis abuelos en verano.,A1,spanish A1 verbs,vocabulary
+invitar,приглашать,Te invito a cenar.,A2,spanish A2 verbs,vocabulary
+presentar,представлять; знакомить,Te presento a mi amiga Marta.,A2,spanish A2 verbs,vocabulary
+recomendar,рекомендовать; советовать,Te recomiendo este restaurante.,A2; e→ie: recomiendo,spanish A2 verbs,vocabulary
+elegir,выбирать,Elijo el vestido azul.,"A2; e→i: elijo, eligió",spanish A2 verbs,vocabulary
+decidir,решать,Decido quedarme en casa.,A2,spanish A2 verbs,vocabulary
+intentar,пытаться,Intento llegar temprano.,A2,spanish A2 verbs,vocabulary
+probar,пробовать; примерять,"Prueba esta sopa, está muy buena.",A2; o→ue: pruebo,spanish A2 verbs,vocabulary
+practicar,практиковаться; заниматься (спортом),Practico español todos los días.,A1; c→qu: practiqué,spanish A1 verbs,vocabulary
+mejorar,улучшать; улучшаться,Quiero mejorar mi español.,A2,spanish A2 verbs,vocabulary
+celebrar,праздновать,Celebramos mi cumpleaños en casa.,A2,spanish A2 verbs,vocabulary
+reservar,бронировать,Quiero reservar una mesa para dos.,A2,spanish A2 verbs,vocabulary
+tardar,занимать время; медлить,El tren tarda dos horas.,A2,spanish A2 verbs,vocabulary
+durar,длиться,La película dura dos horas.,A2,spanish A2 verbs,vocabulary
+sacar,вынимать; выносить; получать,Saco la basura por la noche.,A2; c→qu: saqué,spanish A2 verbs,vocabulary
+caer,падать,Las hojas caen en otoño.,"A2; irregular: caigo, cayó",spanish A2 verbs,vocabulary
+deber,быть должным; следует,Debes descansar más.,"A2; deber + infinitive: should, must",spanish A2 verbs,vocabulary
+soler,обычно делать,Suelo desayunar a las ocho.,A2; o→ue: suelo; only in the present and the imperfect,spanish A2 verbs,vocabulary
+ofrecer,предлагать,Te ofrezco un café.,A2; irregular: ofrezco,spanish A2 verbs,vocabulary
+conseguir,добиваться; получать,Consigo un buen precio.,"A2; e→i: consigo, consiguió",spanish A2 verbs,vocabulary
+importar,иметь значение; быть важным,No me importa el precio.,A2; used like gustar; ¿te importa...? = do you mind...?,spanish A2 verbs,vocabulary
+faltar,не хватать; отсутствовать,Falta sal en la sopa.,A2; used like gustar,spanish A2 verbs,vocabulary
+llevarse,ладить; забирать с собой,Me llevo bien con mi hermano.,A2; llevarse bien con = to get along with,spanish A2 verbs,vocabulary
+casarse,жениться; выходить замуж,Mi hermana se casa en junio.,A2,spanish A2 verbs,vocabulary
+grande,большой; великий,Tenemos un jardín muy grande.,A1; invariable in gender; gran before a singular noun: un gran amigo,spanish A1 adjectives,vocabulary
+pequeño,маленький,Vivo en un piso pequeño.,A1,spanish A1 adjectives,vocabulary
+bueno,хороший; добрый,Este restaurante es muy bueno.,A1; buen before a masculine singular noun: un buen día,spanish A1 adjectives,vocabulary
+malo,плохой,Hoy hace mal tiempo.,A1; mal before a masculine singular noun: un mal día,spanish A1 adjectives,vocabulary
+nuevo,новый,Tengo un móvil nuevo.,A1,spanish A1 adjectives,vocabulary
+viejo,старый,Mi coche es muy viejo.,A1,spanish A1 adjectives,vocabulary
+joven,молодой,Mi profesora es muy joven.,A1; invariable in gender; plural: jóvenes,spanish A1 adjectives,vocabulary
+mayor,старший; пожилой,Mi hermano mayor tiene treinta años.,"A2; invariable in gender; also ""older"" and ""elderly""",spanish A2 adjectives,vocabulary
+menor,младший,Mi hermana menor tiene diez años.,"A2; invariable in gender; also ""younger""",spanish A2 adjectives,vocabulary
+bonito,красивый; симпатичный,Tienes un jardín muy bonito.,A1,spanish A1 adjectives,vocabulary
+guapo,красивый; привлекательный,Tu hermano es muy guapo.,A1; for people,spanish A1 adjectives,vocabulary
+feo,некрасивый; уродливый,Ese edificio es muy feo.,A1,spanish A1 adjectives,vocabulary
+alto,высокий,Mi padre es muy alto.,A1,spanish A1 adjectives,vocabulary
+bajo,низкий; невысокий,Mi madre es baja.,A1; feminine: baja,spanish A1 adjectives,vocabulary
+largo,длинный,Tengo el pelo largo.,A1,spanish A1 adjectives,vocabulary
+corto,короткий,La falda es muy corta.,A1,spanish A1 adjectives,vocabulary
+gordo,толстый,El gato está gordo.,A2,spanish A2 adjectives,vocabulary
+delgado,худой; стройный,Mi hermano es alto y delgado.,A2,spanish A2 adjectives,vocabulary
+fuerte,сильный; крепкий,Mi padre es muy fuerte.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+débil,слабый,Estoy débil por la gripe.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+rápido,быстрый,El tren es muy rápido.,A1,spanish A1 adjectives,vocabulary
+lento,медленный,El internet es muy lento.,A1,spanish A1 adjectives,vocabulary
+fácil,лёгкий; простой,El examen es fácil.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+difícil,трудный,Esta pregunta es difícil.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+caro,дорогой,Este abrigo es muy caro.,A1,spanish A1 adjectives,vocabulary
+barato,дешёвый,Esta camisa es muy barata.,A1,spanish A1 adjectives,vocabulary
+rico,вкусный; богатый,La sopa está muy rica.,A1; rico = tasty (food) or rich (people),spanish A1 adjectives,vocabulary
+pobre,бедный,Es una familia pobre.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+lleno,полный,El autobús está lleno.,A1,spanish A1 adjectives,vocabulary
+vacío,пустой,El vaso está vacío.,A2,spanish A2 adjectives,vocabulary
+limpio,чистый,La cocina está limpia.,A1,spanish A1 adjectives,vocabulary
+sucio,грязный,Mi coche está sucio.,A1,spanish A1 adjectives,vocabulary
+abierto,открытый,La tienda está abierta.,A1; irregular participle of abrir used as an adjective,spanish A1 adjectives,vocabulary
+cerrado,закрытый,El banco está cerrado hoy.,A1,spanish A1 adjectives,vocabulary
+caliente,горячий,La sopa está caliente.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+fresco,свежий; прохладный,Hace fresco por la noche.,A2,spanish A2 adjectives,vocabulary
+dulce,сладкий,El pastel es muy dulce.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+duro,твёрдый; тяжёлый,El pan está duro.,A2,spanish A2 adjectives,vocabulary
+pesado,тяжёлый; нудный,Mi maleta es muy pesada.,A2,spanish A2 adjectives,vocabulary
+tranquilo,спокойный; тихий,Mi barrio es muy tranquilo.,A1,spanish A1 adjectives,vocabulary
+feliz,счастливый,Estoy muy feliz hoy.,A1; invariable in gender; plural: felices,spanish A1 adjectives,vocabulary
+triste,грустный,Mi hermana está triste.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+contento,довольный; радостный,Estoy contento con mi trabajo.,A1,spanish A1 adjectives,vocabulary
+alegre,весёлый,Mi abuela es muy alegre.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+enfadado,сердитый,Mi padre está enfadado.,A2,spanish A2 adjectives,vocabulary
+nervioso,нервный; взволнованный,Estoy nervioso por el examen.,A2,spanish A2 adjectives,vocabulary
+preocupado,обеспокоенный,Estoy preocupado por mi madre.,A2,spanish A2 adjectives,vocabulary
+aburrido,скучный; соскучившийся,Esta película es aburrida.,A2; ser aburrido = to be boring; estar aburrido = to be bored,spanish A2 adjectives,vocabulary
+divertido,весёлый; забавный,La fiesta es muy divertida.,A2,spanish A2 adjectives,vocabulary
+interesante,интересный,El libro es muy interesante.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+importante,важный,Es muy importante dormir bien.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+necesario,необходимый,Es necesario llevar el pasaporte.,A2,spanish A2 adjectives,vocabulary
+posible,возможный,Es posible llegar en tren.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+imposible,невозможный,Es imposible llegar a tiempo.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+seguro,уверенный; надёжный,Estoy seguro de que viene.,"A2; also ""sure""; the noun el seguro is ""insurance""",spanish A2 adjectives,vocabulary
+peligroso,опасный,La carretera es peligrosa.,A2,spanish A2 adjectives,vocabulary
+libre,свободный,¿Está libre esta silla?,A2; invariable in gender,spanish A2 adjectives,vocabulary
+ocupado,занятый,Estoy muy ocupado hoy.,A1,spanish A1 adjectives,vocabulary
+listo,готовый; умный,La cena ya está lista.,A2; estar listo = to be ready; ser listo = to be clever,spanish A2 adjectives,vocabulary
+tonto,глупый,No seas tonto.,A2,spanish A2 adjectives,vocabulary
+simpático,симпатичный; приятный,Mi vecina es muy simpática.,"A1; for people: nice, friendly",spanish A1 adjectives,vocabulary
+amable,любезный; добрый,El camarero es muy amable.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+antipático,неприятный; несимпатичный,Mi jefe es antipático.,A2,spanish A2 adjectives,vocabulary
+trabajador,трудолюбивый,Mi hermano es muy trabajador.,A2; feminine: trabajadora,spanish A2 adjectives,vocabulary
+serio,серьёзный,Mi profesor es muy serio.,A2,spanish A2 adjectives,vocabulary
+cómodo,удобный,Este sofá es muy cómodo.,A1,spanish A1 adjectives,vocabulary
+famoso,известный,Es un actor muy famoso.,A2,spanish A2 adjectives,vocabulary
+típico,типичный,Es un plato típico de España.,A2,spanish A2 adjectives,vocabulary
+diferente,разный; другой,Mi hermano es muy diferente a mí.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+igual,одинаковый; такой же,Los dos son iguales.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+siguiente,следующий,El siguiente tren sale a las ocho.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+raro,странный; редкий,"Es raro, no contesta.",A2,spanish A2 adjectives,vocabulary
+normal,обычный; нормальный,Es normal estar cansado.,A1; invariable in gender,spanish A1 adjectives,vocabulary
+especial,особенный,Hoy es un día especial.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+principal,главный,La plaza principal es muy bonita.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+único,единственный; уникальный,Es mi único hermano.,A2,spanish A2 adjectives,vocabulary
+cierto,верный; определённый,Es cierto que llueve.,A2,spanish A2 adjectives,vocabulary
+enorme,огромный,Tienen una casa enorme.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+blanco,белый,Mi camisa es blanca.,A1,spanish A1 colours,vocabulary
+negro,чёрный,Mi gato es negro.,A1,spanish A1 colours,vocabulary
+rojo,красный,Mi coche es rojo.,A1,spanish A1 colours,vocabulary
+azul,синий; голубой,El cielo es azul.,A1; invariable in gender,spanish A1 colours,vocabulary
+verde,зелёный,El árbol es verde.,A1; invariable in gender,spanish A1 colours,vocabulary
+amarillo,жёлтый,El sol es amarillo.,A1,spanish A1 colours,vocabulary
+gris,серый,Hoy el cielo está gris.,A1; invariable in gender,spanish A1 colours,vocabulary
+marrón,коричневый,Mis zapatos son marrones.,A2; invariable in gender; plural: marrones,spanish A2 colours,vocabulary
+rosa,розовый,Lleva un vestido rosa.,"A2; invariable in gender; also the noun la rosa, ""rose""",spanish A2 colours,vocabulary
+morado,фиолетовый,Tengo una camisa morada.,A2; also: violeta,spanish A2 colours,vocabulary
+el color,цвет,¿Cuál es tu color favorito?,A1,spanish A1 colours,vocabulary
+la cosa,вещь; дело,Tengo muchas cosas que hacer.,A1,spanish A1 things,vocabulary
+el lugar,место,Es un lugar muy tranquilo.,A1,spanish A1 things,vocabulary
+el sitio,место,¿Hay sitio en esta mesa?,A1,spanish A1 things,vocabulary
+la parte,часть,Una parte de la clase viene hoy.,A2,spanish A2 things,vocabulary
+la forma,форма; способ,Esta es la mejor forma de aprender.,A2,spanish A2 things,vocabulary
+la manera,способ; манера,No me gusta su manera de hablar.,A2,spanish A2 things,vocabulary
+el tipo,тип; вид,¿Qué tipo de música te gusta?,"A2; colloquial: ""guy""",spanish A2 things,vocabulary
+la idea,идея,Es una buena idea.,A1,spanish A1 things,vocabulary
+la razón,причина; правота,No sé la razón.,A2,spanish A2 things,vocabulary
+la vida,жизнь,La vida en el campo es tranquila.,A1,spanish A1 things,vocabulary
+el amor,любовь,Es el amor de mi vida.,A1,spanish A1 things,vocabulary
+la amistad,дружба,La amistad es muy importante.,A2,spanish A2 things,vocabulary
+la verdad,правда,Digo la verdad.,A1,spanish A1 things,vocabulary
+la mentira,ложь,Eso es una mentira.,A2,spanish A2 things,vocabulary
+el miedo,страх,Tengo miedo de los perros.,A2; tener miedo de = to be afraid of,spanish A2 things,vocabulary
+la suerte,удача; везение,¡Buena suerte!,A1,spanish A1 things,vocabulary
+la ayuda,помощь,Necesito tu ayuda.,A1,spanish A1 things,vocabulary
+el principio,начало,Al principio no entiendo nada.,A2,spanish A2 things,vocabulary
+el final,конец; финал,El final de la película es triste.,A2,spanish A2 things,vocabulary
+el motivo,причина; мотив,¿Cuál es el motivo del viaje?,A2,spanish A2 things,vocabulary
+el resultado,результат,El resultado del examen es bueno.,A2,spanish A2 things,vocabulary
+el nombre,имя; название,¿Cuál es tu nombre?,A1,spanish A1 things,vocabulary
+el apellido,фамилия,Mi apellido es García.,A1,spanish A1 things,vocabulary
+la edad,возраст,¿Qué edad tienes?,A1,spanish A1 things,vocabulary
+el número,номер; число,Mi número de teléfono es nuevo.,A1,spanish A1 things,vocabulary
+el tamaño,размер,¿Qué tamaño quieres?,A2,spanish A2 things,vocabulary
+la cantidad,количество,Necesito una gran cantidad de agua.,A2,spanish A2 things,vocabulary
+la lista,список,Hago una lista de la compra.,A1,spanish A1 things,vocabulary
+el grupo,группа,Mi grupo de amigos es pequeño.,A2,spanish A2 things,vocabulary
+el cuadro,картина,Hay un cuadro en la pared.,"A2; also ""square""",spanish A2 things,vocabulary
+el paraguas,зонт,Llevo un paraguas porque llueve.,A1; singular and plural are the same,spanish A1 things,vocabulary
+la sorpresa,сюрприз; удивление,Qué sorpresa verte aquí.,A2,spanish A2 things,vocabulary
+el ruido,шум,Hay mucho ruido en la calle.,A2,spanish A2 things,vocabulary
+el silencio,тишина; молчание,En la biblioteca hay silencio.,A2,spanish A2 things,vocabulary
+la diferencia,разница,No veo la diferencia.,A2,spanish A2 things,vocabulary
+la información,информация,Necesito más información.,A2; singular in Spanish,spanish A2 things,vocabulary
+la opinión,мнение,En mi opinión es muy caro.,A2,spanish A2 things,vocabulary
+el sueño,сон; мечта,Tengo un sueño muy raro.,"A2; also ""sleepiness"": tengo sueño",spanish A2 things,vocabulary
+la bebida,напиток,¿Qué bebida quieres?,A1,spanish A1 things,vocabulary
+la gasolina,бензин,El coche necesita gasolina.,A2,spanish A2 things,vocabulary
+la gasolinera,заправка,Hay una gasolinera cerca.,A2,spanish A2 things,vocabulary
+la carretera,шоссе; дорога,La carretera está cerrada.,A2,spanish A2 things,vocabulary
+el camino,дорога; путь,El camino al pueblo es largo.,A2,spanish A2 things,vocabulary
+el país,страна,España es un país muy bonito.,A1,spanish A1 things,vocabulary
+la capital,столица,Madrid es la capital de España.,A1,spanish A1 things,vocabulary
+dentista,стоматолог,Voy al dentista mañana.,"A2; masculine and feminine: el dentista, la dentista",spanish A2 things,vocabulary
+artista,художник; артист,Mi tío es artista.,"A2; masculine and feminine: el artista, la artista",spanish A2 things,vocabulary
+periodista,журналист,Mi hermana es periodista.,"A2; masculine and feminine: el periodista, la periodista",spanish A2 things,vocabulary
+cantante,певец; певица,Mi cantante favorito es español.,"A2; masculine and feminine: el cantante, la cantante",spanish A2 things,vocabulary
+el accidente,авария; несчастный случай,Hay un accidente en la carretera.,A2,spanish A2 things,vocabulary
+por ejemplo,например,"Me gustan los deportes, por ejemplo el tenis.",A1,spanish A1 phrases,vocabulary
+por supuesto,конечно,—¿Vienes? —Por supuesto.,A1,spanish A1 phrases,vocabulary
+por cierto,кстати,"Por cierto, ¿cómo está tu madre?",A2,spanish A2 phrases,vocabulary
+a lo mejor,может быть; возможно,A lo mejor llueve mañana.,A2; used with the indicative,spanish A2 phrases,vocabulary
+más o menos,более или менее; примерно,Son más o menos las tres.,A2,spanish A2 phrases,vocabulary
+de vez en cuando,время от времени,De vez en cuando voy al teatro.,A2,spanish A2 phrases,vocabulary
+sobre todo,особенно; прежде всего,"Me gusta el verano, sobre todo la playa.",A2,spanish A2 phrases,vocabulary
+en cambio,зато; напротив,"Yo tomo té; mi hermano, en cambio, café.",A2,spanish A2 phrases,vocabulary
+de nuevo,снова,Empiezo de nuevo.,A2,spanish A2 phrases,vocabulary
+en punto,ровно,Son las ocho en punto.,A1,spanish A1 phrases,vocabulary
+y media,половина (о времени),Son las ocho y media.,A1,spanish A1 phrases,vocabulary
+menos cuarto,без четверти,Son las nueve menos cuarto.,A1,spanish A1 phrases,vocabulary
+y cuarto,четверть (после часа),Son las dos y cuarto.,A1,spanish A1 phrases,vocabulary
+hace falta,нужно,Hace falta más tiempo.,A2; hace falta + infinitive or noun,spanish A2 phrases,vocabulary
+hay que,нужно; надо,Hay que comer bien.,A2; impersonal; followed by an infinitive,spanish A2 phrases,vocabulary
+ir de compras,ходить за покупками,Voy de compras con mi madre.,"A2; irregular: voy, fui",spanish A2 phrases,vocabulary
+estar de acuerdo,соглашаться,Estoy de acuerdo contigo.,A1,spanish A1 phrases,vocabulary
+darse cuenta,понимать; замечать,Me doy cuenta de que es tarde.,A2; darse cuenta de = to realise,spanish A2 phrases,vocabulary
+tener cuidado,быть осторожным,Ten cuidado con el coche.,"A2; irregular: tengo, tuve",spanish A2 phrases,vocabulary
+pasarlo bien,хорошо проводить время,Lo pasamos muy bien en la fiesta.,A2,spanish A2 phrases,vocabulary
+llevarse bien,ладить,Me llevo bien con mis vecinos.,A2,spanish A2 phrases,vocabulary
+a pie,пешком,Voy a la escuela a pie.,A1,spanish A1 phrases,vocabulary
+en coche,на машине,Vamos en coche al pueblo.,A1,spanish A1 phrases,vocabulary
+a tiempo,вовремя,Llego a tiempo a clase.,A2,spanish A2 phrases,vocabulary
+la mamá,мама,Mi mamá cocina muy bien.,A1; also: la madre,spanish A1 family,vocabulary
+el papá,папа,Mi papá trabaja en un banco.,"A1; masculine; also: el padre; plural: los papás means ""parents"" in LatAm",spanish A1 family,vocabulary
+la señora,госпожа; женщина; жена,La señora López espera en la puerta.,A1,spanish A1 family,vocabulary
+la chica,девушка; девочка,Esa chica es mi vecina.,A1; masculine: el chico,spanish A1 family,vocabulary
+la niña,девочка; ребёнок,La niña juega con su muñeca.,A1; masculine: el niño,spanish A1 family,vocabulary
+el muchacho,юноша; парень,Ese muchacho vive en mi calle.,A2; feminine: la muchacha,spanish A2 family,vocabulary
+la pareja,пара; партнёр,Vivo con mi pareja.,A2; can be a man or a woman; always feminine,spanish A2 family,vocabulary
+el dueño,владелец,El dueño del bar es muy simpático.,A2; feminine: la dueña,spanish A2 family,vocabulary
+el rey,король,El rey habla en la televisión.,A2; feminine: la reina,spanish A2 family,vocabulary
+casado,женатый; замужем,Mi hermano está casado.,A2; feminine: casada,spanish A2 family,vocabulary
+claro,конечно; ясно,—¿Vienes? —Claro.,"A1; also an adjective: clear, light; claro que sí = of course",spanish A1 adverbs,vocabulary
+ni,ни; даже не,No tengo ni tiempo ni dinero.,A2; ni... ni = neither... nor,spanish A2 adverbs,vocabulary
+incluso,даже; включая,"Todos vienen, incluso mi abuelo.",A2,spanish A2 adverbs,vocabulary
+pues,ну; значит; так как,"Pues, no sé qué decir.",A2,spanish A2 adverbs,vocabulary
+adelante,вперёд; входите,"Siga adelante, por favor.","A2; ¡Adelante! also means ""come in""",spanish A2 adverbs,vocabulary
+atrás,назад; сзади,Da un paso atrás.,A2,spanish A2 adverbs,vocabulary
+probablemente,вероятно,Probablemente llego tarde.,A2,spanish A2 adverbs,vocabulary
+simplemente,просто,Simplemente no tengo tiempo.,A2,spanish A2 adverbs,vocabulary
+apenas,едва; почти не,Apenas tengo tiempo.,A2,spanish A2 adverbs,vocabulary
+excepto,кроме,Trabajo todos los días excepto el domingo.,A2,spanish A2 adverbs,vocabulary
+gratis,бесплатный; бесплатно,La entrada al museo es gratis.,A2; invariable,spanish A2 adverbs,vocabulary
+loco,сумасшедший; безумный,Mi vecino está un poco loco.,A2,spanish A2 adjectives,vocabulary
+genial,замечательный; отлично,La fiesta fue genial.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+querido,дорогой; любимый,Querida Ana: te escribo desde Madrid.,A2,spanish A2 adjectives,vocabulary
+suficiente,достаточный,Tengo suficiente dinero para el billete.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+perfecto,идеальный; отлично,Las ocho es perfecto para mí.,A2,spanish A2 adjectives,vocabulary
+increíble,невероятный,Es una historia increíble.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+maravilloso,чудесный,Hoy es un día maravilloso.,A2,spanish A2 adjectives,vocabulary
+estupendo,замечательный,Es un plan estupendo.,A2,spanish A2 adjectives,vocabulary
+precioso,прекрасный; красивый,Tienes una casa preciosa.,A2,spanish A2 adjectives,vocabulary
+orgulloso,гордый,Estoy orgulloso de mi hijo.,A2,spanish A2 adjectives,vocabulary
+el cariño,нежность; привязанность,Mi abuela me trata con mucho cariño.,A2,spanish A2 things,vocabulary
+el caso,случай; дело,"En ese caso, no vamos.",A2,spanish A2 things,vocabulary
+la prueba,тест; доказательство; проба,Mañana tenemos una prueba de español.,A2,spanish A2 things,vocabulary
+la guerra,война,Mi abuelo recuerda la guerra.,A2,spanish A2 things,vocabulary
+el plan,план,¿Tienes planes para el sábado?,A2,spanish A2 things,vocabulary
+el negocio,бизнес; дело,Mi tío tiene un negocio pequeño.,A2,spanish A2 things,vocabulary
+el secreto,секрет,Es un secreto; no se lo digas a nadie.,A2,spanish A2 things,vocabulary
+la paz,мир; покой,Quiero paz y tranquilidad.,A2; plural: paces,spanish A2 things,vocabulary
+el paso,шаг; проход,Cada paso es más difícil.,A2,spanish A2 things,vocabulary
+la voz,голос,Tiene una voz muy bonita.,A2; plural: voces,spanish A2 things,vocabulary
+el aire,воздух,En el campo el aire es limpio.,A2,spanish A2 things,vocabulary
+el sistema,система,El sistema no funciona hoy.,A2; masculine despite the -a ending,spanish A2 things,vocabulary
+la situación,ситуация,La situación es difícil.,A2,spanish A2 things,vocabulary
+el traje,костюм,Mi padre lleva traje al trabajo.,A2,spanish A2 things,vocabulary
+la boda,свадьба,La boda es en junio.,A2,spanish A2 things,vocabulary
+la decisión,решение,Es una decisión difícil.,A2,spanish A2 things,vocabulary
+la Navidad,Рождество,En Navidad vamos con mis abuelos.,A1; usually capitalised; Spain: also las Navidades,spanish A1 things,vocabulary
+el consejo,совет,Quiero pedirte un consejo.,A2,spanish A2 things,vocabulary
+el edificio,здание,Vivo en un edificio muy antiguo.,A1,spanish A1 things,vocabulary
+el norte,север,Burgos está al norte de Madrid.,A2,spanish A2 things,vocabulary
+el sur,юг,Málaga está en el sur de España.,A2,spanish A2 things,vocabulary
+el este,восток,El sol sale por el este.,A2; different from the demonstrative este,spanish A2 things,vocabulary
+el oeste,запад,El sol se pone por el oeste.,A2,spanish A2 things,vocabulary
+la salida,выход; отправление,La salida está al fondo.,A1,spanish A1 things,vocabulary
+el apartamento,квартира; апартаменты,Alquilo un apartamento en la playa.,A2; LatAm: el departamento,spanish A2 things,vocabulary
+el vuelo,рейс; полёт,Mi vuelo sale a las diez.,A2,spanish A2 things,vocabulary
+la visita,визит; гость,Hoy tengo visita en casa.,A2,spanish A2 things,vocabulary
+el beso,поцелуй,Te doy un beso.,A2,spanish A2 things,vocabulary
+el anillo,кольцо,Llevo un anillo de oro.,A2,spanish A2 things,vocabulary
+el hielo,лёд,Quiero agua con hielo.,A2,spanish A2 things,vocabulary
+el asiento,сиденье; место,Este asiento está libre.,A2,spanish A2 things,vocabulary
+el proyecto,проект,Mi proyecto es aprender español.,A2,spanish A2 things,vocabulary
+la enfermedad,болезнь,Es una enfermedad muy común.,A2,spanish A2 things,vocabulary
+la costa,побережье,Vivimos en la costa.,A2,spanish A2 things,vocabulary
+tratar,пытаться; обращаться,Trato de dormir ocho horas.,A2; tratar de + infinitive: to try to; tratar a alguien: to treat someone,spanish A2 verbs,vocabulary
+significar,значить; означать,¿Qué significa esta palabra?,A2; c→qu: signifiqué,spanish A2 verbs,vocabulary
+robar,красть; грабить,Alguien robó mi bicicleta.,A2,spanish A2 verbs,vocabulary
+evitar,избегать,Evito el centro por el tráfico.,A2,spanish A2 verbs,vocabulary
+interesar,интересовать,Me interesa la historia.,A2; used like gustar,spanish A2 verbs,vocabulary
+arreglar,чинить; приводить в порядок,Arreglo la bici.,A2,spanish A2 verbs,vocabulary
+servir,служить; подавать; годиться,Este cuchillo no sirve.,A2; e→i: sirvo; servir para = to be used for,spanish A2 verbs,vocabulary
+permitir,разрешать,No se permite fumar aquí.,A2,spanish A2 verbs,vocabulary
+echar de menos,скучать по,Echo de menos a mi familia.,A2; Spain; LatAm: extrañar,spanish A2 verbs,vocabulary
+desear,желать,Te deseo un buen viaje.,A2,spanish A2 verbs,vocabulary
+aceptar,принимать; соглашаться,Acepto tu invitación.,A2,spanish A2 verbs,vocabulary
+charlar,болтать,Charlamos un rato en el café.,A2,spanish A2 verbs,vocabulary
+mentir,лгать,No me gusta mentir.,A2; e→ie: miento,spanish A2 verbs,vocabulary
+imaginar,представлять; воображать,Imagino que tienes hambre.,A2,spanish A2 verbs,vocabulary
+crear,создавать,Quiero crear una empresa.,A2,spanish A2 verbs,vocabulary
+ir a + infinitivo,собираться (что-то делать),Voy a comer ahora.,"A1; irregular: voy, fui; ir a + infinitive is the near future",spanish A1 phrases,vocabulary

@@ -105,7 +105,9 @@ values:
 [docs/csv_format.md](docs/csv_format.md).
 
 Starter sets are in `card_sets/<mode>/`: `card_sets/DE-RU/german_test.csv` is
-a 100-word German verb list.
+a 100-word German verb list, and `card_sets/ES-RU/spanish_a1_a2_vocabulary.csv`
+is about 1,000 Castilian Spanish words and phrases at A1–A2 with Russian
+glosses, to import into the `ES-RU` global deck.
 
 ## Deployment
 

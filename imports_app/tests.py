@@ -118,6 +118,35 @@ class B2VocabularyCardSetTests(TestCase):
         self.assertEqual(len(fronts), len(set(fronts)))
 
 
+class SpanishVocabularyCardSetTests(TestCase):
+    def test_spanish_a1_a2_card_set_loads_into_an_es_ru_global_deck(self):
+        path = Path(settings.BASE_DIR, "card_sets", "ES-RU", "spanish_a1_a2_vocabulary.csv")
+        csv_text = path.read_bytes().decode("utf-8-sig")  # as the upload view decodes it
+        deck = Deck.objects.create(
+            name="Spanish",
+            language_mode=Deck.LanguageMode.ES_RU,
+            owner=create_user(),
+            is_global=True,
+        )
+
+        result = import_cards_from_csv(deck, csv_text)
+
+        self.assertEqual(result.errors, [])
+        cards = list(Card.objects.filter(deck=deck))
+        self.assertGreaterEqual(result.imported_count, 900)
+        self.assertEqual(len(cards), result.imported_count)
+        fronts = [card.front.casefold() for card in cards]
+        self.assertEqual(len(fronts), len(set(fronts)))
+        for card in cards:
+            with self.subTest(front=card.front):
+                self.assertTrue(card.back)
+                self.assertTrue(card.example_sentence)
+                self.assertFalse(card.front.startswith(("los ", "las ", "un ", "una ")))
+                for article in ("el", "la"):
+                    if card.front.startswith(f"{article} "):
+                        self.assertEqual(card.article, article)
+
+
 class CsvImportFormTests(TestCase):
     def test_import_form_limits_decks_to_selected_language_mode(self):
         owner = create_user()
