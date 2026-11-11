@@ -1,0 +1,16 @@
+<section class="global-deck-card" aria-labelledby="global-deck-title">
+  <div>
+    <h2 id="global-deck-title">Global deck</h2>
+    <p class="muted">Main study list · {{ language_mode_label }}. One place for words you add manually or capture from video transcripts.</p>
+  </div>
+  <div class="global-deck-card__meta">
+    <strong>{{ global_deck.cards.count }}</strong>
+    <span>words</span>
+  </div>
+  <div class="global-deck-card__actions">
+    <a class="button primary" href="{% url 'reviews:start_study' global_deck.pk %}">Study global deck</a>
+    <a class="button" href="{% url 'reviews:start_study' global_deck.pk %}?direction=reverse">Study reversed</a>
+    <a class="button" href="{% url 'cards:create' %}?global=1">Add a word</a>
+    <a class="button" href="{{ global_deck.get_absolute_url }}">Open list</a>
+  </div>
+</section>

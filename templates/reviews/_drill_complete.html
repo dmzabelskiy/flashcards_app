@@ -1,0 +1,56 @@
+<section class="review drill-workspace drill-complete">
+  <header class="drill-titlebar">
+    <div>
+      <h1>Round complete</h1>
+      <p class="drill-subline">{{ eyebrow }}</p>
+    </div>
+    <a class="drill-exit" href="{% url 'core:dashboard' %}">Exit</a>
+  </header>
+
+  <div class="completion-panel">
+
+        <strong class="completion-percentage">{{ percentage }}%</strong>
+    <p class="completion-score">{{ session.correct|stringformat:"02d" }} / {{ session.seen|stringformat:"02d" }} correct</p>
+
+    {% widthratio percentage 100 20 as lit_cells %}
+    <div class="meter meter--lg meter--result" role="img" aria-label="Final score {{ percentage }} percent">
+      {% with ""|center:20 as cells %}{% for _ in cells %}<span class="meter-cell{% if forloop.counter <= lit_cells|add:"0" %} is-on{% endif %}"></span>{% endfor %}{% endwith %}
+    </div>
+
+    <p class="completion-message">
+      {% if percentage >= 90 %}
+        Excellent recall. These connections are becoming automatic.
+      {% elif percentage >= 75 %}
+        Strong result. One more round will help reinforce the uncertain items.
+      {% elif percentage >= 50 %}
+        Good foundation. Repeat the round and focus on the corrections.
+      {% else %}
+        Keep going. Review the feedback examples and try another round.
+      {% endif %}
+    </p>
+
+    {% if session.pending_correction %}
+      <form method="post" action="{{ step_url }}" class="completion-actions completion-correction">
+        {% csrf_token %}
+        <button class="button" type="submit" name="action" value="mark_last_correct">I was right about {{ session.pending_correction.label }}</button>
+      </form>
+    {% endif %}
+
+    {% if session.pending_retirement %}
+      <form method="post" action="{{ step_url }}" class="completion-actions completion-correction">
+        {% csrf_token %}
+        <button class="button" type="submit" name="action" value="retire_word">Retire {{ session.pending_retirement.label }} from trainer</button>
+      </form>
+    {% endif %}
+
+    <div class="completion-actions">
+      <a class="button primary" href="{{ retry_url }}">{{ retry_label }}</a>
+      <a class="button" href="{% url 'core:dashboard' %}">Dashboard</a>
+    </div>
+  </div>
+
+  <div class="completion-stats" aria-label="Round summary">
+    <div><span>Correct</span><strong>{{ session.correct }}</strong></div>
+    <div><span>To review</span><strong>{{ incorrect }}</strong></div>
+  </div>
+</section>

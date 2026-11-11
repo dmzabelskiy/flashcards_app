@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Review{% endblock %}
+{% block content %}
+<section class="review">
+  <p class="muted">{{ card.deck.name }}</p>
+  <div class="review-card flip-on-answer {% if show_answer %}has-answer{% endif %}">
+    <h1>{{ card.display_front|linebreaksbr }} <button type="button" class="tts-button" aria-label="Speak" data-tts-text="{{ card.display_front }}" data-tts-lang="{{ card.speech_locale }}"><svg class="pic" aria-hidden="true"><use href="#pic-speaker"></use></svg></button></h1>
+    {% if show_answer %}
+      <hr>
+      <div class="answer">{{ card.back|linebreaksbr }}</div>
+      {% if card.example_sentence %}<p class="example">{{ card.example_sentence|linebreaksbr }}</p>{% endif %}
+      {% if card.notes %}<p class="notes">{{ card.notes|linebreaksbr }}</p>{% endif %}
+    {% endif %}
+  </div>
+
+  {% if show_answer %}
+    <form method="post" class="rating-form" id="rating-form">
+      {% csrf_token %}
+      <input type="hidden" name="submission" value="{{ submission_token }}">
+      <input type="hidden" name="elapsed_seconds" id="elapsed-seconds">
+      <button class="button danger" name="rating" value="again" data-key="1">Again</button>
+      <button class="button hard" name="rating" value="hard" data-key="2">Hard</button>
+      <button class="button good" name="rating" value="good" data-key="3">Good</button>
+      <button class="button easy" name="rating" value="easy" data-key="4">Easy</button>
+      {% if can_retire %}
+        <button class="button retire-word-button" name="retire" value="1" title="Remove this word from future study sessions" onclick="return confirm('Retire this word from future study sessions?');">Retire word</button>
+      {% endif %}
+    </form>
+  {% else %}
+    <a class="button primary show-answer" href="?answer=1">Show answer</a>
+  {% endif %}
+</section>
+<script src="{% static 'js/review_card.js' %}"></script>
+{% endblock %}
+

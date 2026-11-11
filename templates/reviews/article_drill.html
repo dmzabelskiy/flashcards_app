@@ -1,0 +1,35 @@
+{% extends "reviews/_drill_page.html" %}
+{% block title %}Article drill{% endblock %}
+{% block workspace_class %}article-drill{% endblock %}
+{% block drill_kicker %}Grammar trainer{% endblock %}
+{% block drill_heading %}Article drill{% endblock %}
+
+{% block feedback %}
+      <div class="feedback-heading">
+        <svg class="pic status-marker" aria-hidden="true"><use href="#pic-{% if last.correct %}check{% else %}cross{% endif %}"></use></svg>
+        <strong>{% if last.correct %}Correct{% else %}Not quite{% endif %}</strong>
+      </div>
+      <div class="feedback-connection">
+        <span class="answer-tag">{{ last.expected }} {{ last.stem }}</span>
+      </div>
+      {% if not last.correct %}<p class="feedback-choice">You chose <strong>{{ last.chosen|default:"—" }}</strong></p>{% endif %}
+{% endblock %}
+
+{% block prompt %}
+    <h2><span aria-hidden="true">…</span> {{ card.noun_stem }}</h2>
+    <p class="drill-prompt-instruction">Choose the article</p>
+    <p>{{ card.back|linebreaksbr }}</p>
+{% endblock %}
+
+{% block answer_form %}
+  <form method="post" class="article-answer-grid" aria-label="Choose an article">
+    {% csrf_token %}
+    {% for option in card.article_options %}
+      <button class="article-choice article-{{ option.value }}" name="answer" value="{{ option.value }}" data-drill-key="{{ option.key }}">
+        <span class="article-accent" aria-hidden="true"></span>
+        <small>{{ option.gender }}</small><strong>{{ option.value }}</strong><kbd>{{ option.key }}</kbd>
+      </button>
+    {% endfor %}
+  </form>
+{% endblock %}
+{% block drill_hint %}Use keys 1–{{ card.article_options|length }} or choose an article{% endblock %}

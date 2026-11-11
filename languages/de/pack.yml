@@ -1,0 +1,8 @@
+code: de
+name: German
+articles: [der, die, das]
+article_genders: [Masculine, Feminine, Neuter]
+speech_locale: de-DE
+media:
+  video_channel: kurzgesagt-de
+  podcast: true

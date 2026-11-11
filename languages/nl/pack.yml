@@ -1,0 +1,8 @@
+code: nl
+name: Dutch
+articles: [de, het]
+article_genders: [Common, Neuter]
+speech_locale: nl-NL
+media:
+  video_channel: nl-channel
+  podcast: false

@@ -1,0 +1,11 @@
+# A made-up language folder for the drill engine tests. It carries no real
+# content and uses the real mode codes (DE-RU, DE-ES) so the engine is run
+# through the same mode, target and registry code as the real packs.
+code: de
+name: Testland
+articles: []
+article_genders: []
+speech_locale: de-DE
+media:
+  video_channel: null
+  podcast: false

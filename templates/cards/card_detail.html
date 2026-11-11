@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Card{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <h1>Card</h1>
+  <div class="actions">
+    <a class="button" href="{% url 'cards:edit' card.pk %}">Edit</a>
+    <a class="button danger" href="{% url 'cards:delete' card.pk %}">Delete</a>
+  </div>
+</div>
+<article class="card-detail">
+  <p class="muted">{{ card.deck.name }} · {{ card.get_card_type_display }}</p>
+  <dl class="detail-grid">
+    <div>
+      <dt>Front</dt>
+      <dd>{{ card.display_front|linebreaksbr }} <button type="button" class="tts-button" aria-label="Speak" data-tts-text="{{ card.display_front }}" data-tts-lang="{{ card.speech_locale }}"><svg class="pic" aria-hidden="true"><use href="#pic-speaker"></use></svg></button></dd>
+    </div>
+    <div><dt>Back</dt><dd>{{ card.back|linebreaksbr }}</dd></div>
+    {% if card.example_sentence %}<div><dt>Example</dt><dd>{{ card.example_sentence|linebreaksbr }}</dd></div>{% endif %}
+    {% if card.notes %}<div><dt>Notes</dt><dd>{{ card.notes|linebreaksbr }}</dd></div>{% endif %}
+  </dl>
+  {% if card.tags %}<p class="muted">Tags: {{ card.tags }}</p>{% endif %}
+</article>
+{% endblock %}
+

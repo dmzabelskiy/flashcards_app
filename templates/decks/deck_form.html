@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Deck{% endblock %}
+{% block content %}
+<h1>{% if object %}Edit deck{% else %}New deck{% endif %}</h1>
+<form method="post" class="form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="button primary" type="submit">Save</button>
+  {% if object %}<a class="button danger" href="{% url 'decks:delete' object.pk %}">Delete</a>{% endif %}
+</form>
+{% endblock %}
+

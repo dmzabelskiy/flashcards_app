@@ -1,0 +1,507 @@
+# Adjective + preposition pairs.
+# One item per pair; an item lists its own pair first and then the other pairs
+# of the same adjective, so an answer must match one pair as a whole.
+slug: adjective-prepositions
+trainer: adjective_preposition
+label: Adjective + preposition
+description: Fixed adjective–preposition pairs and the case they take.
+order: 10
+round_size: 20
+instruction: Identify the fixed preposition and required case.
+fields:
+  - key: preposition
+    label: Preposition
+    kind: typed
+    normalise: preposition
+    placeholder: e.g. mit
+  - key: case
+    label: Case
+    kind: choice
+    normalise: exact
+    options:
+      - value: A
+        label: Akkusativ
+      - value: D
+        label: Dativ
+items:
+  - id: abhaengig-von
+    prompt: abhängig
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Immer mehr Menschen sind finanziell vom Staat abhängig.
+  - id: angenehm-fuer
+    prompt: angenehm
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Die Massage war sehr angenehm für ihn.
+  - id: angesehen-bei
+    prompt: angesehen
+    alternatives:
+      - preposition: [bei]
+        case: [D]
+        example: Der Pfarrer war bei allen Kirchgängern hoch angesehen.
+  - id: angewiesen-auf
+    prompt: angewiesen
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Kinder sind auf die Hilfe Erwachsener angewiesen.
+  - id: aergerlich-auf
+    prompt: ärgerlich
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Wegen der schlechten Noten war der Schüler ärgerlich auf den Lehrer.
+      - preposition: [über]
+        case: [A]
+        example: Andi war ärgerlich über seine schlechte Leistung.
+  - id: aergerlich-ueber
+    prompt: ärgerlich
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Andi war ärgerlich über seine schlechte Leistung.
+      - preposition: [auf]
+        case: [A]
+        example: Wegen der schlechten Noten war der Schüler ärgerlich auf den Lehrer.
+  - id: befreundet-mit
+    prompt: befreundet
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Der Politiker ist mit der ganzen Welt befreundet.
+  - id: begeistert-von
+    prompt: begeistert
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Die Touristen sind begeistert von der unberührten Natur.
+  - id: behilflich-bei
+    prompt: behilflich
+    alternatives:
+      - preposition: [bei]
+        case: [D]
+        example: Der Vater ist behilflich beim Wechseln des Fahrradreifens.
+  - id: bekannt-fuer
+    prompt: bekannt
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Die Schwaben sind bekannt für ihre Sparsamkeit.
+      - preposition: [mit]
+        case: [D]
+        example: Der Bürgermeister ist mit vielen Prominenten bekannt.
+  - id: bekannt-mit
+    prompt: bekannt
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Der Bürgermeister ist mit vielen Prominenten bekannt.
+      - preposition: [für]
+        case: [A]
+        example: Die Schwaben sind bekannt für ihre Sparsamkeit.
+  - id: beliebt-bei
+    prompt: beliebt
+    alternatives:
+      - preposition: [bei]
+        case: [D]
+        example: Science-Fiction-Geschichten sind beliebt bei Jung und Alt.
+  - id: bereit-zu
+    prompt: bereit
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: Seid ihr alle bereit zum Aufbruch?
+  - id: beruehmt-fuer
+    prompt: berühmt
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Pierce Brosnan war berühmt für seine Rolle als James Bond.
+  - id: beschaeftigt-mit
+    prompt: beschäftigt
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Montags ist Martha mit dem Hausputz beschäftigt.
+  - id: besorgt-ueber
+    prompt: besorgt
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Hannes ist ein wenig besorgt über seinen hohen Blutdruck.
+      - preposition: [um]
+        case: [A]
+        example: Die Mutter war besorgt um ihr krankes Kind.
+  - id: besorgt-um
+    prompt: besorgt
+    alternatives:
+      - preposition: [um]
+        case: [A]
+        example: Die Mutter war besorgt um ihr krankes Kind.
+      - preposition: [über]
+        case: [A]
+        example: Hannes ist ein wenig besorgt über seinen hohen Blutdruck.
+  - id: beteiligt-an
+    prompt: beteiligt
+    alternatives:
+      - preposition: [an]
+        case: [D]
+        example: Philipp war an allen Torchancen des Fußballspiels beteiligt.
+  - id: beunruhigt-ueber
+    prompt: beunruhigt
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Die Deutschen waren beunruhigt über die Bankenkrise.
+  - id: boese-auf
+    prompt: böse
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Lisa war böse auf ihren großen Bruder.
+  - id: dankbar-fuer
+    prompt: dankbar
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Die Polizei ist dankbar für jeden Hinweis zum Tathergang.
+  - id: eifersuechtig-auf
+    prompt: eifersüchtig
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Kleine Kinder sind oft eifersüchtig auf ihre älteren Geschwister, weil sie mehr Freiheiten
+          haben.
+  - id: einverstanden-mit
+    prompt: einverstanden
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Bist du einverstanden mit einer Reise in die Berge?
+  - id: entsetzt-ueber
+    prompt: entsetzt
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Die ganze Welt war entsetzt über das Hochwasser in Pakistan.
+  - id: enttaeuscht-von
+    prompt: enttäuscht
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Die Fans waren enttäuscht vom schlechten Spielergebnis.
+  - id: erfreut-ueber
+    prompt: erfreut
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Ich bin sehr erfreut über Ihre positive Entscheidung.
+  - id: erstaunt-ueber
+    prompt: erstaunt
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Ich bin erstaunt über deinen plötzlichen Meinungsumschwung.
+  - id: fertig-mit
+    prompt: fertig
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Bist du schon fertig mit den Hausaufgaben?
+  - id: frei-von
+    prompt: frei
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Biologische Nahrungsmittel sind frei von chemischen Zusatzstoffen.
+  - id: freundlich-zu
+    prompt: freundlich
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: Sei stets freundlich zu deinen Mitmenschen.
+  - id: froh-ueber
+    prompt: froh
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Alle Kollegen waren froh über das gute Jahresergebnis der Firma.
+  - id: geeignet-fuer
+    prompt: geeignet
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Musicals sind gut geeignet für einen unterhaltsamen Abend.
+  - id: gespannt-auf
+    prompt: gespannt
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: An Heiligabend warten Kinder gespannt auf den Weihnachtsmann.
+  - id: gewoehnt-an
+    prompt: gewöhnt
+    alternatives:
+      - preposition: [an]
+        case: [A]
+        example: Eisbären sind an die Kälte gewöhnt.
+  - id: gluecklich-ueber
+    prompt: glücklich
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Das Brautpaar war glücklich über die vielen Hochzeitsgeschenke.
+  - id: gut-in
+    prompt: gut
+    alternatives:
+      - preposition: [in]
+        case: [D]
+        example: Gauß war schon als Kind gut im Rechnen.
+      - preposition: [zu]
+        case: [D]
+        example: Mutter Theresa war immer gut zu allen Menschen.
+  - id: gut-zu
+    prompt: gut
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: Mutter Theresa war immer gut zu allen Menschen.
+      - preposition: [in]
+        case: [D]
+        example: Gauß war schon als Kind gut im Rechnen.
+  - id: interessiert-an
+    prompt: interessiert
+    alternatives:
+      - preposition: [an]
+        case: [D]
+        example: Frau Maier zeigte sich sehr interessiert an der neuen Stelle.
+  - id: hoeflich-zu
+    prompt: höflich
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: Ein Kellner sollte stets höflich zu den Hotelgästen sein.
+  - id: leicht-fuer
+    prompt: leicht
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Die Übung war zu leicht für mich.
+  - id: lieb-zu
+    prompt: lieb
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: „Seid lieb zu eurem Vater!“, sagte die Mutter.
+  - id: misstrauisch-gegenueber
+    prompt: misstrauisch
+    alternatives:
+      - preposition: [gegenüber]
+        case: [D]
+        example: Die alte Dame war misstrauisch gegenüber allen Fremden.
+  - id: muede-von
+    prompt: müde
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Lisa fühlte sich müde vom langen Warten.
+  - id: neidisch-auf
+    prompt: neidisch
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Rob war neidisch auf seinen erfolgreichen Bruder.
+  - id: nett-zu
+    prompt: nett
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: Seid nett zu euren Nachbarn.
+  - id: neugierig-auf
+    prompt: neugierig
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Karla ist neugierig auf ihre Geburtstagsgeschenke.
+  - id: reich-an
+    prompt: reich
+    alternatives:
+      - preposition: [an]
+        case: [D]
+        example: Olivenöl ist reich an ungesättigten Fettsäuren.
+  - id: schaedlich-fuer
+    prompt: schädlich
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Zucker ist schädlich für die Zähne.
+  - id: schuld-an
+    prompt: schuld
+    alternatives:
+      - preposition: [an]
+        case: [D]
+        example: Der Motorradfahrer war schuld an dem Unfall.
+  - id: schwierig-fuer
+    prompt: schwierig
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Ein Umzug ist immer schwierig für Kinder.
+  - id: sicher-vor
+    prompt: sicher
+    alternatives:
+      - preposition: [vor]
+        case: [D]
+        example: Hier im Haus sind wir sicher vor dem Sturm.
+  - id: stolz-auf
+    prompt: stolz
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Lothar ist sehr stolz auf seine hübsche Frau.
+  - id: traurig-ueber
+    prompt: traurig
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Martha ist traurig über das schlechte Ergebnis ihrer Deutschprüfung.
+  - id: typisch-fuer
+    prompt: typisch
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Gestreifte Krawatten sind typisch für Politiker.
+  - id: ueberzeugt-von
+    prompt: überzeugt
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Der Richter war überzeugt von der Schuld des Angeklagten.
+  - id: unabhaengig-von
+    prompt: unabhängig
+    alternatives:
+      - preposition: [von]
+        case: [D]
+        example: Fitness ist unabhängig vom Alter.
+  - id: unangenehm-fuer
+    prompt: unangenehm
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Ist eine Ultraschalluntersuchung unangenehm für das Baby?
+  - id: unbeliebt-bei
+    prompt: unbeliebt
+    alternatives:
+      - preposition: [bei]
+        case: [D]
+        example: Die Deutschen sind unbeliebt bei den Österreichern.
+  - id: unerfahren-in
+    prompt: unerfahren
+    alternatives:
+      - preposition: [in]
+        case: [D]
+        example: Wer 18 Jahre ist, der ist unerfahren im Autofahren.
+  - id: unfreundlich-zu
+    prompt: unfreundlich
+    alternatives:
+      - preposition: [zu]
+        case: [D]
+        example: Sei nicht so unfreundlich zu deinem Vater!
+  - id: ungeeignet-fuer
+    prompt: ungeeignet
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Sommerreifen sind ungeeignet für eine Fahrt bei Eis und Schnee.
+  - id: ungluecklich-ueber
+    prompt: unglücklich
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Viele Frauen sind nach der Geburt des Babys unglücklich über ihre Figur.
+  - id: unzufrieden-mit
+    prompt: unzufrieden
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: 85 % der Deutschen sind unzufrieden mit ihrer Arbeit.
+  - id: verantwortlich-fuer
+    prompt: verantwortlich
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Pollen und Staub sind oft verantwortlich für Allergien.
+  - id: veraergert-ueber
+    prompt: verärgert
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Autofahrer sind verärgert über die hohen Benzinpreise.
+  - id: verheiratet-mit
+    prompt: verheiratet
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Mein Großvater ist schon 50 Jahre mit meiner Großmutter verheiratet.
+  - id: verliebt-in
+    prompt: verliebt
+    alternatives:
+      - preposition: [in]
+        case: [A]
+        example: Paris Hilton war ganz verliebt in ihren kleinen Hund.
+  - id: verlobt-mit
+    prompt: verlobt
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Katja ist mit einem 20 Jahre älteren Mann verlobt.
+  - id: verrueckt-nach
+    prompt: verrückt
+    alternatives:
+      - preposition: [nach]
+        case: [D]
+        example: Du bist ja ganz verrückt nach diesem Mann!
+  - id: verwandt-mit
+    prompt: verwandt
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: John Kerry ist mit der Queen verwandt.
+  - id: wichtig-fuer
+    prompt: wichtig
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Das ist momentan nicht wichtig für mich.
+  - id: wuetend-auf
+    prompt: wütend
+    alternatives:
+      - preposition: [auf]
+        case: [A]
+        example: Nach dem Streit war Thomas sehr wütend auf seinen Sohn.
+      - preposition: [über]
+        case: [A]
+        example: Viele DSL-Kunden sind wütend über den schlechten Service.
+  - id: wuetend-ueber
+    prompt: wütend
+    alternatives:
+      - preposition: [über]
+        case: [A]
+        example: Viele DSL-Kunden sind wütend über den schlechten Service.
+      - preposition: [auf]
+        case: [A]
+        example: Nach dem Streit war Thomas sehr wütend auf seinen Sohn.
+  - id: zufrieden-mit
+    prompt: zufrieden
+    alternatives:
+      - preposition: [mit]
+        case: [D]
+        example: Wir sind sehr zufrieden mit unserem neuen Auto.
+  - id: zustaendig-fuer
+    prompt: zuständig
+    alternatives:
+      - preposition: [für]
+        case: [A]
+        example: Frau Maier ist zuständig für den Kundenservice.

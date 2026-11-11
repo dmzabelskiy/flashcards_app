@@ -1,0 +1,300 @@
+# Verbs with their governing preposition, with glosses per target language.
+slug: verb-prepositions
+trainer: verb_preposition
+label: Verb + preposition
+description: Verbs with their governing preposition and case.
+order: 20
+round_size: 20
+instruction: Translate the verb into {target_label} and choose its German preposition.
+hint: Both answers must be correct · the required case appears after submission
+fields:
+  - key: translation
+    label: '{target_label}'
+    kind: typed
+    normalise: translation
+    placeholder: Type the translation
+  - key: preposition
+    label: Präposition
+    kind: pool_choice
+    normalise: exact
+items:
+  - id: teilnehmen-an
+    prompt: teilnehmen
+    alternatives:
+      - translation:
+          ru: [участвовать, принимать участие]
+          es: [participar]
+        preposition: [an]
+        reveal: {Kasus: Dativ}
+  - id: sich-beschaeftigen-mit
+    prompt: sich beschäftigen
+    alternatives:
+      - translation:
+          ru: [заниматься]
+          es: [ocuparse, dedicarse]
+        preposition: [mit]
+        reveal: {Kasus: Dativ}
+  - id: sich-bewerben-um
+    prompt: sich bewerben
+    alternatives:
+      - translation:
+          ru: [подавать заявление, претендовать]
+          es: [solicitar, presentarse]
+        preposition: [um]
+        reveal: {Kasus: Akkusativ}
+  - id: sprechen-ueber
+    prompt: sprechen
+    alternatives:
+      - translation:
+          ru: [говорить, разговаривать]
+          es: [hablar]
+        preposition: [über]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-entschliessen-zu
+    prompt: sich entschließen
+    alternatives:
+      - translation:
+          ru: [решиться, принимать решение]
+          es: [decidirse]
+        preposition: [zu]
+        reveal: {Kasus: Dativ}
+  - id: sich-bemuehen-um
+    prompt: sich bemühen
+    alternatives:
+      - translation:
+          ru: [стараться, прилагать усилия]
+          es: [esforzarse]
+        preposition: [um]
+        reveal: {Kasus: Akkusativ}
+  - id: arbeiten-an
+    prompt: arbeiten
+    alternatives:
+      - translation:
+          ru: [работать]
+          es: [trabajar]
+        preposition: [an]
+        reveal: {Kasus: Dativ}
+  - id: hoffen-auf
+    prompt: hoffen
+    alternatives:
+      - translation:
+          ru: [надеяться]
+          es: [esperar, tener esperanza]
+        preposition: [auf]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-verlieben-in
+    prompt: sich verlieben
+    alternatives:
+      - translation:
+          ru: [влюбляться, влюбиться]
+          es: [enamorarse]
+        preposition: [in]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-interessieren-fuer
+    prompt: sich interessieren
+    alternatives:
+      - translation:
+          ru: [интересоваться]
+          es: [interesarse]
+        preposition: [für]
+        reveal: {Kasus: Akkusativ}
+  - id: gratulieren-zu
+    prompt: gratulieren
+    alternatives:
+      - translation:
+          ru: [поздравлять]
+          es: [felicitar]
+        preposition: [zu]
+        reveal: {Kasus: Dativ}
+  - id: denken-an
+    prompt: denken
+    alternatives:
+      - translation:
+          ru: [думать]
+          es: [pensar]
+        preposition: [an]
+        reveal: {Kasus: Akkusativ}
+  - id: lachen-ueber
+    prompt: lachen
+    alternatives:
+      - translation:
+          ru: [смеяться]
+          es: [reírse, reir]
+        preposition: [über]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-erinnern-an
+    prompt: sich erinnern
+    alternatives:
+      - translation:
+          ru: [вспоминать, помнить]
+          es: [acordarse, recordar]
+        preposition: [an]
+        reveal: {Kasus: Akkusativ}
+  - id: telefonieren-mit
+    prompt: telefonieren
+    alternatives:
+      - translation:
+          ru: [разговаривать по телефону, звонить]
+          es: [hablar por teléfono, telefonear]
+        preposition: [mit]
+        reveal: {Kasus: Dativ}
+  - id: warten-auf
+    prompt: warten
+    alternatives:
+      - translation:
+          ru: [ждать]
+          es: [esperar]
+        preposition: [auf]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-unterhalten-ueber
+    prompt: sich unterhalten
+    alternatives:
+      - translation:
+          ru: [беседовать, разговаривать]
+          es: [conversar, charlar]
+        preposition: [über]
+        reveal: {Kasus: Akkusativ}
+  - id: gehoeren-zu
+    prompt: gehören
+    alternatives:
+      - translation:
+          ru: [принадлежать, относиться]
+          es: [pertenecer]
+        preposition: [zu]
+        reveal: {Kasus: Dativ}
+  - id: sich-streiten-mit
+    prompt: sich streiten
+    alternatives:
+      - translation:
+          ru: [ссориться, спорить]
+          es: [discutir, pelearse]
+        preposition: [mit]
+        reveal: {Kasus: Dativ}
+  - id: eingehen-auf
+    prompt: eingehen
+    alternatives:
+      - translation:
+          ru: [рассматривать, реагировать]
+          es: [abordar, responder]
+        preposition: [auf]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-erholen-von
+    prompt: sich erholen
+    alternatives:
+      - translation:
+          ru: [отдыхать, оправляться]
+          es: [recuperarse, descansar]
+        preposition: [von]
+        reveal: {Kasus: Dativ}
+  - id: einladen-zu
+    prompt: einladen
+    alternatives:
+      - translation:
+          ru: [приглашать]
+          es: [invitar]
+        preposition: [zu]
+        reveal: {Kasus: Dativ}
+  - id: halten-von
+    prompt: halten
+    alternatives:
+      - translation:
+          ru: [быть мнения, считать]
+          es: [opinar, pensar]
+        preposition: [von]
+        reveal: {Kasus: Dativ}
+  - id: sich-freuen-auf
+    prompt: sich freuen
+    alternatives:
+      - translation:
+          ru: [предвкушать, с нетерпением ждать]
+          es: [tener ganas, esperar con ilusión]
+        preposition: [auf]
+        reveal: {Kasus: Akkusativ}
+  - id: ausgeben-fuer
+    prompt: ausgeben
+    alternatives:
+      - translation:
+          ru: [тратить]
+          es: [gastar]
+        preposition: [für]
+        reveal: {Kasus: Akkusativ}
+  - id: bitten-um
+    prompt: bitten
+    alternatives:
+      - translation:
+          ru: [просить]
+          es: [pedir]
+        preposition: [um]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-entscheiden-fuer
+    prompt: sich entscheiden
+    alternatives:
+      - translation:
+          ru: [выбирать, решаться]
+          es: [decidirse, elegir]
+        preposition: [für]
+        reveal: {Kasus: Akkusativ}
+  - id: handeln-von
+    prompt: handeln
+    alternatives:
+      - translation:
+          ru: [быть о, рассказывать о]
+          es: [tratar]
+        preposition: [von]
+        reveal: {Kasus: Dativ}
+  - id: traeumen-von
+    prompt: träumen
+    alternatives:
+      - translation:
+          ru: [мечтать]
+          es: [soñar]
+        preposition: [von]
+        reveal: {Kasus: Dativ}
+  - id: rechnen-mit
+    prompt: rechnen
+    alternatives:
+      - translation:
+          ru: [рассчитывать, ожидать]
+          es: [contar, esperar]
+        preposition: [mit]
+        reveal: {Kasus: Dativ}
+  - id: kaempfen-fuer
+    prompt: kämpfen
+    alternatives:
+      - translation:
+          ru: [бороться]
+          es: [luchar]
+        preposition: [für]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-bedanken-fuer
+    prompt: sich bedanken
+    alternatives:
+      - translation:
+          ru: [благодарить]
+          es: [dar las gracias, agradecer]
+        preposition: [für]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-beschweren-ueber
+    prompt: sich beschweren
+    alternatives:
+      - translation:
+          ru: [жаловаться]
+          es: [quejarse]
+        preposition: [über]
+        reveal: {Kasus: Akkusativ}
+  - id: sich-aergern-ueber
+    prompt: sich ärgern
+    alternatives:
+      - translation:
+          ru: [злиться, сердиться]
+          es: [enfadarse, enojarse]
+        preposition: [über]
+        reveal: {Kasus: Akkusativ}
+  - id: protestieren-gegen
+    prompt: protestieren
+    alternatives:
+      - translation:
+          ru: [протестовать]
+          es: [protestar]
+        preposition: [gegen]
+        reveal: {Kasus: Akkusativ}

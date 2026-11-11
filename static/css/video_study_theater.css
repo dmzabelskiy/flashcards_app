@@ -1,0 +1,298 @@
+.video-player-column {
+  position: relative;
+}
+
+.video-player-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.video-player-actions .video-refresh-form {
+  margin: 0;
+}
+
+.theater-toggle {
+  gap: 8px;
+}
+
+.theater-toggle kbd {
+  display: none;
+  padding: 2px 6px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  color: inherit;
+  font-size: 0.7rem;
+  opacity: 0.72;
+}
+
+.translation-panel__selection-hint {
+  display: block;
+  margin-top: 3px;
+  color: var(--ink-2);
+  font-size: 0.8125rem;
+}
+
+.translation-panel__result strong {
+  overflow-wrap: anywhere;
+}
+
+body.video-theater-mode {
+  overflow: hidden;
+}
+
+body.video-theater-mode .topbar,
+body.video-theater-mode .site-sidebar,
+body.video-theater-mode .sidebar-toggle,
+body.video-theater-mode .video-study__titlebar,
+body.video-theater-mode .video-loader {
+  display: none;
+}
+
+body.video-theater-mode .app-shell {
+  display: block;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.video-theater-mode .app-main,
+body.video-theater-mode .video-study {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.video-theater-mode .video-workspace {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(360px, 32vw, 560px);
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  border: 0;
+  background: var(--ink);
+}
+
+body.video-theater-mode .video-player-column {
+  display: flex;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  flex-direction: column;
+  padding: 12px;
+  border-color: var(--ink-700);
+  background: var(--ink);
+}
+
+body.video-theater-mode .video-player-shell {
+  position: relative;
+  top: auto;
+  flex: 1;
+  min-height: min(180px, 55dvh);
+  aspect-ratio: auto;
+}
+
+body.video-theater-mode .video-player-meta,
+body.video-theater-mode .video-refresh-form {
+  display: none;
+}
+
+body.video-theater-mode .video-player-actions {
+  flex: none;
+  justify-content: flex-end;
+  min-height: 44px;
+  margin: 8px 0 0;
+}
+
+body.video-theater-mode .video-caption-control label { color: var(--sky-300); }
+body.video-theater-mode .video-caption-error { flex: none; max-height: 22vh; overflow-y: auto; }
+
+body.video-theater-mode .theater-toggle {
+  border-color: var(--sky-300);
+  background: var(--ink);
+  color: var(--sky-300);
+}
+
+body.video-theater-mode .theater-toggle:hover {
+  background: var(--ink-700);
+}
+
+body.video-theater-mode .theater-toggle kbd {
+  display: inline-block;
+}
+
+body.video-theater-mode .transcript-column {
+  height: 100vh;
+  height: 100dvh;
+  max-height: none;
+}
+
+body.video-theater-mode .transcript-list {
+  min-height: 0;
+}
+
+body.video-theater-mode .transcript-header {
+  flex: none;
+}
+
+body.video-theater-mode .transcript-header > div:first-child {
+  min-width: 0;
+  max-height: 20dvh;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  body.video-theater-mode .video-workspace {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(45vh, 1fr) minmax(260px, 45vh);
+  }
+
+  body.video-theater-mode .video-player-column {
+    border-right: 0;
+    border-bottom: 1px solid var(--ink-700);
+  }
+
+  body.video-theater-mode .transcript-column {
+    height: auto;
+    min-height: 0;
+  }
+}
+
+
+@media (max-width: 700px) {
+  body.video-theater-mode .video-workspace {
+    position: fixed;
+    inset: 0;
+    display: block;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  body.video-theater-mode .video-player-column {
+    display: flex;
+    height: calc(100dvh - 58px);
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0;
+    border: 0;
+    flex-direction: column;
+  }
+
+  body.video-theater-mode .video-player-shell {
+    width: 100%;
+    flex: none;
+    aspect-ratio: 16 / 9;
+  }
+
+  body.video-theater-mode .video-player-actions {
+    justify-content: flex-start;
+    min-height: 56px;
+    margin: 0;
+    padding: 6px 12px;
+    background: var(--ink);
+  }
+
+  body.video-theater-mode .video-player-actions .theater-toggle { width: auto; }
+  body.video-theater-mode .video-caption-control,
+  body.video-theater-mode .video-caption-control .button { width: auto; }
+  body.video-theater-mode .transcript-column {
+    position: fixed;
+    z-index: 1050;
+    inset: auto 0 0;
+    display: flex;
+    height: 48dvh;
+    max-height: 48dvh;
+    min-height: 0;
+    border-top: 1px solid var(--ink-700);
+    transform: translateY(calc(100% - 58px));
+    transition: transform 180ms var(--ease);
+  }
+
+  body.video-theater-mode .transcript-column.is-expanded { transform: translateY(0); }
+  body.video-theater-mode .transcript-header {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    background: var(--white);
+  }
+  /* The first 58px must always contain the complete drawer control. */
+  body.video-theater-mode .transcript-header__tools {
+    order: -1;
+    flex: none;
+    justify-content: space-between;
+    height: 57px;
+    padding: 6px 12px;
+  }
+  body.video-theater-mode .transcript-header > div:first-child {
+    display: none;
+  }
+  body.video-theater-mode .transcript-column.is-expanded .transcript-header > div:first-child {
+    display: block;
+    max-height: 14dvh;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+    padding: 0 12px 8px;
+  }
+  body.video-theater-mode .transcript-drawer-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 8px 10px;
+    border: 1px solid var(--line-strong);
+    background: var(--white);
+    color: var(--ink);
+    cursor: pointer;
+    font: inherit;
+  }
+  body.video-theater-mode .transcript-list {
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  body.video-theater-mode .translation-panel {
+    position: fixed;
+    z-index: 1150;
+    inset: auto 0 0;
+    margin: 0;
+    max-height: 70dvh;
+    overflow-y: auto;
+    border-width: 1px 0 0;
+    box-shadow: var(--shadow-float);
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+}
+
+/* Short viewports scroll controls rather than squeezing the video away. */
+@media (min-width: 701px) and (max-height: 600px) {
+  body.video-theater-mode .video-player-shell {
+    flex: none;
+    height: 55dvh;
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 700px) and (max-height: 600px) and (orientation: landscape) {
+  body.video-theater-mode .video-player-shell {
+    height: min(56.25vw, 55dvh);
+    aspect-ratio: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.video-theater-mode .transcript-column { transition: none; }
+}

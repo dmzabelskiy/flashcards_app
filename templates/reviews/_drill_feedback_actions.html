@@ -1,0 +1,18 @@
+{% comment %}
+Shared feedback controls: correcting a wrongly-marked answer and retiring an
+item the user has now answered right three times in a row. Both post to the
+drill's own step view, which the engine handles for every drill.
+{% endcomment %}
+{% if not last.correct %}
+  <form method="post" class="feedback-correction-form">
+    {% csrf_token %}
+    <button class="button" type="submit" name="action" value="mark_last_correct">I was right</button>
+  </form>
+{% endif %}
+{% if last.can_retire %}
+  <p class="feedback-choice">{{ last.correct_streak }} correct in a row. You can remove this word from future trainer rounds.</p>
+  <form method="post" class="feedback-correction-form">
+    {% csrf_token %}
+    <button class="button" type="submit" name="action" value="retire_word">Retire from trainer</button>
+  </form>
+{% endif %}

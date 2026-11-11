@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Decks{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <h1>Decks</h1>
+  <a class="button primary" href="{% url 'decks:create' %}">New deck</a>
+</div>
+<table class="responsive-table">
+  <thead><tr><th>Name</th><th>Description</th><th>Status</th><th></th></tr></thead>
+  <tbody>
+    {% for deck in decks %}
+      <tr>
+        <td data-label="Name"><a href="{{ deck.get_absolute_url }}">{{ deck.name }}</a></td>
+        <td data-label="Description">{{ deck.description|truncatewords:16 }}</td>
+        <td data-label="Status">{% if deck.is_archived %}Archived{% else %}Active{% endif %}</td>
+        <td data-label="Actions"><a href="{% url 'decks:edit' deck.pk %}">Edit</a></td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="4">No decks yet.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+

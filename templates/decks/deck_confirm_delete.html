@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Delete deck{% endblock %}
+{% block content %}
+<section class="confirm-panel">
+  <h1>Delete deck</h1>
+  <p>{{ object.name }}</p>
+  <form method="post" class="actions centered">
+    {% csrf_token %}
+    <button class="button danger" type="submit">Delete</button>
+    <a class="button" href="{{ object.get_absolute_url }}">Cancel</a>
+  </form>
+</section>
+{% endblock %}
+

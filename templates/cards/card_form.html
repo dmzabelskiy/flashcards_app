@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Card{% endblock %}
+{% block content %}
+<h1>{% if object %}Edit card{% else %}New card{% endif %}</h1>
+<form method="post" class="form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="button primary" type="submit">Save</button>
+  {% if object %}<a class="button danger" href="{% url 'cards:delete' object.pk %}">Delete</a>{% endif %}
+</form>
+{% endblock %}
+

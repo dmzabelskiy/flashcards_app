@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Import CSV{% endblock %}
+{% block content %}
+<h1>Import CSV</h1>
+<form method="post" enctype="multipart/form-data" class="form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="button primary" type="submit">Import</button>
+</form>
+{% if result %}
+  <section>
+    <h2>Result</h2>
+    <p>Imported {{ result.imported_count }} card(s).</p>
+    {% if result.errors %}
+      <table class="responsive-table">
+        <thead><tr><th>Row</th><th>Error</th></tr></thead>
+        <tbody>
+          {% for error in result.errors %}
+            <tr><td data-label="Row">{{ error.row_number }}</td><td data-label="Error">{{ error.message }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </section>
+{% endif %}
+{% endblock %}
+

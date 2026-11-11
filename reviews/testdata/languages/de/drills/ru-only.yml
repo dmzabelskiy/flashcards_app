@@ -1,0 +1,21 @@
+# Offered only where the target language is ru.
+slug: ru-only
+trainer: synth_ru_only
+label: Russian only
+description: A drill with a target gate.
+order: 20
+targets: [ru]
+fields:
+  - key: answer
+    label: Answer
+    kind: typed
+    normalise: exact
+items:
+  - id: one
+    prompt: one
+    alternatives:
+      - answer: [Eins]
+  - id: two
+    prompt: two
+    alternatives:
+      - answer: [zwei]

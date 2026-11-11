@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Video study · German Flashcards{% endblock %}
+
+{% block extra_head %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'css/video_study.css' %}">
+  <link rel="stylesheet" href="{% static 'css/video_study_theater.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="video-study" id="video-study-app"
+  {% if video %}data-video-id="{{ video.youtube_id }}"{% endif %}
+  data-source-language="{{ source_language }}"
+  data-bilingual="{{ bilingual|yesno:'true,false' }}"
+  data-target-language="{{ target_language }}"
+  data-target-language-label="{{ target_language_label }}"
+  data-translate-url="{% url 'video_study:translate_word' %}"
+  data-add-to-global-url="{% url 'cards:add_to_global' %}"
+  {% if video %}data-source-url="{{ video.source_url }}"{% endif %}>
+  <header class="video-study__titlebar">
+    <div>
+      <h1>Video study</h1>
+      <p class="muted">{% if allow_bilingual %}Load Dutch captions and click a Dutch word or select a phrase for an English translation.{% else %}Load German or English captions and click a word or select a phrase for a {{ target_language_label }} translation.{% endif %}</p>
+    </div>
+    {% if video %}
+      <a class="video-study__youtube-link" href="{{ video.source_url }}"
+        target="_blank" rel="noopener noreferrer">Open on YouTube<svg class="pic" aria-hidden="true"><use href="#pic-external"></use></svg></a>
+    {% endif %}
+  </header>
+
+  <form method="post" class="video-loader" novalidate>
+    {% csrf_token %}
+    <label for="{{ form.url.id_for_label }}">
+      <span>{{ form.url.label }}</span>
+      {{ form.url }}
+    </label>
+    <label for="{{ form.source_language.id_for_label }}">
+      <span>{{ form.source_language.label }}</span>
+      {{ form.source_language }}
+    </label>
+    {% if allow_bilingual %}
+    <label class="video-caption-checkbox" for="{{ form.bilingual.id_for_label }}">
+      {{ form.bilingual }} <span>{{ form.bilingual.label }}</span>
+    </label>
+    {% endif %}
+    <button class="button primary" type="submit">Load transcript</button>
+    {% if form.url.errors %}
+      <div class="video-loader__error" role="alert">{{ form.url.errors }}</div>
+    {% endif %}
+    <p class="video-loader__hint">
+      Paste a regular, Shorts, Live, or youtu.be link. Previously loaded transcripts open from the local cache.
+    </p>
+  </form>
+
+  {% if video %}
+    {{ transcript|json_script:"video-transcript-data" }}
+    {% if bilingual %}{{ english_transcript|json_script:"video-english-transcript-data" }}{% endif %}
+    <div class="video-workspace">
+      <section class="video-player-column" aria-label="YouTube video">
+        <div class="video-player-shell">
+          <div id="youtube-player"></div>
+        </div>
+        {% if bilingual %}
+        <div class="video-bilingual-captions" aria-label="Current Dutch and English captions">
+          <div><span class="video-caption-language">Dutch</span><span id="current-dutch-caption" lang="nl"></span></div>
+          <div><span class="video-caption-language">English</span><span id="current-english-caption" lang="en"></span></div>
+        </div>
+        {% if english_error %}
+        <div class="video-caption-error" role="status">
+          <p>{{ english_error }} {% if english_transcript %}Showing cached English captions.{% else %}Dutch captions remain available.{% endif %}</p>
+          <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="url" value="{{ video.source_url }}">
+            <input type="hidden" name="source_language" value="nl">
+            <input type="hidden" name="bilingual" value="on">
+            <input type="hidden" name="retry_english" value="1">
+            <button class="button" type="submit">Retry English captions</button>
+          </form>
+        </div>
+        {% endif %}
+        {% endif %}
+        <div class="video-player-meta">
+          <div>
+            <span class="video-player-meta__label">Video ID</span>
+            <strong>{{ video.youtube_id }}</strong>
+          </div>
+          <div>
+            <span class="video-player-meta__label">Captions</span>
+            <strong>{{ source_language_label }} · {{ transcript|length }} segments</strong>
+            {% if source_language == 'en' and video.caption_origin == 'translated' %}<span>{{ video.get_caption_origin_display }}</span>{% endif %}
+            {% if bilingual and english_transcript %}<span>{{ english_caption_label }}</span>{% endif %}
+          </div>
+        </div>
+        <div class="video-player-actions">
+          <button class="button theater-toggle" id="theater-toggle" type="button" aria-pressed="true">
+            <svg class="pic" aria-hidden="true"><use href="#pic-theater"></use></svg>
+            <span id="theater-label">Exit theater</span>
+            <kbd>Esc</kbd>
+          </button>
+        {% if allow_bilingual %}
+        <form method="post" class="video-caption-control">
+          {% csrf_token %}
+          <input type="hidden" name="url" value="{{ video.source_url }}">
+          <input type="hidden" name="source_language" value="nl">
+          <label for="caption-display">Captions</label>
+          <select name="bilingual" id="caption-display">
+            <option value=""{% if not bilingual %} selected{% endif %}>Dutch only</option>
+            <option value="on"{% if bilingual %} selected{% endif %}>Dutch + English</option>
+          </select>
+          <button class="button" type="submit">Apply captions</button>
+        </form>
+        {% endif %}
+        <form method="post" class="video-refresh-form">
+          {% csrf_token %}
+          <input type="hidden" name="url" value="{{ video.source_url }}">
+          <input type="hidden" name="source_language" value="{{ video.source_language }}">
+          <input type="hidden" name="refresh" value="1">
+          {% if bilingual %}<input type="hidden" name="bilingual" value="on">{% endif %}
+          <button class="button" type="submit">Refresh transcript</button>
+        </form>
+        {% if transcript %}
+        <form method="post" action="{% url 'core:complete_media' %}" class="media-complete-form" data-media-complete>
+          {% csrf_token %}
+          <input type="hidden" name="kind" value="video">
+          <input type="hidden" name="video" value="{{ video.youtube_id }}">
+          <input type="hidden" name="lang" value="{{ video.source_language }}">
+          {% if media_complete_today %}
+            <button class="button" type="submit">Media done today</button>
+          {% else %}
+            <button class="button primary" type="submit">Mark media done for today</button>
+          {% endif %}
+        </form>
+        {% endif %}
+        </div>
+      </section>
+
+      <section class="transcript-column" aria-labelledby="transcript-heading">
+        <header class="transcript-header">
+          <div>
+            <h2 id="transcript-heading">Transcript</h2>
+            <p class="video-study__kicker">{{ source_language_label }} captions</p>
+            {% if source_language == 'en' and video.caption_origin == 'translated' %}<p class="video-caption-provenance">{{ video.get_caption_origin_display }}</p>{% endif %}
+            {% if bilingual and english_transcript %}<p class="video-caption-provenance">{{ english_caption_label }}</p>{% endif %}
+          </div>
+          <div class="transcript-header__tools">
+            <span class="transcript-header__status" id="player-status">Player loading</span>
+            <button class="transcript-drawer-toggle" id="transcript-drawer-toggle"
+              type="button" aria-expanded="false">Transcript <svg class="pic pic--sm" aria-hidden="true"><use href="#pic-chevron-down"></use></svg></button>
+          </div>
+        </header>
+
+        <aside class="translation-panel" id="translation-panel" hidden aria-live="polite">
+          <button class="translation-panel__close" id="translation-close"
+            type="button" aria-label="Close translation"><svg class="pic pic--sm" aria-hidden="true"><use href="#pic-cross"></use></svg></button>
+          <span class="translation-panel__label">{{ source_language_label }} → {{ target_language_label }}</span>
+          <span class="translation-panel__selection-hint">Click one word or drag to select a phrase</span>
+          <div class="translation-panel__result">
+            <strong id="translation-source"></strong>
+            <svg class="pic pic--sm" aria-hidden="true"><use href="#pic-arrow-right"></use></svg>
+            <strong id="translation-result"></strong>
+          </div>
+          <dl class="translation-panel__metadata" id="translation-metadata" hidden>
+            <div><dt>Grammar</dt><dd id="translation-grammar">—</dd></div>
+            <div><dt>Gender</dt><dd id="translation-gender">—</dd></div>
+            <div><dt>Plural</dt><dd id="translation-plural">—</dd></div>
+          </dl>
+          <p id="translation-context"></p>
+          <p id="translation-dictionary-status" class="translation-status" hidden></p>
+          <button class="button primary translation-panel__add" id="add-to-global" type="button" hidden>
+            Add to global deck
+          </button>
+          <p class="translation-panel__status" id="global-deck-status" role="status"></p>
+        </aside>
+
+        <div class="transcript-list" id="transcript-list"
+          aria-label="Timestamped transcript"></div>
+      </section>
+    </div>
+  {% else %}
+    <div class="video-study-empty">
+      <span class="video-study-empty__index" aria-hidden="true">01</span>
+      <div>
+        <h2>Choose a video to begin</h2>
+        <p>Try a captioned video from the Kurzgesagt channel. The video stays on YouTube; only its transcript is cached here.</p>
+      </div>
+    </div>
+  {% endif %}
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+  {{ block.super }}
+  {% if video %}
+    <script src="{% static 'js/capture_panel.js' %}"></script>
+    <script src="{% static 'js/video_captions.js' %}"></script>
+    <script src="{% static 'js/video_study.js' %}"></script>
+    <script src="{% static 'js/video_global_deck.js' %}"></script>
+  {% endif %}
+{% endblock %}

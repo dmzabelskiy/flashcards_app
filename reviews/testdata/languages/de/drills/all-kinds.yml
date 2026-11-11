@@ -1,0 +1,81 @@
+# Uses every field kind, alternatives, per-target answers and reveal.
+slug: all-kinds
+trainer: synth_kinds
+label: All kinds
+description: Every field kind in one drill.
+order: 10
+round_size: 3
+instruction: Translate into {target_label}.
+hint: Made-up footer hint
+pictogram: verb
+fields:
+  - key: word
+    label: Form
+    kind: typed
+    normalise: german
+    hint: Made-up field hint
+    placeholder: e.g. blorp
+  - key: gloss
+    label: "{target_label}"
+    kind: typed
+    normalise: translation
+  - key: kind
+    label: Kind
+    kind: choice
+    options:
+      - {value: X, label: Ex}
+      - {value: Y, label: Why}
+  - key: tag
+    label: Tag
+    kind: pool_choice
+items:
+  - id: alpha
+    prompt: alpha
+    alternatives:
+      - word: [grüne]
+        gloss: {ru: [один, раз], es: [uno]}
+        kind: [X]
+        tag: [t1]
+        example: Example of alpha.
+        reveal: {Note: first}
+  - id: beta
+    prompt: beta
+    alternatives:
+      - word: [aa]
+        gloss: {ru: [a-ru], es: [a-es]}
+        kind: [X]
+        tag: [t2]
+        example: Example of beta one.
+      - word: [bb]
+        gloss: {ru: [b-ru], es: [b-es]}
+        kind: [Y]
+        tag: [t3]
+        example: Example of beta two.
+  - id: gamma
+    prompt: gamma
+    alternatives:
+      - word: [cc]
+        gloss: {ru: [g-ru]}
+        kind: [Y]
+        tag: [t4]
+  - id: delta
+    prompt: delta
+    alternatives:
+      - word: [dd]
+        gloss: {ru: [d-ru], es: [d-es]}
+        kind: [X]
+        tag: [t5]
+  - id: epsilon
+    prompt: epsilon
+    alternatives:
+      - word: [ee]
+        gloss: {ru: [e-ru], es: [e-es]}
+        kind: [Y]
+        tag: [t1]
+  - id: zeta
+    prompt: zeta
+    alternatives:
+      - word: [ff]
+        gloss: {ru: [z-ru], es: [z-es]}
+        kind: [X]
+        tag: [t2]

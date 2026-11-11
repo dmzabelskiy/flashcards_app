@@ -1,0 +1,167 @@
+/* The memory-mode card keeps both faces in the DOM so the server-rendered
+   POST/redirect flow remains the no-JS fallback. */
+.flashcard-3d {
+  min-height: 390px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  perspective: 1200px;
+}
+
+.flashcard-3d-inner {
+  display: grid;
+  min-height: 390px;
+  transform-style: preserve-3d;
+  transition: transform 650ms ease;
+}
+
+.flashcard-3d.is-revealed .flashcard-3d-inner {
+  transform: rotateX(180deg);
+}
+
+.flashcard-3d.is-returning .flashcard-3d-inner {
+  transition-duration: 350ms;
+  transition-timing-function: ease-in;
+}
+
+/* Next-card hydration pauses at the invisible midpoint while the POST's
+   redirected HTML is parsed. Keeping the revealed rule more specific lets
+   the edge state be applied before the first half starts. */
+.flashcard-3d.is-next-edge:not(.is-revealed) .flashcard-3d-inner {
+  transform: rotateX(90deg);
+  transition-duration: 325ms;
+}
+
+.flashcard-3d.is-next-settling .flashcard-3d-inner {
+  transition-duration: 325ms;
+}
+
+.flashcard-3d.is-next-complete .flashcard-3d-inner {
+  visibility: hidden;
+}
+
+.flashcard-face {
+  position: relative;
+  display: flex;
+  grid-area: 1 / 1;
+  min-height: 390px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 36px;
+  overflow-wrap: anywhere;
+  background: var(--sky-100);
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.flashcard-face-front .flashcard-question {
+  width: min(820px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+  text-wrap: balance;
+}
+
+.flashcard-face-front .flashcard-question--medium {
+  font-size: clamp(2.25rem, 6.2vw, 4.5rem);
+  line-height: 1;
+}
+
+.flashcard-face-front .flashcard-question--long {
+  font-size: clamp(1.875rem, 5.2vw, 3.4rem);
+  line-height: 0.98;
+}
+
+.flashcard-face-front .flashcard-question--extra-long {
+  font-size: clamp(1.75rem, 4.4vw, 2.7rem);
+  line-height: 1;
+}
+
+.flashcard-face[aria-hidden="true"] {
+  pointer-events: none;
+}
+
+.flashcard-face-back {
+  transform: rotateX(180deg);
+  background: var(--white);
+  border: 1px solid var(--line-strong);
+}
+.flashcard-label { margin: 0; color: var(--ink-band); font-size: 0.875rem; font-weight: 600; }
+.flashcard-answer-title { margin: 0 0 8px; color: var(--ink-2); font-size: 0.8125rem; font-weight: 600; }
+
+.flashcard-back-context {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flashcard-back-question {
+  margin: 0 0 4px !important;
+  font-size: clamp(1.5rem, 4vw, 2.25rem) !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.05 !important;
+}
+
+.flashcard-face-back .flashcard-answer {
+  width: min(560px, 100%);
+  margin: 24px auto 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.flashcard-face-back .flashcard-answer-list {
+  text-align: left;
+}
+
+.flashcard-face-back .flashcard-example {
+  text-align: center;
+}
+
+.flashcard-action {
+  width: min(100%, 420px);
+  gap: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flashcard-action .button {
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.flashcard-back-button {
+  background: var(--surface-muted, var(--surface));
+}
+
+.flashcard-action .button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+@media (max-width: 780px) {
+  .flashcard-3d,
+  .flashcard-3d-inner {
+    min-height: 340px;
+  }
+
+  .flashcard-face {
+    min-height: 340px;
+    padding: 36px 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .flashcard-action {
+    gap: 8px;
+  }
+
+  .flashcard-action .button {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flashcard-3d-inner,
+  .flashcard-3d.is-returning .flashcard-3d-inner {
+    transition: none;
+  }
+}

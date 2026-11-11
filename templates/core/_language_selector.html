@@ -1,0 +1,20 @@
+{% load static %}
+<details class="language-control">
+  <summary aria-label="Choose translation language">
+    <img class="language-control__flag" src="{% static 'img/flags/' %}{{ target_language }}.png" alt="{{ language_mode_label }} flag">
+    <span class="language-control__value">{{ source_language|upper }} → {{ target_language|upper }}</span>
+    <span class="sr-only">{{ source_language_label }} with {{ language_mode_label }}</span>
+    <span class="language-control__chevron" aria-hidden="true">▾</span>
+  </summary>
+  <div class="language-control__menu">
+    {% for option in language_mode_options %}
+      <form method="post" action="{% url 'core:set_language_mode' %}">
+        {% csrf_token %}
+        <button type="submit" name="language_mode" value="{{ option.value }}"{% if option.is_active %} class="is-active" aria-current="true"{% endif %}>
+          <span>{{ option.description }}</span>
+          {% if option.is_active %}<span aria-hidden="true">✓</span>{% endif %}
+        </button>
+      </form>
+    {% endfor %}
+  </div>
+</details>

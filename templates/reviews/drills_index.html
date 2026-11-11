@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Drills{% endblock %}
+{% block extra_head %}{% load static %}<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <div>
+    <h1>Drills</h1>
+    <p>Short targeted practice rounds. One drill rotates onto your daily plan each day.</p>
+  </div>
+</div>
+
+<div class="drill-list">
+  {% for drill in drills %}
+    <section class="card drill-card">
+      <svg class="pic pic--lg" aria-hidden="true"><use href="#pic-{{ drill.pictogram }}"></use></svg>
+      <div class="drill-card__body">
+        <p class="row-title">{{ drill.label }}{% if drill.is_today %} <span class="tag">Today's drill</span>{% endif %}</p>
+        <p class="row-sub">{{ drill.description }}</p>
+      </div>
+      <div class="drill-card__actions">
+        <a class="btn btn-ghost" href="{% url 'reviews:flashcards_start' drill.trainer %}">Flashcards</a>
+        <a class="btn btn-primary" href="{{ drill.start_url }}">Start</a>
+      </div>
+    </section>
+  {% empty %}
+    <p class="muted">No drills are available for this study language yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}

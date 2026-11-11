@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Sign in{% endblock %}
+{% block extra_head %}
+<style>
+  .app-shell:has(.auth-page) { grid-template-columns: 1fr; }
+  .app-shell:has(.auth-page) .site-sidebar,
+  .app-shell:has(.auth-page) .sidebar-backdrop { display: none; }
+  .auth-page { display: flex; justify-content: center; padding-top: 32px; }
+  .auth-panel { width: 100%; max-width: 420px; padding: 32px 28px; border: 1px solid var(--line); background: var(--white); }
+  .auth-panel h1 { margin-bottom: 18px; }
+  .auth-panel .form { max-width: none; padding: 0; border: 0; }
+  .auth-panel .button.primary { width: 100%; margin-top: 4px; }
+</style>
+{% endblock %}
+{% block content %}
+<div class="auth-page">
+  <section class="auth-panel">
+    <h1>Sign in</h1>
+    {% if form.errors %}
+      <p class="form-error">Your username and password didn't match. Please try again.</p>
+    {% endif %}
+    <form method="post" action="{% url 'login' %}" class="form">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="hidden" name="next" value="{{ next }}">
+      <button type="submit" class="button primary">Sign in</button>
+    </form>
+  </section>
+</div>
+{% endblock %}

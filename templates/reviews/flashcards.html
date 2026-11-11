@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/flashcards.css' %}">
+{% endblock %}
+{% block title %}{{ trainer_meta.label }} flashcards{% endblock %}
+{% block content %}
+<section class="review drill-workspace flashcard-workspace">
+  <header class="drill-titlebar">
+    <div>
+      <h1>Flashcards</h1>
+      <p class="drill-subline">{{ trainer_meta.label }} · memory mode</p>
+    </div>
+    <a class="drill-exit" href="{% url 'reviews:drills' %}">Back to drills</a>
+  </header>
+
+  <div class="flashcard-meta" aria-label="Flashcard session details">
+    <span>Card <b>{{ position }}</b> / {{ total }}</span>
+    <span>Random order · No tracking</span>
+  </div>
+
+  <article class="flashcard-panel flashcard-3d{% if revealed %} is-revealed{% endif %}" data-flashcard data-revealed="{% if revealed %}true{% else %}false{% endif %}" data-back-available="{% if position > 1 %}true{% else %}false{% endif %}" aria-live="polite">
+    <div class="flashcard-3d-inner">
+      <section class="flashcard-face flashcard-face-front" data-flashcard-face="front" aria-hidden="{% if revealed %}true{% else %}false{% endif %}"{% if revealed %} inert{% endif %}>
+        <h2 class="flashcard-question flashcard-question--{{ flashcard.question_size }}">{{ flashcard.question }}</h2>
+        <p class="flashcard-label">{{ flashcard.question_label }}</p>
+        <p class="flashcard-question-detail">{{ flashcard.question_detail }}</p>
+      </section>
+
+      <section class="flashcard-face flashcard-face-back" data-flashcard-face="back" aria-hidden="{% if revealed %}false{% else %}true{% endif %}"{% if not revealed %} inert{% endif %}>
+        <div class="flashcard-back-context">
+          <h2 class="flashcard-back-question">{{ flashcard.question }}</h2>
+          <p class="flashcard-label">{{ flashcard.question_label }}</p>
+          <p class="flashcard-question-detail">{{ flashcard.question_detail }}</p>
+        </div>
+        <div class="flashcard-answer">
+          <p class="flashcard-answer-title">Answer</p>
+          <dl class="flashcard-answer-list">
+            {% for row in flashcard.answer_rows %}
+              <div>
+                <dt>{{ row.label }}</dt>
+                <dd>{{ row.value }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+          {% if flashcard.example %}<p class="flashcard-example">{{ flashcard.example }}</p>{% endif %}
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <form method="post" class="flashcard-action" data-flashcard-form>
+    {% csrf_token %}
+    <button
+      class="button flashcard-back-button"
+      data-flashcard-back
+      name="action"
+      value="back"
+      type="submit"
+      aria-label="Back to previous card"
+      {% if position == 1 %}disabled aria-disabled="true"{% endif %}
+    ><svg class="pic" aria-hidden="true"><use href="#pic-arrow-left"></use></svg> Back</button>
+    {% if revealed %}
+      <button class="button primary" name="action" value="next" type="submit">Next card <svg class="pic" aria-hidden="true"><use href="#pic-arrow-right"></use></svg></button>
+    {% else %}
+      <button class="button primary" name="action" value="show_answer" type="submit">Show answer</button>
+    {% endif %}
+  </form>
+  <p class="drill-hint">Recall first, then reveal · this session does not affect your stats</p>
+</section>
+{% endblock %}
+{% block extra_scripts %}
+  {% load static %}
+  <script src="{% static 'js/flashcards.js' %}"></script>
+{% endblock %}

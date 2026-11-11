@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ deck.name }}{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <div>
+    <h1>{{ deck.name }}</h1>
+    {% if deck.description %}<p>{{ deck.description }}</p>{% endif %}
+  </div>
+  <div class="actions">
+    <a class="button primary" href="{% url 'reviews:start_study' deck.pk %}">Study</a>
+    <a class="button" href="{% url 'reviews:start_study' deck.pk %}?direction=reverse">Study reversed</a>
+    <a class="button" href="{% url 'cards:create' %}?deck={{ deck.pk }}">New card</a>
+    <a class="button" href="{% url 'cards:export_deck_csv' deck.pk %}">Export CSV</a>
+    <a class="button" href="{% url 'decks:edit' deck.pk %}">Edit</a>
+  </div>
+</div>
+{% if deck.is_global %}
+  {% include "decks/_global_deck_panel.html" %}
+{% else %}
+<table class="responsive-table">
+  <thead><tr><th>Front</th><th>Type</th><th>Due</th><th></th></tr></thead>
+  <tbody>
+    {% for card in deck.cards.all %}
+      <tr>
+        <td data-label="Front"><a href="{{ card.get_absolute_url }}">{{ card.front|truncatechars:80 }}</a></td>
+        <td data-label="Type">{{ card.get_card_type_display }}</td>
+        <td data-label="Due">{{ card.due_at|date:"Y-m-d H:i" }}</td>
+        <td data-label="Actions"><a href="{% url 'cards:edit' card.pk %}">Edit</a></td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="4">No cards in this deck.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}
+

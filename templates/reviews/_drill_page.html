@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% comment %}
+The page every drill step renders: title bar, progress track, feedback aside and
+prompt field. A drill fills the blocks below with its own prompt, answer form
+and feedback; everything else is shared, the way the engine shares the views.
+{% endcomment %}
+{% block content %}
+{% widthratio position total 100 as step_progress_percent %}
+<section class="review drill-workspace {% block workspace_class %}{% endblock %}">
+  <header class="drill-titlebar">
+    <div>
+      <h1>{% block drill_heading %}{% endblock %}</h1>
+      <p class="drill-subline">{% block drill_kicker %}{% endblock %}</p>
+    </div>
+    <a class="drill-exit" href="{% block exit_url %}{% url 'core:dashboard' %}{% endblock %}"><svg class="pic pic--sm" aria-hidden="true"><use href="#pic-cross"></use></svg>{% block exit_label %}Exit drill{% endblock %}</a>
+  </header>
+
+  <div class="drill-progress" aria-label="Round progress">
+    <div class="drill-progress-meta">
+      <span>Question <b>{{ position }}</b> / {{ total }}</span>
+      <span>Score <b>{{ session.correct }}</b></span>
+    </div>
+    <div class="progress-track" role="progressbar" aria-valuenow="{{ position }}" aria-valuemin="1" aria-valuemax="{{ total }}">
+      <span style="width: {% block progress_width %}{{ step_progress_percent }}{% endblock %}%"></span>
+    </div>
+  </div>
+
+  {% if last %}
+    <aside class="drill-feedback {% block feedback_class %}{% endblock %}{% if last.correct %}correct{% else %}incorrect{% endif %}" aria-live="polite">
+      {% block feedback %}{% endblock %}
+      {% include "reviews/_drill_feedback_actions.html" %}
+    </aside>
+  {% endif %}
+
+  <div class="drill-prompt-panel {% block prompt_class %}{% endblock %}">
+    {% block prompt %}{% endblock %}
+  </div>
+
+  {% block answer_form %}{% endblock %}
+  <p class="drill-hint">{% block drill_hint %}{% endblock %}</p>
+</section>
+{% endblock %}

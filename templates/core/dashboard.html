@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Today{% endblock %}
+{% block extra_head %}{% load static %}<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">{% endblock %}
+{% block content %}
+<section class="today-band">
+  <div>
+    <h1>Today</h1>
+    <p class="today-date">{% now "l, j F" %}</p>
+  </div>
+  <div class="today-day">
+    <div class="meter meter--day" role="img" aria-label="{{ daily_plan.completed }} of {{ daily_plan.total }} tasks done">
+      {% with ""|center:daily_plan.total as cells %}{% for _ in cells %}<span class="meter-cell{% if forloop.counter <= daily_plan.completed %} is-on{% endif %}"></span>{% endfor %}{% endwith %}
+    </div>
+    <p><b>{{ daily_plan.completed }}</b> of {{ daily_plan.total }} done · <span class="today-streak"><svg class="pic" aria-hidden="true"><use href="#pic-streak"></use></svg><b>{{ analytics.streak }}</b>-day streak</span></p>
+  </div>
+</section>
+
+<div class="dash-grid">
+  <section class="hub">
+    <div class="hub-top">
+      <span class="hub-title">Your daily plan</span>
+    </div>
+
+    <div class="hero {% if daily_plan.study.is_done %}is-done{% endif %}">
+      <svg class="pic pic--xl" aria-hidden="true"><use href="#pic-words"></use></svg>
+      <div class="hero-body">
+        {% if not daily_plan.study.has_cards %}
+          <h2>No words to study yet</h2>
+          <p class="muted">{{ daily_plan.study.deck.name }} · add a few words, then come back to start today's session.</p>
+        {% elif daily_plan.study.is_done %}
+          <h2>Daily goal complete</h2>
+          <p class="muted">{{ daily_plan.study.deck.name }} · <span class="num">{{ daily_plan.study.correct_count }} / {{ daily_plan.study.target }}</span> today · more practice is optional</p>
+        {% else %}
+          <h2>Study {{ daily_plan.study.session_size }} word{{ daily_plan.study.session_size|pluralize }}</h2>
+          <p class="muted">{{ daily_plan.study.deck.name }} · <span class="num">{{ daily_plan.study.correct_count }} / {{ daily_plan.study.target }}</span> today{% if daily_plan.study.is_short %} · only {{ daily_plan.study.available }} active word{{ daily_plan.study.available|pluralize }}, fewer than the {{ daily_plan.study.remaining }} left for the goal{% endif %}</p>
+        {% endif %}
+        <div class="meter meter--session" role="img" aria-label="{{ daily_plan.study.correct_count }} of {{ daily_plan.study.target }} words correct today">
+          {% with ""|center:daily_plan.study.target as cells %}{% for _ in cells %}<span class="meter-cell{% if forloop.counter <= daily_plan.study.correct_count %} is-on{% endif %}" style="--i: {{ forloop.counter0 }}"></span>{% endfor %}{% endwith %}
+        </div>
+      </div>
+      <div class="hero-actions">
+        {% if daily_plan.study.has_cards %}
+          <a class="btn btn-primary" href="{{ daily_plan.study.study_url }}">{% if daily_plan.study.is_done %}Practice all words{% else %}Start studying{% endif %} <svg class="pic" aria-hidden="true"><use href="#pic-arrow-right"></use></svg></a>
+          <a class="btn btn-ghost" href="{{ daily_plan.study.reverse_url }}">Reverse</a>
+        {% else %}
+          <a class="btn btn-primary" href="{{ daily_plan.study.add_words_url }}">Add words <svg class="pic" aria-hidden="true"><use href="#pic-arrow-right"></use></svg></a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="checklist">
+      <div class="row {% if daily_plan.drill.is_done %}row-done{% endif %}">
+        <span class="check" aria-hidden="true"><svg class="pic"><use href="#pic-check"></use></svg></span>
+        <svg class="pic row-pic" aria-hidden="true"><use href="#pic-drill"></use></svg>
+        <div class="row-main">
+          <p class="row-title">Today's drill <span class="tag">{{ daily_plan.drill.label }}</span></p>
+          <p class="row-sub"><span class="num">{{ daily_plan.drill.correct_count }} / {{ daily_plan.drill.target }}</span> correct · rotates daily</p>
+        </div>
+        <div class="row-actions"><a class="btn btn-ghost" href="{{ daily_plan.drill.start_url }}">Drill</a></div>
+      </div>
+
+      <div class="row {% if daily_plan.media.is_done %}row-done{% endif %}">
+        <span class="check" aria-hidden="true"><svg class="pic"><use href="#pic-check"></use></svg></span>
+        <svg class="pic row-pic" aria-hidden="true"><use href="#pic-media"></use></svg>
+        <div class="row-main">
+          <p class="row-title">Watch or listen</p>
+          <p class="row-sub">
+            {% if daily_plan.media.video %}{{ daily_plan.media.video.title }}{% endif %}
+            {% if daily_plan.media.podcast %} · or {{ daily_plan.media.podcast.title }}{% endif %}
+            {% if not daily_plan.media.video and not daily_plan.media.podcast %}Open a captioned video or podcast{% endif %}
+          </p>
+        </div>
+        <div class="row-actions">
+          {% if daily_plan.media.video_url %}<a class="btn btn-ghost" href="{{ daily_plan.media.video_url }}">Watch</a>{% endif %}
+          {% if daily_plan.media.podcast_url %}<a class="btn btn-ghost" href="{{ daily_plan.media.podcast_url }}">Listen</a>{% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="rail">
+    <section class="card widget">
+      <h3>This week</h3>
+      <div class="stat-grid">
+        <div class="stat"><b>{{ analytics.review_count }}</b><span>reviews</span></div>
+        <div class="stat"><b>{{ analytics.accuracy|default:"–" }}%</b><span>accuracy</span></div>
+        <div class="stat"><b>{{ analytics.due_count }}</b><span>due now</span></div>
+        <div class="stat"><b>{{ daily_plan.study.deck.cards.count }}</b><span>words</span></div>
+      </div>
+    </section>
+    <section class="card widget">
+      <h3>Activity · last 7 days</h3>
+      <div class="activity-week">
+        {% for day in analytics.daily_activity %}
+          <div class="activity-day{% if forloop.last %} is-today{% endif %}" title="{{ day.date }}: {{ day.count }} action{{ day.count|pluralize }}">
+            <span class="activity-count">{% if day.count %}{{ day.count }}{% endif %}</span>
+            <span class="activity-track"><span class="bar" style="height: {{ day.height }}%"></span></span>
+            <span class="activity-dow">{{ day.date|date:"D"|slice:":2" }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </aside>
+</div>
+{% endblock %}

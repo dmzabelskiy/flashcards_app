@@ -1,0 +1,20 @@
+{% load static %}
+{% with resolver=request.resolver_match %}
+<aside class="site-sidebar" id="siteSidebar" data-collapsed="false">
+  <nav class="side-nav" aria-label="Sections">
+    <div class="side-group">
+      <a class="side-item{% if resolver and resolver.view_name == 'core:dashboard' %} is-current{% endif %}" href="{% url 'core:dashboard' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-today"></use></svg><span class="side-lbl">Today</span></a>
+      <a class="side-item{% if resolver and resolver.app_name == 'reviews' and 'drill' not in resolver.view_name %} is-current{% endif %}" href="{% url 'reviews:start' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-words"></use></svg><span class="side-lbl">Study words</span></a>
+      <a class="side-item{% if resolver and 'drill' in resolver.view_name %} is-current{% endif %}" href="{% url 'reviews:drills' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-drill"></use></svg><span class="side-lbl">Drills</span></a>
+      <a class="side-item{% if resolver and resolver.app_name == 'video_study' %} is-current{% endif %}" href="{% url 'video_study:workspace' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-media"></use></svg><span class="side-lbl">Watch &amp; listen</span></a>
+    </div>
+    <div class="side-group">
+      <p class="side-cap">Library</p>
+      <a class="side-item{% if resolver and resolver.app_name == 'cards' %} is-current{% endif %}" href="{% url 'cards:list' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-cards"></use></svg><span class="side-lbl">Cards</span></a>
+      <a class="side-item{% if resolver and resolver.app_name == 'imports_app' %} is-current{% endif %}" href="{% url 'imports_app:import_cards' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-import"></use></svg><span class="side-lbl">Import</span></a>
+      <a class="side-item{% if resolver and resolver.app_name == 'decks' %} is-current{% endif %}" href="{% url 'decks:list' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-decks"></use></svg><span class="side-lbl">Decks</span></a>
+      <a class="side-item{% if resolver and resolver.view_name == 'core:stats' %} is-current{% endif %}" href="{% url 'core:stats' %}"><svg class="pic side-ic" aria-hidden="true"><use href="#pic-stats"></use></svg><span class="side-lbl">Stats</span></a>
+    </div>
+  </nav>
+</aside>
+{% endwith %}

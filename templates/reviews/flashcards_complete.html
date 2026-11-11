@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Flashcards complete{% endblock %}
+{% block content %}
+<section class="review drill-workspace flashcard-workspace">
+  <header class="drill-titlebar">
+    <div>
+      <h1>Deck complete</h1>
+      <p class="drill-subline">{{ trainer_meta.label }} · memory mode</p>
+    </div>
+    <a class="drill-exit" href="{% url 'reviews:drills' %}">Back to drills</a>
+  </header>
+
+  <div class="flashcard-complete-panel">
+    <h2>{{ total }} cards reviewed</h2>
+    <p>You can shuffle the same set again whenever you want. Nothing was scored or saved.</p>
+    <div class="completion-actions">
+      <a class="button primary" href="{% url 'reviews:flashcards_start' trainer %}">Shuffle again</a>
+      <a class="button" href="{% url 'reviews:drills' %}">Back to drills</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

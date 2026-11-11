@@ -1,0 +1,12 @@
+target-version = "py313"
+line-length = 100
+extend-exclude = ["*/migrations/*", "temp", "staticfiles", "assets"]
+
+[lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+# E501 (line-too-long) is ignored globally, not per file.
+ignore = ["E501"]
+
+[lint.isort]
+known-first-party = ["config", "core", "decks", "cards", "reviews",
+  "imports_app", "video_study"]

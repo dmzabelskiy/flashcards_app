@@ -1,0 +1,37 @@
+<section class="global-deck-panel" aria-labelledby="global-deck-heading">
+  <div class="global-deck-panel__intro">
+    <div>
+      <h2 id="global-deck-heading">Global deck</h2>
+      <p class="muted">Main deck · {{ target_language_label }}. Retirement is always explicit. A card becomes eligible after {{ global_deck_retire_streak }} correct answers in a row.</p>
+    </div>
+    <a class="button" href="{% url 'cards:create' %}?global=1">Add a word</a>
+  </div>
+  <table class="responsive-table">
+    <thead><tr><th>Word</th><th>Translation</th><th>Grammar</th><th>Streak</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+      {% for card in deck.cards.all %}
+        <tr class="{% if card.is_retired %}is-retired{% endif %}">
+          <td data-label="Word"><a href="{{ card.get_absolute_url }}">{{ card.display_front|truncatechars:60 }}</a></td>
+          <td data-label="Translation">{{ card.back|truncatechars:60 }}</td>
+          <td data-label="Grammar">{% if card.article %}{{ card.get_article_display }}{% else %}—{% endif %}{% if card.plural %}<br><span class="muted">pl. {{ card.plural }}</span>{% endif %}</td>
+          <td data-label="Streak">
+            <div class="meter" role="img" aria-label="{{ card.correct_streak }} of {{ global_deck_retire_streak }} correct in a row">
+              {% with ""|center:global_deck_retire_streak as cells %}{% for _ in cells %}<span class="meter-cell{% if forloop.counter <= card.correct_streak %} is-on{% endif %}"></span>{% endfor %}{% endwith %}
+            </div>
+          </td>
+          <td data-label="Status">{% if card.is_retired %}Retired{% else %}Active{% endif %}</td>
+          <td data-label="Actions">
+            {% if not card.is_retired %}
+              <form method="post" action="{% url 'cards:retire_global_card' card.pk %}" onsubmit="return confirm('Retire this word from the main deck?');">
+                {% csrf_token %}
+                <button class="button" type="submit" {% if card.correct_streak < global_deck_retire_streak %}disabled title="Requires {{ global_deck_retire_streak }} correct answers in a row"{% endif %}>Retire</button>
+              </form>
+            {% endif %}
+          </td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="6">Your global deck is empty. Add a word manually or click a transcript word in Video study.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>

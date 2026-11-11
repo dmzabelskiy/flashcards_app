@@ -1,0 +1,126 @@
+/* Today and the drills index. The band says what day it is and how much of it
+   is done; the plan below is one wide session panel and two task rows; the
+   rail carries the week's figures. */
+.dash-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: start; }
+.card { background: var(--white); border: 1px solid var(--line); }
+
+.today-band {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 28px 22px;
+  margin: 0 0 20px;
+  background: var(--sky-300);
+  color: var(--ink);
+}
+.today-band h1 { margin: 0; font-size: 2.25rem; }
+.today-date { margin: 4px 0 0; color: var(--ink-band); font-weight: 500; }
+.today-day { display: grid; justify-items: end; gap: 8px; text-align: right; }
+.today-day p { margin: 0; color: var(--ink-band); font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.today-day b { color: var(--ink); }
+.today-streak { display: inline-flex; align-items: center; }
+.today-streak .pic { width: 16px; height: 16px; margin-right: 4px; stroke-width: 2.25; vertical-align: 0; }
+.meter--day .meter-cell { width: 18px; height: 18px; background: rgba(255, 255, 255, 0.7); }
+.meter--day .meter-cell.is-on { background: var(--blue); }
+
+.hub { padding: 0; border: 0; background: transparent; }
+.hub-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 0 0 12px; }
+.hub-title { font-stretch: 112%; font-weight: 650; font-size: 1.125rem; }
+.hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  margin: 0 0 10px;
+  border: 1px solid var(--line-strong);
+  background: var(--white);
+}
+.hero.is-done { border-color: var(--line); background: var(--good-bg); }
+.hero .pic--xl { color: var(--blue); }
+.hero-body { min-width: 0; }
+.hero-body h2 { margin: 0 0 2px; font-size: 1.375rem; }
+.hero-body .muted { margin: 0 0 12px; }
+.hero-body .meter { margin-top: 2px; }
+.hero .btn-primary { min-height: 48px; padding-inline: 22px; }
+.hero-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+/* The one authored moment on Today: the session meter lights one cell after another. */
+.meter--session .meter-cell.is-on { animation: cellOn 300ms var(--ease) both; animation-delay: calc(var(--i, 0) * 28ms); }
+@keyframes cellOn { from { background: var(--sky-200); transform: scale(0.6); } to { background: var(--blue); transform: none; } }
+
+.checklist { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.row {
+  display: grid;
+  grid-template-columns: 24px 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 18px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+.row-done { background: var(--good-bg); border-color: transparent; }
+.check {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border-radius: 50%;
+  border: 2px solid var(--line-strong);
+  color: transparent;
+}
+.check .pic { width: 14px; height: 14px; stroke-width: 3; vertical-align: 0; }
+.row-done .check { background: var(--good); border-color: var(--good); color: #fff; }
+.row-pic { color: var(--ink-2); }
+.row-done .row-pic { color: var(--good); }
+.row-main { flex: 1; min-width: 0; }
+.row-title { font-weight: 650; margin: 0; display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.row-sub { font-size: 0.8125rem; color: var(--ink-2); margin: 1px 0 0; }
+.row-actions { display: flex; gap: 8px; }
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--sky-100);
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.rail { display: flex; flex-direction: column; gap: 16px; }
+.widget { padding: 16px 18px; }
+.widget h3 { margin: 0 0 12px; font-size: 0.9375rem; }
+.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stat b { display: block; font-size: 1.625rem; font-stretch: 112%; font-weight: 650; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.stat span { font-size: 0.8125rem; color: var(--ink-2); }
+.activity-week { display: flex; align-items: flex-end; gap: 6px; }
+.activity-day { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.activity-count { font-size: 0.6875rem; color: var(--ink-2); font-variant-numeric: tabular-nums; min-height: 13px; line-height: 1; }
+.activity-track { display: flex; align-items: flex-end; width: 100%; height: 52px; background: var(--sky-50); }
+.activity-day.is-today .activity-track { background: var(--sky-100); }
+.activity-day .bar { width: 100%; min-height: 3px; background: var(--sky-300); }
+.activity-day.is-today .bar { background: var(--blue); }
+.activity-dow { font-size: 0.6875rem; color: var(--ink-2); }
+.activity-day.is-today .activity-dow { color: var(--blue); font-weight: 650; }
+
+/* Drills index */
+.drill-list { display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+.drill-card { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center; gap: 16px; padding: 16px 18px; }
+.drill-card > .pic { color: var(--blue); }
+.drill-card__body { flex: 1; min-width: 0; }
+.drill-card__actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+@media (max-width: 860px) { .dash-grid { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+  .today-band { flex-direction: column; align-items: flex-start; padding: 20px; }
+  .today-day { justify-items: start; text-align: left; }
+  .hero { grid-template-columns: auto minmax(0, 1fr); }
+  .hero-actions { grid-column: 1 / -1; width: 100%; }
+  .hero-actions .btn { flex: 1; }
+  .row { grid-template-columns: 24px 24px minmax(0, 1fr); }
+  .row-actions { grid-column: 1 / -1; }
+  .row-actions .btn { flex: 1; justify-content: center; }
+  .drill-card { grid-template-columns: 32px minmax(0, 1fr); }
+  .drill-card__actions { grid-column: 1 / -1; width: 100%; }
+  .drill-card__actions .btn { flex: 1; justify-content: center; }
+}

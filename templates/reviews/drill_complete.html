@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}{{ drill.label }} complete{% endblock %}
+{% block content %}
+{% include "reviews/_drill_complete.html" with eyebrow=eyebrow retry_label=retry_label step_url=step_url retry_url=retry_url %}
+{% endblock %}

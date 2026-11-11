@@ -1,0 +1,9 @@
+# The second made-up pack: a mode whose pack has no drills at all.
+code: nl
+name: Otherland
+articles: []
+article_genders: []
+speech_locale: nl-NL
+media:
+  video_channel: null
+  podcast: false

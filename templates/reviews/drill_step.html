@@ -1,0 +1,80 @@
+{% extends "reviews/_drill_page.html" %}
+{% comment %}
+The step page of every data drill: prompt, one input per field from the drill
+file, and feedback as one row per field plus the example.
+{% endcomment %}
+{% block title %}{{ drill.label }}{% endblock %}
+{% block drill_heading %}{{ drill.label }}{% endblock %}
+{% block drill_kicker %}{{ description }}{% endblock %}
+{% block feedback_class %}verb-feedback {% endblock %}
+{% block prompt_class %}verb-prompt-panel{% endblock %}
+
+{% block feedback %}
+      <div class="feedback-heading">
+        <svg class="pic status-marker" aria-hidden="true"><use href="#pic-{% if last.correct %}check{% else %}cross{% endif %}"></use></svg>
+        <strong>{% if last.correct %}Correct{% else %}Review the marked fields{% endif %}</strong>
+      </div>
+      <p class="verb-feedback-title">{{ last.prompt }}{% for pair in last.reveal %} <span class="answer-tag">{{ pair.0 }}: {{ pair.1 }}</span>{% endfor %}</p>
+      <div class="verb-feedback-grid">
+        {% for row in last.rows %}
+          <div class="verb-feedback-row {% if row.correct %}correct{% else %}incorrect{% endif %}">
+            <svg class="pic status-marker verb-result-marker" role="img" aria-label="{% if row.correct %}Correct{% else %}Incorrect{% endif %}"><use href="#pic-{% if row.correct %}check{% else %}cross{% endif %}"></use></svg>
+            <span class="verb-result-label">{{ row.label }}</span>
+            <span class="verb-result-answer">
+              <strong>{{ row.expected }}</strong>
+              {% if not row.correct %}<small>Your answer: {{ row.given|default:"—" }}</small>{% endif %}
+            </span>
+          </div>
+        {% endfor %}
+      </div>
+      {% if last.accepted %}
+        <p class="feedback-choice">Accepted: {% for text in last.accepted %}<span class="answer-tag">{{ text }}</span>{% if not forloop.last %} <span class="answer-separator">or</span> {% endif %}{% endfor %}</p>
+      {% endif %}
+      {% if last.example %}<p class="feedback-example">{{ last.example }}</p>{% endif %}
+{% endblock %}
+
+{% block prompt %}
+    <h2>{{ drill_prompt }}</h2>
+    {% if instruction %}<p>{{ instruction }}</p>{% endif %}
+{% endblock %}
+
+{% block answer_form %}
+  <form method="post" class="verb-answer-form" autocomplete="off">
+    {% csrf_token %}
+    {% for field in fields %}
+      {% if field.kind == "typed" %}
+        <label class="verb-answer-field">
+          <span>{{ field.label }}</span>
+          <input name="{{ field.key }}" type="text"{% if field.placeholder %} placeholder="{{ field.placeholder }}"{% endif %} autocapitalize="none" spellcheck="false" required{% if field.autofocus %} autofocus{% endif %}{% if field.hint %} aria-describedby="hint-{{ field.key }}"{% endif %}>
+          {% if field.hint %}<small class="drill-field-hint" id="hint-{{ field.key }}">{{ field.hint }}</small>{% endif %}
+        </label>
+      {% elif field.kind == "choice" %}
+        <fieldset class="case-picker">
+          <legend>{{ field.label }}</legend>
+          <div class="case-options">
+            {% for option in field.options %}
+              <label>
+                <input type="radio" name="{{ field.key }}" value="{{ option.value }}" required>
+                <span><b>{{ option.value }}</b>{{ option.label }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </fieldset>
+      {% else %}
+        <fieldset class="preposition-picker">
+          <legend>{{ field.label }}</legend>
+          <div class="preposition-options">
+            {% for choice in field.choices %}
+              <label>
+                <input name="{{ field.key }}" type="radio" value="{{ choice }}" required>
+                <span>{{ choice }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </fieldset>
+      {% endif %}
+    {% endfor %}
+    <button class="button primary drill-submit verb-submit" type="submit">Check answer <svg class="pic" aria-hidden="true"><use href="#pic-arrow-right"></use></svg></button>
+  </form>
+{% endblock %}
+{% block drill_hint %}{{ drill_hint }}{% endblock %}

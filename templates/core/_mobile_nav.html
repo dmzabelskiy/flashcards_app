@@ -1,0 +1,21 @@
+<details class="mobile-nav-menu">
+  <summary aria-label="Open navigation menu">
+    <span class="mobile-nav-menu__icon" aria-hidden="true">☰</span>
+    <span>Menu</span>
+  </summary>
+  <div class="mobile-nav-menu__panel">
+    <a href="{% url 'core:dashboard' %}">Dashboard</a>
+    <a href="{% url 'decks:list' %}">Decks</a>
+    <a href="{% url 'cards:list' %}">Cards</a>
+    <a href="{% url 'imports_app:import_cards' %}">Import</a>
+    <a href="{% url 'core:stats' %}">Stats</a>
+    <a href="{% url 'video_study:workspace' %}">Video study</a>
+    <a href="{% url 'podcasts:workspace' %}">Podcast study</a>
+    {% if user.is_authenticated %}
+      <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Log out</button>
+      </form>
+    {% endif %}
+  </div>
+</details>

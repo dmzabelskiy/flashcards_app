@@ -1,0 +1,1772 @@
+# Irregular verbs: third person Präsens, Präteritum, Perfekt and a Russian gloss.
+slug: irregular-verbs
+trainer: irregular_verb
+label: Irregular verbs
+description: Strong / irregular verb forms (German ↔ Russian).
+order: 30
+pictogram: verb
+round_size: 20
+targets:
+  - ru
+instruction: Use the bare form without a pronoun.
+hint: Enter submits · ae / oe / ue and ss are accepted
+fields:
+  - key: present
+    label: Präsens
+    kind: typed
+    normalise: german
+    hint: Third person singular
+    placeholder: e.g. fährt ab
+  - key: preterite
+    label: Präteritum
+    kind: typed
+    normalise: german
+    placeholder: e.g. fuhr ab
+  - key: perfect
+    label: Perfekt
+    kind: typed
+    normalise: german
+    hint: Include hat or ist
+    placeholder: e.g. ist abgefahren
+  - key: translation
+    label: Русский
+    kind: typed
+    normalise: russian
+    placeholder: e.g. уезжать
+items:
+  - id: abbiegen
+    prompt: abbiegen
+    alternatives:
+      - present: [biegt ab]
+        preterite: [bog ab]
+        perfect: [ist abgebogen]
+        translation:
+          ru: [поворачивать, сворачивать]
+  - id: abfahren
+    prompt: abfahren
+    alternatives:
+      - present: [fährt ab]
+        preterite: [fuhr ab]
+        perfect: [ist abgefahren]
+        translation:
+          ru: [отправляться, уезжать]
+  - id: abfliegen
+    prompt: abfliegen
+    alternatives:
+      - present: [fliegt ab]
+        preterite: [flog ab]
+        perfect: [ist abgeflogen]
+        translation:
+          ru: [улетать]
+  - id: abgeben
+    prompt: abgeben
+    alternatives:
+      - present: [gibt ab]
+        preterite: [gab ab]
+        perfect: [hat abgegeben]
+        translation:
+          ru: [отдавать, сдавать]
+  - id: abheben
+    prompt: abheben
+    alternatives:
+      - present: [hebt ab]
+        preterite: [hob ab]
+        perfect: [hat abgehoben]
+        translation:
+          ru: [поднимать, снимать, взлетать]
+  - id: abschließen
+    prompt: abschließen
+    alternatives:
+      - present: [schließt ab]
+        preterite: [schloss ab]
+        perfect: [hat abgeschlossen]
+        translation:
+          ru: [закрывать, запирать, заканчивать]
+  - id: abwaschen
+    prompt: abwaschen
+    alternatives:
+      - present: [wäscht ab]
+        preterite: [wusch ab]
+        perfect: [hat abgewaschen]
+        translation:
+          ru: [мыть, смывать]
+  - id: anbieten
+    prompt: anbieten
+    alternatives:
+      - present: [bietet an]
+        preterite: [bot an]
+        perfect: [hat angeboten]
+        translation:
+          ru: [предлагать]
+  - id: anfangen
+    prompt: anfangen
+    alternatives:
+      - present: [fängt an]
+        preterite: [fing an]
+        perfect: [hat angefangen]
+        translation:
+          ru: [начинать]
+  - id: angreifen
+    prompt: angreifen
+    alternatives:
+      - present: [greift an]
+        preterite: [griff an]
+        perfect: [hat angegriffen]
+        translation:
+          ru: [нападать, атаковать]
+  - id: ankommen
+    prompt: ankommen
+    alternatives:
+      - present: [kommt an]
+        preterite: [kam an]
+        perfect: [ist angekommen]
+        translation:
+          ru: [прибывать, приезжать]
+  - id: annehmen
+    prompt: annehmen
+    alternatives:
+      - present: [nimmt an]
+        preterite: [nahm an]
+        perfect: [hat angenommen]
+        translation:
+          ru: [принимать]
+  - id: anrufen
+    prompt: anrufen
+    alternatives:
+      - present: [ruft an]
+        preterite: [rief an]
+        perfect: [hat angerufen]
+        translation:
+          ru: [звонить]
+  - id: ansehen
+    prompt: ansehen
+    alternatives:
+      - present: [sieht an]
+        preterite: [sah an]
+        perfect: [hat angesehen]
+        translation:
+          ru: [смотреть, рассматривать]
+  - id: anziehen
+    prompt: anziehen
+    alternatives:
+      - present: [zieht an]
+        preterite: [zog an]
+        perfect: [hat angezogen]
+        translation:
+          ru: [надевать, притягивать]
+  - id: aufgeben
+    prompt: aufgeben
+    alternatives:
+      - present: [gibt auf]
+        preterite: [gab auf]
+        perfect: [hat aufgegeben]
+        translation:
+          ru: [сдаваться, отказываться, отправлять]
+  - id: ausgeben
+    prompt: ausgeben
+    alternatives:
+      - present: [gibt aus]
+        preterite: [gab aus]
+        perfect: [hat ausgegeben]
+        translation:
+          ru: [тратить, выдавать]
+  - id: aussehen
+    prompt: aussehen
+    alternatives:
+      - present: [sieht aus]
+        preterite: [sah aus]
+        perfect: [hat ausgesehen]
+        translation:
+          ru: [выглядеть]
+  - id: aufheben
+    prompt: aufheben
+    alternatives:
+      - present: [hebt auf]
+        preterite: [hob auf]
+        perfect: [hat aufgehoben]
+        translation:
+          ru: [поднимать, сохранять, отменять]
+  - id: aufnehmen
+    prompt: aufnehmen
+    alternatives:
+      - present: [nimmt auf]
+        preterite: [nahm auf]
+        perfect: [hat aufgenommen]
+        translation:
+          ru: [принимать, записывать]
+  - id: aufstehen
+    prompt: aufstehen
+    alternatives:
+      - present: [steht auf]
+        preterite: [stand auf]
+        perfect: [ist aufgestanden]
+        translation:
+          ru: [вставать]
+  - id: ausgehen
+    prompt: ausgehen
+    alternatives:
+      - present: [geht aus]
+        preterite: [ging aus]
+        perfect: [ist ausgegangen]
+        translation:
+          ru: [выходить, исходить]
+  - id: ausschließen
+    prompt: ausschließen
+    alternatives:
+      - present: [schließt aus]
+        preterite: [schloss aus]
+        perfect: [hat ausgeschlossen]
+        translation:
+          ru: [исключать]
+  - id: aussteigen
+    prompt: aussteigen
+    alternatives:
+      - present: [steigt aus]
+        preterite: [stieg aus]
+        perfect: [ist ausgestiegen]
+        translation:
+          ru: [выходить из транспорта, выходить]
+  - id: backen
+    prompt: backen
+    alternatives:
+      - present: [backt]
+        preterite: [buk, backte]
+        perfect: [hat gebacken]
+        translation:
+          ru: [печь]
+  - id: befehlen
+    prompt: befehlen
+    alternatives:
+      - present: [befiehlt]
+        preterite: [befahl]
+        perfect: [hat befohlen]
+        translation:
+          ru: [приказывать]
+  - id: beginnen
+    prompt: beginnen
+    alternatives:
+      - present: [beginnt]
+        preterite: [begann]
+        perfect: [hat begonnen]
+        translation:
+          ru: [начинать]
+  - id: behalten
+    prompt: behalten
+    alternatives:
+      - present: [behält]
+        preterite: [behielt]
+        perfect: [hat behalten]
+        translation:
+          ru: [оставлять, сохранять]
+  - id: beißen
+    prompt: beißen
+    alternatives:
+      - present: [beißt]
+        preterite: [biss]
+        perfect: [hat gebissen]
+        translation:
+          ru: [кусать]
+  - id: bekommen
+    prompt: bekommen
+    alternatives:
+      - present: [bekommt]
+        preterite: [bekam]
+        perfect: [hat bekommen]
+        translation:
+          ru: [получать]
+  - id: belügen
+    prompt: belügen
+    alternatives:
+      - present: [belügt]
+        preterite: [belog]
+        perfect: [hat belogen]
+        translation:
+          ru: [обманывать]
+  - id: beraten
+    prompt: beraten
+    alternatives:
+      - present: [berät]
+        preterite: [beriet]
+        perfect: [hat beraten]
+        translation:
+          ru: [советовать, консультировать]
+  - id: beschließen
+    prompt: beschließen
+    alternatives:
+      - present: [beschließt]
+        preterite: [beschloss]
+        perfect: [hat beschlossen]
+        translation:
+          ru: [решать, постановлять]
+  - id: beschreiben
+    prompt: beschreiben
+    alternatives:
+      - present: [beschreibt]
+        preterite: [beschrieb]
+        perfect: [hat beschrieben]
+        translation:
+          ru: [описывать]
+  - id: besitzen
+    prompt: besitzen
+    alternatives:
+      - present: [besitzt]
+        preterite: [besaß]
+        perfect: [hat besessen]
+        translation:
+          ru: [владеть]
+  - id: bestehen
+    prompt: bestehen
+    alternatives:
+      - present: [besteht]
+        preterite: [bestand]
+        perfect: [hat bestanden]
+        translation:
+          ru: [существовать, состоять, сдавать]
+  - id: betragen
+    prompt: betragen
+    alternatives:
+      - present: [beträgt]
+        preterite: [betrug]
+        perfect: [hat betragen]
+        translation:
+          ru: [составлять]
+  - id: betrügen
+    prompt: betrügen
+    alternatives:
+      - present: [betrügt]
+        preterite: [betrog]
+        perfect: [hat betrogen]
+        translation:
+          ru: [обманывать]
+  - id: bewegen
+    prompt: bewegen
+    alternatives:
+      - present: [bewegt]
+        preterite: [bewog]
+        perfect: [hat bewogen]
+        translation:
+          ru: [побуждать, трогать]
+  - id: beweisen
+    prompt: beweisen
+    alternatives:
+      - present: [beweist]
+        preterite: [bewies]
+        perfect: [hat bewiesen]
+        translation:
+          ru: [доказывать]
+  - id: bewerben
+    prompt: bewerben
+    alternatives:
+      - present: [bewirbt]
+        preterite: [bewarb]
+        perfect: [hat beworben]
+        translation:
+          ru: [подавать заявку, претендовать]
+  - id: beziehen
+    prompt: beziehen
+    alternatives:
+      - present: [bezieht]
+        preterite: [bezog]
+        perfect: [hat bezogen]
+        translation:
+          ru: [получать, относиться]
+  - id: biegen
+    prompt: biegen
+    alternatives:
+      - present: [biegt]
+        preterite: [bog]
+        perfect: [hat gebogen]
+        translation:
+          ru: [гнуть, сгибать]
+  - id: bieten
+    prompt: bieten
+    alternatives:
+      - present: [bietet]
+        preterite: [bot]
+        perfect: [hat geboten]
+        translation:
+          ru: [предлагать]
+  - id: binden
+    prompt: binden
+    alternatives:
+      - present: [bindet]
+        preterite: [band]
+        perfect: [hat gebunden]
+        translation:
+          ru: [связывать]
+  - id: bitten
+    prompt: bitten
+    alternatives:
+      - present: [bittet]
+        preterite: [bat]
+        perfect: [hat gebeten]
+        translation:
+          ru: [просить]
+  - id: blasen
+    prompt: blasen
+    alternatives:
+      - present: [bläst]
+        preterite: [blies]
+        perfect: [hat geblasen]
+        translation:
+          ru: [дуть]
+  - id: bleiben
+    prompt: bleiben
+    alternatives:
+      - present: [bleibt]
+        preterite: [blieb]
+        perfect: [ist geblieben]
+        translation:
+          ru: [оставаться]
+  - id: braten
+    prompt: braten
+    alternatives:
+      - present: [brät]
+        preterite: [briet]
+        perfect: [hat gebraten]
+        translation:
+          ru: [жарить]
+  - id: brechen
+    prompt: brechen
+    alternatives:
+      - present: [bricht]
+        preterite: [brach]
+        perfect: [hat gebrochen]
+        translation:
+          ru: [ломать]
+  - id: brennen
+    prompt: brennen
+    alternatives:
+      - present: [brennt]
+        preterite: [brannte]
+        perfect: [hat gebrannt]
+        translation:
+          ru: [гореть]
+  - id: bringen
+    prompt: bringen
+    alternatives:
+      - present: [bringt]
+        preterite: [brachte]
+        perfect: [hat gebracht]
+        translation:
+          ru: [приносить, приводить]
+  - id: denken
+    prompt: denken
+    alternatives:
+      - present: [denkt]
+        preterite: [dachte]
+        perfect: [hat gedacht]
+        translation:
+          ru: [думать]
+  - id: dringen
+    prompt: dringen
+    alternatives:
+      - present: [dringt]
+        preterite: [drang]
+        perfect: [ist gedrungen]
+        translation:
+          ru: [проникать]
+  - id: dürfen
+    prompt: dürfen
+    alternatives:
+      - present: [darf]
+        preterite: [durfte]
+        perfect: [hat gedurft]
+        translation:
+          ru: [мочь, иметь разрешение]
+  - id: einfallen
+    prompt: einfallen
+    alternatives:
+      - present: [fällt ein]
+        preterite: [fiel ein]
+        perfect: [ist eingefallen]
+        translation:
+          ru: [приходить в голову]
+  - id: einladen
+    prompt: einladen
+    alternatives:
+      - present: [lädt ein]
+        preterite: [lud ein]
+        perfect: [hat eingeladen]
+        translation:
+          ru: [приглашать]
+  - id: einschlafen
+    prompt: einschlafen
+    alternatives:
+      - present: [schläft ein]
+        preterite: [schlief ein]
+        perfect: [ist eingeschlafen]
+        translation:
+          ru: [засыпать]
+  - id: einsteigen
+    prompt: einsteigen
+    alternatives:
+      - present: [steigt ein]
+        preterite: [stieg ein]
+        perfect: [ist eingestiegen]
+        translation:
+          ru: [садиться в транспорт, садиться]
+  - id: einziehen
+    prompt: einziehen
+    alternatives:
+      - present: [zieht ein]
+        preterite: [zog ein]
+        perfect: [ist eingezogen]
+        translation:
+          ru: [въезжать]
+  - id: empfehlen
+    prompt: empfehlen
+    alternatives:
+      - present: [empfiehlt]
+        preterite: [empfahl]
+        perfect: [hat empfohlen]
+        translation:
+          ru: [рекомендовать]
+  - id: enthalten
+    prompt: enthalten
+    alternatives:
+      - present: [enthält]
+        preterite: [enthielt]
+        perfect: [hat enthalten]
+        translation:
+          ru: [содержать]
+  - id: entlassen
+    prompt: entlassen
+    alternatives:
+      - present: [entlässt]
+        preterite: [entließ]
+        perfect: [hat entlassen]
+        translation:
+          ru: [увольнять, освобождать]
+  - id: entscheiden
+    prompt: entscheiden
+    alternatives:
+      - present: [entscheidet]
+        preterite: [entschied]
+        perfect: [hat entschieden]
+        translation:
+          ru: [решать]
+  - id: entschließen
+    prompt: entschließen
+    alternatives:
+      - present: [entschließt]
+        preterite: [entschloss]
+        perfect: [hat entschlossen]
+        translation:
+          ru: [решаться]
+  - id: entsprechen
+    prompt: entsprechen
+    alternatives:
+      - present: [entspricht]
+        preterite: [entsprach]
+        perfect: [hat entsprochen]
+        translation:
+          ru: [соответствовать]
+  - id: entstehen
+    prompt: entstehen
+    alternatives:
+      - present: [entsteht]
+        preterite: [entstand]
+        perfect: [ist entstanden]
+        translation:
+          ru: [возникать]
+  - id: erfahren
+    prompt: erfahren
+    alternatives:
+      - present: [erfährt]
+        preterite: [erfuhr]
+        perfect: [hat erfahren]
+        translation:
+          ru: [узнавать, испытывать]
+  - id: erfinden
+    prompt: erfinden
+    alternatives:
+      - present: [erfindet]
+        preterite: [erfand]
+        perfect: [hat erfunden]
+        translation:
+          ru: [изобретать, выдумывать]
+  - id: erhalten
+    prompt: erhalten
+    alternatives:
+      - present: [erhält]
+        preterite: [erhielt]
+        perfect: [hat erhalten]
+        translation:
+          ru: [получать, сохранять]
+  - id: erkennen
+    prompt: erkennen
+    alternatives:
+      - present: [erkennt]
+        preterite: [erkannte]
+        perfect: [hat erkannt]
+        translation:
+          ru: [узнавать, распознавать]
+  - id: erscheinen
+    prompt: erscheinen
+    alternatives:
+      - present: [erscheint]
+        preterite: [erschien]
+        perfect: [ist erschienen]
+        translation:
+          ru: [появляться]
+  - id: erschrecken
+    prompt: erschrecken
+    alternatives:
+      - present: [erschrickt]
+        preterite: [erschrak]
+        perfect: [ist erschrocken]
+        translation:
+          ru: [пугаться]
+  - id: erziehen
+    prompt: erziehen
+    alternatives:
+      - present: [erzieht]
+        preterite: [erzog]
+        perfect: [hat erzogen]
+        translation:
+          ru: [воспитывать]
+  - id: essen
+    prompt: essen
+    alternatives:
+      - present: [isst]
+        preterite: [aß]
+        perfect: [hat gegessen]
+        translation:
+          ru: [есть]
+  - id: fahren
+    prompt: fahren
+    alternatives:
+      - present: [fährt]
+        preterite: [fuhr]
+        perfect: [ist gefahren]
+        translation:
+          ru: [ехать]
+  - id: fallen
+    prompt: fallen
+    alternatives:
+      - present: [fällt]
+        preterite: [fiel]
+        perfect: [ist gefallen]
+        translation:
+          ru: [падать]
+  - id: fangen
+    prompt: fangen
+    alternatives:
+      - present: [fängt]
+        preterite: [fing]
+        perfect: [hat gefangen]
+        translation:
+          ru: [ловить]
+  - id: fernsehen
+    prompt: fernsehen
+    alternatives:
+      - present: [sieht fern]
+        preterite: [sah fern]
+        perfect: [hat ferngesehen]
+        translation:
+          ru: [смотреть телевизор]
+  - id: festhalten
+    prompt: festhalten
+    alternatives:
+      - present: [hält fest]
+        preterite: [hielt fest]
+        perfect: [hat festgehalten]
+        translation:
+          ru: [держать, фиксировать]
+  - id: finden
+    prompt: finden
+    alternatives:
+      - present: [findet]
+        preterite: [fand]
+        perfect: [hat gefunden]
+        translation:
+          ru: [находить]
+  - id: fliegen
+    prompt: fliegen
+    alternatives:
+      - present: [fliegt]
+        preterite: [flog]
+        perfect: [ist geflogen]
+        translation:
+          ru: [летать, лететь]
+  - id: fliehen
+    prompt: fliehen
+    alternatives:
+      - present: [flieht]
+        preterite: [floh]
+        perfect: [ist geflohen]
+        translation:
+          ru: [бежать, спасаться бегством]
+  - id: fließen
+    prompt: fließen
+    alternatives:
+      - present: [fließt]
+        preterite: [floss]
+        perfect: [ist geflossen]
+        translation:
+          ru: [течь]
+  - id: fressen
+    prompt: fressen
+    alternatives:
+      - present: [frisst]
+        preterite: [fraß]
+        perfect: [hat gefressen]
+        translation:
+          ru: [есть о животных, есть]
+  - id: frieren
+    prompt: frieren
+    alternatives:
+      - present: [friert]
+        preterite: [fror]
+        perfect: [hat gefroren]
+        translation:
+          ru: [мёрзнуть, мерзнуть]
+  - id: geben
+    prompt: geben
+    alternatives:
+      - present: [gibt]
+        preterite: [gab]
+        perfect: [hat gegeben]
+        translation:
+          ru: [давать]
+  - id: gefallen
+    prompt: gefallen
+    alternatives:
+      - present: [gefällt]
+        preterite: [gefiel]
+        perfect: [hat gefallen]
+        translation:
+          ru: [нравиться]
+  - id: gehen
+    prompt: gehen
+    alternatives:
+      - present: [geht]
+        preterite: [ging]
+        perfect: [ist gegangen]
+        translation:
+          ru: [идти]
+  - id: gelingen
+    prompt: gelingen
+    alternatives:
+      - present: [gelingt]
+        preterite: [gelang]
+        perfect: [ist gelungen]
+        translation:
+          ru: [удаваться]
+  - id: gelten
+    prompt: gelten
+    alternatives:
+      - present: [gilt]
+        preterite: [galt]
+        perfect: [hat gegolten]
+        translation:
+          ru: [действовать, считаться]
+  - id: genießen
+    prompt: genießen
+    alternatives:
+      - present: [genießt]
+        preterite: [genoss]
+        perfect: [hat genossen]
+        translation:
+          ru: [наслаждаться]
+  - id: geraten
+    prompt: geraten
+    alternatives:
+      - present: [gerät]
+        preterite: [geriet]
+        perfect: [ist geraten]
+        translation:
+          ru: [попадать]
+  - id: geschehen
+    prompt: geschehen
+    alternatives:
+      - present: [geschieht]
+        preterite: [geschah]
+        perfect: [ist geschehen]
+        translation:
+          ru: [происходить]
+  - id: gewinnen
+    prompt: gewinnen
+    alternatives:
+      - present: [gewinnt]
+        preterite: [gewann]
+        perfect: [hat gewonnen]
+        translation:
+          ru: [выигрывать]
+  - id: gießen
+    prompt: gießen
+    alternatives:
+      - present: [gießt]
+        preterite: [goss]
+        perfect: [hat gegossen]
+        translation:
+          ru: [лить, поливать]
+  - id: gleichen
+    prompt: gleichen
+    alternatives:
+      - present: [gleicht]
+        preterite: [glich]
+        perfect: [hat geglichen]
+        translation:
+          ru: [быть похожим]
+  - id: gleiten
+    prompt: gleiten
+    alternatives:
+      - present: [gleitet]
+        preterite: [glitt]
+        perfect: [ist geglitten]
+        translation:
+          ru: [скользить]
+  - id: graben
+    prompt: graben
+    alternatives:
+      - present: [gräbt]
+        preterite: [grub]
+        perfect: [hat gegraben]
+        translation:
+          ru: [копать]
+  - id: greifen
+    prompt: greifen
+    alternatives:
+      - present: [greift]
+        preterite: [griff]
+        perfect: [hat gegriffen]
+        translation:
+          ru: [хватать]
+  - id: haben
+    prompt: haben
+    alternatives:
+      - present: [hat]
+        preterite: [hatte]
+        perfect: [hat gehabt]
+        translation:
+          ru: [иметь]
+  - id: halten
+    prompt: halten
+    alternatives:
+      - present: [hält]
+        preterite: [hielt]
+        perfect: [hat gehalten]
+        translation:
+          ru: [держать, останавливать]
+  - id: hängen
+    prompt: hängen
+    alternatives:
+      - present: [hängt]
+        preterite: [hing]
+        perfect: [hat gehangen]
+        translation:
+          ru: [висеть]
+  - id: hauen
+    prompt: hauen
+    alternatives:
+      - present: [haut]
+        preterite: [haute, hieb]
+        perfect: [hat gehauen]
+        translation:
+          ru: [бить, рубить]
+  - id: heben
+    prompt: heben
+    alternatives:
+      - present: [hebt]
+        preterite: [hob]
+        perfect: [hat gehoben]
+        translation:
+          ru: [поднимать]
+  - id: heißen
+    prompt: heißen
+    alternatives:
+      - present: [heißt]
+        preterite: [hieß]
+        perfect: [hat geheißen]
+        translation:
+          ru: [называться, означать]
+  - id: helfen
+    prompt: helfen
+    alternatives:
+      - present: [hilft]
+        preterite: [half]
+        perfect: [hat geholfen]
+        translation:
+          ru: [помогать]
+  - id: kennen
+    prompt: kennen
+    alternatives:
+      - present: [kennt]
+        preterite: [kannte]
+        perfect: [hat gekannt]
+        translation:
+          ru: [знать, быть знакомым]
+  - id: klingen
+    prompt: klingen
+    alternatives:
+      - present: [klingt]
+        preterite: [klang]
+        perfect: [hat geklungen]
+        translation:
+          ru: [звучать]
+  - id: kommen
+    prompt: kommen
+    alternatives:
+      - present: [kommt]
+        preterite: [kam]
+        perfect: [ist gekommen]
+        translation:
+          ru: [приходить]
+  - id: kriechen
+    prompt: kriechen
+    alternatives:
+      - present: [kriecht]
+        preterite: [kroch]
+        perfect: [ist gekrochen]
+        translation:
+          ru: [ползти]
+  - id: laden
+    prompt: laden
+    alternatives:
+      - present: [lädt]
+        preterite: [lud]
+        perfect: [hat geladen]
+        translation:
+          ru: [грузить, заряжать]
+  - id: lassen
+    prompt: lassen
+    alternatives:
+      - present: [lässt]
+        preterite: [ließ]
+        perfect: [hat gelassen]
+        translation:
+          ru: [позволять, оставлять]
+  - id: laufen
+    prompt: laufen
+    alternatives:
+      - present: [läuft]
+        preterite: [lief]
+        perfect: [ist gelaufen]
+        translation:
+          ru: [бегать, идти]
+  - id: leiden
+    prompt: leiden
+    alternatives:
+      - present: [leidet]
+        preterite: [litt]
+        perfect: [hat gelitten]
+        translation:
+          ru: [страдать]
+  - id: leihen
+    prompt: leihen
+    alternatives:
+      - present: [leiht]
+        preterite: [lieh]
+        perfect: [hat geliehen]
+        translation:
+          ru: [одалживать]
+  - id: lesen
+    prompt: lesen
+    alternatives:
+      - present: [liest]
+        preterite: [las]
+        perfect: [hat gelesen]
+        translation:
+          ru: [читать]
+  - id: liegen
+    prompt: liegen
+    alternatives:
+      - present: [liegt]
+        preterite: [lag]
+        perfect: [hat gelegen]
+        translation:
+          ru: [лежать]
+  - id: lügen
+    prompt: lügen
+    alternatives:
+      - present: [lügt]
+        preterite: [log]
+        perfect: [hat gelogen]
+        translation:
+          ru: [лгать]
+  - id: meiden
+    prompt: meiden
+    alternatives:
+      - present: [meidet]
+        preterite: [mied]
+        perfect: [hat gemieden]
+        translation:
+          ru: [избегать]
+  - id: melken
+    prompt: melken
+    alternatives:
+      - present: [melkt]
+        preterite: [molk]
+        perfect: [hat gemolken]
+        translation:
+          ru: [доить]
+  - id: messen
+    prompt: messen
+    alternatives:
+      - present: [misst]
+        preterite: [maß]
+        perfect: [hat gemessen]
+        translation:
+          ru: [измерять]
+  - id: misslingen
+    prompt: misslingen
+    alternatives:
+      - present: [misslingt]
+        preterite: [misslang]
+        perfect: [ist misslungen]
+        translation:
+          ru: [не удаваться]
+  - id: missverstehen
+    prompt: missverstehen
+    alternatives:
+      - present: [missversteht]
+        preterite: [missverstand]
+        perfect: [hat missverstanden]
+        translation:
+          ru: [неправильно понимать]
+  - id: mitbringen
+    prompt: mitbringen
+    alternatives:
+      - present: [bringt mit]
+        preterite: [brachte mit]
+        perfect: [hat mitgebracht]
+        translation:
+          ru: [приносить с собой]
+  - id: mögen
+    prompt: mögen
+    alternatives:
+      - present: [mag]
+        preterite: [mochte]
+        perfect: [hat gemocht]
+        translation:
+          ru: [нравиться, любить]
+  - id: nehmen
+    prompt: nehmen
+    alternatives:
+      - present: [nimmt]
+        preterite: [nahm]
+        perfect: [hat genommen]
+        translation:
+          ru: [брать]
+  - id: nennen
+    prompt: nennen
+    alternatives:
+      - present: [nennt]
+        preterite: [nannte]
+        perfect: [hat genannt]
+        translation:
+          ru: [называть]
+  - id: pfeifen
+    prompt: pfeifen
+    alternatives:
+      - present: [pfeift]
+        preterite: [pfiff]
+        perfect: [hat gepfiffen]
+        translation:
+          ru: [свистеть]
+  - id: raten
+    prompt: raten
+    alternatives:
+      - present: [rät]
+        preterite: [riet]
+        perfect: [hat geraten]
+        translation:
+          ru: [советовать, угадывать]
+  - id: reiben
+    prompt: reiben
+    alternatives:
+      - present: [reibt]
+        preterite: [rieb]
+        perfect: [hat gerieben]
+        translation:
+          ru: [тереть]
+  - id: reißen
+    prompt: reißen
+    alternatives:
+      - present: [reißt]
+        preterite: [riss]
+        perfect: [hat gerissen]
+        translation:
+          ru: [рвать]
+  - id: reiten
+    prompt: reiten
+    alternatives:
+      - present: [reitet]
+        preterite: [ritt]
+        perfect: [hat geritten, ist geritten]
+        translation:
+          ru: [ездить верхом]
+  - id: rennen
+    prompt: rennen
+    alternatives:
+      - present: [rennt]
+        preterite: [rannte]
+        perfect: [ist gerannt]
+        translation:
+          ru: [бежать]
+  - id: riechen
+    prompt: riechen
+    alternatives:
+      - present: [riecht]
+        preterite: [roch]
+        perfect: [hat gerochen]
+        translation:
+          ru: [пахнуть, нюхать]
+  - id: rufen
+    prompt: rufen
+    alternatives:
+      - present: [ruft]
+        preterite: [rief]
+        perfect: [hat gerufen]
+        translation:
+          ru: [звать, кричать]
+  - id: saufen
+    prompt: saufen
+    alternatives:
+      - present: [säuft]
+        preterite: [soff]
+        perfect: [hat gesoffen]
+        translation:
+          ru: [пить]
+  - id: saugen
+    prompt: saugen
+    alternatives:
+      - present: [saugt]
+        preterite: [sog]
+        perfect: [hat gesogen]
+        translation:
+          ru: [сосать, всасывать]
+  - id: schaffen
+    prompt: schaffen
+    alternatives:
+      - present: [schafft]
+        preterite: [schuf]
+        perfect: [hat geschaffen]
+        translation:
+          ru: [создавать]
+  - id: scheinen
+    prompt: scheinen
+    alternatives:
+      - present: [scheint]
+        preterite: [schien]
+        perfect: [hat geschienen]
+        translation:
+          ru: [светить, казаться]
+  - id: schieben
+    prompt: schieben
+    alternatives:
+      - present: [schiebt]
+        preterite: [schob]
+        perfect: [hat geschoben]
+        translation:
+          ru: [толкать, двигать]
+  - id: schießen
+    prompt: schießen
+    alternatives:
+      - present: [schießt]
+        preterite: [schoss]
+        perfect: [hat geschossen]
+        translation:
+          ru: [стрелять]
+  - id: schlafen
+    prompt: schlafen
+    alternatives:
+      - present: [schläft]
+        preterite: [schlief]
+        perfect: [hat geschlafen]
+        translation:
+          ru: [спать]
+  - id: schlagen
+    prompt: schlagen
+    alternatives:
+      - present: [schlägt]
+        preterite: [schlug]
+        perfect: [hat geschlagen]
+        translation:
+          ru: [бить]
+  - id: schleichen
+    prompt: schleichen
+    alternatives:
+      - present: [schleicht]
+        preterite: [schlich]
+        perfect: [ist geschlichen]
+        translation:
+          ru: [красться]
+  - id: schleifen
+    prompt: schleifen
+    alternatives:
+      - present: [schleift]
+        preterite: [schliff]
+        perfect: [hat geschliffen]
+        translation:
+          ru: [точить, шлифовать]
+  - id: schließen
+    prompt: schließen
+    alternatives:
+      - present: [schließt]
+        preterite: [schloss]
+        perfect: [hat geschlossen]
+        translation:
+          ru: [закрывать]
+  - id: schmeißen
+    prompt: schmeißen
+    alternatives:
+      - present: [schmeißt]
+        preterite: [schmiss]
+        perfect: [hat geschmissen]
+        translation:
+          ru: [бросать]
+  - id: schmelzen
+    prompt: schmelzen
+    alternatives:
+      - present: [schmilzt]
+        preterite: [schmolz]
+        perfect: [ist geschmolzen, hat geschmolzen]
+        translation:
+          ru: [таять, плавить]
+  - id: schneiden
+    prompt: schneiden
+    alternatives:
+      - present: [schneidet]
+        preterite: [schnitt]
+        perfect: [hat geschnitten]
+        translation:
+          ru: [резать]
+  - id: schreiben
+    prompt: schreiben
+    alternatives:
+      - present: [schreibt]
+        preterite: [schrieb]
+        perfect: [hat geschrieben]
+        translation:
+          ru: [писать]
+  - id: schreien
+    prompt: schreien
+    alternatives:
+      - present: [schreit]
+        preterite: [schrie]
+        perfect: [hat geschrien]
+        translation:
+          ru: [кричать]
+  - id: schreiten
+    prompt: schreiten
+    alternatives:
+      - present: [schreitet]
+        preterite: [schritt]
+        perfect: [ist geschritten]
+        translation:
+          ru: [шагать]
+  - id: schweigen
+    prompt: schweigen
+    alternatives:
+      - present: [schweigt]
+        preterite: [schwieg]
+        perfect: [hat geschwiegen]
+        translation:
+          ru: [молчать]
+  - id: schwimmen
+    prompt: schwimmen
+    alternatives:
+      - present: [schwimmt]
+        preterite: [schwamm]
+        perfect: [ist geschwommen]
+        translation:
+          ru: [плавать]
+  - id: schwören
+    prompt: schwören
+    alternatives:
+      - present: [schwört]
+        preterite: [schwor]
+        perfect: [hat geschworen]
+        translation:
+          ru: [клясться]
+  - id: sehen
+    prompt: sehen
+    alternatives:
+      - present: [sieht]
+        preterite: [sah]
+        perfect: [hat gesehen]
+        translation:
+          ru: [видеть]
+  - id: sein
+    prompt: sein
+    alternatives:
+      - present: [ist]
+        preterite: [war]
+        perfect: [ist gewesen]
+        translation:
+          ru: [быть]
+  - id: senden
+    prompt: senden
+    alternatives:
+      - present: [sendet]
+        preterite: [sandte, sendete]
+        perfect: [hat gesandt, hat gesendet]
+        translation:
+          ru: [посылать, отправлять]
+  - id: singen
+    prompt: singen
+    alternatives:
+      - present: [singt]
+        preterite: [sang]
+        perfect: [hat gesungen]
+        translation:
+          ru: [петь]
+  - id: sinken
+    prompt: sinken
+    alternatives:
+      - present: [sinkt]
+        preterite: [sank]
+        perfect: [ist gesunken]
+        translation:
+          ru: [тонуть, опускаться]
+  - id: sitzen
+    prompt: sitzen
+    alternatives:
+      - present: [sitzt]
+        preterite: [saß]
+        perfect: [hat gesessen]
+        translation:
+          ru: [сидеть]
+  - id: spinnen
+    prompt: spinnen
+    alternatives:
+      - present: [spinnt]
+        preterite: [spann]
+        perfect: [hat gesponnen]
+        translation:
+          ru: [прясть]
+  - id: sprechen
+    prompt: sprechen
+    alternatives:
+      - present: [spricht]
+        preterite: [sprach]
+        perfect: [hat gesprochen]
+        translation:
+          ru: [говорить]
+  - id: springen
+    prompt: springen
+    alternatives:
+      - present: [springt]
+        preterite: [sprang]
+        perfect: [ist gesprungen]
+        translation:
+          ru: [прыгать]
+  - id: stattfinden
+    prompt: stattfinden
+    alternatives:
+      - present: [findet statt]
+        preterite: [fand statt]
+        perfect: [hat stattgefunden]
+        translation:
+          ru: [состояться, происходить]
+  - id: stechen
+    prompt: stechen
+    alternatives:
+      - present: [sticht]
+        preterite: [stach]
+        perfect: [hat gestochen]
+        translation:
+          ru: [колоть, жалить]
+  - id: stehen
+    prompt: stehen
+    alternatives:
+      - present: [steht]
+        preterite: [stand]
+        perfect: [hat gestanden]
+        translation:
+          ru: [стоять]
+  - id: stehlen
+    prompt: stehlen
+    alternatives:
+      - present: [stiehlt]
+        preterite: [stahl]
+        perfect: [hat gestohlen]
+        translation:
+          ru: [красть]
+  - id: steigen
+    prompt: steigen
+    alternatives:
+      - present: [steigt]
+        preterite: [stieg]
+        perfect: [ist gestiegen]
+        translation:
+          ru: [подниматься]
+  - id: sterben
+    prompt: sterben
+    alternatives:
+      - present: [stirbt]
+        preterite: [starb]
+        perfect: [ist gestorben]
+        translation:
+          ru: [умирать]
+  - id: stinken
+    prompt: stinken
+    alternatives:
+      - present: [stinkt]
+        preterite: [stank]
+        perfect: [hat gestunken]
+        translation:
+          ru: [вонять]
+  - id: stoßen
+    prompt: stoßen
+    alternatives:
+      - present: [stößt]
+        preterite: [stieß]
+        perfect: [hat gestoßen]
+        translation:
+          ru: [толкать, ударять]
+  - id: streichen
+    prompt: streichen
+    alternatives:
+      - present: [streicht]
+        preterite: [strich]
+        perfect: [hat gestrichen]
+        translation:
+          ru: [гладить, вычёркивать, красить]
+  - id: streiten
+    prompt: streiten
+    alternatives:
+      - present: [streitet]
+        preterite: [stritt]
+        perfect: [hat gestritten]
+        translation:
+          ru: [спорить, ссориться]
+  - id: tragen
+    prompt: tragen
+    alternatives:
+      - present: [trägt]
+        preterite: [trug]
+        perfect: [hat getragen]
+        translation:
+          ru: [носить]
+  - id: treffen
+    prompt: treffen
+    alternatives:
+      - present: [trifft]
+        preterite: [traf]
+        perfect: [hat getroffen]
+        translation:
+          ru: [встречать]
+  - id: treiben
+    prompt: treiben
+    alternatives:
+      - present: [treibt]
+        preterite: [trieb]
+        perfect: [hat getrieben]
+        translation:
+          ru: [гнать, заниматься]
+  - id: treten
+    prompt: treten
+    alternatives:
+      - present: [tritt]
+        preterite: [trat]
+        perfect: [hat getreten]
+        translation:
+          ru: [ступать, пинать]
+  - id: trinken
+    prompt: trinken
+    alternatives:
+      - present: [trinkt]
+        preterite: [trank]
+        perfect: [hat getrunken]
+        translation:
+          ru: [пить]
+  - id: tun
+    prompt: tun
+    alternatives:
+      - present: [tut]
+        preterite: [tat]
+        perfect: [hat getan]
+        translation:
+          ru: [делать]
+  - id: übernehmen
+    prompt: übernehmen
+    alternatives:
+      - present: [übernimmt]
+        preterite: [übernahm]
+        perfect: [hat übernommen]
+        translation:
+          ru: [перенимать, брать на себя]
+  - id: überweisen
+    prompt: überweisen
+    alternatives:
+      - present: [überweist]
+        preterite: [überwies]
+        perfect: [hat überwiesen]
+        translation:
+          ru: [переводить деньги, переводить]
+  - id: unterhalten
+    prompt: unterhalten
+    alternatives:
+      - present: [unterhält]
+        preterite: [unterhielt]
+        perfect: [hat unterhalten]
+        translation:
+          ru: [развлекать]
+  - id: umziehen
+    prompt: umziehen
+    alternatives:
+      - present: [zieht um]
+        preterite: [zog um]
+        perfect: [ist umgezogen]
+        translation:
+          ru: [переезжать]
+  - id: unterscheiden
+    prompt: unterscheiden
+    alternatives:
+      - present: [unterscheidet]
+        preterite: [unterschied]
+        perfect: [hat unterschieden]
+        translation:
+          ru: [различать]
+  - id: unterschreiben
+    prompt: unterschreiben
+    alternatives:
+      - present: [unterschreibt]
+        preterite: [unterschrieb]
+        perfect: [hat unterschrieben]
+        translation:
+          ru: [подписывать]
+  - id: verbieten
+    prompt: verbieten
+    alternatives:
+      - present: [verbietet]
+        preterite: [verbot]
+        perfect: [hat verboten]
+        translation:
+          ru: [запрещать]
+  - id: verbinden
+    prompt: verbinden
+    alternatives:
+      - present: [verbindet]
+        preterite: [verband]
+        perfect: [hat verbunden]
+        translation:
+          ru: [соединять]
+  - id: verbringen
+    prompt: verbringen
+    alternatives:
+      - present: [verbringt]
+        preterite: [verbrachte]
+        perfect: [hat verbracht]
+        translation:
+          ru: [проводить время]
+  - id: vergessen
+    prompt: vergessen
+    alternatives:
+      - present: [vergisst]
+        preterite: [vergaß]
+        perfect: [hat vergessen]
+        translation:
+          ru: [забывать]
+  - id: vergleichen
+    prompt: vergleichen
+    alternatives:
+      - present: [vergleicht]
+        preterite: [verglich]
+        perfect: [hat verglichen]
+        translation:
+          ru: [сравнивать]
+  - id: verhalten
+    prompt: verhalten
+    alternatives:
+      - present: [verhält]
+        preterite: [verhielt]
+        perfect: [hat verhalten]
+        translation:
+          ru: [вести себя]
+  - id: verlassen
+    prompt: verlassen
+    alternatives:
+      - present: [verlässt]
+        preterite: [verließ]
+        perfect: [hat verlassen]
+        translation:
+          ru: [покидать]
+  - id: verlieren
+    prompt: verlieren
+    alternatives:
+      - present: [verliert]
+        preterite: [verlor]
+        perfect: [hat verloren]
+        translation:
+          ru: [терять]
+  - id: verraten
+    prompt: verraten
+    alternatives:
+      - present: [verrät]
+        preterite: [verriet]
+        perfect: [hat verraten]
+        translation:
+          ru: [предавать, выдавать]
+  - id: verschreiben
+    prompt: verschreiben
+    alternatives:
+      - present: [verschreibt]
+        preterite: [verschrieb]
+        perfect: [hat verschrieben]
+        translation:
+          ru: [прописывать, ошибаться при письме]
+  - id: verschwinden
+    prompt: verschwinden
+    alternatives:
+      - present: [verschwindet]
+        preterite: [verschwand]
+        perfect: [ist verschwunden]
+        translation:
+          ru: [исчезать]
+  - id: versprechen
+    prompt: versprechen
+    alternatives:
+      - present: [verspricht]
+        preterite: [versprach]
+        perfect: [hat versprochen]
+        translation:
+          ru: [обещать]
+  - id: verstehen
+    prompt: verstehen
+    alternatives:
+      - present: [versteht]
+        preterite: [verstand]
+        perfect: [hat verstanden]
+        translation:
+          ru: [понимать]
+  - id: vertreten
+    prompt: vertreten
+    alternatives:
+      - present: [vertritt]
+        preterite: [vertrat]
+        perfect: [hat vertreten]
+        translation:
+          ru: [представлять, замещать]
+  - id: verzeihen
+    prompt: verzeihen
+    alternatives:
+      - present: [verzeiht]
+        preterite: [verzieh]
+        perfect: [hat verziehen]
+        translation:
+          ru: [прощать]
+  - id: vorhaben
+    prompt: vorhaben
+    alternatives:
+      - present: [hat vor]
+        preterite: [hatte vor]
+        perfect: [hat vorgehabt]
+        translation:
+          ru: [намереваться]
+  - id: vorschlagen
+    prompt: vorschlagen
+    alternatives:
+      - present: [schlägt vor]
+        preterite: [schlug vor]
+        perfect: [hat vorgeschlagen]
+        translation:
+          ru: [предлагать]
+  - id: wachsen
+    prompt: wachsen
+    alternatives:
+      - present: [wächst]
+        preterite: [wuchs]
+        perfect: [ist gewachsen]
+        translation:
+          ru: [расти]
+  - id: waschen
+    prompt: waschen
+    alternatives:
+      - present: [wäscht]
+        preterite: [wusch]
+        perfect: [hat gewaschen]
+        translation:
+          ru: [мыть]
+  - id: wehtun
+    prompt: wehtun
+    alternatives:
+      - present: [tut weh]
+        preterite: [tat weh]
+        perfect: [hat wehgetan]
+        translation:
+          ru: [причинять боль, болеть]
+  - id: wenden
+    prompt: wenden
+    alternatives:
+      - present: [wendet]
+        preterite: [wandte]
+        perfect: [hat gewandt]
+        translation:
+          ru: [поворачивать]
+  - id: werben
+    prompt: werben
+    alternatives:
+      - present: [wirbt]
+        preterite: [warb]
+        perfect: [hat geworben]
+        translation:
+          ru: [рекламировать, вербовать]
+  - id: werden
+    prompt: werden
+    alternatives:
+      - present: [wird]
+        preterite: [wurde]
+        perfect: [ist geworden]
+        translation:
+          ru: [становиться]
+  - id: werfen
+    prompt: werfen
+    alternatives:
+      - present: [wirft]
+        preterite: [warf]
+        perfect: [hat geworfen]
+        translation:
+          ru: [бросать]
+  - id: widersprechen
+    prompt: widersprechen
+    alternatives:
+      - present: [widerspricht]
+        preterite: [widersprach]
+        perfect: [hat widersprochen]
+        translation:
+          ru: [возражать]
+  - id: wiegen
+    prompt: wiegen
+    alternatives:
+      - present: [wiegt]
+        preterite: [wog]
+        perfect: [hat gewogen]
+        translation:
+          ru: [весить]
+  - id: wissen
+    prompt: wissen
+    alternatives:
+      - present: [weiß]
+        preterite: [wusste]
+        perfect: [hat gewusst]
+        translation:
+          ru: [знать]
+  - id: ziehen
+    prompt: ziehen
+    alternatives:
+      - present: [zieht]
+        preterite: [zog]
+        perfect: [hat gezogen]
+        translation:
+          ru: [тянуть]
+  - id: zunehmen
+    prompt: zunehmen
+    alternatives:
+      - present: [nimmt zu]
+        preterite: [nahm zu]
+        perfect: [hat zugenommen]
+        translation:
+          ru: [увеличиваться, прибавлять вес]
+  - id: zwingen
+    prompt: zwingen
+    alternatives:
+      - present: [zwingt]
+        preterite: [zwang]
+        perfect: [hat gezwungen]
+        translation:
+          ru: [принуждать]

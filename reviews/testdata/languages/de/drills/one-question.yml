@@ -1,0 +1,18 @@
+# One item and one question per round: the smallest drill the loader accepts.
+slug: one-question
+trainer: synth_one_question
+label: One question
+description: A drill whose round is a single question.
+order: 30
+round_size: 1
+targets: [ru]
+fields:
+  - key: answer
+    label: Answer
+    kind: typed
+    normalise: exact
+items:
+  - id: only
+    prompt: only
+    alternatives:
+      - answer: [einzig]

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Study complete{% endblock %}
+{% block content %}
+<section class="review">
+  <h1>Study complete</h1>
+  <section class="metrics">
+    <div><strong>{{ study_session.correct }}</strong><span>Correct</span></div>
+    <div><strong>{{ study_session.incorrect }}</strong><span>Incorrect</span></div>
+    <div><strong>{{ study_session.queue|length }}</strong><span>Total</span></div>
+  </section>
+  <div class="actions centered">
+    {% if retry_count %}
+      <form method="post" action="{% url 'reviews:retry_mistakes' %}">
+        {% csrf_token %}
+        <button class="button primary" type="submit">Retry {{ retry_count }} mistake{{ retry_count|pluralize }}</button>
+      </form>
+    {% endif %}
+    {% if deck %}
+      <a class="button{% if not retry_count %} primary{% endif %}" href="{% url 'reviews:start_study' deck.pk %}{% if direction == 'reverse' %}?direction=reverse{% endif %}">Study again</a>
+      <a class="button" href="{% url 'reviews:start_study' deck.pk %}?all=1{% if direction == 'reverse' %}&amp;direction=reverse{% endif %}">Practice all words</a>
+      <a class="button" href="{{ deck.get_absolute_url }}">Back to deck</a>
+    {% else %}
+      <a class="button" href="{% url 'core:stats' %}">Back to Stats</a>
+      <a class="button" href="{% url 'core:dashboard' %}">Today</a>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

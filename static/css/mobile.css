@@ -1,0 +1,100 @@
+/* Mobile shell and stacked study layout. Keep the desktop notebook geometry intact. */
+.responsive-table { border: 0; background: transparent; }
+.responsive-table tbody { display: grid; gap: 10px; }
+.responsive-table tr { border: 1px solid var(--line); background: var(--white); }
+
+/* Card detail: white panel, hairline grid of Front / Back / Example / Notes. */
+.card-detail { max-width: 640px; background: var(--white); border: 1px solid var(--line); }
+.card-detail > p.muted:first-child { margin: 0; padding: 16px 20px 10px; }
+.detail-grid { margin: 0; }
+.detail-grid > div { display: grid; grid-template-columns: 140px 1fr; gap: 8px 20px; align-items: baseline; padding: 14px 20px; border-top: 1px solid var(--line); }
+.detail-grid dt { margin: 0; color: var(--ink-2); font-size: 0.8125rem; font-weight: 600; }
+.detail-grid dd { margin: 0; }
+.card-detail > .detail-grid + p.muted { margin: 0; padding: 12px 20px 16px; }
+
+/* Delete confirmation: centred white panel. */
+.confirm-panel { max-width: 420px; margin: 32px auto 0; padding: 28px; border: 1px solid var(--line); background: var(--white); text-align: center; }
+.confirm-panel h1 { margin-bottom: 10px; }
+.confirm-panel p { color: var(--ink-2); margin-bottom: 20px; }
+
+@media (max-width: 780px) {
+  html { overflow-x: hidden; }
+  body { overflow-x: hidden; }
+  .detail-grid > div { grid-template-columns: 1fr; gap: 2px; }
+  .container { padding: 20px 16px 48px; }
+  .page-heading { align-items: flex-start; }
+  .page-heading h1 { margin-bottom: 6px; }
+  .actions { width: 100%; gap: 8px; }
+  .actions .button { flex: 1 1 calc(50% - 8px); }
+  h1 { font-size: clamp(1.625rem, 8vw, 1.875rem); overflow-wrap: anywhere; }
+  h2 { margin-top: 18px; }
+  .button { min-height: 44px; }
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 20px; }
+  .metrics div { padding: 11px; }
+  .metrics strong { font-size: 1.5rem; }
+  .global-deck-card { margin: 0 0 18px; padding: 14px; }
+  .global-deck-card__actions { display: grid; grid-template-columns: 1fr; }
+  .global-deck-card__actions .button { width: 100%; }
+  .global-deck-panel { margin-top: 0; padding: 12px; }
+  .global-deck-panel__intro { gap: 10px; }
+  .global-deck-panel__intro .button { width: 100%; }
+  .global-deck-panel .responsive-table thead,
+  .responsive-table thead { display: none; }
+  .responsive-table tbody { padding: 0; }
+  .responsive-table tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3px 12px;
+    padding: 10px 12px;
+  }
+  .responsive-table td {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
+    min-width: 0;
+    padding: 3px 0;
+    border: 0;
+  }
+  .responsive-table td::before {
+    color: var(--ink-2);
+    content: attr(data-label);
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+  .responsive-table td:last-child {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+  }
+  .responsive-table td:last-child::before { display: none; }
+  .responsive-table td a { overflow-wrap: anywhere; }
+  .global-deck-panel .responsive-table td:last-child .button { width: 100%; }
+  .global-deck-panel .responsive-table td:last-child form { width: 100%; }
+  .global-deck-panel .responsive-table td:nth-child(5) { display: none; }
+  .global-deck-panel .responsive-table td:nth-child(6) { grid-column: 1 / -1; }
+  .filters { gap: 8px; margin-bottom: 12px; }
+  .filters > * { min-width: 0; }
+  .filters .button { width: 100%; }
+  .flip-card { min-height: min(58dvh, 430px); margin: 12px 0; }
+  .flip-card-inner { min-height: min(58dvh, 430px); }
+  .flip-card-face { padding: 22px 16px; }
+  .flip-card-front h1 { font-size: clamp(1.875rem, 9vw, 2.4rem); }
+  .study-status { justify-content: space-between; gap: 6px; font-size: 0.8125rem; }
+  .study-answer-form { grid-template-columns: 1fr; }
+  .study-answer-form input { min-height: 52px; }
+  .study-answer-form .button { width: 100%; }
+  .rating-form { grid-template-columns: 1fr; }
+  .review { margin: 0; text-align: left; }
+  .review .result { align-self: flex-start; }
+  .answer-comparison { gap: 6px 10px; }
+  .responsive-table + * { margin-top: 16px; }
+}
+
+@media (min-width: 781px) {
+  .responsive-table { border-collapse: collapse; background: var(--white); }
+  .responsive-table tbody { display: table-row-group; }
+  .responsive-table tr { display: table-row; background: transparent; }
+}

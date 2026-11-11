@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Cards{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <h1>Cards</h1>
+  <a class="button primary" href="{% url 'cards:create' %}">New card</a>
+</div>
+<form method="get" class="filters">
+  <input type="search" name="q" value="{{ request.GET.q }}" placeholder="Search">
+  <select name="deck">
+    <option value="">All decks</option>
+    {% for deck in decks %}
+      <option value="{{ deck.id }}" {% if request.GET.deck == deck.id|stringformat:"s" %}selected{% endif %}>{{ deck.name }}</option>
+    {% endfor %}
+  </select>
+  <input name="tag" value="{{ request.GET.tag }}" placeholder="Tag">
+  {{ form.card_type }}
+  <label><input type="checkbox" name="due_only" {% if request.GET.due_only %}checked{% endif %}> Due</label>
+  <label><input type="checkbox" name="leech" {% if request.GET.leech %}checked{% endif %}> Leeches</label>
+  {{ form.suspended }}
+  <button class="button" type="submit">Filter</button>
+</form>
+<table class="responsive-table">
+  <thead><tr><th>Front</th><th>Back</th><th>Deck</th><th>Type</th><th>Due</th><th></th></tr></thead>
+  <tbody>
+    {% for card in cards %}
+      <tr>
+        <td data-label="Front"><a href="{{ card.get_absolute_url }}">{{ card.front|truncatechars:70 }}</a></td>
+        <td data-label="Back">{{ card.back|truncatechars:70 }}</td>
+        <td data-label="Deck">{{ card.deck.name }}</td>
+        <td data-label="Type">{{ card.get_card_type_display }}</td>
+        <td data-label="Due">{{ card.due_at|date:"Y-m-d H:i" }}</td>
+        <td data-label="Actions"><a href="{% url 'cards:edit' card.pk %}">Edit</a></td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="6">No cards found.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a9d6f5">
+  <title>{% block title %}German Flashcards{% endblock %}</title>
+  {% load static %}
+  <link rel="preload" href="{% static 'fonts/Archivo-Variable.ttf' %}" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  <link rel="stylesheet" href="{% static 'css/global_deck.css' %}">
+  <link rel="stylesheet" href="{% static 'css/irregular_verbs.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+  <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body{% if video or theater %} class="video-theater-mode"{% endif %}>
+  <!--
+  impeccable direction contract · seed 8f7924f5
+  THESIS: A cheerful, strict study instrument in white, light blue, and blue: München '72 run as a daily plan. It refuses the friendly learning-app arrangement of pastel rounded cards, pill buttons, progress rings, and eyebrow labels.
+  OWN-WORLD: White ground; a light-blue band for "today" and the top bar; one blue for action and state; navy ink; squares and hairlines, no rounded slabs, no panel shadows; Archivo set wide for headings; pictograms on a 24-unit grid with square-capped 2-unit strokes; square-cell meters instead of rings.
+  STORY: The learner opens Today, sees the three tasks and how much of the day is done, starts the word session in one click, and every drill afterwards reads the same way: one focal prompt on a light-blue field, answer tiles in a row, feedback attached above the next prompt.
+  FIRST VIEWPORT: Light-blue band across the main column with the heading and date left, the three-cell day meter and streak right; below it the word-session panel spans the column with pictogram, title, 20-cell meter and the blue Start studying button at its right edge; then two task rows; the rail holds this week's four figures and seven activity bars.
+  FORM: München '72 (Otl Aicher identity program); code-led.
+  FINISH: unreviewed and undocumented is unfinished; DESIGN.md documents the system.
+  -->
+  {% include "core/_pictograms.html" %}
+  <header class="topbar">
+    <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation" aria-expanded="true"><svg class="pic" aria-hidden="true"><use href="#pic-menu"></use></svg></button>
+    <a class="brand" href="{% url 'core:dashboard' %}">
+      <span class="brand-mark" aria-hidden="true">G</span>
+      <span class="brand-name">German Flashcards</span>
+    </a>
+    <span class="topbar-spacer"></span>
+    {% include "core/_language_selector.html" %}
+    {% if user.is_authenticated %}
+      <form method="post" action="{% url 'logout' %}" class="nav-logout">
+        {% csrf_token %}
+        <button type="submit" class="link-btn"><svg class="pic" aria-hidden="true"><use href="#pic-logout"></use></svg><span>Log out</span></button>
+      </form>
+    {% endif %}
+  </header>
+  <div class="brand-stripes" aria-hidden="true"><i></i></div>
+
+  <div class="app-shell">
+    {% include "core/_sidebar.html" %}
+    <div class="sidebar-backdrop" aria-hidden="true"></div>
+    <main class="app-main">
+      {% if messages %}
+        <div class="messages">
+          {% for message in messages %}
+            <div class="message {{ message.tags }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+  <script src="{% static 'js/tts.js' %}"></script>
+  <script src="{% static 'js/drills.js' %}"></script>
+  <script src="{% static 'js/sidebar.js' %}"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>
