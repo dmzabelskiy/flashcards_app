@@ -67,7 +67,7 @@
           <p class="row-sub">
             {% if daily_plan.media.video %}{{ daily_plan.media.video.title }}{% endif %}
             {% if daily_plan.media.podcast %} · or {{ daily_plan.media.podcast.title }}{% endif %}
-            {% if not daily_plan.media.video and not daily_plan.media.podcast %}Open a captioned video or podcast{% endif %}
+            {% if daily_plan.media.all_videos_studied %}Every video of the channel is studied. Load any video by its URL in <a href="{% url 'video_study:workspace' %}">video study</a>.{% elif not daily_plan.media.video and not daily_plan.media.podcast %}Open a captioned video or podcast{% endif %}
           </p>
         </div>
         <div class="row-actions">

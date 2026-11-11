@@ -33,6 +33,28 @@ def task_is_complete(user, task, language_mode, date=None):
     ).exists()
 
 
+VIDEO_LABEL_PREFIX = "video:"
+
+
+def studied_video_ids(user, language_mode, before):
+    """The YouTube ids ``user`` marked studied in ``language_mode`` on days before ``before``.
+
+    A video counts as studied when a ``media`` completion carries the label
+    ``video:<youtube id>``; podcast marks and the marks of other accounts or modes
+    do not count.  Only one mark is stored per day, so a second video marked on the
+    same day is not recorded.
+    """
+    _validated("media", language_mode)
+    labels = DailyTaskCompletion.objects.filter(
+        owner=user,
+        task="media",
+        language_mode=language_mode,
+        date__lt=before,
+        item_label__startswith=VIDEO_LABEL_PREFIX,
+    ).values_list("item_label", flat=True)
+    return {label[len(VIDEO_LABEL_PREFIX) :] for label in labels}
+
+
 def mark_task_complete(user, task, language_mode, item_label="", date=None):
     """Record the completion once per day; repeat calls keep the first mark.
 

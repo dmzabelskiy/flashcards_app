@@ -227,7 +227,8 @@ def implicit_catalog_refresh_enabled():
     return getattr(settings, "VIDEO_STUDY_IMPLICIT_CATALOG_REFRESH", True)
 
 
-def get_channel_video_of_day(channel, now=None):
+def get_channel_video_of_day(channel, now=None, exclude_ids=frozenset()):
+    """The channel's video for the day, rotating over the catalog without ``exclude_ids``."""
     from video_study.models import ChannelVideo
 
     current_time = now or timezone.now()
@@ -246,7 +247,11 @@ def get_channel_video_of_day(channel, now=None):
         except ChannelUnavailable:
             pass
 
-    videos = list(ChannelVideo.objects.filter(channel_key=channel.key).order_by("youtube_id"))
+    videos = list(
+        ChannelVideo.objects.filter(channel_key=channel.key)
+        .exclude(youtube_id__in=exclude_ids)
+        .order_by("youtube_id")
+    )
     return rotating_choice(
         videos,
         timezone.localdate(current_time),
@@ -254,8 +259,8 @@ def get_channel_video_of_day(channel, now=None):
     )
 
 
-def get_kurzgesagt_video_of_day(now=None):
-    return get_channel_video_of_day(KURZGESAGT_DE, now=now)
+def get_kurzgesagt_video_of_day(now=None, exclude_ids=frozenset()):
+    return get_channel_video_of_day(KURZGESAGT_DE, now=now, exclude_ids=exclude_ids)
 
 
 PODCAST_API_URL = "https://14minuten.de/wp-json/wp/v2/posts"

@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.utils import timezone
 
 from cards.models import Card
-from core.completion import task_is_complete
+from core.completion import studied_video_ids, task_is_complete
 from core.language_modes import get_language_mode
 from core.language_packs import pack_for_mode
 from core.rotation import rotating_choice
@@ -14,6 +14,7 @@ from reviews.daily import DAILY_TARGET, daily_correct_count
 from reviews.drills import drill_for_trainer, drills_for_mode
 from reviews.models import TrainerAttempt
 from reviews.study_queue import STUDY_SESSION_LIMIT
+from video_study.models import ChannelVideo
 from video_study.services import (
     KURZGESAGT_DE,
     channel_for_mode,
@@ -105,15 +106,20 @@ def _drill_item(user, language_mode, day_start, day_end, today):
 def _media_item(user, language_mode, today):
     pack = pack_for_mode(language_mode)
     channel = channel_for_mode(language_mode)
+    # A video studied on an earlier day does not come back; today's own mark does not
+    # change today's video, so the dashboard keeps showing the one just finished.
+    studied = studied_video_ids(user, language_mode, today)
     video = (
-        get_kurzgesagt_video_of_day()
+        get_kurzgesagt_video_of_day(exclude_ids=studied)
         if channel is KURZGESAGT_DE
-        else get_channel_video_of_day(channel)
+        else get_channel_video_of_day(channel, exclude_ids=studied)
     )
     podcast = get_podcast_of_day() if "podcast" in pack.features else None
     return {
         "is_done": task_is_complete(user, "media", language_mode, today),
         "video": video,
+        "all_videos_studied": video is None
+        and ChannelVideo.objects.filter(channel_key=channel.key).exists(),
         "podcast": podcast,
         "video_url": (
             reverse("video_study:workspace")
