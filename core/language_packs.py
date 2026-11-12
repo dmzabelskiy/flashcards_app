@@ -18,8 +18,9 @@ _TOP_LEVEL_FIELDS = {
     "article_genders",
     "speech_locale",
     "media",
+    "extra_letters",
 }
-_REQUIRED_FIELDS = _TOP_LEVEL_FIELDS
+_REQUIRED_FIELDS = _TOP_LEVEL_FIELDS - {"extra_letters"}
 _MEDIA_FIELDS = {"video_channel", "podcast"}
 
 
@@ -36,6 +37,7 @@ class LanguagePack:
     features: frozenset
     video_channel_key: str
     speech_locale: str
+    extra_letters: tuple = ()
 
 
 def _fail(path, field, problem):
@@ -81,6 +83,9 @@ def load_pack(path, folder_code):
         _fail(path, "code", f"is '{code}' but the folder is '{folder_code}'")
     name = _text(path, data, "name")
     speech_locale = _text(path, data, "speech_locale")
+    extra_letters = _text_list(
+        path, data.get("extra_letters", []), "extra_letters", allow_empty=True
+    )
     articles = _text_list(path, data["articles"], "articles", allow_empty=True)
     article_genders = _text_list(path, data["article_genders"], "article_genders", allow_empty=True)
     if len(article_genders) != len(articles):
@@ -116,6 +121,7 @@ def load_pack(path, folder_code):
         features=frozenset(features),
         video_channel_key=video_channel,
         speech_locale=speech_locale,
+        extra_letters=extra_letters,
     )
 
 

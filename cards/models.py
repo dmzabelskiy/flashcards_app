@@ -146,6 +146,12 @@ class Card(models.Model):
         return pack.speech_locale
 
     @property
+    def extra_letters(self):
+        """Letters of the studied language that an English keyboard lacks."""
+        pack = pack_for_mode(self.deck.language_mode) if self.deck_id else GERMAN
+        return pack.extra_letters
+
+    @property
     def display_front(self):
         if self.article and not self.front.casefold().startswith(f"{self.article} "):
             return f"{self.article} {self.front}"

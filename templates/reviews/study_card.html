@@ -65,12 +65,17 @@
       {% csrf_token %}
       <input type="hidden" name="action" value="check">
       <input type="hidden" name="submission" value="{{ submission_token }}">
-      <input name="answer" autofocus autocomplete="off" placeholder="{% if is_reverse %}Type the {{ source_language_label }} word{% else %}Type translation{% endif %}">
+      <div class="letter-input-row" data-letter-row>
+        <input name="answer" autofocus autocomplete="off" placeholder="{% if is_reverse %}Type the {{ source_language_label }} word{% else %}Type translation{% endif %}">
+        {% include "reviews/_letter_buttons.html" %}
+      </div>
       <button class="button primary" type="submit">Check</button>
     </form>
   {% endif %}
 </section>
 {% if checked %}
 <script src="{% static 'js/study_card.js' %}"></script>
+{% elif extra_letters %}
+<script src="{% static 'js/letter_buttons.js' %}"></script>
 {% endif %}
 {% endblock %}

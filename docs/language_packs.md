@@ -18,7 +18,7 @@ third (`ES-RU`, with `el` and `la`).
 
 ## pack.yml
 
-Every field is required; unknown fields are rejected.
+Every field except `extra_letters` is required; unknown fields are rejected.
 
 - `code`: equals the folder name.
 - `name`: language name, shown as "German → Russian" in the mode list.
@@ -26,6 +26,9 @@ Every field is required; unknown fields are rejected.
 - `article_genders`: one gender label per article. Both lists are the choices
   for a card's article.
 - `speech_locale`: locale of the speech button on card faces (`de-DE`).
+- `extra_letters` (optional, default `[]`): letters the learner may lack on
+  their keyboard (`[ñ]`). Each one gets an insert button next to the typed
+  answer of a card and next to the text inputs of the pack's drills.
 - `media.video_channel`: a key of `MEDIA_CHANNELS` in
   `video_study/services.py`, or `null`. A channel lists one feed, or more
   through `extra_feed_urls` (Spanish After Hours lists its uploads and three playlists).

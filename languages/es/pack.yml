@@ -3,6 +3,7 @@ name: Spanish
 articles: [el, la]
 article_genders: [Masculine, Feminine]
 speech_locale: es-ES
+extra_letters: [ñ]
 media:
   video_channel: spanish-after-hours
   podcast: false

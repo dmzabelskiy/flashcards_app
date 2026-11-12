@@ -1,4 +1,5 @@
 {% extends "reviews/_drill_page.html" %}
+{% load static %}
 {% comment %}
 The step page of every data drill: prompt, one input per field from the drill
 file, and feedback as one row per field plus the example.
@@ -45,8 +46,11 @@ file, and feedback as one row per field plus the example.
     {% for field in fields %}
       {% if field.kind == "typed" %}
         <label class="verb-answer-field">
-          <span>{{ field.label }}</span>
-          <input name="{{ field.key }}" type="text"{% if field.placeholder %} placeholder="{{ field.placeholder }}"{% endif %} autocapitalize="none" spellcheck="false" required{% if field.autofocus %} autofocus{% endif %}{% if field.hint %} aria-describedby="hint-{{ field.key }}"{% endif %}>
+          <span{% if extra_letters %} id="label-{{ field.key }}"{% endif %}>{{ field.label }}</span>
+          <span class="letter-input-row" data-letter-row>
+            <input name="{{ field.key }}" type="text"{% if field.placeholder %} placeholder="{{ field.placeholder }}"{% endif %} autocapitalize="none" spellcheck="false" required{% if field.autofocus %} autofocus{% endif %}{% if extra_letters %} aria-labelledby="label-{{ field.key }}"{% endif %}{% if field.hint %} aria-describedby="hint-{{ field.key }}"{% endif %}>
+            {% include "reviews/_letter_buttons.html" %}
+          </span>
           {% if field.hint %}<small class="drill-field-hint" id="hint-{{ field.key }}">{{ field.hint }}</small>{% endif %}
         </label>
       {% elif field.kind == "choice" %}
@@ -79,3 +83,6 @@ file, and feedback as one row per field plus the example.
   </form>
 {% endblock %}
 {% block drill_hint %}{{ drill_hint }}{% endblock %}
+{% block extra_scripts %}
+{% if extra_letters %}<script src="{% static 'js/letter_buttons.js' %}"></script>{% endif %}
+{% endblock %}

@@ -418,6 +418,10 @@ tbody tr:hover td { background: var(--sky-50); }
 .answer-comparison dd { margin: 0; font-weight: 600; }
 .study-answer-form { display: grid; grid-template-columns: 1fr auto; gap: 10px; max-width: 760px; margin: 0 auto; }
 .study-answer-form input { margin-top: 0; min-height: 52px; font-size: 1.05rem; }
+/* Letter buttons beside a typed answer; the base .button supplies the look. */
+.letter-input-row, .verb-answer-field > .letter-input-row { display: flex; gap: 8px; margin: 0; color: inherit; font-size: inherit; font-weight: inherit; }
+.letter-input-row input { flex: 1 1 auto; min-width: 0; }
+.letter-button { flex: 0 0 auto; min-width: 52px; min-height: 52px; padding: 0 12px; font-size: 1.25rem; }
 .flip-on-answer.has-answer { animation: reviewFlipIn 420ms var(--ease); }
 @keyframes reviewFlipIn {
   0% { transform: rotateY(-8deg) scale(0.985); opacity: 0.72; }

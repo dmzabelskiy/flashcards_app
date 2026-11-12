@@ -50,6 +50,16 @@ class PackLoaderTests(SimpleTestCase):
         self.assertEqual(pack.video_channel_key, "some-channel")
         self.assertEqual(pack.features, frozenset({"video", "podcast", "article_drill"}))
 
+    def test_extra_letters_are_optional_and_read_as_a_list(self):
+        self.write("xx", VALID)
+        self.assertEqual(load_packs(self.root)["xx"].extra_letters, ())
+        self.write("xx", VALID + "extra_letters: [ñ, ç]\n")
+        self.assertEqual(load_packs(self.root)["xx"].extra_letters, ("ñ", "ç"))
+
+    def test_extra_letters_must_be_a_list_of_strings(self):
+        path = self.write("xx", VALID + "extra_letters: ñ\n")
+        self.assert_fails(str(path), "extra_letters", "list")
+
     def test_every_folder_is_loaded(self):
         self.write("xx", VALID)
         self.write("yy", VALID.replace("code: xx", "code: yy"))

@@ -292,6 +292,8 @@ def study_current(request):
         "display_example_sentence": clean_example_sentence(card.example_sentence),
         "direction": direction,
         "is_reverse": is_reverse,
+        # Reverse cards type the studied language; forward cards type the translation.
+        "extra_letters": card.extra_letters if is_reverse else (),
         "target_language_label": get_target_language_label(get_language_mode(request)),
         "can_retire": (
             checked

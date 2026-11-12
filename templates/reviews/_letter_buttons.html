@@ -1,0 +1,2 @@
+{% comment %}Insert buttons for the studied language's extra letters; static/js/letter_buttons.js wires them to the input of the same [data-letter-row].{% endcomment %}
+{% for letter in extra_letters %}<button type="button" class="button letter-button" data-insert-letter="{{ letter }}" aria-label="Insert {{ letter }}">{{ letter }}</button>{% endfor %}

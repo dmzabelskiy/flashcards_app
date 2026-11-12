@@ -11,6 +11,7 @@ import random
 
 from cards.models import Card
 from core.language_modes import get_target_language, get_target_language_label
+from core.language_packs import PACKS
 from reviews.article_cards import article_cards_for_user
 from reviews.drill_engine import DrillItem, DrillResult, DrillSpec
 from reviews.drills import ARTICLE_SLUG, ARTICLE_TRAINER
@@ -308,6 +309,7 @@ class DataDrillSpec(DrillSpec):
             fields.append(view)
         return {
             "drill": self.drill,
+            "extra_letters": PACKS[self.drill.pack].extra_letters,
             "fields": fields,
             "instruction": self._text(self.drill.instruction, context),
             "drill_hint": self.drill.hint or DEFAULT_HINT,
