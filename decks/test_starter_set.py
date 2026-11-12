@@ -1,4 +1,5 @@
 import csv
+import re
 from pathlib import Path
 from unittest.mock import patch
 
@@ -15,6 +16,17 @@ CARD_SETS = Path(settings.BASE_DIR, "card_sets", "ES-RU")
 STARTER = CARD_SETS / "spanish_a2_starter.csv"
 FULL = CARD_SETS / "spanish_a1_a2_vocabulary.csv"
 ES = Deck.LanguageMode.ES_RU
+ARTICLES = ("el ", "la ", "los ", "las ")
+VERB_FRONT = re.compile(r"[^\W\d_]+(ar|er|ir|ír)(se)?")
+
+
+def raw_records(path):
+    """The file's records as raw bytes, header excluded, keyed by front.
+
+    Every record of these files is one line, and the fronts are never quoted.
+    """
+    lines = path.read_bytes().removeprefix(b"\xef\xbb\xbf").split(b"\n")
+    return {line.split(b",", 1)[0].decode("utf-8"): line for line in lines[1:] if line}
 
 
 def read_rows(path):
@@ -30,11 +42,28 @@ class StarterSetFileTests(AuthedTestCase):
         self.assertEqual(len({row["front"] for row in rows}), 100)
         self.assertTrue(all(row["notes"].startswith("A2") for row in rows))
 
+    def test_the_starter_file_holds_exactly_50_nouns_and_50_verbs_and_nothing_else(self):
+        fronts = [row["front"] for row in read_rows(STARTER)]
+
+        nouns = [front for front in fronts if front.startswith(ARTICLES)]
+        verbs = [front for front in fronts if VERB_FRONT.fullmatch(front)]
+        self.assertEqual(len(nouns), 50, nouns)
+        self.assertEqual(len(verbs), 50, verbs)
+        self.assertEqual(sorted(nouns + verbs), sorted(fronts))
+
     def test_every_starter_row_is_in_the_full_list_unchanged(self):
         full = {row["front"]: row for row in read_rows(FULL)}
 
         for row in read_rows(STARTER):
             self.assertEqual(row, full.get(row["front"]), row["front"])
+
+    def test_every_raw_starter_line_equals_the_raw_line_of_the_full_list(self):
+        starter = raw_records(STARTER)
+        full = raw_records(FULL)
+
+        self.assertEqual(len(starter), 100)
+        for front, line in starter.items():
+            self.assertEqual(line, full.get(front), front)
 
     def test_the_mapping_names_the_starter_file_for_es_ru_only(self):
         self.assertEqual(STARTER_SETS, {ES: STARTER})
