@@ -1,59 +1,9 @@
 front,back,example_sentence,notes,tags,card_type
-desde,с; от,Vivo aquí desde 2020.,A2,spanish A2 prepositions,vocabulary
-sino,а; но; кроме,"No es rojo, sino azul.","A2; after a negative, contrasting",spanish A2 conjunctions,vocabulary
-aunque,хотя; даже если,Voy a correr aunque llueva.,A2,spanish A2 conjunctions,vocabulary
-mientras,пока; в то время как,Leo mientras como.,A2,spanish A2 conjunctions,vocabulary
-además,кроме того; к тому же,Es barato y además es bueno.,A2,spanish A2 conjunctions,vocabulary
-sin embargo,однако,"Es pequeño; sin embargo, es muy cómodo.",A2,spanish A2 conjunctions,vocabulary
-casi,почти,Casi son las ocho.,A2,spanish A2 adverbs,vocabulary
-todavía,ещё; всё ещё,Todavía tengo sueño.,A2,spanish A2 adverbs,vocabulary
-de repente,вдруг; внезапно,De repente empieza a llover.,A2,spanish A2 adverbs,vocabulary
-por fin,наконец,¡Por fin es viernes!,A2,spanish A2 adverbs,vocabulary
-bastante,довольно; достаточно,Es bastante caro.,A2,spanish A2 adverbs,vocabulary
-demasiado,слишком,Hace demasiado frío.,A2,spanish A2 adverbs,vocabulary
-tampoco,тоже не; также не,Yo tampoco tengo tiempo.,A2,spanish A2 adverbs,vocabulary
-quizás,может быть,Quizás vamos a la playa.,A2; also: quizá,spanish A2 adverbs,vocabulary
-mejor,лучше,Mejor llamo mañana.,"A2; also an adjective: ""better""",spanish A2 adverbs,vocabulary
-juntos,вместе,Vamos juntos al trabajo.,A2; feminine: juntas,spanish A2 adverbs,vocabulary
-la fecha,дата,¿Cuál es la fecha de hoy?,A2,spanish A2 time,vocabulary
-el futuro,будущее,En el futuro quiero vivir en España.,A2,spanish A2 time,vocabulary
-no pasa nada,ничего страшного,"No pasa nada, no te preocupes.",A2,spanish A2 greetings,vocabulary
-el compañero,товарищ; коллега,Mi compañero de clase se llama Pablo.,A2; feminine: la compañera,spanish A2 family,vocabulary
-el jefe,начальник,Mi jefe es muy amable.,A2; feminine: la jefa,spanish A2 family,vocabulary
-el corazón,сердце,Mi corazón late muy rápido.,A2,spanish A2 body,vocabulary
-la fiebre,температура; жар,Tengo fiebre y estoy cansado.,A2,spanish A2 health,vocabulary
-la cita,приём; встреча; свидание,Tengo una cita con el médico.,A2; also a date or any arranged meeting,spanish A2 health,vocabulary
-el almuerzo,обед; второй завтрак,El almuerzo es a las dos.,A2; in Spain also a mid-morning snack; the main meal there is la comida,spanish A2 food,vocabulary
-la carta,меню (в ресторане); письмо,"¿Me trae la carta, por favor?","A2; also ""letter""",spanish A2 food,vocabulary
-el dormitorio,спальня,El dormitorio tiene una cama grande.,A2,spanish A2 house,vocabulary
-el balcón,балкон,Tomo el café en el balcón.,A2,spanish A2 house,vocabulary
-el alquiler,аренда; квартплата,El alquiler es muy caro.,A2,spanish A2 house,vocabulary
-el puente,мост,Cruzamos el puente a pie.,A2,spanish A2 town,vocabulary
-el correo,почта,Voy al correo a enviar una carta.,"A2; also ""mail""",spanish A2 town,vocabulary
-el equipaje,багаж,Mi equipaje es muy pesado.,A2,spanish A2 transport,vocabulary
-el pasaporte,паспорт,Llevo el pasaporte en la mochila.,A2,spanish A2 transport,vocabulary
-la naturaleza,природа,Me encanta la naturaleza.,A2,spanish A2 nature,vocabulary
-la nube,облако,Hay muchas nubes en el cielo.,A2,spanish A2 weather,vocabulary
-la temperatura,температура,La temperatura baja por la noche.,A2,spanish A2 weather,vocabulary
-la mascota,домашнее животное,Mi mascota es un conejo.,A2,spanish A2 animals,vocabulary
-la empresa,компания; предприятие,Trabajo en una empresa pequeña.,A2,spanish A2 work,vocabulary
-la reunión,встреча; собрание,Tenemos una reunión a las diez.,A2,spanish A2 work,vocabulary
-el horario,расписание; график,Mi horario es de nueve a cinco.,A2,spanish A2 work,vocabulary
-el sueldo,зарплата,Mi sueldo es bastante bueno.,A2; also: el salario,spanish A2 work,vocabulary
 ganar,зарабатывать; выигрывать,Gano poco dinero.,A2,spanish A2 work,vocabulary
-la lección,урок,La lección de hoy es fácil.,A2,spanish A2 school,vocabulary
-la tarea,задание; домашнее задание,Tengo mucha tarea hoy.,"A2; Spain: also los deberes, in the plural",spanish A2 school,vocabulary
-el error,ошибка,Hay un error en la frase.,A2,spanish A2 school,vocabulary
-el ejemplo,пример,"Dame un ejemplo, por favor.",A2,spanish A2 school,vocabulary
 enseñar,учить; преподавать; показывать,Mi madre enseña inglés.,A2,spanish A2 school,vocabulary
 recordar,помнить; вспоминать,No recuerdo su nombre.,A2; o→ue: recuerdo,spanish A2 school,vocabulary
 olvidar,забывать,Olvido las llaves muy a menudo.,A2,spanish A2 school,vocabulary
 traducir,переводить,Traduzco un texto al ruso.,"A2; irregular: traduzco, traduje",spanish A2 school,vocabulary
-la contraseña,пароль,Olvidé mi contraseña.,A2,spanish A2 tech,vocabulary
-la pantalla,экран,La pantalla del móvil está rota.,A2,spanish A2 tech,vocabulary
-la noticia,новость,Es una noticia muy buena.,A2,spanish A2 tech,vocabulary
-el juego,игра,Es un juego de mesa.,A2,spanish A2 leisure,vocabulary
-el tiempo libre,свободное время,En mi tiempo libre leo.,A2,spanish A2 leisure,vocabulary
 cambiar,менять; меняться,Quiero cambiar esta camisa.,A2,spanish A2 shopping,vocabulary
 oír,слышать,No oigo nada.,"A2; irregular: oigo, oyes, oyó",spanish A2 verbs,vocabulary
 seguir,следовать; продолжать,Sigue todo recto hasta la plaza.,"A2; e→i: sigo, siguió; also seguir + gerund: to keep doing",spanish A2 verbs,vocabulary
@@ -77,25 +27,75 @@ deber,быть должным; следует,Debes descansar más.,"A2; deber +
 ofrecer,предлагать,Te ofrezco un café.,A2; irregular: ofrezco,spanish A2 verbs,vocabulary
 conseguir,добиваться; получать,Consigo un buen precio.,"A2; e→i: consigo, consiguió",spanish A2 verbs,vocabulary
 importar,иметь значение; быть важным,No me importa el precio.,A2; used like gustar; ¿te importa...? = do you mind...?,spanish A2 verbs,vocabulary
-posible,возможный,Es posible llegar en tren.,A2; invariable in gender,spanish A2 adjectives,vocabulary
-seguro,уверенный; надёжный,Estoy seguro de que viene.,"A2; also ""sure""; the noun el seguro is ""insurance""",spanish A2 adjectives,vocabulary
-peligroso,опасный,La carretera es peligrosa.,A2,spanish A2 adjectives,vocabulary
-libre,свободный,¿Está libre esta silla?,A2; invariable in gender,spanish A2 adjectives,vocabulary
-diferente,разный; другой,Mi hermano es muy diferente a mí.,A2; invariable in gender,spanish A2 adjectives,vocabulary
-igual,одинаковый; такой же,Los dos son iguales.,A2; invariable in gender,spanish A2 adjectives,vocabulary
-siguiente,следующий,El siguiente tren sale a las ocho.,A2; invariable in gender,spanish A2 adjectives,vocabulary
-especial,особенный,Hoy es un día especial.,A2; invariable in gender,spanish A2 adjectives,vocabulary
-principal,главный,La plaza principal es muy bonita.,A2; invariable in gender,spanish A2 adjectives,vocabulary
+permitir,разрешать,No se permite fumar aquí.,A2,spanish A2 verbs,vocabulary
+aceptar,принимать; соглашаться,Acepto tu invitación.,A2,spanish A2 verbs,vocabulary
+sentirse,чувствовать себя,Me siento mal hoy.,A2; e→ie: me siento,spanish A2 verbs,vocabulary
+mostrar,показывать,Te muestro mis fotos.,A2; o→ue: muestro,spanish A2 verbs,vocabulary
+nacer,родиться,Mi hijo nació en mayo.,A2; irregular: nazco,spanish A2 verbs,vocabulary
+morir,умирать,Mi abuelo murió hace años.,A2; o→ue: muero; irregular participle: muerto,spanish A2 verbs,vocabulary
+crecer,расти,Mis hijos crecen muy rápido.,A2; irregular: crezco,spanish A2 verbs,vocabulary
+cruzar,пересекать; переходить,Cruzo la calle con cuidado.,A2; z→c: crucé,spanish A2 verbs,vocabulary
+romper,ломать; разбивать,Rompí un vaso.,A2; irregular participle: roto,spanish A2 verbs,vocabulary
+encender,включать; зажигать,Enciendo la luz.,A2; e→ie: enciendo,spanish A2 verbs,vocabulary
+apagar,выключать; гасить,Apago la tele a las once.,A2; g→gu: apagué,spanish A2 verbs,vocabulary
+presentar,представлять; знакомить,Te presento a mi amiga Marta.,A2,spanish A2 verbs,vocabulary
+recomendar,рекомендовать; советовать,Te recomiendo este restaurante.,A2; e→ie: recomiendo,spanish A2 verbs,vocabulary
+mejorar,улучшать; улучшаться,Quiero mejorar mi español.,A2,spanish A2 verbs,vocabulary
+tardar,занимать время; медлить,El tren tarda dos horas.,A2,spanish A2 verbs,vocabulary
+sacar,вынимать; выносить; получать,Saco la basura por la noche.,A2; c→qu: saqué,spanish A2 verbs,vocabulary
+caer,падать,Las hojas caen en otoño.,"A2; irregular: caigo, cayó",spanish A2 verbs,vocabulary
+soler,обычно делать,Suelo desayunar a las ocho.,"A2; o→ue: suelo; chiefly used in the present and imperfect indicative: suelo, solía",spanish A2 verbs,vocabulary
+faltar,не хватать; отсутствовать,Falta sal en la sopa.,A2; used like gustar,spanish A2 verbs,vocabulary
+servir,служить; подавать; годиться,Este cuchillo no sirve.,A2; e→i: sirvo; servir para = to be used for,spanish A2 verbs,vocabulary
+evitar,избегать,Evito el centro por el tráfico.,A2,spanish A2 verbs,vocabulary
+arreglar,чинить; приводить в порядок,Arreglo la bici.,A2,spanish A2 verbs,vocabulary
+la fecha,дата,¿Cuál es la fecha de hoy?,A2,spanish A2 time,vocabulary
+el futuro,будущее,En el futuro quiero vivir en España.,A2,spanish A2 time,vocabulary
+el compañero,товарищ; коллега,Mi compañero de clase se llama Pablo.,A2; feminine: la compañera,spanish A2 family,vocabulary
+el jefe,начальник,Mi jefe es muy amable.,A2; feminine: la jefa,spanish A2 family,vocabulary
+la cita,приём; встреча; свидание,Tengo una cita con el médico.,A2; also a date or any arranged meeting,spanish A2 health,vocabulary
+la carta,меню (в ресторане); письмо,"¿Me trae la carta, por favor?","A2; also ""letter""",spanish A2 food,vocabulary
+el alquiler,аренда; квартплата,El alquiler es muy caro.,A2,spanish A2 house,vocabulary
+el correo,почта,Voy al correo a enviar una carta.,"A2; also ""mail""",spanish A2 town,vocabulary
+el equipaje,багаж,Mi equipaje es muy pesado.,A2,spanish A2 transport,vocabulary
+el pasaporte,паспорт,Llevo el pasaporte en la mochila.,A2,spanish A2 transport,vocabulary
+la empresa,компания; предприятие,Trabajo en una empresa pequeña.,A2,spanish A2 work,vocabulary
+la reunión,встреча; собрание,Tenemos una reunión a las diez.,A2,spanish A2 work,vocabulary
+el horario,расписание; график,Mi horario es de nueve a cinco.,A2,spanish A2 work,vocabulary
+el sueldo,зарплата,Mi sueldo es bastante bueno.,A2; also: el salario,spanish A2 work,vocabulary
+la tarea,задание; домашнее задание,Tengo mucha tarea hoy.,"A2; Spain: also los deberes, in the plural",spanish A2 school,vocabulary
+el error,ошибка,Hay un error en la frase.,A2,spanish A2 school,vocabulary
+el ejemplo,пример,"Dame un ejemplo, por favor.",A2,spanish A2 school,vocabulary
+la contraseña,пароль,Olvidé mi contraseña.,A2,spanish A2 tech,vocabulary
+la pantalla,экран,La pantalla del móvil está rota.,A2,spanish A2 tech,vocabulary
+la noticia,новость,Es una noticia muy buena.,A2,spanish A2 tech,vocabulary
 la razón,причина; правота,No sé la razón.,A2,spanish A2 things,vocabulary
 el miedo,страх,Tengo miedo de los perros.,A2; tener miedo de = to be afraid of,spanish A2 things,vocabulary
 la información,информация,Necesito más información.,A2; singular in Spanish,spanish A2 things,vocabulary
 la opinión,мнение,En mi opinión es muy caro.,A2,spanish A2 things,vocabulary
 el accidente,авария; несчастный случай,Hay un accidente en la carretera.,A2,spanish A2 things,vocabulary
-por cierto,кстати,"Por cierto, ¿cómo está tu madre?",A2,spanish A2 phrases,vocabulary
-a lo mejor,может быть; возможно,A lo mejor llueve mañana.,A2; used with the indicative,spanish A2 phrases,vocabulary
-hay que,нужно; надо,Hay que comer bien.,A2; impersonal; followed by an infinitive,spanish A2 phrases,vocabulary
-increíble,невероятный,Es una historia increíble.,A2; invariable in gender,spanish A2 adjectives,vocabulary
 la situación,ситуация,La situación es difícil.,A2,spanish A2 things,vocabulary
 el vuelo,рейс; полёт,Mi vuelo sale a las diez.,A2,spanish A2 things,vocabulary
-permitir,разрешать,No se permite fumar aquí.,A2,spanish A2 verbs,vocabulary
-aceptar,принимать; соглашаться,Acepto tu invitación.,A2,spanish A2 verbs,vocabulary
+la parte,часть,Una parte de la clase viene hoy.,A2,spanish A2 things,vocabulary
+la forma,форма; способ,Esta es la mejor forma de aprender.,A2,spanish A2 things,vocabulary
+el principio,начало,Al principio no entiendo nada.,A2,spanish A2 things,vocabulary
+el final,конец; финал,El final de la película es triste.,A2,spanish A2 things,vocabulary
+el resultado,результат,El resultado del examen es bueno.,A2,spanish A2 things,vocabulary
+la cantidad,количество,Necesito una gran cantidad de agua.,A2,spanish A2 things,vocabulary
+el grupo,группа,Mi grupo de amigos es pequeño.,A2,spanish A2 things,vocabulary
+el sueño,сон; мечта,Tengo un sueño muy raro.,"A2; also ""sleepiness"": tengo sueño",spanish A2 things,vocabulary
+el camino,дорога; путь,El camino al pueblo es largo.,A2,spanish A2 things,vocabulary
+el caso,случай; дело,"En ese caso, no vamos.",A2,spanish A2 things,vocabulary
+el plan,план,¿Tienes planes para el sábado?,A2,spanish A2 things,vocabulary
+la decisión,решение,Es una decisión difícil.,A2,spanish A2 things,vocabulary
+el consejo,совет,Quiero pedirte un consejo.,A2,spanish A2 things,vocabulary
+la diferencia,разница,No veo la diferencia.,A2,spanish A2 things,vocabulary
+la voz,голос,Tiene una voz muy bonita.,A2; plural: voces,spanish A2 things,vocabulary
+la llamada,звонок,Tengo una llamada importante.,A2,spanish A2 tech,vocabulary
+la aplicación,приложение,Tengo una aplicación para aprender idiomas.,A2; also: la app,spanish A2 tech,vocabulary
+el equipo,команда; оборудование,Mi equipo gana hoy.,A2,spanish A2 leisure,vocabulary
+la medicina,лекарство; медицина,Tomo una medicina para la tos.,A2,spanish A2 health,vocabulary
+la entrada,билет (на мероприятие); вход,Compro dos entradas para el cine.,"A2; also ""entrance""",spanish A2 transport,vocabulary
+el cambio,сдача; обмен; перемена,"Me da el cambio, por favor.",A2,spanish A2 shopping,vocabulary
+la historia,история; рассказ,Me gusta la historia de España.,A2,spanish A2 school,vocabulary
+el tema,тема,El tema de la clase es la familia.,A2; masculine despite the -a ending,spanish A2 school,vocabulary
