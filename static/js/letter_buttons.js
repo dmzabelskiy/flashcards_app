@@ -18,32 +18,34 @@
     };
   }
 
-  if (typeof module !== "undefined" && module.exports) {
-    module.exports = { insertAtCaret };
+  // Wire the buttons on `doc`: one delegated listener per event type.
+  function install(doc) {
+    // Keep the caret in the input: a press on the button must not blur it.
+    doc.addEventListener("mousedown", (event) => {
+      if (event.target.closest("[data-insert-letter]")) event.preventDefault();
+    });
+
+    doc.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-insert-letter]");
+      if (!button) return;
+      const row = button.closest("[data-letter-row]");
+      const input = row && row.querySelector("input");
+      if (!input) return;
+      const letter = button.dataset.insertLetter;
+      const text = event.shiftKey ? letter.toUpperCase() : letter;
+      const start = input.selectionStart === null ? input.value.length : input.selectionStart;
+      const end = input.selectionEnd === null ? start : input.selectionEnd;
+      const result = insertAtCaret(input.value, start, end, text);
+      input.value = result.value;
+      input.focus();
+      input.setSelectionRange(result.caret, result.caret);
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    });
   }
 
-  const doc = root.document;
-  if (!doc) return;
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = { insertAtCaret, install };
+  }
 
-  // Keep the caret in the input: a press on the button must not blur it.
-  doc.addEventListener("mousedown", (event) => {
-    if (event.target.closest("[data-insert-letter]")) event.preventDefault();
-  });
-
-  doc.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-insert-letter]");
-    if (!button) return;
-    const row = button.closest("[data-letter-row]");
-    const input = row && row.querySelector("input");
-    if (!input) return;
-    const letter = button.dataset.insertLetter;
-    const text = event.shiftKey ? letter.toUpperCase() : letter;
-    const start = input.selectionStart === null ? input.value.length : input.selectionStart;
-    const end = input.selectionEnd === null ? start : input.selectionEnd;
-    const result = insertAtCaret(input.value, start, end, text);
-    input.value = result.value;
-    input.focus();
-    input.setSelectionRange(result.caret, result.caret);
-    input.dispatchEvent(new Event("input", { bubbles: true }));
-  });
+  if (root.document) install(root.document);
 })(typeof window !== "undefined" ? window : globalThis);
